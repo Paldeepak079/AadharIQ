@@ -13,6 +13,13 @@ interface DashboardProps {
 
 const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
   const t = translations[lang];
+  const [demographicMode, setDemographicMode] = React.useState<'india' | 'state'>('india');
+
+  // Sync mode with global selection
+  React.useEffect(() => {
+    if (selectedState) setDemographicMode('state');
+    else setDemographicMode('india');
+  }, [selectedState]);
 
   const filteredData = selectedState
     ? INDIA_STATES_DATA.filter(s => s.state.toLowerCase().includes(selectedState.toLowerCase()))
@@ -51,25 +58,43 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
         <div className="lg:col-span-2 space-y-8">
           <div className="glass-panel p-8 rounded-3xl">
             <h3 className="text-xl font-bold mb-6 devanagari-header flex items-center justify-between">
-              <span>Age Demographics</span>
+              <span>Age Demographics (All Regions)</span>
               <span className="text-xs font-normal text-gray-500 uppercase tracking-widest">Enrolment Distribution</span>
             </h3>
-            <div className="h-[300px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={filteredData.slice(0, 7)} layout="vertical">
-                  <CartesianGrid strokeDasharray="3 3" stroke="#222" />
-                  <XAxis type="number" stroke="#666" fontSize={10} hide />
-                  <YAxis dataKey="state" type="category" stroke="#999" fontSize={10} width={100} />
-                  <Tooltip
-                    cursor={{ fill: 'rgba(255,255,255,0.05)' }}
-                    contentStyle={{ backgroundColor: '#121212', border: '1px solid #444', borderRadius: '12px' }}
-                  />
-                  <Bar dataKey="enrolment_0_5" stackId="a" fill="#138808" name="Child (0-5)" radius={[0, 0, 0, 0]} />
-                  <Bar dataKey="enrolment_5_17" stackId="a" fill="#FF9933" name="Youth (5-17)" />
-                  <Bar dataKey="enrolment_18_plus" stackId="a" fill="#3b82f6" name="Adult (18+)" radius={[0, 4, 4, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
+            {/* Scrollable Container for All States */}
+            <div className="h-[400px] w-full overflow-y-auto pr-4 custom-scrollbar">
+              <div style={{ height: `${INDIA_STATES_DATA.length * 40}px`, minHeight: '400px' }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    data={[...INDIA_STATES_DATA].sort((a, b) => b.enrolments - a.enrolments)}
+                    layout="vertical"
+                    margin={{ left: 30, right: 30 }}
+                  >
+                    <CartesianGrid strokeDasharray="3 3" stroke="#222" horizontal={false} />
+                    <XAxis type="number" stroke="#666" fontSize={10} hide />
+                    <YAxis
+                      dataKey="state"
+                      type="category"
+                      stroke="#ccc"
+                      fontSize={11}
+                      width={150}
+                      tick={{ fill: '#bbb', fontWeight: 'bold' }}
+                    />
+                    <Tooltip
+                      cursor={{ fill: 'rgba(255,255,255,0.05)' }}
+                      contentStyle={{ backgroundColor: '#121212', border: '1px solid #444', borderRadius: '12px' }}
+                      itemStyle={{ fontSize: '11px' }}
+                    />
+                    <Bar dataKey="enrolment_0_5" stackId="a" fill="#138808" name="Child (0-5)" radius={[0, 0, 0, 0]} />
+                    <Bar dataKey="enrolment_5_17" stackId="a" fill="#FF9933" name="Youth (5-17)" />
+                    <Bar dataKey="enrolment_18_plus" stackId="a" fill="#3b82f6" name="Adult (18+)" radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
             </div>
+            <p className="mt-4 text-[10px] text-gray-600 text-center uppercase tracking-widest font-bold">
+              Scroll to view all {INDIA_STATES_DATA.length} states/UTs
+            </p>
           </div>
 
           <div className="glass-panel p-8 rounded-3xl">
@@ -133,32 +158,63 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
           </div>
 
           <div className="glass-panel p-8 rounded-3xl">
-            <h3 className="text-lg font-bold mb-4">Demographic Distribution</h3>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-lg font-bold">Demographic Distribution</h3>
+              <div className="flex bg-gray-900/50 p-1 rounded-lg border border-gray-800">
+                <button
+                  onClick={() => setDemographicMode('india')}
+                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'india' ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+                >
+                  India
+                </button>
+                <button
+                  onClick={() => setDemographicMode('state')}
+                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'state' ? 'bg-green-600 text-white shadow-lg shadow-green-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+                >
+                  State
+                </button>
+              </div>
+            </div>
+
             <div className="space-y-5">
               {(() => {
-                // Calculate demographics from filtered filteredData
-                const e0_5 = filteredData.reduce((acc, curr) => acc + (curr.enrolment_0_5 || 0), 0);
-                const e5_17 = filteredData.reduce((acc, curr) => acc + (curr.enrolment_5_17 || 0), 0);
-                const e18_plus = filteredData.reduce((acc, curr) => acc + (curr.enrolment_18_plus || 0), 0);
-                const total = e0_5 + e5_17 + e18_plus || 1; // Avoid div by zero
+                // Determine data source based on selection
+                const dataToUse = demographicMode === 'state' && selectedState ? filteredData : INDIA_STATES_DATA;
+
+                const e0_5 = dataToUse.reduce((acc, curr) => acc + (curr.enrolment_0_5 || 0), 0);
+                const e5_17 = dataToUse.reduce((acc, curr) => acc + (curr.enrolment_5_17 || 0), 0);
+                const e18_plus = dataToUse.reduce((acc, curr) => acc + (curr.enrolment_18_plus || 0), 0);
+                const total = e0_5 + e5_17 + e18_plus || 1;
 
                 const metrics = [
-                  { label: 'Child (0-5)', val: Math.round((e0_5 / total) * 100) },
-                  { label: 'Youth (5-18)', val: Math.round((e5_17 / total) * 100) },
-                  { label: 'Adults (18+)', val: Math.round((e18_plus / total) * 100) }
+                  { label: 'Child (0-5)', val: ((e0_5 / total) * 100).toFixed(1), color: 'from-green-600 to-green-400' },
+                  { label: 'Youth (5-18)', val: ((e5_17 / total) * 100).toFixed(1), color: 'from-orange-600 to-orange-400' },
+                  { label: 'Adults (18+)', val: ((e18_plus / total) * 100).toFixed(1), color: 'from-blue-600 to-blue-400' }
                 ];
 
-                return metrics.map((item, i) => (
-                  <div key={i} className="space-y-2">
-                    <div className="flex justify-between text-[10px] font-bold uppercase tracking-wider text-gray-500">
-                      <span>{item.label}</span>
-                      <span className="text-white">{item.val}%</span>
-                    </div>
-                    <div className="h-1.5 w-full bg-gray-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-orange-500 to-green-500 rounded-full" style={{ width: `${item.val}%` }} />
-                    </div>
-                  </div>
-                ));
+                return (
+                  <>
+                    <p className="text-[10px] text-gray-400 mb-4 uppercase tracking-widest font-bold">
+                      Viewing: <span className={demographicMode === 'state' ? 'text-green-500' : 'text-orange-500'}>
+                        {demographicMode === 'state' ? (selectedState || 'Select a state') : 'National Aggregate'}
+                      </span>
+                    </p>
+                    {metrics.map((item, i) => (
+                      <div key={i} className="space-y-2">
+                        <div className="flex justify-between text-[10px] font-bold uppercase tracking-wider text-gray-400">
+                          <span>{item.label}</span>
+                          <span className="text-white">{item.val}%</span>
+                        </div>
+                        <div className="h-2 w-full bg-gray-900 rounded-full overflow-hidden border border-gray-800">
+                          <div
+                            className={`h-full bg-gradient-to-r ${item.color} rounded-full transition-all duration-1000`}
+                            style={{ width: `${item.val}%` }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                );
               })()}
             </div>
           </div>
