@@ -19,39 +19,22 @@ interface Anomaly {
   desc: string;
 }
 
-const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedState }) => {
+const MLInsights: React.FC<MLProps> = ({ lang, selectedState }) => {
   const t = translations[lang];
-  const [selectedState, setSelectedState] = useState<string>(initialSelectedState || "All India");
   const [pulseData, setPulseData] = useState<any[]>([]);
   const [granularity, setGranularity] = useState<"daily" | "monthly">("daily");
-  const [states, setStates] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [anomalies, setAnomalies] = useState<Anomaly[]>([]);
 
-  // Sync with global state selection
-  useEffect(() => {
-    if (initialSelectedState) {
-      setSelectedState(initialSelectedState);
-    } else {
-      setSelectedState("All India");
-    }
-  }, [initialSelectedState]);
-
-  // Fetch states
-  useEffect(() => {
-    fetch(`${API_BASE_URL}/api/states`)
-      .then(res => res.json())
-      .then(d => setStates(d.map((s: any) => s.state).sort()))
-      .catch(err => console.error("Error states:", err));
-  }, []);
+  const activeState = selectedState || "All India";
 
   // Fetch Pulse diagnostic data
   useEffect(() => {
     setLoading(true);
     // Use the forecast endpoint with 0 forecast steps for history visualization if monthly
     const url = granularity === 'daily'
-      ? (selectedState === "All India" ? `${API_BASE_URL}/api/ml/pulse` : `${API_BASE_URL}/api/ml/pulse?state=${encodeURIComponent(selectedState)}`)
-      : `${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(selectedState)}&granularity=monthly`;
+      ? (activeState === "All India" ? `${API_BASE_URL}/api/ml/pulse` : `${API_BASE_URL}/api/ml/pulse?state=${encodeURIComponent(activeState)}`)
+      : `${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(activeState)}&granularity=monthly`;
 
     fetch(url)
       .then(res => res.json())
@@ -60,7 +43,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
         setPulseData(data || []);
 
         // Fetch anomalies from forecast always
-        fetch(`${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(selectedState)}`)
+        fetch(`${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(activeState)}`)
           .then(res => res.json())
           .then(fd => {
             setAnomalies(fd.anomalies || []);
@@ -69,27 +52,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
       })
       .catch(err => {
         console.error("Fetch error:", err);
-        if (selectedState === "All India") {
-          import('../data/realData').then(({ TIME_SERIES_DATA }) => {
-            // Match backend: Slice last 30 days for daily pulse
-            const raw = granularity === 'daily' ? TIME_SERIES_DATA.slice(-30) : TIME_SERIES_DATA;
-            setPulseData(raw.map((d: any) => {
-              const dt = new Date(d.date);
-              const label = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-              return {
-                label,
-                val: d.enrolments,
-                actual: d.enrolments
-              };
-            }));
-          });
-        } else {
-          setPulseData([]);
-        }
-        setAnomalies([]);
         setLoading(false);
       });
-  }, [selectedState, granularity]);
+  }, [activeState, granularity]);
 
   // Derive anomaly points (spikes) for visualization
   const anomalyPoints = pulseData.filter((d, i) => {
@@ -110,7 +75,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
               <Target className="text-orange-500 w-7 h-7" />
               <div>
                 <h3 className="text-xl font-black text-white">
-                  {selectedState === "All India" ? "National Activity Pulse" : `${selectedState}: Diagnostic Pulse`}
+                  {activeState === "All India" ? "National Activity Pulse" : `${activeState}: Diagnostic Pulse`}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black">Velocity tracking</p>
@@ -132,14 +97,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
               </div>
             </div>
 
-            <select
-              value={selectedState}
-              onChange={(e) => setSelectedState(e.target.value)}
-              className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-2 text-xs font-bold text-gray-300 outline-none hover:border-orange-500 transition-all cursor-pointer"
-            >
-              <option value="All India">National View</option>
-              {states.map(s => <option key={s} value={s}>{s}</option>)}
-            </select>
+            <div className="bg-orange-600/20 px-4 py-2 rounded-xl border border-orange-500/30">
+              <span className="text-xs font-black text-orange-400 uppercase tracking-widest">{activeState}</span>
+            </div>
           </div>
 
           <div className="h-[320px] w-full relative">
@@ -237,9 +197,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
         </div>
       </div>
 
-      <IntersectionExplorer lang={lang} selectedState={selectedState} />
+      <IntersectionExplorer lang={lang} selectedState={activeState} />
 
-      <UrbanRuralVelocityChart externalState={selectedState} />
+      <UrbanRuralVelocityChart externalState={activeState} />
 
       <div className="glass-panel p-8 rounded-3xl border-t-2 border-green-500/20">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -268,7 +228,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
             </div>
           </div>
 
-          <AgeGroupDistribution externalState={selectedState} />
+          <AgeGroupDistribution externalState={activeState} />
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const App: React.FC = () => {
   const renderContent = () => {
     switch (activeTab) {
       case 'dashboard':
-        return <Dashboard lang={state.lang} selectedState={state.selectedState} />;
+        return <Dashboard lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'comparison':
         return <StateComparison lang={state.lang} />;
       case 'map':

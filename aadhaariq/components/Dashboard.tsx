@@ -9,22 +9,14 @@ import { TrendingUp, Users, RefreshCw, Baby, Globe2, ArrowRight } from 'lucide-r
 interface DashboardProps {
   lang: Language;
   selectedState: string | null;
+  onSelect: (state: string | null) => void;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState: globalSelectedState }) => {
+const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) => {
   const t = translations[lang];
-  const [demographicMode, setDemographicMode] = React.useState<'india' | 'state'>('india');
-  const [localSelectedState, setLocalSelectedState] = React.useState<string | null>(null);
+  const [demographicMode, setDemographicMode] = React.useState<'india' | 'state'>(selectedState ? 'state' : 'india');
 
-  // Sync mode with global selection or local selection
-  React.useEffect(() => {
-    if (globalSelectedState) {
-      setDemographicMode('state');
-      setLocalSelectedState(globalSelectedState);
-    }
-  }, [globalSelectedState]);
-
-  const activeState = demographicMode === 'state' ? (localSelectedState || globalSelectedState) : null;
+  const activeState = demographicMode === 'state' ? selectedState : null;
 
   const filteredData = activeState
     ? INDIA_STATES_DATA.filter(s => s.state.toLowerCase().includes(activeState.toLowerCase()))
@@ -170,7 +162,7 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState: globalSelect
                   <button
                     onClick={() => {
                       setDemographicMode('india');
-                      setLocalSelectedState(null);
+                      onSelect(null);
                     }}
                     className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'india' ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20' : 'text-gray-500 hover:text-gray-300'}`}
                   >
@@ -188,9 +180,9 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState: globalSelect
               {demographicMode === 'state' && (
                 <div className="animate-in slide-in-from-top-2 duration-300">
                   <select
-                    value={localSelectedState || ''}
+                    value={selectedState || ''}
                     onChange={(e) => {
-                      setLocalSelectedState(e.target.value);
+                      onSelect(e.target.value);
                       setDemographicMode('state');
                     }}
                     className="w-full px-3 py-2 bg-gray-900/80 border border-gray-700 rounded-xl text-xs font-bold text-white focus:border-green-500 outline-none transition-all cursor-pointer shadow-xl"

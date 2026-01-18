@@ -190,8 +190,15 @@ async def get_forecast(state: Optional[str] = None, granularity: str = "monthly"
     else:
         if update_ratio > 25:
              anomaly_narratives.append({"type": "CRITICAL", "title": "Update Friction Detected", "desc": f"{display_name} reports a high update-to-enrollment ratio ({update_ratio:.1f}). Focus on biometric kiosk capacity."})
+        elif update_ratio < 10:
+             anomaly_narratives.append({"type": "SOCIETAL", "title": "Enrollment Drive Opportunity", "desc": f"{display_name} has a low update ratio ({update_ratio:.1f}). Potential for targeted new enrollment campaigns in dark zones."})
+        
         if -5 < growth < 5:
-             anomaly_narratives.append({"type": "SOCIETAL", "title": "Operational Plateu", "desc": f"{display_name} has reached a steady state of enrollments. Resource allocation should focus on maintenance."})
+             anomaly_narratives.append({"type": "SOCIETAL", "title": "Operational Plateau", "desc": f"{display_name} has reached a steady state of enrollments. Resource allocation should focus on maintenance and updates."})
+        elif growth > 5:
+             anomaly_narratives.append({"type": "GROWTH", "title": "Expansion Pulse", "desc": f"Projected growth of {growth:.1f}% in {display_name} indicates an influx of transaction volume. Prepare infrastructure for seasonal scaling."})
+        else:
+             anomaly_narratives.append({"type": "INFRA", "title": "Efficiency Optimization", "desc": f"Current transaction velocity in {display_name} is stable. Recommend machine health checkups for long-term reliability."})
 
     # Model metadata refinement for authenticity
     return {

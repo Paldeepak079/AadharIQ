@@ -29,31 +29,14 @@ interface PredictiveDemandProps {
     selectedState?: string | null;
 }
 
-const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState: initialSelectedState }) => {
+const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState }) => {
     const [data, setData] = useState<ForecastResponse | null>(null);
     const [loading, setLoading] = useState(true);
-    const [selectedState, setSelectedState] = useState<string>(initialSelectedState || "All India");
     const [granularity, setGranularity] = useState<"daily" | "monthly">("monthly");
-    const [states, setStates] = useState<string[]>([]);
 
-    // Sync with global state selection
-    useEffect(() => {
-        if (initialSelectedState) {
-            setSelectedState(initialSelectedState);
-        } else {
-            setSelectedState("All India");
-        }
-    }, [initialSelectedState]);
+    const activeState = selectedState || "All India";
 
-    useEffect(() => {
-        fetch(`${API_BASE_URL}/api/states`)
-            .then(res => res.json())
-            .then(d => {
-                const names = d.map((s: any) => s.state).sort();
-                setStates(names);
-            })
-            .catch(err => console.error("Error fetching states:", err));
-    }, []);
+
 
     const fetchForecast = (stateName: string, gran: string) => {
         setLoading(true);
@@ -67,57 +50,14 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState: init
             })
             .catch(err => {
                 console.error("Forecast fetch error:", err);
-                import('../data/realData').then(({ TIME_SERIES_DATA }) => {
-                    let processed: any[] = [];
-                    if (gran === 'monthly') {
-                        // Aggregate daily to monthly
-                        const monthly: Record<string, number> = {};
-                        TIME_SERIES_DATA.forEach(d => {
-                            const monthKey = d.date.substring(0, 7); // YYYY-MM
-                            monthly[monthKey] = (monthly[monthKey] || 0) + d.enrolments;
-                        });
-                        processed = Object.entries(monthly).map(([key, val]) => {
-                            const dt = new Date(key + "-02"); // Use 02 to avoid TZ issues
-                            return {
-                                date: key,
-                                label: dt.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }),
-                                actual: val,
-                                predicted: null
-                            };
-                        });
-                    } else {
-                        // Slice last 30 for daily
-                        processed = TIME_SERIES_DATA.slice(-30).map(d => {
-                            const dt = new Date(d.date);
-                            return {
-                                date: d.date,
-                                label: dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-                                actual: d.enrolments,
-                                predicted: null
-                            };
-                        });
-                    }
-
-                    const historicalOnly: ForecastResponse = {
-                        mergedData: processed.map(p => ({ ...p, upper: null, lower: null })),
-                        growth_percent: 0,
-                        interpretation: "Historical transaction overview. Real-time predictive analytics available on secure local server.",
-                        confidence_score: 100,
-                        model_metadata: {
-                            citation: "Authentic historical dataset active.",
-                            input_range: "Source: Historical Database",
-                            algorithm: "Deterministic Record View"
-                        }
-                    };
-                    setData(historicalOnly);
-                    setLoading(false);
-                });
+                setData(null);
+                setLoading(false);
             });
     };
 
     useEffect(() => {
-        fetchForecast(selectedState, granularity);
-    }, [selectedState, granularity]);
+        fetchForecast(activeState, granularity);
+    }, [activeState, granularity]);
 
     return (
         <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -154,17 +94,8 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState: init
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-                        <div className="relative group w-full sm:w-64">
-                            <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-orange-500" />
-                            <select
-                                value={selectedState}
-                                onChange={(e) => setSelectedState(e.target.value)}
-                                className="w-full bg-gray-900 border border-gray-700 rounded-xl pl-11 pr-4 py-3 text-sm font-bold text-white focus:border-orange-500 outline-none transition-all appearance-none cursor-pointer hover:bg-gray-800"
-                            >
-                                <option value="All India">All India (National)</option>
-                                {states.map(s => <option key={s} value={s}>{s}</option>)}
-                            </select>
-                            <Filter className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+                        <div className="bg-blue-600/20 px-6 py-3 rounded-xl border border-blue-500/30">
+                            <span className="text-sm font-black text-blue-400 uppercase tracking-widest">{activeState}</span>
                         </div>
 
                         <div className="px-6 py-3 bg-gray-900/80 rounded-xl border border-gray-800 flex items-center gap-4 min-w-[200px]">
@@ -326,8 +257,8 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState: init
                             <p className="text-sm font-bold text-white mb-2 leading-tight">Dynamic Resource Allocation</p>
                             <p className="text-[11px] text-gray-400 leading-relaxed font-medium transition-all">
                                 {granularity === 'daily'
-                                    ? `Immediate ${data?.growth_percent && data.growth_percent > 0 ? 'surge' : 'recession'} alert for next 7 days in **${selectedState}**.`
-                                    : `Shift infrastructure focus in **${selectedState}** for the upcoming 6-month cycle.`}
+                                    ? `Immediate ${data?.growth_percent && data.growth_percent > 0 ? 'surge' : 'recession'} alert for next 7 days in **${activeState}**.`
+                                    : `Shift infrastructure focus in **${activeState}** for the upcoming 6-month cycle.`}
                             </p>
                             <button className="mt-6 w-full py-3 bg-blue-600/20 hover:bg-blue-600/40 text-blue-400 text-[10px] font-black uppercase tracking-widest rounded-xl transition-all border border-blue-600/30 flex items-center justify-center gap-2">
                                 DEPLOYMENT PLAN <ArrowRight className="w-3 h-3" />

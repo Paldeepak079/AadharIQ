@@ -17,6 +17,7 @@ import {
   CheckCircle2,
   Activity
 } from 'lucide-react';
+import { INDIA_STATES_DATA } from '../data/realData';
 
 interface LayoutProps {
   state: AppState;
@@ -116,10 +117,17 @@ const Layout: React.FC<LayoutProps> = ({ state, setState, activeTab, setActiveTa
             <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
             <input
               type="text"
+              list="states-list"
               placeholder={t.searchPlaceholder || "Search states..."}
               onChange={handleSearchChange}
               className="w-full bg-gray-900 border border-gray-700 rounded-lg pl-10 pr-4 py-2 text-sm focus:border-orange-500 focus:outline-none transition-colors"
             />
+            <datalist id="states-list">
+              <option value="All India" />
+              {INDIA_STATES_DATA.map(s => (
+                <option key={s.state} value={s.state} />
+              ))}
+            </datalist>
           </div>
 
           <div className="flex items-center gap-4">
