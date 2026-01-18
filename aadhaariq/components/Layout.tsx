@@ -14,7 +14,8 @@ import {
   Search,
   ArrowLeftRight,
   Database,
-  CheckCircle2
+  CheckCircle2,
+  Activity
 } from 'lucide-react';
 
 interface LayoutProps {
@@ -45,6 +46,7 @@ const Layout: React.FC<LayoutProps> = ({ state, setState, activeTab, setActiveTa
     { id: 'comparison', icon: ArrowLeftRight, label: t.compareStates },
     { id: 'map', icon: MapIcon, label: t.geoMap },
     { id: 'ml', icon: Cpu, label: t.mlInsights },
+    { id: 'predictive', icon: Activity, label: t.predictiveTrends },
     { id: 'ai', icon: MessageSquare, label: t.aiEngine },
     { id: 'reports', icon: FileText, label: t.strategyReports },
   ];

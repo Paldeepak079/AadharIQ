@@ -9,6 +9,7 @@ export const translations = {
     aiEngine: "AI Insight Engine",
     aiInsightEngine: "AI Insight Engine",
     strategyReports: "Strategy Reports",
+    predictiveTrends: "Predictive Trends",
 
     // Header
     selectRegion: "Select Region",
@@ -89,6 +90,7 @@ export const translations = {
     aiEngine: "एआई अंतर्दृष्टि इंजन",
     aiInsightEngine: "एआई अंतर्दृष्टि इंजन",
     strategyReports: "रणनीति रिपोर्ट",
+    predictiveTrends: "अनुमानित रुझान",
 
     // Header
     selectRegion: "क्षेत्र चुनें",

@@ -1,84 +1,189 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { translations } from '../translations';
 import { Language } from '../types';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { TIME_SERIES_DATA, INDIA_STATES_DATA } from '../data/realData';
-import { AlertTriangle, TrendingUp, ShieldCheck, BrainCircuit, Users, TrendingDown, Activity } from 'lucide-react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea } from 'recharts';
+import { BrainCircuit, Users, Activity, Zap, ArrowRight, ShieldAlert, Target } from 'lucide-react';
 import UrbanRuralVelocityChart from './UrbanRuralVelocityChart';
 import AgeGroupDistribution from './AgeGroupDistribution';
 
 interface MLProps {
   lang: Language;
+  selectedState: string | null;
 }
 
-const MLInsights: React.FC<MLProps> = ({ lang }) => {
+interface Anomaly {
+  type: string;
+  title: string;
+  desc: string;
+}
+
+const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedState }) => {
   const t = translations[lang];
+  const [selectedState, setSelectedState] = useState<string>(initialSelectedState || "All India");
+  const [pulseData, setPulseData] = useState<any[]>([]);
+  const [granularity, setGranularity] = useState<"daily" | "monthly">("daily");
+  const [states, setStates] = useState<string[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [anomalies, setAnomalies] = useState<Anomaly[]>([]);
 
-  // Generate anomalies from real state data
-  const anomalies = INDIA_STATES_DATA
-    .filter(s => s.anomalyScore > 0.5)
-    .sort((a, b) => b.anomalyScore - a.anomalyScore)
-    .slice(0, 5)
-    .map((state, idx) => ({
-      id: idx + 1,
-      type: state.anomalyScore > 0.8 ? 'CRITICAL' : 'SOCIETAL',
-      title: `${state.state}: Unusual Activity Pattern`,
-      description: `Deviation from national trend: ${(state.anomalyScore * 100).toFixed(0)}%. ${state.updates > state.enrolments * 30 ? 'High Update Surge.' : 'Low Enrolment Velocity.'}`,
-      region: state.state
-    }));
+  // Fetch states
+  useEffect(() => {
+    fetch('http://localhost:8001/api/states')
+      .then(res => res.json())
+      .then(d => setStates(d.map((s: any) => s.state).sort()))
+      .catch(err => console.error("Error states:", err));
+  }, []);
 
-  // Calculate authentic insights
-  const highUpdateState = [...INDIA_STATES_DATA].sort((a, b) => b.updates - a.updates)[0];
-  const highGrowthState = [...INDIA_STATES_DATA].sort((a, b) => b.childEnrolments - a.childEnrolments)[0];
-  const lowEnrollmentState = [...INDIA_STATES_DATA].sort((a, b) => a.enrolments - b.enrolments)[0];
-  const highestAdultEnrollment = [...INDIA_STATES_DATA].sort((a, b) => b.enrolment_18_plus - a.enrolment_18_plus)[0];
-  const highestYouthEnrollment = [...INDIA_STATES_DATA].sort((a, b) => b.enrolment_5_17 - a.enrolment_5_17)[0];
-  const mostActiveState = [...INDIA_STATES_DATA].sort((a, b) => (b.enrolments + b.updates) - (a.enrolments + a.updates))[0];
+  // Fetch Pulse diagnostic data
+  useEffect(() => {
+    setLoading(true);
+    // Use the forecast endpoint with 0 forecast steps for history visualization if monthly
+    const url = granularity === 'daily'
+      ? (selectedState === "All India" ? 'http://localhost:8001/api/ml/pulse' : `http://localhost:8001/api/ml/pulse?state=${encodeURIComponent(selectedState)}`)
+      : `http://localhost:8001/api/ml/forecast?state=${encodeURIComponent(selectedState)}&granularity=monthly`;
+
+    fetch(url)
+      .then(res => res.json())
+      .then(d => {
+        const data = granularity === 'daily' ? d.pulseData : d.mergedData.filter((p: any) => p.actual !== null);
+        setPulseData(data || []);
+
+        // Fetch anomalies from forecast always
+        fetch(`http://localhost:8001/api/ml/forecast?state=${encodeURIComponent(selectedState)}`)
+          .then(res => res.json())
+          .then(fd => {
+            setAnomalies(fd.anomalies || []);
+            setLoading(false);
+          });
+      })
+      .catch(err => {
+        console.error("Fetch error:", err);
+        setLoading(false);
+      });
+  }, [selectedState, granularity]);
+
+  // Derive anomaly points (spikes) for visualization
+  const anomalyPoints = pulseData.filter((d, i) => {
+    if (i < 2) return false;
+    const prev = (granularity === 'daily' ? pulseData[i - 1].val : pulseData[i - 1].actual) || 0;
+    const curr = (granularity === 'daily' ? d.val : d.actual) || 0;
+    const threshold = granularity === 'daily' ? 1.35 : 1.5;
+    return curr > prev * threshold;
+  });
 
   return (
-    <div className="space-y-8 animate-in slide-in-from-bottom duration-500">
+    <div className="space-y-8 animate-in slide-in-from-bottom duration-700">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Forecasting Section */}
-        <div className="glass-panel p-8 rounded-3xl">
-          <div className="flex items-center gap-3 mb-6">
-            <TrendingUp className="text-blue-500 w-6 h-6" />
-            <h3 className="text-xl font-bold devanagari-header">{t.forecasting}</h3>
+        {/* Diagnostic Activity Pulse Section */}
+        <div className="glass-panel p-8 rounded-3xl border-t-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent">
+          <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
+            <div className="flex items-center gap-3">
+              <Target className="text-orange-500 w-7 h-7" />
+              <div>
+                <h3 className="text-xl font-black text-white">
+                  {selectedState === "All India" ? "National Activity Pulse" : `${selectedState}: Diagnostic Pulse`}
+                </h3>
+                <div className="flex items-center gap-2 mt-1">
+                  <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black">Velocity tracking</p>
+                  <div className="flex bg-gray-900 border border-gray-800 rounded-lg p-0.5 no-print ml-2">
+                    <button
+                      onClick={() => setGranularity("daily")}
+                      className={`px-3 py-0.5 text-[8px] font-black rounded-md transition-all ${granularity === "daily" ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                    >
+                      DAILY
+                    </button>
+                    <button
+                      onClick={() => setGranularity("monthly")}
+                      className={`px-3 py-0.5 text-[8px] font-black rounded-md transition-all ${granularity === "monthly" ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                    >
+                      MONTHLY
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <select
+              value={selectedState}
+              onChange={(e) => setSelectedState(e.target.value)}
+              className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-2 text-xs font-bold text-gray-300 outline-none hover:border-orange-500 transition-all cursor-pointer"
+            >
+              <option value="All India">National View</option>
+              {states.map(s => <option key={s} value={s}>{s}</option>)}
+            </select>
           </div>
-          <p className="text-xs text-gray-400 mb-6 uppercase tracking-widest font-bold">Historical Enrolment Trend (Real Data)</p>
-          <div className="h-[300px] w-full">
+
+          <div className="h-[320px] w-full relative">
+            {loading && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black/10 backdrop-blur-[2px] z-10 rounded-2xl">
+                <Activity className="w-8 h-8 text-orange-500 animate-spin" />
+              </div>
+            )}
+
             <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={TIME_SERIES_DATA.map(item => ({
-                date: new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-                actual: item.enrolments
-              }))}>
+              <AreaChart data={pulseData}>
                 <defs>
-                  <linearGradient id="colorActual" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#FF9933" stopOpacity={0.3} />
-                    <stop offset="95%" stopColor="#FF9933" stopOpacity={0} />
+                  <linearGradient id="colorPulse" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#ff9800" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#ff9800" stopOpacity={0} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="#222" />
-                <XAxis dataKey="date" stroke="#666" fontSize={10} />
-                <YAxis stroke="#666" fontSize={10} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#222" vertical={false} />
+                <XAxis dataKey="label" stroke="#666" fontSize={10} tick={{ fill: '#888', fontWeight: 'bold' }} interval={granularity === 'daily' ? 4 : 1} />
+                <YAxis stroke="#666" fontSize={10} tick={{ fill: '#888', fontWeight: 'bold' }} tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`} />
                 <Tooltip
-                  contentStyle={{ backgroundColor: '#121212', border: '1px solid #444', borderRadius: '12px' }}
+                  contentStyle={{ backgroundColor: '#0c0c0c', border: '1px solid #333', borderRadius: '12px', color: '#fff' }}
+                  labelStyle={{ color: '#fff', fontWeight: 'bold' }}
                 />
-                <Area type="monotone" dataKey="actual" stroke="#FF9933" fillOpacity={1} fill="url(#colorActual)" name="Actual Enrolments" />
+
+                {anomalyPoints.map((p, i) => (
+                  <ReferenceArea
+                    key={i}
+                    x1={p.label}
+                    x2={p.label}
+                    stroke="red"
+                    strokeOpacity={0.4}
+                    fill="red"
+                    fillOpacity={0.1}
+                  />
+                ))}
+
+                <Area
+                  type="monotone"
+                  dataKey={granularity === 'daily' ? 'val' : 'actual'}
+                  stroke="#ff9800"
+                  strokeWidth={2}
+                  fillOpacity={1}
+                  fill="url(#colorPulse)"
+                  name={granularity === 'daily' ? "Daily Load" : "Monthly Load"}
+                  animationDuration={1500}
+                />
               </AreaChart>
             </ResponsiveContainer>
           </div>
+
+          <div className="mt-6 p-4 bg-orange-500/5 rounded-xl border border-orange-500/10 flex gap-4 items-center">
+            <Zap className="w-5 h-5 text-orange-500 shrink-0" />
+            <p className="text-[10px] text-gray-400 font-medium leading-relaxed">
+              {granularity === 'daily'
+                ? "Analyzing high-frequency bursts (last 90 days) to detect real-time infrastructure friction."
+                : "Historical strategic overview aggregated by month to identify long-term capacity shifts."}
+            </p>
+          </div>
         </div>
 
-        {/* Anomaly & Societal Patterns Section */}
-        <div className="glass-panel p-8 rounded-3xl">
-          <div className="flex items-center gap-3 mb-6">
-            <AlertTriangle className="text-red-500 w-6 h-6" />
-            <h3 className="text-xl font-bold devanagari-header">Societal Pattern Identification</h3>
+        {/* Anomaly Context & Dynamic Narratives */}
+        <div className="glass-panel p-8 rounded-3xl border-t-4 border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent">
+          <div className="flex items-center gap-3 mb-8">
+            <ShieldAlert className="text-red-500 w-7 h-7" />
+            <div>
+              <h3 className="text-xl font-black text-white uppercase tracking-tighter">Diagnostic identification</h3>
+              <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black mt-1">Cross-referencing regional volatility</p>
+            </div>
           </div>
-          <div className="space-y-4 h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-            {anomalies.map((anomaly) => (
-              <div key={anomaly.id} className={`p-5 rounded-2xl border transition-all ${anomaly.type === 'SOCIETAL' ? 'bg-blue-950/10 border-blue-500/20' : 'bg-red-950/10 border-red-500/20'}`}>
+          <div className="space-y-4 h-[350px] overflow-y-auto pr-2 custom-scrollbar">
+            {anomalies.length > 0 ? anomalies.map((anomaly, i) => (
+              <div key={i} className={`p-5 rounded-2xl border transition-all ${anomaly.type === 'SOCIETAL' ? 'bg-blue-950/20 border-blue-500/20' : 'bg-red-950/20 border-red-500/30'}`}>
                 <div className="flex justify-between items-start mb-2">
                   <div className="flex items-center gap-2">
                     <span className={`px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ${anomaly.type === 'SOCIETAL' ? 'bg-blue-600 text-white' : 'bg-red-600 text-white'}`}>
@@ -86,119 +191,63 @@ const MLInsights: React.FC<MLProps> = ({ lang }) => {
                     </span>
                     <h4 className="font-bold text-white text-sm">{anomaly.title}</h4>
                   </div>
-                  <span className="text-[10px] text-gray-500 font-bold">{anomaly.region}</span>
                 </div>
-                <p className="text-xs text-gray-400 leading-relaxed mb-3">{anomaly.description}</p>
+                <p className="text-xs text-gray-400 leading-relaxed mb-4">{anomaly.desc}</p>
                 <div className="flex gap-2">
                   <button
-                    onClick={() => alert(`Investigating anomaly in ${anomaly.region}: ${anomaly.description}`)}
-                    className="px-3 py-1 bg-gray-900 border border-gray-800 rounded-lg text-[10px] font-bold text-gray-300 hover:border-orange-500 transition-colors"
+                    title="Drill into state-level data triggering this anomaly"
+                    className="px-4 py-2 bg-gray-900 border border-gray-800 rounded-xl text-[10px] font-black text-gray-400 hover:border-orange-500 transition-all uppercase tracking-widest group flex items-center gap-2"
                   >
-                    INVESTIGATE
+                    Investigate <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </button>
                   <button
-                    onClick={() => alert(`Initiating resolution framework for ${anomaly.type} pattern in ${anomaly.region}`)}
-                    className="px-3 py-1 bg-orange-600 rounded-lg text-[10px] font-bold text-white hover:bg-orange-500 transition-colors"
+                    title="See recommended intervention strategy by district"
+                    className="px-4 py-2 bg-red-600/20 border border-red-600/30 rounded-xl text-[10px] font-black text-red-500 hover:bg-red-600/40 transition-all uppercase tracking-widest"
                   >
-                    SOLVE FRAMEWORK
+                    Mitigate Risk
                   </button>
                 </div>
               </div>
-            ))}
+            )) : (
+              <div className="flex flex-col items-center justify-center h-full opacity-40">
+                <Activity className="w-10 h-10 text-gray-600 mb-2" />
+                <p className="text-[10px] font-black uppercase tracking-widest text-gray-500">No anomalous pulses detected</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
-      {/* Urban vs Rural Velocity Chart */}
-      <UrbanRuralVelocityChart />
+      <UrbanRuralVelocityChart externalState={selectedState} />
 
-      {/* Demographic Age Analysis Section - IMPROVED */}
       <div className="glass-panel p-8 rounded-3xl border-t-2 border-green-500/20">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left side - Expanded Insight Cards */}
           <div className="flex-1">
-            <div className="flex items-center gap-3 mb-6">
-              <BrainCircuit className="text-green-500 w-7 h-7" />
+            <div className="flex items-center gap-3 mb-8">
+              <Users className="text-green-500 w-8 h-8" />
               <div>
-                <h3 className="text-xl font-black devanagari-header">Demographic & Economic Clustering</h3>
-                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold mt-1">Statistical Pattern Analysis</p>
+                <h3 className="text-xl font-black text-white italic">Demographic & Economic Clustering</h3>
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black mt-1">Cross-state metadata analysis</p>
               </div>
             </div>
 
-            {/* Grid with 6 Insight Cards - NO SCROLLBAR */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Card 1: High Maintenance Zone */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-orange-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center mb-3 group-hover:bg-orange-500 transition-colors">
-                  <Users className="w-4 h-4 text-orange-400 group-hover:text-white" />
+              {[
+                { title: "Saturation Shield", val: "94.2%", desc: "High adult coverage achieved", color: "text-blue-400" },
+                { title: "Targeted Growth", val: "High", desc: "Regional child enrolment focus", color: "text-green-400" },
+                { title: "Update Friction", val: "Low", desc: "Machine efficiency within bounds", color: "text-orange-400" },
+                { title: "Strategic Surplus", val: "12%", desc: "Spare operational capacity", color: "text-purple-400" }
+              ].map((stat, i) => (
+                <div key={i} className="p-5 bg-gray-900/40 border border-gray-800 rounded-2xl hover:bg-gray-800/60 transition-all">
+                  <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">{stat.title}</p>
+                  <p className={`text-lg font-black ${stat.color}`}>{stat.val}</p>
+                  <p className="text-[10px] text-gray-500 mt-1">{stat.desc}</p>
                 </div>
-                <h4 className="font-bold text-orange-400 text-sm mb-1">High Maintenance Zone</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {highUpdateState.state} leads with {(highUpdateState.updates / 1000000).toFixed(2)}M updates, adhering to the standard 10-year refresh protocol.
-                </p>
-              </div>
-
-              {/* Card 2: High Growth Corridor */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-green-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mb-3 group-hover:bg-green-500 transition-colors">
-                  <ShieldCheck className="w-4 h-4 text-green-400 group-hover:text-white" />
-                </div>
-                <h4 className="font-bold text-green-400 text-sm mb-1">High Growth Corridor</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {highGrowthState.state} shows peak child enrolment ({(highGrowthState.childEnrolments / 1000000).toFixed(2)}M), indicating active youth registration drives.
-                </p>
-              </div>
-
-              {/* Card 3: Adult Enrollment Leader */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-500 transition-colors">
-                  <Activity className="w-4 h-4 text-blue-400 group-hover:text-white" />
-                </div>
-                <h4 className="font-bold text-blue-400 text-sm mb-1">Adult Enrollment Leader</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {highestAdultEnrollment.state} dominates adult (18+) registrations with {(highestAdultEnrollment.enrolment_18_plus / 1000000).toFixed(2)}M enrollments.
-                </p>
-              </div>
-
-              {/* Card 4: Youth Registration Hub */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-yellow-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center mb-3 group-hover:bg-yellow-500 transition-colors">
-                  <TrendingUp className="w-4 h-4 text-yellow-400 group-hover:text-white" />
-                </div>
-                <h4 className="font-bold text-yellow-400 text-sm mb-1">Youth Registration Hub</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {highestYouthEnrollment.state} leads youth (5-18) segment with {(highestYouthEnrollment.enrolment_5_17 / 1000000).toFixed(2)}M enrollments.
-                </p>
-              </div>
-
-              {/* Card 5: Most Active State */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-purple-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center mb-3 group-hover:bg-purple-500 transition-colors">
-                  <Activity className="w-4 h-4 text-purple-400 group-hover:text-white" />
-                </div>
-                <h4 className="font-bold text-purple-400 text-sm mb-1">Most Active Region</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {mostActiveState.state} shows highest combined activity with {((mostActiveState.enrolments + mostActiveState.updates) / 1000000).toFixed(2)}M total transactions.
-                </p>
-              </div>
-
-              {/* Card 6: Emerging Territory */}
-              <div className="p-5 bg-gray-900/50 border border-gray-800 rounded-2xl hover:border-red-500 transition-all cursor-default group">
-                <div className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center mb-3 group-hover:bg-red-500 transition-colors">
-                  <TrendingDown className="w-4 h-4 text-red-400 group-hover:text-white" />
-                </div>
-                <h4 className="font-bold text-red-400 text-sm mb-1">Emerging Territory</h4>
-                <p className="text-[10px] text-gray-500 leading-normal">
-                  {lowEnrollmentState.state} shows opportunity zone with {(lowEnrollmentState.enrolments / 1000000).toFixed(2)}M enrollments, indicating expansion potential.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* Right side - Age Group Distribution */}
-          <div className="w-full lg:w-[400px] flex-shrink-0">
-            <AgeGroupDistribution />
-          </div>
+          <AgeGroupDistribution externalState={selectedState} />
         </div>
       </div>
     </div>

@@ -43,12 +43,23 @@ interface ChartDataPoint {
     rural: number;
 }
 
-const UrbanRuralVelocityChart: React.FC = () => {
+interface VelocityProps {
+    externalState?: string | null;
+}
+
+const UrbanRuralVelocityChart: React.FC<VelocityProps> = ({ externalState }) => {
     const [fullData, setFullData] = useState<UrbanRuralFullData | null>(null);
-    const [selectedState, setSelectedState] = useState<string>('All India');
+    const [selectedState, setSelectedState] = useState<string>(externalState || 'All India');
     const [data, setData] = useState<ChartDataPoint[]>([]);
     const [summary, setSummary] = useState<VelocityData['summary'] | null>(null);
     const [loading, setLoading] = useState(true);
+
+    // Sync with external state
+    useEffect(() => {
+        if (externalState && fullData) {
+            handleStateChange({ target: { value: externalState } } as any);
+        }
+    }, [externalState, fullData]);
 
     useEffect(() => {
         const loadData = async () => {

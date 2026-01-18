@@ -6,6 +6,7 @@ import GeospatialMap from './components/GeospatialMap';
 import MLInsights from './components/MLInsights';
 import InsightEngine from './components/InsightEngine';
 import StateComparison from './components/StateComparison';
+import PredictiveDemand from './components/PredictiveDemand';
 import { AppState } from './types';
 import { translations } from './translations';
 import { generatePolicyPDF } from './services/pdfGenerator';
@@ -30,7 +31,9 @@ const App: React.FC = () => {
       case 'map':
         return <GeospatialMap lang={state.lang} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'ml':
-        return <MLInsights lang={state.lang} />;
+        return <MLInsights lang={state.lang} selectedState={state.selectedState} />;
+      case 'predictive':
+        return <PredictiveDemand />;
       case 'ai':
         return <InsightEngine lang={state.lang} selectedState={state.selectedState} />;
       case 'reports':

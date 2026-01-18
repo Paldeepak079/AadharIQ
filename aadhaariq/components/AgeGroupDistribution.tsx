@@ -9,10 +9,21 @@ interface AgeGroupData {
     color: string;
 }
 
-const AgeGroupDistribution: React.FC = () => {
-    const [selectedState, setSelectedState] = useState<string>('All India');
+interface AgeGroupProps {
+    externalState?: string | null;
+}
+
+const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState }) => {
+    const [selectedState, setSelectedState] = useState<string>(externalState || 'All India');
     const [chartData, setChartData] = useState<AgeGroupData[]>([]);
     const [totalEnrollments, setTotalEnrollments] = useState<number>(0);
+
+    // Sync with external state
+    useEffect(() => {
+        if (externalState) {
+            setSelectedState(externalState);
+        }
+    }, [externalState]);
 
     // Get unique state list from authentic data
     const stateList = Array.from(new Set(INDIA_STATES_DATA.map(s => s.state))).sort();
