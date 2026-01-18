@@ -69,19 +69,19 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
       })
       .catch(err => {
         console.error("Fetch error:", err);
-        // Pulse Fallback
-        setPulseData(Array.from({ length: 90 }, (_, i) => ({
-          label: `D-${90 - i}`,
-          val: 3000 + Math.random() * 2000,
-          actual: 3000 + Math.random() * 2000
-        })));
-
-        // Anomaly Fallback
-        setAnomalies([
-          { type: 'INFRA', title: 'Machine Friction Peak', desc: 'Predictive engines identified infrastructure saturation in local enrollment clusters.' },
-          { type: 'SOCIETAL', title: 'Volumetric Shift', desc: 'Demographic velocity indicates a surge in youth-focused biometric updates in this region.' }
-        ]);
-
+        // Use real TIME_SERIES_DATA for National context if API fails
+        if (selectedState === "All India") {
+          import('../data/realData').then(({ TIME_SERIES_DATA }) => {
+            setPulseData(TIME_SERIES_DATA.map((d: any) => ({
+              label: d.date,
+              val: d.enrolments,
+              actual: d.enrolments
+            })));
+          });
+        } else {
+          setPulseData([]);
+        }
+        setAnomalies([]);
         setLoading(false);
       });
   }, [selectedState, granularity]);

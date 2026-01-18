@@ -74,14 +74,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
       .then(setSaturationData)
       .catch(err => {
         console.error('Failed to load saturation data:', err);
-        // Saturation Fallback
-        setSaturationData(INDIA_STATES_DATA.map(s => ({
-          state: s.state,
-          saturation: 92 + Math.random() * 6,
-          gap: 2 + Math.random() * 8,
-          status: Math.random() > 0.3 ? 'HEALTHY' : 'CRITICAL',
-          population_target: 'Projected 2024'
-        })));
+        setSaturationData([]);
       });
   }, []);
 

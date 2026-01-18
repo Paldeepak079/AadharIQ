@@ -67,28 +67,29 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState: init
             })
             .catch(err => {
                 console.error("Forecast fetch error:", err);
-                // Mock Fallback for Netlify / Backend Down
-                const mockData: ForecastResponse = {
-                    mergedData: Array.from({ length: 20 }, (_, i) => ({
-                        date: `2024-01-${i + 1}`,
-                        label: gran === 'monthly' ? `Month ${i + 1}` : `Day ${i + 1}`,
-                        actual: i < 14 ? 50000 + Math.random() * 20000 : null,
-                        predicted: i >= 13 ? 60000 + Math.random() * 15000 : null,
-                        upper: i >= 13 ? 80000 : null,
-                        lower: i >= 13 ? 40000 : null
-                    })),
-                    growth_percent: 12.5,
-                    interpretation: "Historical trends suggest stable growth with periodic transactional spikes.",
-                    state: stateName,
-                    confidence_score: 92.4,
-                    model_metadata: {
-                        citation: "Fall-back simulation engine active.",
-                        input_range: "Jan 2023 - Jan 2024",
-                        algorithm: "Deterministic Linear Growth"
-                    }
-                };
-                setData(mockData);
-                setLoading(false);
+                // Fallback to real historical data from JSON, but NO MOCKED PROJECTIONS
+                import('../data/realData').then(({ TIME_SERIES_DATA }) => {
+                    const historicalOnly: ForecastResponse = {
+                        mergedData: TIME_SERIES_DATA.map(d => ({
+                            date: d.date,
+                            label: d.date,
+                            actual: d.enrolments,
+                            predicted: null,
+                            upper: null,
+                            lower: null
+                        })),
+                        growth_percent: 0,
+                        interpretation: "Displaying authentic historical transaction records. Predictive engine (local AI server) is currently offline.",
+                        confidence_score: 100,
+                        model_metadata: {
+                            citation: "Authentic historical dataset active.",
+                            input_range: "Source: aadhaar_data.json",
+                            algorithm: "None (Historical Only)"
+                        }
+                    };
+                    setData(historicalOnly);
+                    setLoading(false);
+                });
             });
     };
 
