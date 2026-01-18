@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { API_BASE_URL } from '../services/api';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { TrendingUp, AlertTriangle, Lightbulb, ArrowRight, Activity, Globe, Filter, Info, Calendar } from 'lucide-react';
+import { API_BASE_URL } from '../src/config';
 
 interface MergedPoint {
     date: string;
@@ -138,7 +138,7 @@ const PredictiveDemand: React.FC = () => {
                                 <p className="text-xs text-gray-500 font-bold uppercase tracking-widest">Awaiting Simulation Results...</p>
                             </div>
                         ) : (
-                            <ResponsiveContainer width="100%" height="100%">
+                            <ResponsiveContainer width="100%" height="100%" minHeight={400}>
                                 <AreaChart
                                     data={data.mergedData}
                                     margin={{ top: 20, right: 30, left: 20, bottom: 20 }}

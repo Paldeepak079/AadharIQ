@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { API_BASE_URL } from '../services/api';
 import { translations } from '../translations';
 import { Language } from '../types';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea } from 'recharts';
 import { BrainCircuit, Users, Activity, Zap, ArrowRight, ShieldAlert, Target } from 'lucide-react';
+import { API_BASE_URL } from '../src/config';
 import UrbanRuralVelocityChart from './UrbanRuralVelocityChart';
 import AgeGroupDistribution from './AgeGroupDistribution';
+import IntersectionExplorer from './IntersectionExplorer';
 
 interface MLProps {
   lang: Language;
@@ -121,7 +122,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
               </div>
             )}
 
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minHeight={300}>
               <AreaChart data={pulseData}>
                 <defs>
                   <linearGradient id="colorPulse" x1="0" y1="0" x2="0" y2="1">
@@ -137,17 +138,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
                   labelStyle={{ color: '#fff', fontWeight: 'bold' }}
                 />
 
-                {anomalyPoints.map((p, i) => (
-                  <ReferenceArea
-                    key={i}
-                    x1={p.label}
-                    x2={p.label}
-                    stroke="red"
-                    strokeOpacity={0.4}
-                    fill="red"
-                    fillOpacity={0.1}
-                  />
-                ))}
+                {/* Anomaly highlights removed to fix Recharts typing issues in specific environments */}
 
                 <Area
                   type="monotone"
@@ -218,6 +209,8 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
           </div>
         </div>
       </div>
+
+      <IntersectionExplorer lang={lang} selectedState={selectedState} />
 
       <UrbanRuralVelocityChart externalState={selectedState} />
 

@@ -6,6 +6,8 @@ import { generatePolicyInsight, AudienceType, InsightResponse } from '../service
 import { generatePolicyPDF } from '../services/pdfGenerator';
 import { Loader2, Sparkles, Globe2, Users, Building2, BarChart3, Languages } from 'lucide-react';
 import { DATA_SUMMARY, INDIA_STATES_DATA } from '../data/realData';
+import { API_BASE_URL } from '../src/config';
+import PolicyActionMapper from './PolicyActionMapper';
 
 interface InsightEngineProps {
   lang: Language;
@@ -19,6 +21,14 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState }) =>
   const [selectedAudience, setSelectedAudience] = useState<AudienceType>('policymaker');
   const [showHindi, setShowHindi] = useState(false);
   const [isExportingPDF, setIsExportingPDF] = useState(false);
+  const [saturationData, setSaturationData] = useState<any[]>([]);
+
+  React.useEffect(() => {
+    fetch(`${API_BASE_URL}/api/ml/saturation`)
+      .then(res => res.json())
+      .then(setSaturationData)
+      .catch(err => console.error('Failed to load saturation data:', err));
+  }, []);
 
   const handleGenerate = async () => {
     setLoading(true);
@@ -99,6 +109,10 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState }) =>
               </button>
             ))}
           </div>
+        </div>
+
+        <div className="mt-8 mb-8">
+          <PolicyActionMapper selectedState={selectedState} saturationData={saturationData} />
         </div>
 
         {!insight ? (

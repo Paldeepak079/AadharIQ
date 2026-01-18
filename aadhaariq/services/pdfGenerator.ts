@@ -83,6 +83,15 @@ export const generatePolicyPDF = async (options: PDFExportOptions): Promise<void
             addText(insights.insight, 10);
         }
 
+        // Add Data-Driven Strategic Metrics
+        if (insights.metrics) {
+            yPosition += 5;
+            addText('Regional Strategic Metrics', 12, true, [66, 135, 245]);
+            addText(`• Saturation Gap: ${insights.metrics.gap}%`, 10);
+            addText(`• Anomaly Sensitivity: ${insights.metrics.anomaly}`, 10);
+            addText(`• Saturation Status: ${insights.metrics.status}`, 10);
+        }
+
         if (insights.hindiTranslation) {
             yPosition += 5;
             addText('हिंदी अनुवाद', 12, true, [66, 135, 245]);
