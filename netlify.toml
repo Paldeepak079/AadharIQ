@@ -1,0 +1,16 @@
+[build]
+  # Build command (explicitly install and build from the subdirectory)
+  command = "cd aadhaariq && npm install && npm run build"
+  
+  # Publish directory relative to the repository root
+  publish = "aadhaariq/dist"
+
+[[redirects]]
+  # Handle SPA routing (redirect all requests to index.html)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  # Ensure Node version is compatible
+  NODE_VERSION = "20"
