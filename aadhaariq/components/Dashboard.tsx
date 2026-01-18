@@ -11,18 +11,23 @@ interface DashboardProps {
   selectedState: string | null;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
+const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState: globalSelectedState }) => {
   const t = translations[lang];
   const [demographicMode, setDemographicMode] = React.useState<'india' | 'state'>('india');
+  const [localSelectedState, setLocalSelectedState] = React.useState<string | null>(null);
 
-  // Sync mode with global selection
+  // Sync mode with global selection or local selection
   React.useEffect(() => {
-    if (selectedState) setDemographicMode('state');
-    else setDemographicMode('india');
-  }, [selectedState]);
+    if (globalSelectedState) {
+      setDemographicMode('state');
+      setLocalSelectedState(globalSelectedState);
+    }
+  }, [globalSelectedState]);
 
-  const filteredData = selectedState
-    ? INDIA_STATES_DATA.filter(s => s.state.toLowerCase().includes(selectedState.toLowerCase()))
+  const activeState = demographicMode === 'state' ? (localSelectedState || globalSelectedState) : null;
+
+  const filteredData = activeState
+    ? INDIA_STATES_DATA.filter(s => s.state.toLowerCase().includes(activeState.toLowerCase()))
     : INDIA_STATES_DATA;
 
   const totalEnrolments = filteredData.reduce((acc, curr) => acc + curr.enrolments, 0);
@@ -158,28 +163,54 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
           </div>
 
           <div className="glass-panel p-8 rounded-3xl">
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-lg font-bold">Demographic Distribution</h3>
-              <div className="flex bg-gray-900/50 p-1 rounded-lg border border-gray-800">
-                <button
-                  onClick={() => setDemographicMode('india')}
-                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'india' ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  India
-                </button>
-                <button
-                  onClick={() => setDemographicMode('state')}
-                  className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'state' ? 'bg-green-600 text-white shadow-lg shadow-green-500/20' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  State
-                </button>
+            <div className="flex flex-col gap-4 mb-6">
+              <div className="flex justify-between items-center">
+                <h3 className="text-lg font-bold">Demographic Distribution</h3>
+                <div className="flex bg-gray-900/50 p-1 rounded-lg border border-gray-800 shadow-inner">
+                  <button
+                    onClick={() => {
+                      setDemographicMode('india');
+                      setLocalSelectedState(null);
+                    }}
+                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'india' ? 'bg-orange-600 text-white shadow-lg shadow-orange-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+                  >
+                    All India
+                  </button>
+                  <button
+                    onClick={() => setDemographicMode('state')}
+                    className={`px-3 py-1 text-[10px] font-bold rounded-md transition-all ${demographicMode === 'state' ? 'bg-green-600 text-white shadow-lg shadow-green-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+                  >
+                    State Wise
+                  </button>
+                </div>
               </div>
+
+              {demographicMode === 'state' && (
+                <div className="animate-in slide-in-from-top-2 duration-300">
+                  <select
+                    value={localSelectedState || ''}
+                    onChange={(e) => {
+                      setLocalSelectedState(e.target.value);
+                      setDemographicMode('state');
+                    }}
+                    className="w-full px-3 py-2 bg-gray-900/80 border border-gray-700 rounded-xl text-xs font-bold text-white focus:border-green-500 outline-none transition-all cursor-pointer shadow-xl"
+                  >
+                    <option value="" disabled>Select a state to analyze...</option>
+                    {[...INDIA_STATES_DATA]
+                      .sort((a, b) => a.state.localeCompare(b.state))
+                      .map(s => (
+                        <option key={s.state} value={s.state}>{s.state}</option>
+                      ))
+                    }
+                  </select>
+                </div>
+              )}
             </div>
 
             <div className="space-y-5">
               {(() => {
                 // Determine data source based on selection
-                const dataToUse = demographicMode === 'state' && selectedState ? filteredData : INDIA_STATES_DATA;
+                const dataToUse = demographicMode === 'state' && activeState ? filteredData : INDIA_STATES_DATA;
 
                 const e0_5 = dataToUse.reduce((acc, curr) => acc + (curr.enrolment_0_5 || 0), 0);
                 const e5_17 = dataToUse.reduce((acc, curr) => acc + (curr.enrolment_5_17 || 0), 0);
@@ -194,9 +225,10 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState }) => {
 
                 return (
                   <>
-                    <p className="text-[10px] text-gray-400 mb-4 uppercase tracking-widest font-bold">
+                    <p className="text-[10px] text-gray-400 mb-4 uppercase tracking-widest font-bold flex items-center gap-2">
+                      <span className={`w-2 h-2 rounded-full ${demographicMode === 'state' ? 'bg-green-500 animate-pulse' : 'bg-orange-500 animate-pulse'}`} />
                       Viewing: <span className={demographicMode === 'state' ? 'text-green-500' : 'text-orange-500'}>
-                        {demographicMode === 'state' ? (selectedState || 'Select a state') : 'National Aggregate'}
+                        {demographicMode === 'state' ? (activeState || 'State Data') : 'National Aggregate'}
                       </span>
                     </p>
                     {metrics.map((item, i) => (
