@@ -1,0 +1,5 @@
+state_name,district,date_of_update,update_count,age_group,update_type
+Kerala,Kochi,2023-09-15,150,18-35,Address
+Gujarat,Ahmedabad,2023-09-16,210,35-60,Name
+West Bengal,Kolkata,2023-09-17,95,0-5,Gender
+Madhya Pradesh,Indore,2023-09-18,NaN,18-35,Mobile

@@ -1,0 +1,8 @@
+State Name,District,Date of Update,Update Count,Age Group,Gender
+Uttar Pradesh,Lucknow,2023-10-01,1200,0-5,M
+Maharashtra,Mumbai,2023-10-02,850,5-18,F
+Bihar,Patna,2023-10-03,invalid,18-35,M
+Jharkhand,Ranchi,,450,0-5,F
+Karnataka,Bengaluru,2023-10-05,-10,35-60,M
+Tamil Nadu,Chennai,2023-10-06,320,60+,F
+Uttar Pradesh,Lucknow,2023-10-01,1200,0-5,M

@@ -1,0 +1,7092 @@
+{
+  "ANDAMAN AND NICOBAR ISLANDS": {
+    "NORTH AND MIDDLE ANDAMAN": {
+      "lat": 12.6455,
+      "lng": 92.8851,
+      "offices": 8,
+      "enrollments": 132,
+      "updates": 0,
+      "child_enrollments": 128,
+      "density": 16.5,
+      "anomaly_score": 0.146
+    }
+  },
+  "ANDHRA PRADESH": {
+    "ANANTAPUR": {
+      "lat": 14.8615,
+      "lng": 77.1774,
+      "offices": 471,
+      "enrollments": 4415,
+      "updates": 0,
+      "child_enrollments": 4089,
+      "density": 9.37,
+      "anomaly_score": 0.182
+    },
+    "ALLURI SITHARAMA RAJU": {
+      "lat": 17.7431,
+      "lng": 82.1379,
+      "offices": 258,
+      "enrollments": 1255,
+      "updates": 0,
+      "child_enrollments": 1105,
+      "density": 4.86,
+      "anomaly_score": 0.205
+    },
+    "ANAKAPALLI": {
+      "lat": 17.7145,
+      "lng": 82.8652,
+      "offices": 277,
+      "enrollments": 543,
+      "updates": 0,
+      "child_enrollments": 523,
+      "density": 1.96,
+      "anomaly_score": 0.22
+    },
+    "ANNAMAYYA": {
+      "lat": 13.7475,
+      "lng": 78.4047,
+      "offices": 74,
+      "enrollments": 1021,
+      "updates": 0,
+      "child_enrollments": 868,
+      "density": 13.8,
+      "anomaly_score": 0.16
+    },
+    "BAPATLA": {
+      "lat": 15.9313,
+      "lng": 80.2502,
+      "offices": 201,
+      "enrollments": 492,
+      "updates": 0,
+      "child_enrollments": 421,
+      "density": 2.45,
+      "anomaly_score": 0.217
+    },
+    "CHITTOOR": {
+      "lat": 13.5231,
+      "lng": 78.8613,
+      "offices": 414,
+      "enrollments": 8199,
+      "updates": 0,
+      "child_enrollments": 7497,
+      "density": 19.8,
+      "anomaly_score": 0.129
+    },
+    "EAST GODAVARI": {
+      "lat": 17.1949,
+      "lng": 81.8673,
+      "offices": 197,
+      "enrollments": 7678,
+      "updates": 0,
+      "child_enrollments": 7161,
+      "density": 38.97,
+      "anomaly_score": 0.032
+    },
+    "ELURU": {
+      "lat": 16.8544,
+      "lng": 81.138,
+      "offices": 436,
+      "enrollments": 629,
+      "updates": 0,
+      "child_enrollments": 568,
+      "density": 1.44,
+      "anomaly_score": 0.222
+    },
+    "GUNTUR": {
+      "lat": 16.3262,
+      "lng": 80.4588,
+      "offices": 220,
+      "enrollments": 9729,
+      "updates": 0,
+      "child_enrollments": 8769,
+      "density": 44.22,
+      "anomaly_score": 0.005
+    },
+    "KRISHNA": {
+      "lat": 16.429,
+      "lng": 80.8613,
+      "offices": 239,
+      "enrollments": 6737,
+      "updates": 0,
+      "child_enrollments": 6163,
+      "density": 28.19,
+      "anomaly_score": 0.087
+    },
+    "KURNOOL": {
+      "lat": 15.6802,
+      "lng": 77.6611,
+      "offices": 54,
+      "enrollments": 11770,
+      "updates": 0,
+      "child_enrollments": 10923,
+      "density": 217.96,
+      "anomaly_score": 0.877
+    },
+    "KAKINADA": {
+      "lat": 17.1131,
+      "lng": 82.1927,
+      "offices": 250,
+      "enrollments": 969,
+      "updates": 0,
+      "child_enrollments": 858,
+      "density": 3.88,
+      "anomaly_score": 0.21
+    },
+    "NANDYAL": {
+      "lat": 15.4473,
+      "lng": 78.3689,
+      "offices": 60,
+      "enrollments": 905,
+      "updates": 0,
+      "child_enrollments": 860,
+      "density": 15.08,
+      "anomaly_score": 0.153
+    },
+    "PRAKASAM": {
+      "lat": 15.6058,
+      "lng": 79.5297,
+      "offices": 755,
+      "enrollments": 7623,
+      "updates": 0,
+      "child_enrollments": 6405,
+      "density": 10.1,
+      "anomaly_score": 0.179
+    },
+    "PALNADU": {
+      "lat": 16.3456,
+      "lng": 79.8933,
+      "offices": 434,
+      "enrollments": 860,
+      "updates": 0,
+      "child_enrollments": 759,
+      "density": 1.98,
+      "anomaly_score": 0.22
+    },
+    "PARVATHIPURAM MANYAM": {
+      "lat": 18.6753,
+      "lng": 83.5972,
+      "offices": 49,
+      "enrollments": 508,
+      "updates": 0,
+      "child_enrollments": 464,
+      "density": 10.37,
+      "anomaly_score": 0.177
+    },
+    "SPSR NELLORE": {
+      "lat": 14.5378,
+      "lng": 79.7728,
+      "offices": 586,
+      "enrollments": 2183,
+      "updates": 0,
+      "child_enrollments": 1167,
+      "density": 3.73,
+      "anomaly_score": 0.211
+    },
+    "SRIKAKULAM": {
+      "lat": 18.5585,
+      "lng": 84.0028,
+      "offices": 552,
+      "enrollments": 4300,
+      "updates": 0,
+      "child_enrollments": 4157,
+      "density": 7.79,
+      "anomaly_score": 0.19
+    },
+    "SRI SATHYA SAI": {
+      "lat": 14.1454,
+      "lng": 77.6807,
+      "offices": 52,
+      "enrollments": 938,
+      "updates": 0,
+      "child_enrollments": 879,
+      "density": 18.04,
+      "anomaly_score": 0.138
+    },
+    "TIRUPATI": {
+      "lat": 13.9805,
+      "lng": 79.7974,
+      "offices": 189,
+      "enrollments": 1719,
+      "updates": 0,
+      "child_enrollments": 802,
+      "density": 9.1,
+      "anomaly_score": 0.184
+    },
+    "VISAKHAPATANAM": {
+      "lat": 17.856,
+      "lng": 82.929,
+      "offices": 425,
+      "enrollments": 226,
+      "updates": 0,
+      "child_enrollments": 186,
+      "density": 0.53,
+      "anomaly_score": 0.227
+    },
+    "VIZIANAGARAM": {
+      "lat": 18.1007,
+      "lng": 83.1579,
+      "offices": 335,
+      "enrollments": 3856,
+      "updates": 0,
+      "child_enrollments": 3695,
+      "density": 11.51,
+      "anomaly_score": 0.171
+    },
+    "WEST GODAVARI": {
+      "lat": 16.7287,
+      "lng": 81.5767,
+      "offices": 484,
+      "enrollments": 5935,
+      "updates": 0,
+      "child_enrollments": 5568,
+      "density": 12.26,
+      "anomaly_score": 0.168
+    }
+  },
+  "ARUNACHAL PRADESH": {
+    "ANJAW": {
+      "lat": 27.8255,
+      "lng": 96.435,
+      "offices": 45,
+      "enrollments": 37,
+      "updates": 0,
+      "child_enrollments": 23,
+      "density": 0.82,
+      "anomaly_score": 0.226
+    },
+    "CHANGLANG": {
+      "lat": 27.2486,
+      "lng": 96.0046,
+      "offices": 66,
+      "enrollments": 803,
+      "updates": 0,
+      "child_enrollments": 486,
+      "density": 12.17,
+      "anomaly_score": 0.168
+    },
+    "DIBANG VALLEY": {
+      "lat": 28.2873,
+      "lng": 95.6428,
+      "offices": 75,
+      "enrollments": 10,
+      "updates": 0,
+      "child_enrollments": 7,
+      "density": 0.13,
+      "anomaly_score": 0.229
+    },
+    "EAST KAMENG": {
+      "lat": 27.3097,
+      "lng": 93.0746,
+      "offices": 94,
+      "enrollments": 181,
+      "updates": 0,
+      "child_enrollments": 88,
+      "density": 1.93,
+      "anomaly_score": 0.22
+    },
+    "EAST SIANG": {
+      "lat": 28.0472,
+      "lng": 95.1418,
+      "offices": 47,
+      "enrollments": 168,
+      "updates": 0,
+      "child_enrollments": 80,
+      "density": 3.57,
+      "anomaly_score": 0.212
+    },
+    "KAMLE": {
+      "lat": 27.7673,
+      "lng": 94.0328,
+      "offices": 2,
+      "enrollments": 30,
+      "updates": 0,
+      "child_enrollments": 3,
+      "density": 15.0,
+      "anomaly_score": 0.154
+    },
+    "KRA DAADI": {
+      "lat": 27.9207,
+      "lng": 93.6616,
+      "offices": 3,
+      "enrollments": 81,
+      "updates": 0,
+      "child_enrollments": 18,
+      "density": 27.0,
+      "anomaly_score": 0.093
+    },
+    "KURUNG KUMEY": {
+      "lat": 27.7409,
+      "lng": 93.3732,
+      "offices": 146,
+      "enrollments": 75,
+      "updates": 0,
+      "child_enrollments": 19,
+      "density": 0.51,
+      "anomaly_score": 0.227
+    },
+    "LEPARADA": {
+      "lat": 27.9835,
+      "lng": 94.7208,
+      "offices": 5,
+      "enrollments": 3,
+      "updates": 0,
+      "child_enrollments": 0,
+      "density": 0.6,
+      "anomaly_score": 0.227
+    },
+    "LOHIT": {
+      "lat": 27.6995,
+      "lng": 96.11,
+      "offices": 28,
+      "enrollments": 166,
+      "updates": 0,
+      "child_enrollments": 102,
+      "density": 5.93,
+      "anomaly_score": 0.2
+    },
+    "LONGDING": {
+      "lat": 26.879,
+      "lng": 95.2407,
+      "offices": 34,
+      "enrollments": 897,
+      "updates": 0,
+      "child_enrollments": 141,
+      "density": 26.38,
+      "anomaly_score": 0.096
+    },
+    "LOWER DIBANG VALLEY": {
+      "lat": 28.1133,
+      "lng": 95.7788,
+      "offices": 18,
+      "enrollments": 109,
+      "updates": 0,
+      "child_enrollments": 58,
+      "density": 6.06,
+      "anomaly_score": 0.199
+    },
+    "LOWER SIANG": {
+      "lat": 27.5821,
+      "lng": 94.5271,
+      "offices": 35,
+      "enrollments": 31,
+      "updates": 0,
+      "child_enrollments": 10,
+      "density": 0.89,
+      "anomaly_score": 0.225
+    },
+    "LOWER SUBANSIRI": {
+      "lat": 27.4033,
+      "lng": 93.6269,
+      "offices": 53,
+      "enrollments": 105,
+      "updates": 0,
+      "child_enrollments": 50,
+      "density": 1.98,
+      "anomaly_score": 0.22
+    },
+    "NAMSAI": {
+      "lat": 27.5529,
+      "lng": 95.8506,
+      "offices": 37,
+      "enrollments": 150,
+      "updates": 0,
+      "child_enrollments": 95,
+      "density": 4.05,
+      "anomaly_score": 0.209
+    },
+    "PAKKE KESSANG": {
+      "lat": 27.0079,
+      "lng": 93.1776,
+      "offices": 19,
+      "enrollments": 4,
+      "updates": 0,
+      "child_enrollments": 2,
+      "density": 0.21,
+      "anomaly_score": 0.229
+    },
+    "PAPUM PARE": {
+      "lat": 27.12,
+      "lng": 93.5235,
+      "offices": 78,
+      "enrollments": 447,
+      "updates": 0,
+      "child_enrollments": 201,
+      "density": 5.73,
+      "anomaly_score": 0.201
+    },
+    "SIANG": {
+      "lat": 28.3194,
+      "lng": 94.9142,
+      "offices": 8,
+      "enrollments": 103,
+      "updates": 0,
+      "child_enrollments": 39,
+      "density": 12.88,
+      "anomaly_score": 0.164
+    },
+    "TAWANG": {
+      "lat": 27.4589,
+      "lng": 91.661,
+      "offices": 24,
+      "enrollments": 154,
+      "updates": 0,
+      "child_enrollments": 104,
+      "density": 6.42,
+      "anomaly_score": 0.197
+    },
+    "TIRAP": {
+      "lat": 27.1307,
+      "lng": 95.4483,
+      "offices": 31,
+      "enrollments": 99,
+      "updates": 0,
+      "child_enrollments": 59,
+      "density": 3.19,
+      "anomaly_score": 0.214
+    },
+    "UPPER SIANG": {
+      "lat": 28.5452,
+      "lng": 95.1387,
+      "offices": 44,
+      "enrollments": 43,
+      "updates": 0,
+      "child_enrollments": 21,
+      "density": 0.98,
+      "anomaly_score": 0.225
+    },
+    "UPPER SUBANSIRI": {
+      "lat": 28.2134,
+      "lng": 94.0701,
+      "offices": 152,
+      "enrollments": 143,
+      "updates": 0,
+      "child_enrollments": 76,
+      "density": 0.94,
+      "anomaly_score": 0.225
+    },
+    "WEST KAMENG": {
+      "lat": 27.1678,
+      "lng": 92.3795,
+      "offices": 40,
+      "enrollments": 278,
+      "updates": 0,
+      "child_enrollments": 157,
+      "density": 6.95,
+      "anomaly_score": 0.195
+    },
+    "WEST SIANG": {
+      "lat": 28.2225,
+      "lng": 94.5264,
+      "offices": 51,
+      "enrollments": 192,
+      "updates": 0,
+      "child_enrollments": 110,
+      "density": 3.76,
+      "anomaly_score": 0.211
+    }
+  },
+  "ASSAM": {
+    "BAKSA": {
+      "lat": 26.3614,
+      "lng": 91.3586,
+      "offices": 130,
+      "enrollments": 3699,
+      "updates": 0,
+      "child_enrollments": 2120,
+      "density": 28.45,
+      "anomaly_score": 0.085
+    },
+    "BARPETA": {
+      "lat": 26.3276,
+      "lng": 90.9596,
+      "offices": 162,
+      "enrollments": 14383,
+      "updates": 0,
+      "child_enrollments": 10545,
+      "density": 88.78,
+      "anomaly_score": 0.221
+    },
+    "BONGAIGAON": {
+      "lat": 26.2905,
+      "lng": 90.8101,
+      "offices": 36,
+      "enrollments": 3175,
+      "updates": 0,
+      "child_enrollments": 2324,
+      "density": 88.19,
+      "anomaly_score": 0.218
+    },
+    "BAJALI": {
+      "lat": 26.4336,
+      "lng": 91.1846,
+      "offices": 25,
+      "enrollments": 29,
+      "updates": 0,
+      "child_enrollments": 19,
+      "density": 1.16,
+      "anomaly_score": 0.224
+    },
+    "BISWANATH": {
+      "lat": 26.7609,
+      "lng": 93.1095,
+      "offices": 97,
+      "enrollments": 1329,
+      "updates": 0,
+      "child_enrollments": 789,
+      "density": 13.7,
+      "anomaly_score": 0.16
+    },
+    "CACHAR": {
+      "lat": 24.782,
+      "lng": 92.7027,
+      "offices": 283,
+      "enrollments": 17514,
+      "updates": 0,
+      "child_enrollments": 11474,
+      "density": 61.89,
+      "anomaly_score": 0.084
+    },
+    "CHARAIDEO": {
+      "lat": 25.829,
+      "lng": 93.5706,
+      "offices": 72,
+      "enrollments": 1189,
+      "updates": 0,
+      "child_enrollments": 659,
+      "density": 16.51,
+      "anomaly_score": 0.146
+    },
+    "CHIRANG": {
+      "lat": 26.593,
+      "lng": 91.1773,
+      "offices": 62,
+      "enrollments": 3348,
+      "updates": 0,
+      "child_enrollments": 2013,
+      "density": 54.0,
+      "anomaly_score": 0.044
+    },
+    "DARRANG": {
+      "lat": 26.5028,
+      "lng": 91.8609,
+      "offices": 74,
+      "enrollments": 7595,
+      "updates": 0,
+      "child_enrollments": 4390,
+      "density": 102.64,
+      "anomaly_score": 0.291
+    },
+    "DHEMAJI": {
+      "lat": 27.533,
+      "lng": 94.659,
+      "offices": 95,
+      "enrollments": 6901,
+      "updates": 0,
+      "child_enrollments": 3864,
+      "density": 72.64,
+      "anomaly_score": 0.139
+    },
+    "DHUBRI": {
+      "lat": 26.2096,
+      "lng": 90.2749,
+      "offices": 124,
+      "enrollments": 12646,
+      "updates": 0,
+      "child_enrollments": 8432,
+      "density": 101.98,
+      "anomaly_score": 0.288
+    },
+    "DIBRUGARH": {
+      "lat": 27.3097,
+      "lng": 95.0438,
+      "offices": 218,
+      "enrollments": 7062,
+      "updates": 0,
+      "child_enrollments": 3895,
+      "density": 32.39,
+      "anomaly_score": 0.065
+    },
+    "DIMA HASAO": {
+      "lat": 24.9383,
+      "lng": 92.9717,
+      "offices": 78,
+      "enrollments": 250,
+      "updates": 0,
+      "child_enrollments": 119,
+      "density": 3.21,
+      "anomaly_score": 0.214
+    },
+    "GOALPARA": {
+      "lat": 25.8869,
+      "lng": 90.4239,
+      "offices": 12,
+      "enrollments": 9898,
+      "updates": 0,
+      "child_enrollments": 6881,
+      "density": 824.83,
+      "anomaly_score": 1.0
+    },
+    "GOLAGHAT": {
+      "lat": 26.4519,
+      "lng": 93.7979,
+      "offices": 148,
+      "enrollments": 11505,
+      "updates": 0,
+      "child_enrollments": 5537,
+      "density": 77.74,
+      "anomaly_score": 0.165
+    },
+    "HAILAKANDI": {
+      "lat": 24.815,
+      "lng": 91.6342,
+      "offices": 97,
+      "enrollments": 5578,
+      "updates": 0,
+      "child_enrollments": 3826,
+      "density": 57.51,
+      "anomaly_score": 0.062
+    },
+    "HOJAI": {
+      "lat": 26.2802,
+      "lng": 92.761,
+      "offices": 76,
+      "enrollments": 7050,
+      "updates": 0,
+      "child_enrollments": 5288,
+      "density": 92.76,
+      "anomaly_score": 0.241
+    },
+    "JORHAT": {
+      "lat": 26.35,
+      "lng": 94.0164,
+      "offices": 187,
+      "enrollments": 4887,
+      "updates": 0,
+      "child_enrollments": 2905,
+      "density": 26.13,
+      "anomaly_score": 0.097
+    },
+    "KAMRUP": {
+      "lat": 26.0728,
+      "lng": 91.5805,
+      "offices": 201,
+      "enrollments": 13666,
+      "updates": 0,
+      "child_enrollments": 9311,
+      "density": 67.99,
+      "anomaly_score": 0.115
+    },
+    "KAMRUP METRO": {
+      "lat": 26.1537,
+      "lng": 91.7313,
+      "offices": 77,
+      "enrollments": 6046,
+      "updates": 0,
+      "child_enrollments": 2654,
+      "density": 78.52,
+      "anomaly_score": 0.169
+    },
+    "KARBI ANGLONG": {
+      "lat": 25.9459,
+      "lng": 93.2533,
+      "offices": 97,
+      "enrollments": 8107,
+      "updates": 0,
+      "child_enrollments": 2918,
+      "density": 83.58,
+      "anomaly_score": 0.195
+    },
+    "KARIMGANJ": {
+      "lat": 24.729,
+      "lng": 92.1865,
+      "offices": 158,
+      "enrollments": 14833,
+      "updates": 0,
+      "child_enrollments": 9336,
+      "density": 93.88,
+      "anomaly_score": 0.247
+    },
+    "KOKRAJHAR": {
+      "lat": 26.4031,
+      "lng": 90.3909,
+      "offices": 110,
+      "enrollments": 4609,
+      "updates": 0,
+      "child_enrollments": 2519,
+      "density": 41.9,
+      "anomaly_score": 0.017
+    },
+    "LAKHIMPUR": {
+      "lat": 27.2165,
+      "lng": 94.2335,
+      "offices": 172,
+      "enrollments": 7199,
+      "updates": 0,
+      "child_enrollments": 4726,
+      "density": 41.85,
+      "anomaly_score": 0.017
+    },
+    "MAJULI": {
+      "lat": 26.8787,
+      "lng": 94.1612,
+      "offices": 57,
+      "enrollments": 515,
+      "updates": 0,
+      "child_enrollments": 347,
+      "density": 9.04,
+      "anomaly_score": 0.184
+    },
+    "MARIGAON": {
+      "lat": 26.2958,
+      "lng": 92.4509,
+      "offices": 101,
+      "enrollments": 10487,
+      "updates": 0,
+      "child_enrollments": 6735,
+      "density": 103.83,
+      "anomaly_score": 0.297
+    },
+    "NAGAON": {
+      "lat": 26.2853,
+      "lng": 92.6435,
+      "offices": 213,
+      "enrollments": 12873,
+      "updates": 0,
+      "child_enrollments": 9002,
+      "density": 60.44,
+      "anomaly_score": 0.077
+    },
+    "NALBARI": {
+      "lat": 26.2696,
+      "lng": 91.4437,
+      "offices": 147,
+      "enrollments": 3881,
+      "updates": 0,
+      "child_enrollments": 2709,
+      "density": 26.4,
+      "anomaly_score": 0.096
+    },
+    "SIVASAGAR": {
+      "lat": 26.2009,
+      "lng": 94.015,
+      "offices": 173,
+      "enrollments": 422,
+      "updates": 0,
+      "child_enrollments": 204,
+      "density": 2.44,
+      "anomaly_score": 0.217
+    },
+    "SONITPUR": {
+      "lat": 26.7403,
+      "lng": 92.5712,
+      "offices": 126,
+      "enrollments": 9197,
+      "updates": 0,
+      "child_enrollments": 5501,
+      "density": 72.99,
+      "anomaly_score": 0.141
+    },
+    "TINSUKIA": {
+      "lat": 27.4064,
+      "lng": 95.3528,
+      "offices": 142,
+      "enrollments": 8384,
+      "updates": 0,
+      "child_enrollments": 3884,
+      "density": 59.04,
+      "anomaly_score": 0.07
+    },
+    "UDALGURI": {
+      "lat": 26.6506,
+      "lng": 92.1844,
+      "offices": 101,
+      "enrollments": 4565,
+      "updates": 0,
+      "child_enrollments": 2658,
+      "density": 45.2,
+      "anomaly_score": 0.0
+    },
+    "WEST KARBI ANGLONG": {
+      "lat": 25.7537,
+      "lng": 92.6247,
+      "offices": 33,
+      "enrollments": 1884,
+      "updates": 0,
+      "child_enrollments": 390,
+      "density": 57.09,
+      "anomaly_score": 0.06
+    }
+  },
+  "BIHAR": {
+    "ARARIA": {
+      "lat": 26.0483,
+      "lng": 87.0999,
+      "offices": 161,
+      "enrollments": 15579,
+      "updates": 0,
+      "child_enrollments": 9939,
+      "density": 96.76,
+      "anomaly_score": 0.262
+    },
+    "ARWAL": {
+      "lat": 24.8072,
+      "lng": 83.9982,
+      "offices": 94,
+      "enrollments": 3866,
+      "updates": 0,
+      "child_enrollments": 812,
+      "density": 41.13,
+      "anomaly_score": 0.021
+    },
+    "AURANGABAD": {
+      "lat": 21.1077,
+      "lng": 77.6088,
+      "offices": 304,
+      "enrollments": 10170,
+      "updates": 0,
+      "child_enrollments": 3001,
+      "density": 33.45,
+      "anomaly_score": 0.06
+    },
+    "BANKA": {
+      "lat": 24.4973,
+      "lng": 85.3092,
+      "offices": 219,
+      "enrollments": 11074,
+      "updates": 0,
+      "child_enrollments": 6198,
+      "density": 50.57,
+      "anomaly_score": 0.027
+    },
+    "BEGUSARAI": {
+      "lat": 25.4292,
+      "lng": 86.1252,
+      "offices": 234,
+      "enrollments": 13209,
+      "updates": 0,
+      "child_enrollments": 8106,
+      "density": 56.45,
+      "anomaly_score": 0.057
+    },
+    "BHAGALPUR": {
+      "lat": 25.0226,
+      "lng": 86.1443,
+      "offices": 226,
+      "enrollments": 21062,
+      "updates": 0,
+      "child_enrollments": 10456,
+      "density": 93.19,
+      "anomaly_score": 0.243
+    },
+    "BHOJPUR": {
+      "lat": 25.4717,
+      "lng": 84.5406,
+      "offices": 303,
+      "enrollments": 13357,
+      "updates": 0,
+      "child_enrollments": 3136,
+      "density": 44.08,
+      "anomaly_score": 0.006
+    },
+    "BUXAR": {
+      "lat": 25.4988,
+      "lng": 84.1235,
+      "offices": 185,
+      "enrollments": 7240,
+      "updates": 0,
+      "child_enrollments": 2528,
+      "density": 39.14,
+      "anomaly_score": 0.031
+    },
+    "DARBHANGA": {
+      "lat": 24.4602,
+      "lng": 85.963,
+      "offices": 365,
+      "enrollments": 15765,
+      "updates": 0,
+      "child_enrollments": 10017,
+      "density": 43.19,
+      "anomaly_score": 0.01
+    },
+    "GAYA": {
+      "lat": 24.5534,
+      "lng": 84.5396,
+      "offices": 402,
+      "enrollments": 27401,
+      "updates": 0,
+      "child_enrollments": 6722,
+      "density": 68.16,
+      "anomaly_score": 0.116
+    },
+    "GOPALGANJ": {
+      "lat": 26.4223,
+      "lng": 84.4444,
+      "offices": 204,
+      "enrollments": 15148,
+      "updates": 0,
+      "child_enrollments": 5303,
+      "density": 74.25,
+      "anomaly_score": 0.147
+    },
+    "JAMUI": {
+      "lat": 24.8255,
+      "lng": 86.2955,
+      "offices": 159,
+      "enrollments": 10382,
+      "updates": 0,
+      "child_enrollments": 5193,
+      "density": 65.3,
+      "anomaly_score": 0.102
+    },
+    "JEHANABAD": {
+      "lat": 25.1246,
+      "lng": 84.7962,
+      "offices": 124,
+      "enrollments": 4883,
+      "updates": 0,
+      "child_enrollments": 915,
+      "density": 39.38,
+      "anomaly_score": 0.03
+    },
+    "KAIMUR (BHABUA)": {
+      "lat": 25.0378,
+      "lng": 83.6511,
+      "offices": 162,
+      "enrollments": 7825,
+      "updates": 0,
+      "child_enrollments": 3033,
+      "density": 48.3,
+      "anomaly_score": 0.015
+    },
+    "KATIHAR": {
+      "lat": 25.5127,
+      "lng": 87.4135,
+      "offices": 183,
+      "enrollments": 16350,
+      "updates": 0,
+      "child_enrollments": 11332,
+      "density": 89.34,
+      "anomaly_score": 0.224
+    },
+    "KHAGARIA": {
+      "lat": 25.5091,
+      "lng": 86.477,
+      "offices": 135,
+      "enrollments": 8196,
+      "updates": 0,
+      "child_enrollments": 4348,
+      "density": 60.71,
+      "anomaly_score": 0.078
+    },
+    "KISHANGANJ": {
+      "lat": 26.1106,
+      "lng": 87.661,
+      "offices": 92,
+      "enrollments": 8764,
+      "updates": 0,
+      "child_enrollments": 6957,
+      "density": 95.26,
+      "anomaly_score": 0.254
+    },
+    "LAKHISARAI": {
+      "lat": 25.2089,
+      "lng": 86.0959,
+      "offices": 31,
+      "enrollments": 6155,
+      "updates": 0,
+      "child_enrollments": 2664,
+      "density": 198.55,
+      "anomaly_score": 0.778
+    },
+    "MADHEPURA": {
+      "lat": 25.9028,
+      "lng": 86.7663,
+      "offices": 201,
+      "enrollments": 9027,
+      "updates": 0,
+      "child_enrollments": 4571,
+      "density": 44.91,
+      "anomaly_score": 0.002
+    },
+    "MADHUBANI": {
+      "lat": 26.2993,
+      "lng": 86.0538,
+      "offices": 419,
+      "enrollments": 25930,
+      "updates": 0,
+      "child_enrollments": 12598,
+      "density": 61.89,
+      "anomaly_score": 0.084
+    },
+    "MUNGER": {
+      "lat": 25.145,
+      "lng": 86.2638,
+      "offices": 115,
+      "enrollments": 6087,
+      "updates": 0,
+      "child_enrollments": 2445,
+      "density": 52.93,
+      "anomaly_score": 0.039
+    },
+    "MUZAFFARPUR": {
+      "lat": 26.1451,
+      "lng": 85.1497,
+      "offices": 420,
+      "enrollments": 28855,
+      "updates": 0,
+      "child_enrollments": 14087,
+      "density": 68.7,
+      "anomaly_score": 0.119
+    },
+    "NALANDA": {
+      "lat": 25.1376,
+      "lng": 85.068,
+      "offices": 255,
+      "enrollments": 14575,
+      "updates": 0,
+      "child_enrollments": 3676,
+      "density": 57.16,
+      "anomaly_score": 0.06
+    },
+    "NAWADA": {
+      "lat": 24.9018,
+      "lng": 85.3617,
+      "offices": 226,
+      "enrollments": 15413,
+      "updates": 0,
+      "child_enrollments": 2742,
+      "density": 68.2,
+      "anomaly_score": 0.117
+    },
+    "PASHCHIM CHAMPARAN": {
+      "lat": 26.9713,
+      "lng": 84.4309,
+      "offices": 274,
+      "enrollments": 16359,
+      "updates": 0,
+      "child_enrollments": 5060,
+      "density": 59.7,
+      "anomaly_score": 0.073
+    },
+    "PATNA": {
+      "lat": 25.3839,
+      "lng": 85.2072,
+      "offices": 475,
+      "enrollments": 24644,
+      "updates": 0,
+      "child_enrollments": 6745,
+      "density": 51.88,
+      "anomaly_score": 0.034
+    },
+    "PURBI CHAMPARAN": {
+      "lat": 26.5628,
+      "lng": 84.9266,
+      "offices": 423,
+      "enrollments": 14871,
+      "updates": 0,
+      "child_enrollments": 4000,
+      "density": 35.16,
+      "anomaly_score": 0.051
+    },
+    "PURNIA": {
+      "lat": 25.8788,
+      "lng": 87.0623,
+      "offices": 188,
+      "enrollments": 20100,
+      "updates": 0,
+      "child_enrollments": 12195,
+      "density": 106.91,
+      "anomaly_score": 0.313
+    },
+    "ROHTAS": {
+      "lat": 24.9227,
+      "lng": 84.0352,
+      "offices": 298,
+      "enrollments": 7939,
+      "updates": 0,
+      "child_enrollments": 2741,
+      "density": 26.64,
+      "anomaly_score": 0.095
+    },
+    "SAHARSA": {
+      "lat": 25.8741,
+      "lng": 86.5988,
+      "offices": 165,
+      "enrollments": 13063,
+      "updates": 0,
+      "child_enrollments": 6281,
+      "density": 79.17,
+      "anomaly_score": 0.172
+    },
+    "SAMASTIPUR": {
+      "lat": 25.805,
+      "lng": 85.7842,
+      "offices": 378,
+      "enrollments": 19207,
+      "updates": 0,
+      "child_enrollments": 11289,
+      "density": 50.81,
+      "anomaly_score": 0.028
+    },
+    "SARAN": {
+      "lat": 25.9866,
+      "lng": 84.5212,
+      "offices": 389,
+      "enrollments": 24218,
+      "updates": 0,
+      "child_enrollments": 7592,
+      "density": 62.26,
+      "anomaly_score": 0.086
+    },
+    "SHEIKHPURA": {
+      "lat": 25.1339,
+      "lng": 85.7045,
+      "offices": 97,
+      "enrollments": 3199,
+      "updates": 0,
+      "child_enrollments": 1244,
+      "density": 32.98,
+      "anomaly_score": 0.062
+    },
+    "SHEOHAR": {
+      "lat": 26.5551,
+      "lng": 85.2799,
+      "offices": 38,
+      "enrollments": 3262,
+      "updates": 0,
+      "child_enrollments": 2067,
+      "density": 85.84,
+      "anomaly_score": 0.206
+    },
+    "SITAMARHI": {
+      "lat": 26.3708,
+      "lng": 85.4121,
+      "offices": 297,
+      "enrollments": 42232,
+      "updates": 0,
+      "child_enrollments": 20679,
+      "density": 142.2,
+      "anomaly_score": 0.492
+    },
+    "SIWAN": {
+      "lat": 26.2019,
+      "lng": 84.3576,
+      "offices": 310,
+      "enrollments": 15311,
+      "updates": 0,
+      "child_enrollments": 6149,
+      "density": 49.39,
+      "anomaly_score": 0.021
+    },
+    "SUPAUL": {
+      "lat": 26.0302,
+      "lng": 86.4334,
+      "offices": 209,
+      "enrollments": 10411,
+      "updates": 0,
+      "child_enrollments": 5691,
+      "density": 49.81,
+      "anomaly_score": 0.023
+    },
+    "VAISHALI": {
+      "lat": 25.7515,
+      "lng": 85.3414,
+      "offices": 292,
+      "enrollments": 18007,
+      "updates": 0,
+      "child_enrollments": 8257,
+      "density": 61.67,
+      "anomaly_score": 0.083
+    }
+  },
+  "CHANDIGARH": {
+    "CHANDIGARH": {
+      "lat": 30.6272,
+      "lng": 77.0598,
+      "offices": 53,
+      "enrollments": 2720,
+      "updates": 0,
+      "child_enrollments": 2473,
+      "density": 51.32,
+      "anomaly_score": 0.031
+    }
+  },
+  "CHHATTISGARH": {
+    "BALOD": {
+      "lat": 20.8725,
+      "lng": 81.428,
+      "offices": 140,
+      "enrollments": 1678,
+      "updates": 0,
+      "child_enrollments": 1603,
+      "density": 11.99,
+      "anomaly_score": 0.169
+    },
+    "BALODA BAZAR": {
+      "lat": 21.4196,
+      "lng": 81.5525,
+      "offices": 171,
+      "enrollments": 4944,
+      "updates": 0,
+      "child_enrollments": 4349,
+      "density": 28.91,
+      "anomaly_score": 0.083
+    },
+    "BALRAMPUR": {
+      "lat": 23.5753,
+      "lng": 83.3779,
+      "offices": 139,
+      "enrollments": 6190,
+      "updates": 0,
+      "child_enrollments": 4593,
+      "density": 44.53,
+      "anomaly_score": 0.004
+    },
+    "BASTAR": {
+      "lat": 19.0558,
+      "lng": 81.776,
+      "offices": 47,
+      "enrollments": 6608,
+      "updates": 0,
+      "child_enrollments": 4794,
+      "density": 140.6,
+      "anomaly_score": 0.484
+    },
+    "BEMETARA": {
+      "lat": 21.6646,
+      "lng": 81.5256,
+      "offices": 80,
+      "enrollments": 2771,
+      "updates": 0,
+      "child_enrollments": 2458,
+      "density": 34.64,
+      "anomaly_score": 0.054
+    },
+    "BIJAPUR": {
+      "lat": 19.0806,
+      "lng": 80.9093,
+      "offices": 57,
+      "enrollments": 6724,
+      "updates": 0,
+      "child_enrollments": 3601,
+      "density": 117.96,
+      "anomaly_score": 0.369
+    },
+    "BILASPUR": {
+      "lat": 22.1441,
+      "lng": 82.1262,
+      "offices": 147,
+      "enrollments": 8941,
+      "updates": 0,
+      "child_enrollments": 7490,
+      "density": 60.82,
+      "anomaly_score": 0.079
+    },
+    "DANTEWADA": {
+      "lat": 18.9025,
+      "lng": 81.366,
+      "offices": 132,
+      "enrollments": 710,
+      "updates": 0,
+      "child_enrollments": 584,
+      "density": 5.38,
+      "anomaly_score": 0.202
+    },
+    "DHAMTARI": {
+      "lat": 21.1932,
+      "lng": 81.4607,
+      "offices": 132,
+      "enrollments": 1968,
+      "updates": 0,
+      "child_enrollments": 1876,
+      "density": 14.91,
+      "anomaly_score": 0.154
+    },
+    "DURG": {
+      "lat": 21.2829,
+      "lng": 81.3334,
+      "offices": 175,
+      "enrollments": 4095,
+      "updates": 0,
+      "child_enrollments": 3528,
+      "density": 23.4,
+      "anomaly_score": 0.111
+    },
+    "GARIYABAND": {
+      "lat": 21.1829,
+      "lng": 81.7828,
+      "offices": 136,
+      "enrollments": 1542,
+      "updates": 0,
+      "child_enrollments": 1307,
+      "density": 11.34,
+      "anomaly_score": 0.172
+    },
+    "GAURELLA PENDRA MARWAHI": {
+      "lat": 22.8341,
+      "lng": 81.9864,
+      "offices": 49,
+      "enrollments": 983,
+      "updates": 0,
+      "child_enrollments": 623,
+      "density": 20.06,
+      "anomaly_score": 0.128
+    },
+    "JANJGIR-CHAMPA": {
+      "lat": 21.9208,
+      "lng": 82.7532,
+      "offices": 249,
+      "enrollments": 4639,
+      "updates": 0,
+      "child_enrollments": 4066,
+      "density": 18.63,
+      "anomaly_score": 0.135
+    },
+    "JASHPUR": {
+      "lat": 22.7537,
+      "lng": 83.8581,
+      "offices": 190,
+      "enrollments": 2543,
+      "updates": 0,
+      "child_enrollments": 1666,
+      "density": 13.38,
+      "anomaly_score": 0.162
+    },
+    "KANKER": {
+      "lat": 20.0025,
+      "lng": 80.9538,
+      "offices": 176,
+      "enrollments": 1705,
+      "updates": 0,
+      "child_enrollments": 1426,
+      "density": 9.69,
+      "anomaly_score": 0.181
+    },
+    "KONDAGAON": {
+      "lat": 19.6096,
+      "lng": 81.6571,
+      "offices": 175,
+      "enrollments": 3038,
+      "updates": 0,
+      "child_enrollments": 1975,
+      "density": 17.36,
+      "anomaly_score": 0.142
+    },
+    "KORBA": {
+      "lat": 22.4043,
+      "lng": 82.6164,
+      "offices": 129,
+      "enrollments": 3542,
+      "updates": 0,
+      "child_enrollments": 3040,
+      "density": 27.46,
+      "anomaly_score": 0.09
+    },
+    "MAHASAMUND": {
+      "lat": 21.4002,
+      "lng": 81.6531,
+      "offices": 156,
+      "enrollments": 3361,
+      "updates": 0,
+      "child_enrollments": 2773,
+      "density": 21.54,
+      "anomaly_score": 0.12
+    },
+    "MUNGELI": {
+      "lat": 22.1268,
+      "lng": 81.7093,
+      "offices": 82,
+      "enrollments": 2957,
+      "updates": 0,
+      "child_enrollments": 2600,
+      "density": 36.06,
+      "anomaly_score": 0.047
+    },
+    "NARAYANPUR": {
+      "lat": 19.4574,
+      "lng": 81.1269,
+      "offices": 20,
+      "enrollments": 762,
+      "updates": 0,
+      "child_enrollments": 448,
+      "density": 38.1,
+      "anomaly_score": 0.036
+    },
+    "RAIGARH": {
+      "lat": 21.981,
+      "lng": 83.2523,
+      "offices": 296,
+      "enrollments": 4956,
+      "updates": 0,
+      "child_enrollments": 4294,
+      "density": 16.74,
+      "anomaly_score": 0.145
+    },
+    "RAIPUR": {
+      "lat": 19.8097,
+      "lng": 81.4801,
+      "offices": 660,
+      "enrollments": 7041,
+      "updates": 0,
+      "child_enrollments": 6205,
+      "density": 10.67,
+      "anomaly_score": 0.176
+    },
+    "RAJNANDGAON": {
+      "lat": 21.1317,
+      "lng": 80.9343,
+      "offices": 388,
+      "enrollments": 4185,
+      "updates": 0,
+      "child_enrollments": 3791,
+      "density": 10.79,
+      "anomaly_score": 0.175
+    },
+    "SUKMA": {
+      "lat": 18.4231,
+      "lng": 81.3442,
+      "offices": 18,
+      "enrollments": 2179,
+      "updates": 0,
+      "child_enrollments": 1256,
+      "density": 121.06,
+      "anomaly_score": 0.385
+    },
+    "SURAJPUR": {
+      "lat": 23.3363,
+      "lng": 82.9164,
+      "offices": 73,
+      "enrollments": 2977,
+      "updates": 0,
+      "child_enrollments": 2250,
+      "density": 40.78,
+      "anomaly_score": 0.023
+    },
+    "SURGUJA": {
+      "lat": 22.9785,
+      "lng": 83.2705,
+      "offices": 72,
+      "enrollments": 3556,
+      "updates": 0,
+      "child_enrollments": 2866,
+      "density": 49.39,
+      "anomaly_score": 0.021
+    }
+  },
+  "DELHI": {
+    "NEW DELHI": {
+      "lat": 28.5479,
+      "lng": 77.1747,
+      "offices": 84,
+      "enrollments": 1637,
+      "updates": 0,
+      "child_enrollments": 918,
+      "density": 19.49,
+      "anomaly_score": 0.131
+    },
+    "NORTH EAST": {
+      "lat": 28.6803,
+      "lng": 77.2802,
+      "offices": 20,
+      "enrollments": 1738,
+      "updates": 0,
+      "child_enrollments": 1328,
+      "density": 86.9,
+      "anomaly_score": 0.211
+    },
+    "SHAHDARA": {
+      "lat": 28.6727,
+      "lng": 77.3024,
+      "offices": 28,
+      "enrollments": 1700,
+      "updates": 0,
+      "child_enrollments": 1121,
+      "density": 60.71,
+      "anomaly_score": 0.078
+    }
+  },
+  "GOA": {
+    "NORTH GOA": {
+      "lat": 15.5381,
+      "lng": 73.8574,
+      "offices": 55,
+      "enrollments": 1354,
+      "updates": 0,
+      "child_enrollments": 1109,
+      "density": 24.62,
+      "anomaly_score": 0.105
+    },
+    "SOUTH GOA": {
+      "lat": 15.2997,
+      "lng": 73.9655,
+      "offices": 55,
+      "enrollments": 977,
+      "updates": 0,
+      "child_enrollments": 805,
+      "density": 17.76,
+      "anomaly_score": 0.14
+    }
+  },
+  "GUJARAT": {
+    "AHMADABAD": {
+      "lat": 22.956,
+      "lng": 72.4081,
+      "offices": 428,
+      "enrollments": 6667,
+      "updates": 0,
+      "child_enrollments": 4105,
+      "density": 15.58,
+      "anomaly_score": 0.151
+    },
+    "AMRELI": {
+      "lat": 21.4514,
+      "lng": 71.311,
+      "offices": 343,
+      "enrollments": 4293,
+      "updates": 0,
+      "child_enrollments": 3460,
+      "density": 12.52,
+      "anomaly_score": 0.166
+    },
+    "ANAND": {
+      "lat": 22.4448,
+      "lng": 72.837,
+      "offices": 268,
+      "enrollments": 6980,
+      "updates": 0,
+      "child_enrollments": 5616,
+      "density": 26.04,
+      "anomaly_score": 0.098
+    },
+    "ARVALLI": {
+      "lat": 23.4906,
+      "lng": 73.3176,
+      "offices": 213,
+      "enrollments": 2391,
+      "updates": 0,
+      "child_enrollments": 1952,
+      "density": 11.23,
+      "anomaly_score": 0.173
+    },
+    "BANAS KANTHA": {
+      "lat": 24.2595,
+      "lng": 72.0792,
+      "offices": 371,
+      "enrollments": 13498,
+      "updates": 0,
+      "child_enrollments": 5997,
+      "density": 36.38,
+      "anomaly_score": 0.045
+    },
+    "BHARUCH": {
+      "lat": 21.7662,
+      "lng": 72.9861,
+      "offices": 379,
+      "enrollments": 4351,
+      "updates": 0,
+      "child_enrollments": 3745,
+      "density": 11.48,
+      "anomaly_score": 0.172
+    },
+    "BHAVNAGAR": {
+      "lat": 21.5441,
+      "lng": 71.889,
+      "offices": 329,
+      "enrollments": 10174,
+      "updates": 0,
+      "child_enrollments": 8420,
+      "density": 30.92,
+      "anomaly_score": 0.073
+    },
+    "BOTAD": {
+      "lat": 22.1078,
+      "lng": 71.6866,
+      "offices": 101,
+      "enrollments": 2947,
+      "updates": 0,
+      "child_enrollments": 2302,
+      "density": 29.18,
+      "anomaly_score": 0.082
+    },
+    "CHHOTAUDEPUR": {
+      "lat": 17.5951,
+      "lng": 74.8002,
+      "offices": 210,
+      "enrollments": 4107,
+      "updates": 0,
+      "child_enrollments": 2215,
+      "density": 19.56,
+      "anomaly_score": 0.13
+    },
+    "DANG": {
+      "lat": 20.8022,
+      "lng": 73.7266,
+      "offices": 56,
+      "enrollments": 872,
+      "updates": 0,
+      "child_enrollments": 531,
+      "density": 15.57,
+      "anomaly_score": 0.151
+    },
+    "DEVBHUMI DWARKA": {
+      "lat": 22.1239,
+      "lng": 69.5284,
+      "offices": 138,
+      "enrollments": 2490,
+      "updates": 0,
+      "child_enrollments": 1845,
+      "density": 18.04,
+      "anomaly_score": 0.138
+    },
+    "DOHAD": {
+      "lat": 22.8854,
+      "lng": 74.0812,
+      "offices": 224,
+      "enrollments": 13003,
+      "updates": 0,
+      "child_enrollments": 5003,
+      "density": 58.05,
+      "anomaly_score": 0.065
+    },
+    "GANDHINAGAR": {
+      "lat": 23.1937,
+      "lng": 72.591,
+      "offices": 188,
+      "enrollments": 5650,
+      "updates": 0,
+      "child_enrollments": 4075,
+      "density": 30.05,
+      "anomaly_score": 0.077
+    },
+    "GIR SOMNATH": {
+      "lat": 20.9043,
+      "lng": 70.7612,
+      "offices": 164,
+      "enrollments": 5723,
+      "updates": 0,
+      "child_enrollments": 4375,
+      "density": 34.9,
+      "anomaly_score": 0.053
+    },
+    "JAMNAGAR": {
+      "lat": 22.3104,
+      "lng": 70.2251,
+      "offices": 232,
+      "enrollments": 6078,
+      "updates": 0,
+      "child_enrollments": 4998,
+      "density": 26.2,
+      "anomaly_score": 0.097
+    },
+    "JUNAGADH": {
+      "lat": 21.3758,
+      "lng": 70.3745,
+      "offices": 291,
+      "enrollments": 5536,
+      "updates": 0,
+      "child_enrollments": 4876,
+      "density": 19.02,
+      "anomaly_score": 0.133
+    },
+    "KACHCHH": {
+      "lat": 23.2856,
+      "lng": 69.6904,
+      "offices": 501,
+      "enrollments": 9302,
+      "updates": 0,
+      "child_enrollments": 6176,
+      "density": 18.57,
+      "anomaly_score": 0.136
+    },
+    "KHEDA": {
+      "lat": 20.203,
+      "lng": 73.3722,
+      "offices": 288,
+      "enrollments": 7567,
+      "updates": 0,
+      "child_enrollments": 5826,
+      "density": 26.27,
+      "anomaly_score": 0.096
+    },
+    "MAHESANA": {
+      "lat": 23.5425,
+      "lng": 72.5188,
+      "offices": 284,
+      "enrollments": 6490,
+      "updates": 0,
+      "child_enrollments": 5289,
+      "density": 22.85,
+      "anomaly_score": 0.114
+    },
+    "MORBI": {
+      "lat": 22.8041,
+      "lng": 70.8445,
+      "offices": 171,
+      "enrollments": 8004,
+      "updates": 0,
+      "child_enrollments": 5548,
+      "density": 46.81,
+      "anomaly_score": 0.008
+    },
+    "MAHISAGAR": {
+      "lat": 23.1067,
+      "lng": 73.5695,
+      "offices": 166,
+      "enrollments": 2563,
+      "updates": 0,
+      "child_enrollments": 2036,
+      "density": 15.44,
+      "anomaly_score": 0.151
+    },
+    "NARMADA": {
+      "lat": 20.9605,
+      "lng": 73.6545,
+      "offices": 160,
+      "enrollments": 1280,
+      "updates": 0,
+      "child_enrollments": 1155,
+      "density": 8.0,
+      "anomaly_score": 0.189
+    },
+    "NAVSARI": {
+      "lat": 20.824,
+      "lng": 73.074,
+      "offices": 290,
+      "enrollments": 2757,
+      "updates": 0,
+      "child_enrollments": 2453,
+      "density": 9.51,
+      "anomaly_score": 0.182
+    },
+    "PANCH MAHALS": {
+      "lat": 22.6938,
+      "lng": 73.6579,
+      "offices": 223,
+      "enrollments": 1402,
+      "updates": 0,
+      "child_enrollments": 858,
+      "density": 6.29,
+      "anomaly_score": 0.198
+    },
+    "PATAN": {
+      "lat": 18.782,
+      "lng": 73.1447,
+      "offices": 249,
+      "enrollments": 8967,
+      "updates": 0,
+      "child_enrollments": 6023,
+      "density": 36.01,
+      "anomaly_score": 0.047
+    },
+    "PORBANDAR": {
+      "lat": 21.6405,
+      "lng": 69.7739,
+      "offices": 91,
+      "enrollments": 2519,
+      "updates": 0,
+      "child_enrollments": 2006,
+      "density": 27.68,
+      "anomaly_score": 0.089
+    },
+    "RAJKOT": {
+      "lat": 22.0714,
+      "lng": 71.0355,
+      "offices": 348,
+      "enrollments": 17070,
+      "updates": 0,
+      "child_enrollments": 12419,
+      "density": 49.05,
+      "anomaly_score": 0.019
+    },
+    "SABAR KANTHA": {
+      "lat": 23.7497,
+      "lng": 73.04,
+      "offices": 301,
+      "enrollments": 2437,
+      "updates": 0,
+      "child_enrollments": 1083,
+      "density": 8.1,
+      "anomaly_score": 0.189
+    },
+    "SURAT": {
+      "lat": 21.2045,
+      "lng": 73.044,
+      "offices": 437,
+      "enrollments": 25469,
+      "updates": 0,
+      "child_enrollments": 18412,
+      "density": 58.28,
+      "anomaly_score": 0.066
+    },
+    "SURENDRANAGAR": {
+      "lat": 22.7526,
+      "lng": 71.6152,
+      "offices": 292,
+      "enrollments": 1442,
+      "updates": 0,
+      "child_enrollments": 771,
+      "density": 4.94,
+      "anomaly_score": 0.205
+    },
+    "TAPI": {
+      "lat": 21.1411,
+      "lng": 73.601,
+      "offices": 185,
+      "enrollments": 2212,
+      "updates": 0,
+      "child_enrollments": 1856,
+      "density": 11.96,
+      "anomaly_score": 0.169
+    },
+    "VADODARA": {
+      "lat": 18.3617,
+      "lng": 74.0404,
+      "offices": 417,
+      "enrollments": 12284,
+      "updates": 0,
+      "child_enrollments": 9306,
+      "density": 29.46,
+      "anomaly_score": 0.08
+    },
+    "VALSAD": {
+      "lat": 20.4437,
+      "lng": 73.0309,
+      "offices": 273,
+      "enrollments": 7448,
+      "updates": 0,
+      "child_enrollments": 5818,
+      "density": 27.28,
+      "anomaly_score": 0.091
+    }
+  },
+  "HARYANA": {
+    "AMBALA": {
+      "lat": 30.2334,
+      "lng": 76.9007,
+      "offices": 141,
+      "enrollments": 3218,
+      "updates": 0,
+      "child_enrollments": 3063,
+      "density": 22.82,
+      "anomaly_score": 0.114
+    },
+    "BHIWANI": {
+      "lat": 28.7536,
+      "lng": 75.93,
+      "offices": 149,
+      "enrollments": 3489,
+      "updates": 0,
+      "child_enrollments": 3321,
+      "density": 23.42,
+      "anomaly_score": 0.111
+    },
+    "FARIDABAD": {
+      "lat": 28.1338,
+      "lng": 77.9574,
+      "offices": 66,
+      "enrollments": 16155,
+      "updates": 0,
+      "child_enrollments": 12607,
+      "density": 244.77,
+      "anomaly_score": 1.0
+    },
+    "FATEHABAD": {
+      "lat": 29.6066,
+      "lng": 75.5922,
+      "offices": 118,
+      "enrollments": 2612,
+      "updates": 0,
+      "child_enrollments": 2510,
+      "density": 22.14,
+      "anomaly_score": 0.117
+    },
+    "GURUGRAM": {
+      "lat": 28.4604,
+      "lng": 76.9979,
+      "offices": 106,
+      "enrollments": 2636,
+      "updates": 0,
+      "child_enrollments": 1804,
+      "density": 24.87,
+      "anomaly_score": 0.104
+    },
+    "HISAR": {
+      "lat": 29.2104,
+      "lng": 75.6569,
+      "offices": 165,
+      "enrollments": 5234,
+      "updates": 0,
+      "child_enrollments": 4927,
+      "density": 31.72,
+      "anomaly_score": 0.069
+    },
+    "JHAJJAR": {
+      "lat": 28.6505,
+      "lng": 76.6903,
+      "offices": 147,
+      "enrollments": 2624,
+      "updates": 0,
+      "child_enrollments": 2515,
+      "density": 17.85,
+      "anomaly_score": 0.139
+    },
+    "JIND": {
+      "lat": 29.4683,
+      "lng": 76.2439,
+      "offices": 40,
+      "enrollments": 3821,
+      "updates": 0,
+      "child_enrollments": 3729,
+      "density": 95.53,
+      "anomaly_score": 0.255
+    },
+    "KAITHAL": {
+      "lat": 29.7774,
+      "lng": 76.4278,
+      "offices": 123,
+      "enrollments": 2991,
+      "updates": 0,
+      "child_enrollments": 2894,
+      "density": 24.32,
+      "anomaly_score": 0.106
+    },
+    "KARNAL": {
+      "lat": 29.4664,
+      "lng": 76.6533,
+      "offices": 113,
+      "enrollments": 4048,
+      "updates": 0,
+      "child_enrollments": 3861,
+      "density": 35.82,
+      "anomaly_score": 0.048
+    },
+    "KURUKSHETRA": {
+      "lat": 29.9916,
+      "lng": 76.808,
+      "offices": 112,
+      "enrollments": 2404,
+      "updates": 0,
+      "child_enrollments": 2315,
+      "density": 21.46,
+      "anomaly_score": 0.121
+    },
+    "MAHENDRAGARH": {
+      "lat": 28.1696,
+      "lng": 76.168,
+      "offices": 119,
+      "enrollments": 2754,
+      "updates": 0,
+      "child_enrollments": 2575,
+      "density": 23.14,
+      "anomaly_score": 0.112
+    },
+    "NUH": {
+      "lat": 28.1099,
+      "lng": 76.9093,
+      "offices": 9,
+      "enrollments": 1506,
+      "updates": 0,
+      "child_enrollments": 1251,
+      "density": 167.33,
+      "anomaly_score": 0.62
+    },
+    "PALWAL": {
+      "lat": 27.7626,
+      "lng": 77.601,
+      "offices": 61,
+      "enrollments": 4703,
+      "updates": 0,
+      "child_enrollments": 4367,
+      "density": 77.1,
+      "anomaly_score": 0.162
+    },
+    "PANCHKULA": {
+      "lat": 30.5086,
+      "lng": 76.7381,
+      "offices": 50,
+      "enrollments": 1384,
+      "updates": 0,
+      "child_enrollments": 1287,
+      "density": 27.68,
+      "anomaly_score": 0.089
+    },
+    "PANIPAT": {
+      "lat": 29.4306,
+      "lng": 76.6903,
+      "offices": 31,
+      "enrollments": 6088,
+      "updates": 0,
+      "child_enrollments": 5498,
+      "density": 196.39,
+      "anomaly_score": 0.767
+    },
+    "REWARI": {
+      "lat": 28.2711,
+      "lng": 76.6248,
+      "offices": 24,
+      "enrollments": 2485,
+      "updates": 0,
+      "child_enrollments": 2329,
+      "density": 103.54,
+      "anomaly_score": 0.296
+    },
+    "ROHTAK": {
+      "lat": 28.6879,
+      "lng": 76.5762,
+      "offices": 118,
+      "enrollments": 3413,
+      "updates": 0,
+      "child_enrollments": 3161,
+      "density": 28.92,
+      "anomaly_score": 0.083
+    },
+    "SIRSA": {
+      "lat": 29.6198,
+      "lng": 74.9155,
+      "offices": 15,
+      "enrollments": 3335,
+      "updates": 0,
+      "child_enrollments": 3135,
+      "density": 222.33,
+      "anomaly_score": 0.899
+    },
+    "SONIPAT": {
+      "lat": 28.9592,
+      "lng": 76.9544,
+      "offices": 178,
+      "enrollments": 4619,
+      "updates": 0,
+      "child_enrollments": 4314,
+      "density": 25.95,
+      "anomaly_score": 0.098
+    },
+    "YAMUNANAGAR": {
+      "lat": 29.8936,
+      "lng": 77.0687,
+      "offices": 117,
+      "enrollments": 59,
+      "updates": 0,
+      "child_enrollments": 56,
+      "density": 0.5,
+      "anomaly_score": 0.227
+    }
+  },
+  "HIMACHAL PRADESH": {
+    "BILASPUR": {
+      "lat": 31.3917,
+      "lng": 76.6879,
+      "offices": 144,
+      "enrollments": 999,
+      "updates": 0,
+      "child_enrollments": 985,
+      "density": 6.94,
+      "anomaly_score": 0.195
+    },
+    "CHAMBA": {
+      "lat": 32.5025,
+      "lng": 76.246,
+      "offices": 224,
+      "enrollments": 1657,
+      "updates": 0,
+      "child_enrollments": 1586,
+      "density": 7.4,
+      "anomaly_score": 0.192
+    },
+    "HAMIRPUR": {
+      "lat": 31.6541,
+      "lng": 76.5179,
+      "offices": 224,
+      "enrollments": 1198,
+      "updates": 0,
+      "child_enrollments": 1181,
+      "density": 5.35,
+      "anomaly_score": 0.203
+    },
+    "KANGRA": {
+      "lat": 32.0402,
+      "lng": 76.2724,
+      "offices": 621,
+      "enrollments": 3966,
+      "updates": 0,
+      "child_enrollments": 3869,
+      "density": 6.39,
+      "anomaly_score": 0.197
+    },
+    "KINNAUR": {
+      "lat": 31.5958,
+      "lng": 78.2841,
+      "offices": 72,
+      "enrollments": 163,
+      "updates": 0,
+      "child_enrollments": 137,
+      "density": 2.26,
+      "anomaly_score": 0.218
+    },
+    "KULLU": {
+      "lat": 31.7835,
+      "lng": 77.3381,
+      "offices": 154,
+      "enrollments": 1239,
+      "updates": 0,
+      "child_enrollments": 1022,
+      "density": 8.05,
+      "anomaly_score": 0.189
+    },
+    "LAHUL AND SPITI": {
+      "lat": 32.4773,
+      "lng": 77.2943,
+      "offices": 45,
+      "enrollments": 32,
+      "updates": 0,
+      "child_enrollments": 31,
+      "density": 0.71,
+      "anomaly_score": 0.226
+    },
+    "MANDI": {
+      "lat": 31.6591,
+      "lng": 76.9399,
+      "offices": 374,
+      "enrollments": 2514,
+      "updates": 0,
+      "child_enrollments": 2460,
+      "density": 6.72,
+      "anomaly_score": 0.196
+    },
+    "SHIMLA": {
+      "lat": 31.0439,
+      "lng": 77.4263,
+      "offices": 360,
+      "enrollments": 1670,
+      "updates": 0,
+      "child_enrollments": 1488,
+      "density": 4.64,
+      "anomaly_score": 0.206
+    },
+    "SIRMAUR": {
+      "lat": 30.7203,
+      "lng": 77.3728,
+      "offices": 166,
+      "enrollments": 1584,
+      "updates": 0,
+      "child_enrollments": 1510,
+      "density": 9.54,
+      "anomaly_score": 0.181
+    },
+    "SOLAN": {
+      "lat": 30.9404,
+      "lng": 77.0473,
+      "offices": 172,
+      "enrollments": 1176,
+      "updates": 0,
+      "child_enrollments": 1105,
+      "density": 6.84,
+      "anomaly_score": 0.195
+    },
+    "UNA": {
+      "lat": 31.5793,
+      "lng": 76.2394,
+      "offices": 186,
+      "enrollments": 1247,
+      "updates": 0,
+      "child_enrollments": 1226,
+      "density": 6.7,
+      "anomaly_score": 0.196
+    }
+  },
+  "JAMMU AND KASHMIR": {
+    "ANANTNAG": {
+      "lat": 33.7817,
+      "lng": 74.938,
+      "offices": 57,
+      "enrollments": 3350,
+      "updates": 0,
+      "child_enrollments": 2975,
+      "density": 58.77,
+      "anomaly_score": 0.069
+    },
+    "BUDGAM": {
+      "lat": 34.0549,
+      "lng": 74.7076,
+      "offices": 26,
+      "enrollments": 859,
+      "updates": 0,
+      "child_enrollments": 793,
+      "density": 33.04,
+      "anomaly_score": 0.062
+    },
+    "DODA": {
+      "lat": 32.2079,
+      "lng": 75.3812,
+      "offices": 11,
+      "enrollments": 4502,
+      "updates": 0,
+      "child_enrollments": 3447,
+      "density": 409.27,
+      "anomaly_score": 1.0
+    },
+    "GANDERBAL": {
+      "lat": 34.1708,
+      "lng": 74.7716,
+      "offices": 25,
+      "enrollments": 843,
+      "updates": 0,
+      "child_enrollments": 773,
+      "density": 33.72,
+      "anomaly_score": 0.059
+    },
+    "JAMMU": {
+      "lat": 32.6447,
+      "lng": 74.7603,
+      "offices": 197,
+      "enrollments": 4558,
+      "updates": 0,
+      "child_enrollments": 3697,
+      "density": 23.14,
+      "anomaly_score": 0.112
+    },
+    "KATHUA": {
+      "lat": 32.2877,
+      "lng": 75.2771,
+      "offices": 131,
+      "enrollments": 2954,
+      "updates": 0,
+      "child_enrollments": 2635,
+      "density": 22.55,
+      "anomaly_score": 0.115
+    },
+    "KISHTWAR": {
+      "lat": 33.2324,
+      "lng": 75.2338,
+      "offices": 13,
+      "enrollments": 1269,
+      "updates": 0,
+      "child_enrollments": 1058,
+      "density": 97.62,
+      "anomaly_score": 0.266
+    },
+    "KULGAM": {
+      "lat": 33.8656,
+      "lng": 74.7808,
+      "offices": 34,
+      "enrollments": 1211,
+      "updates": 0,
+      "child_enrollments": 970,
+      "density": 35.62,
+      "anomaly_score": 0.049
+    },
+    "KUPWARA": {
+      "lat": 34.3886,
+      "lng": 74.3076,
+      "offices": 81,
+      "enrollments": 2875,
+      "updates": 0,
+      "child_enrollments": 2392,
+      "density": 35.49,
+      "anomaly_score": 0.05
+    },
+    "PULWAMA": {
+      "lat": 33.5715,
+      "lng": 75.1593,
+      "offices": 25,
+      "enrollments": 1871,
+      "updates": 0,
+      "child_enrollments": 1738,
+      "density": 74.84,
+      "anomaly_score": 0.15
+    },
+    "RAJOURI": {
+      "lat": 33.0981,
+      "lng": 74.4277,
+      "offices": 19,
+      "enrollments": 2674,
+      "updates": 0,
+      "child_enrollments": 2071,
+      "density": 140.74,
+      "anomaly_score": 0.485
+    },
+    "RAMBAN": {
+      "lat": 33.0946,
+      "lng": 75.1784,
+      "offices": 7,
+      "enrollments": 1920,
+      "updates": 0,
+      "child_enrollments": 1317,
+      "density": 274.29,
+      "anomaly_score": 1.0
+    },
+    "REASI": {
+      "lat": 33.0499,
+      "lng": 74.7625,
+      "offices": 11,
+      "enrollments": 1715,
+      "updates": 0,
+      "child_enrollments": 1136,
+      "density": 155.91,
+      "anomaly_score": 0.562
+    },
+    "SAMBA": {
+      "lat": 32.5797,
+      "lng": 74.8332,
+      "offices": 42,
+      "enrollments": 588,
+      "updates": 0,
+      "child_enrollments": 532,
+      "density": 14.0,
+      "anomaly_score": 0.159
+    },
+    "SHOPIAN": {
+      "lat": 33.7718,
+      "lng": 74.8422,
+      "offices": 2,
+      "enrollments": 412,
+      "updates": 0,
+      "child_enrollments": 308,
+      "density": 206.0,
+      "anomaly_score": 0.816
+    },
+    "SRINAGAR": {
+      "lat": 34.1016,
+      "lng": 74.7963,
+      "offices": 56,
+      "enrollments": 3256,
+      "updates": 0,
+      "child_enrollments": 2851,
+      "density": 58.14,
+      "anomaly_score": 0.065
+    },
+    "UDHAMPUR": {
+      "lat": 32.7746,
+      "lng": 75.1687,
+      "offices": 30,
+      "enrollments": 2806,
+      "updates": 0,
+      "child_enrollments": 2446,
+      "density": 93.53,
+      "anomaly_score": 0.245
+    }
+  },
+  "JHARKHAND": {
+    "BOKARO": {
+      "lat": 23.7375,
+      "lng": 85.9449,
+      "offices": 183,
+      "enrollments": 5800,
+      "updates": 0,
+      "child_enrollments": 3505,
+      "density": 31.69,
+      "anomaly_score": 0.069
+    },
+    "CHATRA": {
+      "lat": 24.1767,
+      "lng": 85.0229,
+      "offices": 189,
+      "enrollments": 6302,
+      "updates": 0,
+      "child_enrollments": 3448,
+      "density": 33.34,
+      "anomaly_score": 0.061
+    },
+    "DEOGHAR": {
+      "lat": 24.3587,
+      "lng": 86.7369,
+      "offices": 124,
+      "enrollments": 8324,
+      "updates": 0,
+      "child_enrollments": 4518,
+      "density": 67.13,
+      "anomaly_score": 0.111
+    },
+    "DHANBAD": {
+      "lat": 23.7792,
+      "lng": 86.3895,
+      "offices": 222,
+      "enrollments": 11031,
+      "updates": 0,
+      "child_enrollments": 6878,
+      "density": 49.69,
+      "anomaly_score": 0.023
+    },
+    "DUMKA": {
+      "lat": 24.3667,
+      "lng": 87.0595,
+      "offices": 287,
+      "enrollments": 5825,
+      "updates": 0,
+      "child_enrollments": 2743,
+      "density": 20.3,
+      "anomaly_score": 0.127
+    },
+    "EAST SINGHBUM": {
+      "lat": 22.6792,
+      "lng": 86.3671,
+      "offices": 261,
+      "enrollments": 1447,
+      "updates": 0,
+      "child_enrollments": 848,
+      "density": 5.54,
+      "anomaly_score": 0.202
+    },
+    "GARHWA": {
+      "lat": 24.1868,
+      "lng": 83.9007,
+      "offices": 186,
+      "enrollments": 6073,
+      "updates": 0,
+      "child_enrollments": 4523,
+      "density": 32.65,
+      "anomaly_score": 0.064
+    },
+    "GIRIDIH": {
+      "lat": 24.3783,
+      "lng": 86.0023,
+      "offices": 219,
+      "enrollments": 14303,
+      "updates": 0,
+      "child_enrollments": 7695,
+      "density": 65.31,
+      "anomaly_score": 0.102
+    },
+    "GODDA": {
+      "lat": 24.8053,
+      "lng": 87.1723,
+      "offices": 220,
+      "enrollments": 5390,
+      "updates": 0,
+      "child_enrollments": 3238,
+      "density": 24.5,
+      "anomaly_score": 0.105
+    },
+    "GUMLA": {
+      "lat": 23.0926,
+      "lng": 84.6263,
+      "offices": 221,
+      "enrollments": 6701,
+      "updates": 0,
+      "child_enrollments": 4083,
+      "density": 30.32,
+      "anomaly_score": 0.076
+    },
+    "HAZARIBAGH": {
+      "lat": 24.0343,
+      "lng": 85.3037,
+      "offices": 132,
+      "enrollments": 6204,
+      "updates": 0,
+      "child_enrollments": 4125,
+      "density": 47.0,
+      "anomaly_score": 0.009
+    },
+    "JAMTARA": {
+      "lat": 24.0891,
+      "lng": 86.8367,
+      "offices": 87,
+      "enrollments": 4450,
+      "updates": 0,
+      "child_enrollments": 3160,
+      "density": 51.15,
+      "anomaly_score": 0.03
+    },
+    "KHUNTI": {
+      "lat": 23.0845,
+      "lng": 85.2543,
+      "offices": 92,
+      "enrollments": 2644,
+      "updates": 0,
+      "child_enrollments": 1426,
+      "density": 28.74,
+      "anomaly_score": 0.084
+    },
+    "KODERMA": {
+      "lat": 24.543,
+      "lng": 85.5031,
+      "offices": 81,
+      "enrollments": 3222,
+      "updates": 0,
+      "child_enrollments": 2096,
+      "density": 39.78,
+      "anomaly_score": 0.028
+    },
+    "LATEHAR": {
+      "lat": 23.7498,
+      "lng": 84.5305,
+      "offices": 183,
+      "enrollments": 2609,
+      "updates": 0,
+      "child_enrollments": 1675,
+      "density": 14.26,
+      "anomaly_score": 0.157
+    },
+    "LOHARDAGA": {
+      "lat": 23.4547,
+      "lng": 84.7766,
+      "offices": 74,
+      "enrollments": 2959,
+      "updates": 0,
+      "child_enrollments": 1984,
+      "density": 39.99,
+      "anomaly_score": 0.027
+    },
+    "PAKUR": {
+      "lat": 24.5019,
+      "lng": 87.5842,
+      "offices": 131,
+      "enrollments": 6924,
+      "updates": 0,
+      "child_enrollments": 3971,
+      "density": 52.85,
+      "anomaly_score": 0.039
+    },
+    "PALAMU": {
+      "lat": 23.9642,
+      "lng": 84.5289,
+      "offices": 312,
+      "enrollments": 8606,
+      "updates": 0,
+      "child_enrollments": 6548,
+      "density": 27.58,
+      "anomaly_score": 0.09
+    },
+    "RAMGARH": {
+      "lat": 23.7205,
+      "lng": 85.4523,
+      "offices": 71,
+      "enrollments": 2979,
+      "updates": 0,
+      "child_enrollments": 1902,
+      "density": 41.96,
+      "anomaly_score": 0.017
+    },
+    "RANCHI": {
+      "lat": 23.4049,
+      "lng": 85.3019,
+      "offices": 329,
+      "enrollments": 14265,
+      "updates": 0,
+      "child_enrollments": 9318,
+      "density": 43.36,
+      "anomaly_score": 0.01
+    },
+    "SAHEBGANJ": {
+      "lat": 24.885,
+      "lng": 87.5523,
+      "offices": 103,
+      "enrollments": 6321,
+      "updates": 0,
+      "child_enrollments": 3636,
+      "density": 61.37,
+      "anomaly_score": 0.082
+    },
+    "SIMDEGA": {
+      "lat": 22.7655,
+      "lng": 84.6916,
+      "offices": 108,
+      "enrollments": 2079,
+      "updates": 0,
+      "child_enrollments": 1472,
+      "density": 19.25,
+      "anomaly_score": 0.132
+    },
+    "WEST SINGHBHUM": {
+      "lat": 22.5383,
+      "lng": 85.3323,
+      "offices": 284,
+      "enrollments": 6848,
+      "updates": 0,
+      "child_enrollments": 4211,
+      "density": 24.11,
+      "anomaly_score": 0.107
+    }
+  },
+  "KARNATAKA": {
+    "BAGALKOT": {
+      "lat": 16.209,
+      "lng": 75.6206,
+      "offices": 329,
+      "enrollments": 7142,
+      "updates": 0,
+      "child_enrollments": 6158,
+      "density": 21.71,
+      "anomaly_score": 0.12
+    },
+    "BALLARI": {
+      "lat": 15.2841,
+      "lng": 76.8178,
+      "offices": 201,
+      "enrollments": 2781,
+      "updates": 0,
+      "child_enrollments": 2450,
+      "density": 13.84,
+      "anomaly_score": 0.16
+    },
+    "BELAGAVI": {
+      "lat": 16.1235,
+      "lng": 74.765,
+      "offices": 715,
+      "enrollments": 7805,
+      "updates": 0,
+      "child_enrollments": 7063,
+      "density": 10.92,
+      "anomaly_score": 0.174
+    },
+    "BENGALURU RURAL": {
+      "lat": 13.2065,
+      "lng": 77.5648,
+      "offices": 131,
+      "enrollments": 2790,
+      "updates": 0,
+      "child_enrollments": 1439,
+      "density": 21.3,
+      "anomaly_score": 0.122
+    },
+    "BENGALURU URBAN": {
+      "lat": 12.9361,
+      "lng": 77.581,
+      "offices": 275,
+      "enrollments": 23074,
+      "updates": 0,
+      "child_enrollments": 12111,
+      "density": 83.91,
+      "anomaly_score": 0.196
+    },
+    "BIDAR": {
+      "lat": 17.8611,
+      "lng": 77.6327,
+      "offices": 40,
+      "enrollments": 4920,
+      "updates": 0,
+      "child_enrollments": 3960,
+      "density": 123.0,
+      "anomaly_score": 0.395
+    },
+    "CHIKKAMAGALURU": {
+      "lat": 13.4424,
+      "lng": 75.698,
+      "offices": 301,
+      "enrollments": 1151,
+      "updates": 0,
+      "child_enrollments": 1018,
+      "density": 3.82,
+      "anomaly_score": 0.21
+    },
+    "CHITRADURGA": {
+      "lat": 14.1504,
+      "lng": 76.5844,
+      "offices": 314,
+      "enrollments": 4413,
+      "updates": 0,
+      "child_enrollments": 4042,
+      "density": 14.05,
+      "anomaly_score": 0.158
+    },
+    "DAKSHINA KANNADA": {
+      "lat": 12.8707,
+      "lng": 75.122,
+      "offices": 466,
+      "enrollments": 6505,
+      "updates": 0,
+      "child_enrollments": 5896,
+      "density": 13.96,
+      "anomaly_score": 0.159
+    },
+    "DAVANGERE": {
+      "lat": 14.3755,
+      "lng": 76.0424,
+      "offices": 252,
+      "enrollments": 4813,
+      "updates": 0,
+      "child_enrollments": 4416,
+      "density": 19.1,
+      "anomaly_score": 0.133
+    },
+    "DHARWAD": {
+      "lat": 15.3821,
+      "lng": 75.1274,
+      "offices": 207,
+      "enrollments": 5103,
+      "updates": 0,
+      "child_enrollments": 4733,
+      "density": 24.65,
+      "anomaly_score": 0.105
+    },
+    "GADAG": {
+      "lat": 15.4388,
+      "lng": 75.6689,
+      "offices": 165,
+      "enrollments": 4457,
+      "updates": 0,
+      "child_enrollments": 4088,
+      "density": 27.01,
+      "anomaly_score": 0.093
+    },
+    "HASSAN": {
+      "lat": 13.0017,
+      "lng": 76.1277,
+      "offices": 413,
+      "enrollments": 2494,
+      "updates": 0,
+      "child_enrollments": 2333,
+      "density": 6.04,
+      "anomaly_score": 0.199
+    },
+    "HAVERI": {
+      "lat": 14.7248,
+      "lng": 75.4106,
+      "offices": 256,
+      "enrollments": 4242,
+      "updates": 0,
+      "child_enrollments": 3917,
+      "density": 16.57,
+      "anomaly_score": 0.146
+    },
+    "KALABURAGI": {
+      "lat": 17.2595,
+      "lng": 76.8863,
+      "offices": 428,
+      "enrollments": 4782,
+      "updates": 0,
+      "child_enrollments": 4096,
+      "density": 11.17,
+      "anomaly_score": 0.173
+    },
+    "KODAGU": {
+      "lat": 12.3519,
+      "lng": 75.8391,
+      "offices": 213,
+      "enrollments": 1211,
+      "updates": 0,
+      "child_enrollments": 1095,
+      "density": 5.69,
+      "anomaly_score": 0.201
+    },
+    "KOLAR": {
+      "lat": 13.1155,
+      "lng": 78.2108,
+      "offices": 222,
+      "enrollments": 4186,
+      "updates": 0,
+      "child_enrollments": 3841,
+      "density": 18.86,
+      "anomaly_score": 0.134
+    },
+    "KOPPAL": {
+      "lat": 15.5389,
+      "lng": 76.2461,
+      "offices": 219,
+      "enrollments": 5451,
+      "updates": 0,
+      "child_enrollments": 4752,
+      "density": 24.89,
+      "anomaly_score": 0.103
+    },
+    "MANDYA": {
+      "lat": 12.5625,
+      "lng": 76.8255,
+      "offices": 56,
+      "enrollments": 3594,
+      "updates": 0,
+      "child_enrollments": 3401,
+      "density": 64.18,
+      "anomaly_score": 0.096
+    },
+    "MYSURU": {
+      "lat": 12.2943,
+      "lng": 76.556,
+      "offices": 88,
+      "enrollments": 4361,
+      "updates": 0,
+      "child_enrollments": 3650,
+      "density": 49.56,
+      "anomaly_score": 0.022
+    },
+    "RAICHUR": {
+      "lat": 16.0818,
+      "lng": 76.9394,
+      "offices": 289,
+      "enrollments": 9779,
+      "updates": 0,
+      "child_enrollments": 7619,
+      "density": 33.84,
+      "anomaly_score": 0.058
+    },
+    "RAMANAGARA": {
+      "lat": 12.7123,
+      "lng": 77.3055,
+      "offices": 182,
+      "enrollments": 204,
+      "updates": 0,
+      "child_enrollments": 168,
+      "density": 1.12,
+      "anomaly_score": 0.224
+    },
+    "SHIVAMOGGA": {
+      "lat": 14.0407,
+      "lng": 75.3253,
+      "offices": 357,
+      "enrollments": 2229,
+      "updates": 0,
+      "child_enrollments": 2004,
+      "density": 6.24,
+      "anomaly_score": 0.198
+    },
+    "TUMAKURU": {
+      "lat": 13.44,
+      "lng": 76.9373,
+      "offices": 566,
+      "enrollments": 3000,
+      "updates": 0,
+      "child_enrollments": 2792,
+      "density": 5.3,
+      "anomaly_score": 0.203
+    },
+    "UDUPI": {
+      "lat": 13.4385,
+      "lng": 74.8118,
+      "offices": 329,
+      "enrollments": 3591,
+      "updates": 0,
+      "child_enrollments": 3338,
+      "density": 10.91,
+      "anomaly_score": 0.174
+    },
+    "UTTARA KANNADA": {
+      "lat": 14.4116,
+      "lng": 74.4952,
+      "offices": 280,
+      "enrollments": 3470,
+      "updates": 0,
+      "child_enrollments": 3219,
+      "density": 12.39,
+      "anomaly_score": 0.167
+    },
+    "VIJAYAPURA": {
+      "lat": 16.7603,
+      "lng": 75.9583,
+      "offices": 390,
+      "enrollments": 5596,
+      "updates": 0,
+      "child_enrollments": 4662,
+      "density": 14.35,
+      "anomaly_score": 0.157
+    },
+    "YADGIR": {
+      "lat": 16.6714,
+      "lng": 76.9418,
+      "offices": 197,
+      "enrollments": 6947,
+      "updates": 0,
+      "child_enrollments": 5420,
+      "density": 35.26,
+      "anomaly_score": 0.051
+    }
+  },
+  "KERALA": {
+    "ALAPPUZHA": {
+      "lat": 9.4043,
+      "lng": 76.4487,
+      "offices": 283,
+      "enrollments": 3559,
+      "updates": 0,
+      "child_enrollments": 2536,
+      "density": 12.58,
+      "anomaly_score": 0.166
+    },
+    "ERNAKULAM": {
+      "lat": 10.1219,
+      "lng": 76.4268,
+      "offices": 393,
+      "enrollments": 6324,
+      "updates": 0,
+      "child_enrollments": 4185,
+      "density": 16.09,
+      "anomaly_score": 0.148
+    },
+    "IDUKKI": {
+      "lat": 9.8534,
+      "lng": 76.9918,
+      "offices": 296,
+      "enrollments": 1698,
+      "updates": 0,
+      "child_enrollments": 1399,
+      "density": 5.74,
+      "anomaly_score": 0.201
+    },
+    "KANNUR": {
+      "lat": 11.9446,
+      "lng": 75.5003,
+      "offices": 381,
+      "enrollments": 5965,
+      "updates": 0,
+      "child_enrollments": 4013,
+      "density": 15.66,
+      "anomaly_score": 0.15
+    },
+    "KASARAGOD": {
+      "lat": 12.4554,
+      "lng": 75.1151,
+      "offices": 233,
+      "enrollments": 3555,
+      "updates": 0,
+      "child_enrollments": 2695,
+      "density": 15.26,
+      "anomaly_score": 0.152
+    },
+    "KOLLAM": {
+      "lat": 8.9753,
+      "lng": 76.7519,
+      "offices": 367,
+      "enrollments": 5069,
+      "updates": 0,
+      "child_enrollments": 3814,
+      "density": 13.81,
+      "anomaly_score": 0.16
+    },
+    "KOTTAYAM": {
+      "lat": 10.7175,
+      "lng": 76.6025,
+      "offices": 405,
+      "enrollments": 3321,
+      "updates": 0,
+      "child_enrollments": 2465,
+      "density": 8.2,
+      "anomaly_score": 0.188
+    },
+    "KOZHIKODE": {
+      "lat": 11.4553,
+      "lng": 75.8077,
+      "offices": 409,
+      "enrollments": 6704,
+      "updates": 0,
+      "child_enrollments": 4587,
+      "density": 16.39,
+      "anomaly_score": 0.147
+    },
+    "MALAPPURAM": {
+      "lat": 11.081,
+      "lng": 76.1266,
+      "offices": 433,
+      "enrollments": 14567,
+      "updates": 0,
+      "child_enrollments": 10205,
+      "density": 33.64,
+      "anomaly_score": 0.059
+    },
+    "PALAKKAD": {
+      "lat": 12.3648,
+      "lng": 76.4108,
+      "offices": 455,
+      "enrollments": 6724,
+      "updates": 0,
+      "child_enrollments": 5174,
+      "density": 14.78,
+      "anomaly_score": 0.155
+    },
+    "PATHANAMTHITTA": {
+      "lat": 9.3427,
+      "lng": 76.748,
+      "offices": 293,
+      "enrollments": 1951,
+      "updates": 0,
+      "child_enrollments": 1398,
+      "density": 6.66,
+      "anomaly_score": 0.196
+    },
+    "THIRUVANANTHAPURAM": {
+      "lat": 8.582,
+      "lng": 76.9537,
+      "offices": 412,
+      "enrollments": 6663,
+      "updates": 0,
+      "child_enrollments": 4836,
+      "density": 16.17,
+      "anomaly_score": 0.148
+    },
+    "THRISSUR": {
+      "lat": 10.4222,
+      "lng": 76.2167,
+      "offices": 300,
+      "enrollments": 7071,
+      "updates": 0,
+      "child_enrollments": 4914,
+      "density": 23.57,
+      "anomaly_score": 0.11
+    },
+    "WAYANAD": {
+      "lat": 11.6983,
+      "lng": 76.1075,
+      "offices": 162,
+      "enrollments": 1516,
+      "updates": 0,
+      "child_enrollments": 1265,
+      "density": 9.36,
+      "anomaly_score": 0.182
+    }
+  },
+  "LADAKH": {
+    "KARGIL": {
+      "lat": 34.4448,
+      "lng": 76.6464,
+      "offices": 42,
+      "enrollments": 492,
+      "updates": 0,
+      "child_enrollments": 365,
+      "density": 11.71,
+      "anomaly_score": 0.17
+    }
+  },
+  "LAKSHADWEEP": {},
+  "MADHYA PRADESH": {
+    "AGAR MALWA": {
+      "lat": 23.9756,
+      "lng": 76.5383,
+      "offices": 68,
+      "enrollments": 2537,
+      "updates": 0,
+      "child_enrollments": 2087,
+      "density": 37.31,
+      "anomaly_score": 0.04
+    },
+    "ALIRAJPUR": {
+      "lat": 22.2014,
+      "lng": 74.3188,
+      "offices": 68,
+      "enrollments": 7010,
+      "updates": 0,
+      "child_enrollments": 3251,
+      "density": 103.09,
+      "anomaly_score": 0.294
+    },
+    "ANUPPUR": {
+      "lat": 23.1932,
+      "lng": 81.5542,
+      "offices": 130,
+      "enrollments": 3226,
+      "updates": 0,
+      "child_enrollments": 2864,
+      "density": 24.82,
+      "anomaly_score": 0.104
+    },
+    "ASHOKNAGAR": {
+      "lat": 24.6174,
+      "lng": 77.8063,
+      "offices": 159,
+      "enrollments": 3011,
+      "updates": 0,
+      "child_enrollments": 1594,
+      "density": 18.94,
+      "anomaly_score": 0.134
+    },
+    "BALAGHAT": {
+      "lat": 21.8283,
+      "lng": 80.2504,
+      "offices": 20,
+      "enrollments": 6805,
+      "updates": 0,
+      "child_enrollments": 6237,
+      "density": 340.25,
+      "anomaly_score": 1.0
+    },
+    "BARWANI": {
+      "lat": 21.8596,
+      "lng": 75.0923,
+      "offices": 151,
+      "enrollments": 21823,
+      "updates": 0,
+      "child_enrollments": 12801,
+      "density": 144.52,
+      "anomaly_score": 0.504
+    },
+    "BETUL": {
+      "lat": 22.2008,
+      "lng": 78.0547,
+      "offices": 301,
+      "enrollments": 8166,
+      "updates": 0,
+      "child_enrollments": 6829,
+      "density": 27.13,
+      "anomaly_score": 0.092
+    },
+    "BHIND": {
+      "lat": 26.4404,
+      "lng": 78.7456,
+      "offices": 259,
+      "enrollments": 13967,
+      "updates": 0,
+      "child_enrollments": 8483,
+      "density": 53.93,
+      "anomaly_score": 0.044
+    },
+    "BHOPAL": {
+      "lat": 23.3944,
+      "lng": 77.3895,
+      "offices": 140,
+      "enrollments": 12862,
+      "updates": 0,
+      "child_enrollments": 11256,
+      "density": 91.87,
+      "anomaly_score": 0.237
+    },
+    "BURHANPUR": {
+      "lat": 21.4545,
+      "lng": 76.326,
+      "offices": 71,
+      "enrollments": 9689,
+      "updates": 0,
+      "child_enrollments": 6542,
+      "density": 136.46,
+      "anomaly_score": 0.463
+    },
+    "CHHATARPUR": {
+      "lat": 24.8149,
+      "lng": 79.6381,
+      "offices": 260,
+      "enrollments": 17836,
+      "updates": 0,
+      "child_enrollments": 11504,
+      "density": 68.6,
+      "anomaly_score": 0.119
+    },
+    "CHHINDWARA": {
+      "lat": 22.3844,
+      "lng": 78.8743,
+      "offices": 399,
+      "enrollments": 8981,
+      "updates": 0,
+      "child_enrollments": 8308,
+      "density": 22.51,
+      "anomaly_score": 0.115
+    },
+    "DAMOH": {
+      "lat": 23.7779,
+      "lng": 79.5153,
+      "offices": 206,
+      "enrollments": 6066,
+      "updates": 0,
+      "child_enrollments": 5081,
+      "density": 29.45,
+      "anomaly_score": 0.08
+    },
+    "DATIA": {
+      "lat": 25.817,
+      "lng": 78.5251,
+      "offices": 138,
+      "enrollments": 5843,
+      "updates": 0,
+      "child_enrollments": 3995,
+      "density": 42.34,
+      "anomaly_score": 0.015
+    },
+    "DEWAS": {
+      "lat": 23.1229,
+      "lng": 76.7675,
+      "offices": 195,
+      "enrollments": 10442,
+      "updates": 0,
+      "child_enrollments": 8393,
+      "density": 53.55,
+      "anomaly_score": 0.042
+    },
+    "DHAR": {
+      "lat": 22.9853,
+      "lng": 76.053,
+      "offices": 241,
+      "enrollments": 12712,
+      "updates": 0,
+      "child_enrollments": 8734,
+      "density": 52.75,
+      "anomaly_score": 0.038
+    },
+    "DINDORI": {
+      "lat": 23.6458,
+      "lng": 80.6302,
+      "offices": 169,
+      "enrollments": 2659,
+      "updates": 0,
+      "child_enrollments": 2409,
+      "density": 15.73,
+      "anomaly_score": 0.15
+    },
+    "EAST NIMAR": {
+      "lat": 21.985,
+      "lng": 76.5713,
+      "offices": 172,
+      "enrollments": 3859,
+      "updates": 0,
+      "child_enrollments": 2338,
+      "density": 22.44,
+      "anomaly_score": 0.116
+    },
+    "GUNA": {
+      "lat": 24.5367,
+      "lng": 77.2081,
+      "offices": 163,
+      "enrollments": 9811,
+      "updates": 0,
+      "child_enrollments": 7496,
+      "density": 60.19,
+      "anomaly_score": 0.076
+    },
+    "GWALIOR": {
+      "lat": 26.0742,
+      "lng": 78.1956,
+      "offices": 167,
+      "enrollments": 18542,
+      "updates": 0,
+      "child_enrollments": 12110,
+      "density": 111.03,
+      "anomaly_score": 0.334
+    },
+    "HARDA": {
+      "lat": 22.2708,
+      "lng": 77.0666,
+      "offices": 5,
+      "enrollments": 2134,
+      "updates": 0,
+      "child_enrollments": 1733,
+      "density": 426.8,
+      "anomaly_score": 1.0
+    },
+    "HOSHANGABAD": {
+      "lat": 22.6569,
+      "lng": 77.8593,
+      "offices": 24,
+      "enrollments": 5982,
+      "updates": 0,
+      "child_enrollments": 5158,
+      "density": 249.25,
+      "anomaly_score": 1.0
+    },
+    "INDORE": {
+      "lat": 22.8877,
+      "lng": 76.1922,
+      "offices": 153,
+      "enrollments": 22303,
+      "updates": 0,
+      "child_enrollments": 16685,
+      "density": 145.77,
+      "anomaly_score": 0.51
+    },
+    "JABALPUR": {
+      "lat": 23.1521,
+      "lng": 79.949,
+      "offices": 182,
+      "enrollments": 12467,
+      "updates": 0,
+      "child_enrollments": 10653,
+      "density": 68.5,
+      "anomaly_score": 0.118
+    },
+    "JHABUA": {
+      "lat": 22.8289,
+      "lng": 74.6811,
+      "offices": 47,
+      "enrollments": 13488,
+      "updates": 0,
+      "child_enrollments": 6586,
+      "density": 286.98,
+      "anomaly_score": 1.0
+    },
+    "KATNI": {
+      "lat": 23.716,
+      "lng": 80.3184,
+      "offices": 167,
+      "enrollments": 10941,
+      "updates": 0,
+      "child_enrollments": 8413,
+      "density": 65.51,
+      "anomaly_score": 0.103
+    },
+    "KHARGONE": {
+      "lat": 22.0496,
+      "lng": 75.7527,
+      "offices": 219,
+      "enrollments": 15039,
+      "updates": 0,
+      "child_enrollments": 9870,
+      "density": 68.67,
+      "anomaly_score": 0.119
+    },
+    "MANDLA": {
+      "lat": 23.8772,
+      "lng": 79.924,
+      "offices": 324,
+      "enrollments": 4911,
+      "updates": 0,
+      "child_enrollments": 4645,
+      "density": 15.16,
+      "anomaly_score": 0.153
+    },
+    "MANDSAUR": {
+      "lat": 24.0432,
+      "lng": 75.637,
+      "offices": 220,
+      "enrollments": 8276,
+      "updates": 0,
+      "child_enrollments": 7444,
+      "density": 37.62,
+      "anomaly_score": 0.039
+    },
+    "MORENA": {
+      "lat": 26.5003,
+      "lng": 77.9784,
+      "offices": 203,
+      "enrollments": 22381,
+      "updates": 0,
+      "child_enrollments": 14064,
+      "density": 110.25,
+      "anomaly_score": 0.33
+    },
+    "NARSINGHPUR": {
+      "lat": 22.9001,
+      "lng": 78.9567,
+      "offices": 16,
+      "enrollments": 5174,
+      "updates": 0,
+      "child_enrollments": 3860,
+      "density": 323.38,
+      "anomaly_score": 1.0
+    },
+    "NEEMUCH": {
+      "lat": 24.5472,
+      "lng": 75.0165,
+      "offices": 135,
+      "enrollments": 4964,
+      "updates": 0,
+      "child_enrollments": 4183,
+      "density": 36.77,
+      "anomaly_score": 0.043
+    },
+    "NIWARI": {
+      "lat": 25.2247,
+      "lng": 78.8311,
+      "offices": 51,
+      "enrollments": 142,
+      "updates": 0,
+      "child_enrollments": 117,
+      "density": 2.78,
+      "anomaly_score": 0.216
+    },
+    "PANNA": {
+      "lat": 24.4986,
+      "lng": 80.0276,
+      "offices": 150,
+      "enrollments": 9339,
+      "updates": 0,
+      "child_enrollments": 6807,
+      "density": 62.26,
+      "anomaly_score": 0.086
+    },
+    "RAISEN": {
+      "lat": 23.6338,
+      "lng": 78.5118,
+      "offices": 240,
+      "enrollments": 7567,
+      "updates": 0,
+      "child_enrollments": 6215,
+      "density": 31.53,
+      "anomaly_score": 0.07
+    },
+    "RAJGARH": {
+      "lat": 23.8612,
+      "lng": 77.1495,
+      "offices": 174,
+      "enrollments": 8171,
+      "updates": 0,
+      "child_enrollments": 6542,
+      "density": 46.96,
+      "anomaly_score": 0.009
+    },
+    "RATLAM": {
+      "lat": 23.4775,
+      "lng": 75.1357,
+      "offices": 186,
+      "enrollments": 7982,
+      "updates": 0,
+      "child_enrollments": 6427,
+      "density": 42.91,
+      "anomaly_score": 0.012
+    },
+    "REWA": {
+      "lat": 24.5442,
+      "lng": 81.288,
+      "offices": 333,
+      "enrollments": 10838,
+      "updates": 0,
+      "child_enrollments": 9346,
+      "density": 32.55,
+      "anomaly_score": 0.065
+    },
+    "SAGAR": {
+      "lat": 23.8291,
+      "lng": 78.7424,
+      "offices": 307,
+      "enrollments": 13841,
+      "updates": 0,
+      "child_enrollments": 11572,
+      "density": 45.08,
+      "anomaly_score": 0.001
+    },
+    "SATNA": {
+      "lat": 24.5457,
+      "lng": 81.2641,
+      "offices": 300,
+      "enrollments": 13276,
+      "updates": 0,
+      "child_enrollments": 11198,
+      "density": 44.25,
+      "anomaly_score": 0.005
+    },
+    "SEHORE": {
+      "lat": 23.3314,
+      "lng": 77.4074,
+      "offices": 176,
+      "enrollments": 6518,
+      "updates": 0,
+      "child_enrollments": 5155,
+      "density": 37.03,
+      "anomaly_score": 0.042
+    },
+    "SEONI": {
+      "lat": 22.5333,
+      "lng": 79.4722,
+      "offices": 16,
+      "enrollments": 6081,
+      "updates": 0,
+      "child_enrollments": 5558,
+      "density": 380.06,
+      "anomaly_score": 1.0
+    },
+    "SHAHDOL": {
+      "lat": 23.5597,
+      "lng": 81.3184,
+      "offices": 162,
+      "enrollments": 5297,
+      "updates": 0,
+      "child_enrollments": 4410,
+      "density": 32.7,
+      "anomaly_score": 0.064
+    },
+    "SHAJAPUR": {
+      "lat": 23.5804,
+      "lng": 77.1998,
+      "offices": 124,
+      "enrollments": 7025,
+      "updates": 0,
+      "child_enrollments": 5937,
+      "density": 56.65,
+      "anomaly_score": 0.058
+    },
+    "SHEOPUR": {
+      "lat": 25.8296,
+      "lng": 77.0215,
+      "offices": 85,
+      "enrollments": 7230,
+      "updates": 0,
+      "child_enrollments": 3765,
+      "density": 85.06,
+      "anomaly_score": 0.202
+    },
+    "SHIVPURI": {
+      "lat": 25.3357,
+      "lng": 77.8152,
+      "offices": 263,
+      "enrollments": 12741,
+      "updates": 0,
+      "child_enrollments": 7127,
+      "density": 48.44,
+      "anomaly_score": 0.016
+    },
+    "SIDHI": {
+      "lat": 24.2733,
+      "lng": 81.6871,
+      "offices": 93,
+      "enrollments": 6292,
+      "updates": 0,
+      "child_enrollments": 5606,
+      "density": 67.66,
+      "anomaly_score": 0.114
+    },
+    "SINGRAULI": {
+      "lat": 24.0115,
+      "lng": 82.3284,
+      "offices": 55,
+      "enrollments": 6550,
+      "updates": 0,
+      "child_enrollments": 5669,
+      "density": 119.09,
+      "anomaly_score": 0.375
+    },
+    "TIKAMGARH": {
+      "lat": 24.8495,
+      "lng": 78.9512,
+      "offices": 130,
+      "enrollments": 7242,
+      "updates": 0,
+      "child_enrollments": 5674,
+      "density": 55.71,
+      "anomaly_score": 0.053
+    },
+    "UJJAIN": {
+      "lat": 23.6321,
+      "lng": 76.0341,
+      "offices": 193,
+      "enrollments": 14308,
+      "updates": 0,
+      "child_enrollments": 12450,
+      "density": 74.13,
+      "anomaly_score": 0.147
+    },
+    "UMARIA": {
+      "lat": 23.5596,
+      "lng": 80.9418,
+      "offices": 102,
+      "enrollments": 5300,
+      "updates": 0,
+      "child_enrollments": 4360,
+      "density": 51.96,
+      "anomaly_score": 0.034
+    },
+    "VIDISHA": {
+      "lat": 23.9828,
+      "lng": 77.946,
+      "offices": 189,
+      "enrollments": 10374,
+      "updates": 0,
+      "child_enrollments": 7998,
+      "density": 54.89,
+      "anomaly_score": 0.049
+    }
+  },
+  "MAHARASHTRA": {
+    "AHMEDNAGAR": {
+      "lat": 19.2711,
+      "lng": 74.6314,
+      "offices": 662,
+      "enrollments": 368,
+      "updates": 0,
+      "child_enrollments": 182,
+      "density": 0.56,
+      "anomaly_score": 0.227
+    },
+    "AKOLA": {
+      "lat": 20.7634,
+      "lng": 77.0518,
+      "offices": 241,
+      "enrollments": 4708,
+      "updates": 0,
+      "child_enrollments": 3966,
+      "density": 19.54,
+      "anomaly_score": 0.131
+    },
+    "AMRAVATI": {
+      "lat": 21.1533,
+      "lng": 77.6351,
+      "offices": 450,
+      "enrollments": 6915,
+      "updates": 0,
+      "child_enrollments": 5783,
+      "density": 15.37,
+      "anomaly_score": 0.152
+    },
+    "AURANGABAD": {
+      "lat": 19.9661,
+      "lng": 75.3585,
+      "offices": 326,
+      "enrollments": 17393,
+      "updates": 0,
+      "child_enrollments": 12374,
+      "density": 53.35,
+      "anomaly_score": 0.041
+    },
+    "BEED": {
+      "lat": 18.943,
+      "lng": 75.832,
+      "offices": 341,
+      "enrollments": 10185,
+      "updates": 0,
+      "child_enrollments": 7454,
+      "density": 29.87,
+      "anomaly_score": 0.078
+    },
+    "BHANDARA": {
+      "lat": 21.1714,
+      "lng": 79.6654,
+      "offices": 138,
+      "enrollments": 1903,
+      "updates": 0,
+      "child_enrollments": 1842,
+      "density": 13.79,
+      "anomaly_score": 0.16
+    },
+    "BULDHANA": {
+      "lat": 20.4808,
+      "lng": 76.3898,
+      "offices": 361,
+      "enrollments": 7084,
+      "updates": 0,
+      "child_enrollments": 5849,
+      "density": 19.62,
+      "anomaly_score": 0.13
+    },
+    "CHANDRAPUR": {
+      "lat": 20.101,
+      "lng": 79.3131,
+      "offices": 541,
+      "enrollments": 4475,
+      "updates": 0,
+      "child_enrollments": 4014,
+      "density": 8.27,
+      "anomaly_score": 0.188
+    },
+    "DHULE": {
+      "lat": 21.0953,
+      "lng": 74.6298,
+      "offices": 273,
+      "enrollments": 12605,
+      "updates": 0,
+      "child_enrollments": 7244,
+      "density": 46.17,
+      "anomaly_score": 0.005
+    },
+    "GADCHIROLI": {
+      "lat": 19.8722,
+      "lng": 79.7944,
+      "offices": 446,
+      "enrollments": 2374,
+      "updates": 0,
+      "child_enrollments": 2084,
+      "density": 5.32,
+      "anomaly_score": 0.203
+    },
+    "GONDIA": {
+      "lat": 21.237,
+      "lng": 79.8551,
+      "offices": 487,
+      "enrollments": 29,
+      "updates": 0,
+      "child_enrollments": 25,
+      "density": 0.06,
+      "anomaly_score": 0.229
+    },
+    "HINGOLI": {
+      "lat": 19.6356,
+      "lng": 77.1109,
+      "offices": 149,
+      "enrollments": 8189,
+      "updates": 0,
+      "child_enrollments": 6359,
+      "density": 54.96,
+      "anomaly_score": 0.049
+    },
+    "JALGAON": {
+      "lat": 20.8443,
+      "lng": 75.3078,
+      "offices": 352,
+      "enrollments": 13260,
+      "updates": 0,
+      "child_enrollments": 10454,
+      "density": 37.67,
+      "anomaly_score": 0.039
+    },
+    "JALNA": {
+      "lat": 19.8644,
+      "lng": 75.9514,
+      "offices": 188,
+      "enrollments": 5590,
+      "updates": 0,
+      "child_enrollments": 4627,
+      "density": 29.73,
+      "anomaly_score": 0.079
+    },
+    "KOLHAPUR": {
+      "lat": 16.5627,
+      "lng": 74.2722,
+      "offices": 102,
+      "enrollments": 7480,
+      "updates": 0,
+      "child_enrollments": 6423,
+      "density": 73.33,
+      "anomaly_score": 0.143
+    },
+    "LATUR": {
+      "lat": 18.3404,
+      "lng": 76.539,
+      "offices": 288,
+      "enrollments": 7607,
+      "updates": 0,
+      "child_enrollments": 5828,
+      "density": 26.41,
+      "anomaly_score": 0.096
+    },
+    "MUMBAI": {
+      "lat": 18.973,
+      "lng": 72.8369,
+      "offices": 110,
+      "enrollments": 14552,
+      "updates": 0,
+      "child_enrollments": 10594,
+      "density": 132.29,
+      "anomaly_score": 0.442
+    },
+    "MUMBAI SUBURBAN": {
+      "lat": 19.1246,
+      "lng": 72.8767,
+      "offices": 118,
+      "enrollments": 18216,
+      "updates": 0,
+      "child_enrollments": 12480,
+      "density": 154.37,
+      "anomaly_score": 0.554
+    },
+    "NAGPUR": {
+      "lat": 21.1454,
+      "lng": 78.9339,
+      "offices": 349,
+      "enrollments": 11828,
+      "updates": 0,
+      "child_enrollments": 10093,
+      "density": 33.89,
+      "anomaly_score": 0.058
+    },
+    "NANDED": {
+      "lat": 19.1124,
+      "lng": 77.6174,
+      "offices": 487,
+      "enrollments": 11947,
+      "updates": 0,
+      "child_enrollments": 9164,
+      "density": 24.53,
+      "anomaly_score": 0.105
+    },
+    "NANDURBAR": {
+      "lat": 21.5181,
+      "lng": 74.2068,
+      "offices": 235,
+      "enrollments": 10516,
+      "updates": 0,
+      "child_enrollments": 7649,
+      "density": 44.75,
+      "anomaly_score": 0.003
+    },
+    "NASHIK": {
+      "lat": 20.2224,
+      "lng": 74.0633,
+      "offices": 683,
+      "enrollments": 22368,
+      "updates": 0,
+      "child_enrollments": 16262,
+      "density": 32.75,
+      "anomaly_score": 0.064
+    },
+    "OSMANABAD": {
+      "lat": 18.1871,
+      "lng": 76.0475,
+      "offices": 286,
+      "enrollments": 4026,
+      "updates": 0,
+      "child_enrollments": 3303,
+      "density": 14.08,
+      "anomaly_score": 0.158
+    },
+    "PALGHAR": {
+      "lat": 19.736,
+      "lng": 72.9981,
+      "offices": 243,
+      "enrollments": 10699,
+      "updates": 0,
+      "child_enrollments": 7343,
+      "density": 44.03,
+      "anomaly_score": 0.006
+    },
+    "PARBHANI": {
+      "lat": 19.2539,
+      "lng": 76.6697,
+      "offices": 195,
+      "enrollments": 6272,
+      "updates": 0,
+      "child_enrollments": 5062,
+      "density": 32.16,
+      "anomaly_score": 0.066
+    },
+    "PUNE": {
+      "lat": 18.5639,
+      "lng": 74.0436,
+      "offices": 778,
+      "enrollments": 31763,
+      "updates": 0,
+      "child_enrollments": 24088,
+      "density": 40.83,
+      "anomaly_score": 0.022
+    },
+    "RAIGAD": {
+      "lat": 18.4795,
+      "lng": 73.2114,
+      "offices": 447,
+      "enrollments": 3433,
+      "updates": 0,
+      "child_enrollments": 2585,
+      "density": 7.68,
+      "anomaly_score": 0.191
+    },
+    "RATNAGIRI": {
+      "lat": 17.2783,
+      "lng": 73.4493,
+      "offices": 657,
+      "enrollments": 2603,
+      "updates": 0,
+      "child_enrollments": 2352,
+      "density": 3.96,
+      "anomaly_score": 0.21
+    },
+    "SANGLI": {
+      "lat": 17.1297,
+      "lng": 74.572,
+      "offices": 397,
+      "enrollments": 7632,
+      "updates": 0,
+      "child_enrollments": 5697,
+      "density": 19.22,
+      "anomaly_score": 0.132
+    },
+    "SATARA": {
+      "lat": 17.655,
+      "lng": 74.1294,
+      "offices": 673,
+      "enrollments": 6021,
+      "updates": 0,
+      "child_enrollments": 5148,
+      "density": 8.95,
+      "anomaly_score": 0.184
+    },
+    "SINDHUDURG": {
+      "lat": 16.1375,
+      "lng": 73.6806,
+      "offices": 352,
+      "enrollments": 1202,
+      "updates": 0,
+      "child_enrollments": 1121,
+      "density": 3.41,
+      "anomaly_score": 0.212
+    },
+    "SOLAPUR": {
+      "lat": 17.8358,
+      "lng": 75.5107,
+      "offices": 523,
+      "enrollments": 12292,
+      "updates": 0,
+      "child_enrollments": 9537,
+      "density": 23.5,
+      "anomaly_score": 0.11
+    },
+    "THANE": {
+      "lat": 19.302,
+      "lng": 73.2784,
+      "offices": 217,
+      "enrollments": 43688,
+      "updates": 0,
+      "child_enrollments": 29092,
+      "density": 201.33,
+      "anomaly_score": 0.793
+    },
+    "WARDHA": {
+      "lat": 20.789,
+      "lng": 78.512,
+      "offices": 197,
+      "enrollments": 1953,
+      "updates": 0,
+      "child_enrollments": 1859,
+      "density": 9.91,
+      "anomaly_score": 0.179
+    },
+    "WASHIM": {
+      "lat": 20.2285,
+      "lng": 77.1886,
+      "offices": 172,
+      "enrollments": 3386,
+      "updates": 0,
+      "child_enrollments": 3041,
+      "density": 19.69,
+      "anomaly_score": 0.13
+    },
+    "YAVATMAL": {
+      "lat": 20.1376,
+      "lng": 78.0749,
+      "offices": 404,
+      "enrollments": 7594,
+      "updates": 0,
+      "child_enrollments": 6054,
+      "density": 18.8,
+      "anomaly_score": 0.134
+    }
+  },
+  "MANIPUR": {
+    "BISHNUPUR": {
+      "lat": 24.5357,
+      "lng": 93.7639,
+      "offices": 36,
+      "enrollments": 1117,
+      "updates": 0,
+      "child_enrollments": 516,
+      "density": 31.03,
+      "anomaly_score": 0.072
+    },
+    "CHANDEL": {
+      "lat": 24.2556,
+      "lng": 94.0033,
+      "offices": 72,
+      "enrollments": 759,
+      "updates": 0,
+      "child_enrollments": 244,
+      "density": 10.54,
+      "anomaly_score": 0.176
+    },
+    "CHURACHANDPUR": {
+      "lat": 24.3764,
+      "lng": 93.6012,
+      "offices": 78,
+      "enrollments": 4638,
+      "updates": 0,
+      "child_enrollments": 1256,
+      "density": 59.46,
+      "anomaly_score": 0.072
+    },
+    "IMPHAL EAST": {
+      "lat": 24.7938,
+      "lng": 94.056,
+      "offices": 82,
+      "enrollments": 1132,
+      "updates": 0,
+      "child_enrollments": 559,
+      "density": 13.8,
+      "anomaly_score": 0.16
+    },
+    "IMPHAL WEST": {
+      "lat": 24.7724,
+      "lng": 93.8774,
+      "offices": 75,
+      "enrollments": 1236,
+      "updates": 0,
+      "child_enrollments": 645,
+      "density": 16.48,
+      "anomaly_score": 0.146
+    },
+    "JIRIBAM": {
+      "lat": 24.6837,
+      "lng": 93.3179,
+      "offices": 25,
+      "enrollments": 145,
+      "updates": 0,
+      "child_enrollments": 53,
+      "density": 5.8,
+      "anomaly_score": 0.2
+    },
+    "KAKCHING": {
+      "lat": 24.5044,
+      "lng": 93.88,
+      "offices": 40,
+      "enrollments": 109,
+      "updates": 0,
+      "child_enrollments": 39,
+      "density": 2.73,
+      "anomaly_score": 0.216
+    },
+    "PHERZAWL": {
+      "lat": 24.3987,
+      "lng": 93.3901,
+      "offices": 27,
+      "enrollments": 11,
+      "updates": 0,
+      "child_enrollments": 1,
+      "density": 0.41,
+      "anomaly_score": 0.228
+    },
+    "SENAPATI": {
+      "lat": 25.4102,
+      "lng": 94.1855,
+      "offices": 36,
+      "enrollments": 1501,
+      "updates": 0,
+      "child_enrollments": 764,
+      "density": 41.69,
+      "anomaly_score": 0.018
+    },
+    "TAMENGLONG": {
+      "lat": 25.0147,
+      "lng": 93.5588,
+      "offices": 39,
+      "enrollments": 960,
+      "updates": 0,
+      "child_enrollments": 297,
+      "density": 24.62,
+      "anomaly_score": 0.105
+    },
+    "THOUBAL": {
+      "lat": 24.6087,
+      "lng": 94.0037,
+      "offices": 50,
+      "enrollments": 1067,
+      "updates": 0,
+      "child_enrollments": 423,
+      "density": 21.34,
+      "anomaly_score": 0.121
+    },
+    "UKHRUL": {
+      "lat": 25.1961,
+      "lng": 94.4159,
+      "offices": 43,
+      "enrollments": 781,
+      "updates": 0,
+      "child_enrollments": 343,
+      "density": 18.16,
+      "anomaly_score": 0.138
+    }
+  },
+  "MEGHALAYA": {
+    "EAST GARO HILLS": {
+      "lat": 25.6199,
+      "lng": 90.6117,
+      "offices": 56,
+      "enrollments": 6052,
+      "updates": 0,
+      "child_enrollments": 1012,
+      "density": 108.07,
+      "anomaly_score": 0.319
+    },
+    "EAST JAINTIA HILLS": {
+      "lat": 25.2889,
+      "lng": 92.4032,
+      "offices": 32,
+      "enrollments": 5133,
+      "updates": 0,
+      "child_enrollments": 983,
+      "density": 160.41,
+      "anomaly_score": 0.585
+    },
+    "EAST KHASI HILLS": {
+      "lat": 25.4814,
+      "lng": 91.6978,
+      "offices": 61,
+      "enrollments": 28812,
+      "updates": 0,
+      "child_enrollments": 4258,
+      "density": 472.33,
+      "anomaly_score": 1.0
+    },
+    "NORTH GARO HILLS": {
+      "lat": 25.8258,
+      "lng": 90.6792,
+      "offices": 23,
+      "enrollments": 3069,
+      "updates": 0,
+      "child_enrollments": 457,
+      "density": 133.43,
+      "anomaly_score": 0.448
+    },
+    "RI BHOI": {
+      "lat": 25.8914,
+      "lng": 92.0019,
+      "offices": 49,
+      "enrollments": 9308,
+      "updates": 0,
+      "child_enrollments": 1338,
+      "density": 189.96,
+      "anomaly_score": 0.735
+    },
+    "SOUTH GARO HILLS": {
+      "lat": 25.3165,
+      "lng": 90.6894,
+      "offices": 80,
+      "enrollments": 4441,
+      "updates": 0,
+      "child_enrollments": 568,
+      "density": 55.51,
+      "anomaly_score": 0.052
+    },
+    "SOUTH WEST GARO HILLS": {
+      "lat": 25.4387,
+      "lng": 90.0777,
+      "offices": 19,
+      "enrollments": 4956,
+      "updates": 0,
+      "child_enrollments": 2417,
+      "density": 260.84,
+      "anomaly_score": 1.0
+    },
+    "SOUTH WEST KHASI HILLS": {
+      "lat": 25.4494,
+      "lng": 91.4613,
+      "offices": 7,
+      "enrollments": 3446,
+      "updates": 0,
+      "child_enrollments": 789,
+      "density": 492.29,
+      "anomaly_score": 1.0
+    },
+    "WEST GARO HILLS": {
+      "lat": 25.644,
+      "lng": 90.3892,
+      "offices": 114,
+      "enrollments": 15875,
+      "updates": 0,
+      "child_enrollments": 4545,
+      "density": 139.25,
+      "anomaly_score": 0.477
+    },
+    "WEST JAINTIA HILLS": {
+      "lat": 25.5562,
+      "lng": 91.5911,
+      "offices": 64,
+      "enrollments": 11816,
+      "updates": 0,
+      "child_enrollments": 2382,
+      "density": 184.62,
+      "anomaly_score": 0.708
+    },
+    "WEST KHASI HILLS": {
+      "lat": 25.6105,
+      "lng": 91.0247,
+      "offices": 46,
+      "enrollments": 15898,
+      "updates": 0,
+      "child_enrollments": 2410,
+      "density": 345.61,
+      "anomaly_score": 1.0
+    }
+  },
+  "MIZORAM": {
+    "AIZAWL": {
+      "lat": 23.5313,
+      "lng": 92.7081,
+      "offices": 128,
+      "enrollments": 1059,
+      "updates": 0,
+      "child_enrollments": 762,
+      "density": 8.27,
+      "anomaly_score": 0.188
+    },
+    "CHAMPHAI": {
+      "lat": 23.41,
+      "lng": 93.3105,
+      "offices": 36,
+      "enrollments": 1165,
+      "updates": 0,
+      "child_enrollments": 805,
+      "density": 32.36,
+      "anomaly_score": 0.065
+    },
+    "HNAHTHIAL": {
+      "lat": 23.0437,
+      "lng": 92.9833,
+      "offices": 14,
+      "enrollments": 2,
+      "updates": 0,
+      "child_enrollments": 2,
+      "density": 0.14,
+      "anomaly_score": 0.229
+    },
+    "KHAWZAWL": {
+      "lat": 23.4655,
+      "lng": 93.1454,
+      "offices": 19,
+      "enrollments": 36,
+      "updates": 0,
+      "child_enrollments": 5,
+      "density": 1.89,
+      "anomaly_score": 0.22
+    },
+    "KOLASIB": {
+      "lat": 24.1418,
+      "lng": 92.7138,
+      "offices": 28,
+      "enrollments": 275,
+      "updates": 0,
+      "child_enrollments": 189,
+      "density": 9.82,
+      "anomaly_score": 0.18
+    },
+    "LAWNGTLAI": {
+      "lat": 22.4836,
+      "lng": 92.8669,
+      "offices": 26,
+      "enrollments": 1642,
+      "updates": 0,
+      "child_enrollments": 1164,
+      "density": 63.15,
+      "anomaly_score": 0.091
+    },
+    "LUNGLEI": {
+      "lat": 23.04,
+      "lng": 92.6095,
+      "offices": 20,
+      "enrollments": 726,
+      "updates": 0,
+      "child_enrollments": 541,
+      "density": 36.3,
+      "anomaly_score": 0.045
+    },
+    "MAMIT": {
+      "lat": 23.6426,
+      "lng": 92.5131,
+      "offices": 25,
+      "enrollments": 171,
+      "updates": 0,
+      "child_enrollments": 141,
+      "density": 6.84,
+      "anomaly_score": 0.195
+    },
+    "SAIHA": {
+      "lat": 22.3609,
+      "lng": 93.0119,
+      "offices": 22,
+      "enrollments": 657,
+      "updates": 0,
+      "child_enrollments": 374,
+      "density": 29.86,
+      "anomaly_score": 0.078
+    },
+    "SAITUAL": {
+      "lat": 23.8255,
+      "lng": 93.0539,
+      "offices": 29,
+      "enrollments": 12,
+      "updates": 0,
+      "child_enrollments": 2,
+      "density": 0.41,
+      "anomaly_score": 0.228
+    },
+    "SERCHHIP": {
+      "lat": 23.3193,
+      "lng": 92.9378,
+      "offices": 34,
+      "enrollments": 102,
+      "updates": 0,
+      "child_enrollments": 80,
+      "density": 3.0,
+      "anomaly_score": 0.215
+    }
+  },
+  "NAGALAND": {
+    "DIMAPUR": {
+      "lat": 25.8362,
+      "lng": 93.7849,
+      "offices": 46,
+      "enrollments": 3196,
+      "updates": 0,
+      "child_enrollments": 1118,
+      "density": 69.48,
+      "anomaly_score": 0.123
+    },
+    "KIPHIRE": {
+      "lat": 25.8795,
+      "lng": 94.8116,
+      "offices": 21,
+      "enrollments": 908,
+      "updates": 0,
+      "child_enrollments": 163,
+      "density": 43.24,
+      "anomaly_score": 0.01
+    },
+    "KOHIMA": {
+      "lat": 25.4936,
+      "lng": 93.8224,
+      "offices": 50,
+      "enrollments": 1621,
+      "updates": 0,
+      "child_enrollments": 562,
+      "density": 32.42,
+      "anomaly_score": 0.065
+    },
+    "LONGLENG": {
+      "lat": 26.502,
+      "lng": 94.8032,
+      "offices": 11,
+      "enrollments": 889,
+      "updates": 0,
+      "child_enrollments": 205,
+      "density": 80.82,
+      "anomaly_score": 0.181
+    },
+    "MOKOKCHUNG": {
+      "lat": 26.451,
+      "lng": 94.5372,
+      "offices": 53,
+      "enrollments": 490,
+      "updates": 0,
+      "child_enrollments": 132,
+      "density": 9.25,
+      "anomaly_score": 0.183
+    },
+    "MON": {
+      "lat": 26.6421,
+      "lng": 94.9963,
+      "offices": 32,
+      "enrollments": 2223,
+      "updates": 0,
+      "child_enrollments": 618,
+      "density": 69.47,
+      "anomaly_score": 0.123
+    },
+    "NOKLAK": {
+      "lat": 26.1743,
+      "lng": 94.9591,
+      "offices": 9,
+      "enrollments": 354,
+      "updates": 0,
+      "child_enrollments": 70,
+      "density": 39.33,
+      "anomaly_score": 0.03
+    },
+    "PEREN": {
+      "lat": 25.5572,
+      "lng": 93.6967,
+      "offices": 25,
+      "enrollments": 1454,
+      "updates": 0,
+      "child_enrollments": 511,
+      "density": 58.16,
+      "anomaly_score": 0.066
+    },
+    "PHEK": {
+      "lat": 25.6437,
+      "lng": 94.4217,
+      "offices": 39,
+      "enrollments": 1043,
+      "updates": 0,
+      "child_enrollments": 309,
+      "density": 26.74,
+      "anomaly_score": 0.094
+    },
+    "TUENSANG": {
+      "lat": 26.1716,
+      "lng": 94.4279,
+      "offices": 41,
+      "enrollments": 1579,
+      "updates": 0,
+      "child_enrollments": 512,
+      "density": 38.51,
+      "anomaly_score": 0.034
+    },
+    "WOKHA": {
+      "lat": 26.1309,
+      "lng": 94.2119,
+      "offices": 29,
+      "enrollments": 558,
+      "updates": 0,
+      "child_enrollments": 118,
+      "density": 19.24,
+      "anomaly_score": 0.132
+    },
+    "ZUNHEBOTO": {
+      "lat": 25.9943,
+      "lng": 94.5005,
+      "offices": 42,
+      "enrollments": 761,
+      "updates": 0,
+      "child_enrollments": 131,
+      "density": 18.12,
+      "anomaly_score": 0.138
+    }
+  },
+  "ODISHA": {
+    "ANUGUL": {
+      "lat": 20.9711,
+      "lng": 84.9725,
+      "offices": 262,
+      "enrollments": 156,
+      "updates": 0,
+      "child_enrollments": 129,
+      "density": 0.6,
+      "anomaly_score": 0.227
+    },
+    "BALANGIR": {
+      "lat": 20.5891,
+      "lng": 83.2281,
+      "offices": 316,
+      "enrollments": 5234,
+      "updates": 0,
+      "child_enrollments": 4254,
+      "density": 16.56,
+      "anomaly_score": 0.146
+    },
+    "BALESHWAR": {
+      "lat": 21.5014,
+      "lng": 86.9828,
+      "offices": 499,
+      "enrollments": 845,
+      "updates": 0,
+      "child_enrollments": 641,
+      "density": 1.69,
+      "anomaly_score": 0.221
+    },
+    "BARGARH": {
+      "lat": 21.3008,
+      "lng": 83.4422,
+      "offices": 252,
+      "enrollments": 5150,
+      "updates": 0,
+      "child_enrollments": 4329,
+      "density": 20.44,
+      "anomaly_score": 0.126
+    },
+    "BHADRAK": {
+      "lat": 20.9854,
+      "lng": 86.5894,
+      "offices": 305,
+      "enrollments": 4520,
+      "updates": 0,
+      "child_enrollments": 3369,
+      "density": 14.82,
+      "anomaly_score": 0.155
+    },
+    "BOUDH": {
+      "lat": 20.7688,
+      "lng": 84.2611,
+      "offices": 47,
+      "enrollments": 1424,
+      "updates": 0,
+      "child_enrollments": 1177,
+      "density": 30.3,
+      "anomaly_score": 0.076
+    },
+    "CUTTACK": {
+      "lat": 20.4681,
+      "lng": 85.7895,
+      "offices": 394,
+      "enrollments": 5080,
+      "updates": 0,
+      "child_enrollments": 4040,
+      "density": 12.89,
+      "anomaly_score": 0.164
+    },
+    "DHENKANAL": {
+      "lat": 20.8132,
+      "lng": 85.5261,
+      "offices": 245,
+      "enrollments": 2891,
+      "updates": 0,
+      "child_enrollments": 2358,
+      "density": 11.8,
+      "anomaly_score": 0.17
+    },
+    "GAJAPATI": {
+      "lat": 19.0569,
+      "lng": 84.1695,
+      "offices": 147,
+      "enrollments": 1994,
+      "updates": 0,
+      "child_enrollments": 1658,
+      "density": 13.56,
+      "anomaly_score": 0.161
+    },
+    "GANJAM": {
+      "lat": 19.5513,
+      "lng": 84.7107,
+      "offices": 703,
+      "enrollments": 7714,
+      "updates": 0,
+      "child_enrollments": 6709,
+      "density": 10.97,
+      "anomaly_score": 0.174
+    },
+    "JAGATSINGHAPUR": {
+      "lat": 20.3875,
+      "lng": 86.16,
+      "offices": 208,
+      "enrollments": 3149,
+      "updates": 0,
+      "child_enrollments": 2821,
+      "density": 15.14,
+      "anomaly_score": 0.153
+    },
+    "JAJAPUR": {
+      "lat": 20.8293,
+      "lng": 86.2457,
+      "offices": 299,
+      "enrollments": 2497,
+      "updates": 0,
+      "child_enrollments": 2014,
+      "density": 8.35,
+      "anomaly_score": 0.187
+    },
+    "JHARSUGUDA": {
+      "lat": 21.8279,
+      "lng": 83.9777,
+      "offices": 92,
+      "enrollments": 1157,
+      "updates": 0,
+      "child_enrollments": 1071,
+      "density": 12.58,
+      "anomaly_score": 0.166
+    },
+    "KALAHANDI": {
+      "lat": 19.8789,
+      "lng": 83.0457,
+      "offices": 268,
+      "enrollments": 4485,
+      "updates": 0,
+      "child_enrollments": 3350,
+      "density": 16.74,
+      "anomaly_score": 0.145
+    },
+    "KANDHAMAL": {
+      "lat": 20.1422,
+      "lng": 84.0991,
+      "offices": 240,
+      "enrollments": 3049,
+      "updates": 0,
+      "child_enrollments": 2603,
+      "density": 12.7,
+      "anomaly_score": 0.165
+    },
+    "KENDRAPARA": {
+      "lat": 20.5501,
+      "lng": 86.434,
+      "offices": 277,
+      "enrollments": 3962,
+      "updates": 0,
+      "child_enrollments": 3161,
+      "density": 14.3,
+      "anomaly_score": 0.157
+    },
+    "KENDUJHAR": {
+      "lat": 21.539,
+      "lng": 85.7694,
+      "offices": 443,
+      "enrollments": 5377,
+      "updates": 0,
+      "child_enrollments": 4330,
+      "density": 12.14,
+      "anomaly_score": 0.168
+    },
+    "KHORDHA": {
+      "lat": 20.1395,
+      "lng": 85.6057,
+      "offices": 321,
+      "enrollments": 496,
+      "updates": 0,
+      "child_enrollments": 385,
+      "density": 1.55,
+      "anomaly_score": 0.222
+    },
+    "KORAPUT": {
+      "lat": 18.8562,
+      "lng": 82.727,
+      "offices": 268,
+      "enrollments": 4383,
+      "updates": 0,
+      "child_enrollments": 3172,
+      "density": 16.35,
+      "anomaly_score": 0.147
+    },
+    "MALKANGIRI": {
+      "lat": 18.4513,
+      "lng": 82.2676,
+      "offices": 85,
+      "enrollments": 2823,
+      "updates": 0,
+      "child_enrollments": 2333,
+      "density": 33.21,
+      "anomaly_score": 0.061
+    },
+    "MAYURBHANJ": {
+      "lat": 21.8367,
+      "lng": 86.6573,
+      "offices": 496,
+      "enrollments": 8122,
+      "updates": 0,
+      "child_enrollments": 6227,
+      "density": 16.38,
+      "anomaly_score": 0.147
+    },
+    "NABARANGPUR": {
+      "lat": 19.4882,
+      "lng": 82.4048,
+      "offices": 195,
+      "enrollments": 442,
+      "updates": 0,
+      "child_enrollments": 327,
+      "density": 2.27,
+      "anomaly_score": 0.218
+    },
+    "NAYAGARH": {
+      "lat": 20.1311,
+      "lng": 85.1721,
+      "offices": 131,
+      "enrollments": 2362,
+      "updates": 0,
+      "child_enrollments": 2080,
+      "density": 18.03,
+      "anomaly_score": 0.138
+    },
+    "NUAPADA": {
+      "lat": 20.459,
+      "lng": 82.6534,
+      "offices": 132,
+      "enrollments": 2120,
+      "updates": 0,
+      "child_enrollments": 1701,
+      "density": 16.06,
+      "anomaly_score": 0.148
+    },
+    "PURI": {
+      "lat": 19.95,
+      "lng": 85.8479,
+      "offices": 294,
+      "enrollments": 3511,
+      "updates": 0,
+      "child_enrollments": 2959,
+      "density": 11.94,
+      "anomaly_score": 0.169
+    },
+    "RAYAGADA": {
+      "lat": 19.2597,
+      "lng": 83.4937,
+      "offices": 177,
+      "enrollments": 3045,
+      "updates": 0,
+      "child_enrollments": 2370,
+      "density": 17.2,
+      "anomaly_score": 0.142
+    },
+    "SAMBALPUR": {
+      "lat": 21.5614,
+      "lng": 84.2192,
+      "offices": 215,
+      "enrollments": 2552,
+      "updates": 0,
+      "child_enrollments": 2234,
+      "density": 11.87,
+      "anomaly_score": 0.17
+    },
+    "SUNDARGARH": {
+      "lat": 22.13,
+      "lng": 84.4575,
+      "offices": 407,
+      "enrollments": 591,
+      "updates": 0,
+      "child_enrollments": 486,
+      "density": 1.45,
+      "anomaly_score": 0.222
+    }
+  },
+  "PUDUCHERRY": {
+    "KARAIKAL": {
+      "lat": 10.939,
+      "lng": 79.7534,
+      "offices": 27,
+      "enrollments": 405,
+      "updates": 0,
+      "child_enrollments": 363,
+      "density": 15.0,
+      "anomaly_score": 0.154
+    },
+    "PONDICHERRY": {
+      "lat": 11.9185,
+      "lng": 79.741,
+      "offices": 62,
+      "enrollments": 3,
+      "updates": 0,
+      "child_enrollments": 3,
+      "density": 0.05,
+      "anomaly_score": 0.23
+    },
+    "YANAM": {
+      "lat": 17.3213,
+      "lng": 82.0407,
+      "offices": 1,
+      "enrollments": 7,
+      "updates": 0,
+      "child_enrollments": 6,
+      "density": 7.0,
+      "anomaly_score": 0.194
+    }
+  },
+  "PUNJAB": {
+    "AMRITSAR": {
+      "lat": 31.6679,
+      "lng": 74.9405,
+      "offices": 295,
+      "enrollments": 9655,
+      "updates": 0,
+      "child_enrollments": 7633,
+      "density": 32.73,
+      "anomaly_score": 0.064
+    },
+    "BARNALA": {
+      "lat": 29.8159,
+      "lng": 75.6792,
+      "offices": 69,
+      "enrollments": 1013,
+      "updates": 0,
+      "child_enrollments": 926,
+      "density": 14.68,
+      "anomaly_score": 0.155
+    },
+    "BATHINDA": {
+      "lat": 30.096,
+      "lng": 75.0937,
+      "offices": 156,
+      "enrollments": 2704,
+      "updates": 0,
+      "child_enrollments": 2388,
+      "density": 17.33,
+      "anomaly_score": 0.142
+    },
+    "FARIDKOT": {
+      "lat": 30.5636,
+      "lng": 74.8477,
+      "offices": 65,
+      "enrollments": 902,
+      "updates": 0,
+      "child_enrollments": 793,
+      "density": 13.88,
+      "anomaly_score": 0.159
+    },
+    "FATEHGARH SAHIB": {
+      "lat": 30.496,
+      "lng": 76.336,
+      "offices": 87,
+      "enrollments": 1048,
+      "updates": 0,
+      "child_enrollments": 891,
+      "density": 12.05,
+      "anomaly_score": 0.169
+    },
+    "FAZILKA": {
+      "lat": 30.4627,
+      "lng": 74.2754,
+      "offices": 144,
+      "enrollments": 1911,
+      "updates": 0,
+      "child_enrollments": 1630,
+      "density": 13.27,
+      "anomaly_score": 0.162
+    },
+    "GURDASPUR": {
+      "lat": 31.887,
+      "lng": 75.2795,
+      "offices": 206,
+      "enrollments": 5120,
+      "updates": 0,
+      "child_enrollments": 4436,
+      "density": 24.85,
+      "anomaly_score": 0.104
+    },
+    "HOSHIARPUR": {
+      "lat": 31.3586,
+      "lng": 75.5674,
+      "offices": 355,
+      "enrollments": 4134,
+      "updates": 0,
+      "child_enrollments": 3515,
+      "density": 11.65,
+      "anomaly_score": 0.171
+    },
+    "JALANDHAR": {
+      "lat": 31.2953,
+      "lng": 75.5957,
+      "offices": 348,
+      "enrollments": 4118,
+      "updates": 0,
+      "child_enrollments": 3314,
+      "density": 11.83,
+      "anomaly_score": 0.17
+    },
+    "KAPURTHALA": {
+      "lat": 31.3668,
+      "lng": 75.5327,
+      "offices": 125,
+      "enrollments": 3726,
+      "updates": 0,
+      "child_enrollments": 2067,
+      "density": 29.81,
+      "anomaly_score": 0.078
+    },
+    "LUDHIANA": {
+      "lat": 30.223,
+      "lng": 76.2179,
+      "offices": 364,
+      "enrollments": 17614,
+      "updates": 0,
+      "child_enrollments": 12209,
+      "density": 48.39,
+      "anomaly_score": 0.016
+    },
+    "MALERKOTLA": {
+      "lat": 28.6401,
+      "lng": 76.2326,
+      "offices": 40,
+      "enrollments": 865,
+      "updates": 0,
+      "child_enrollments": 711,
+      "density": 21.62,
+      "anomaly_score": 0.12
+    },
+    "MANSA": {
+      "lat": 29.9681,
+      "lng": 75.3724,
+      "offices": 97,
+      "enrollments": 1124,
+      "updates": 0,
+      "child_enrollments": 998,
+      "density": 11.59,
+      "anomaly_score": 0.171
+    },
+    "MOGA": {
+      "lat": 30.7718,
+      "lng": 75.132,
+      "offices": 172,
+      "enrollments": 1535,
+      "updates": 0,
+      "child_enrollments": 1335,
+      "density": 8.92,
+      "anomaly_score": 0.185
+    },
+    "PATHANKOT": {
+      "lat": 32.2533,
+      "lng": 75.5523,
+      "offices": 71,
+      "enrollments": 1115,
+      "updates": 0,
+      "child_enrollments": 1033,
+      "density": 15.7,
+      "anomaly_score": 0.15
+    },
+    "PATIALA": {
+      "lat": 30.2187,
+      "lng": 76.4822,
+      "offices": 181,
+      "enrollments": 5150,
+      "updates": 0,
+      "child_enrollments": 4298,
+      "density": 28.45,
+      "anomaly_score": 0.085
+    },
+    "RUPNAGAR": {
+      "lat": 30.8947,
+      "lng": 76.4471,
+      "offices": 108,
+      "enrollments": 1246,
+      "updates": 0,
+      "child_enrollments": 1140,
+      "density": 11.54,
+      "anomaly_score": 0.171
+    },
+    "S.A.S NAGAR": {
+      "lat": 30.7901,
+      "lng": 76.4938,
+      "offices": 103,
+      "enrollments": 705,
+      "updates": 0,
+      "child_enrollments": 493,
+      "density": 6.84,
+      "anomaly_score": 0.195
+    },
+    "SANGRUR": {
+      "lat": 29.5583,
+      "lng": 76.3616,
+      "offices": 126,
+      "enrollments": 2329,
+      "updates": 0,
+      "child_enrollments": 2087,
+      "density": 18.48,
+      "anomaly_score": 0.136
+    },
+    "SRI MUKTSAR SAHIB": {
+      "lat": 30.3164,
+      "lng": 74.5752,
+      "offices": 135,
+      "enrollments": 1315,
+      "updates": 0,
+      "child_enrollments": 1157,
+      "density": 9.74,
+      "anomaly_score": 0.18
+    },
+    "TARN TARAN": {
+      "lat": 31.3799,
+      "lng": 74.8665,
+      "offices": 177,
+      "enrollments": 2939,
+      "updates": 0,
+      "child_enrollments": 2646,
+      "density": 16.6,
+      "anomaly_score": 0.146
+    }
+  },
+  "RAJASTHAN": {
+    "AJMER": {
+      "lat": 26.2047,
+      "lng": 74.8638,
+      "offices": 400,
+      "enrollments": 12135,
+      "updates": 0,
+      "child_enrollments": 9200,
+      "density": 30.34,
+      "anomaly_score": 0.076
+    },
+    "ALWAR": {
+      "lat": 27.551,
+      "lng": 76.6357,
+      "offices": 485,
+      "enrollments": 23383,
+      "updates": 0,
+      "child_enrollments": 15764,
+      "density": 48.21,
+      "anomaly_score": 0.015
+    },
+    "BANSWARA": {
+      "lat": 23.5074,
+      "lng": 74.3273,
+      "offices": 263,
+      "enrollments": 7263,
+      "updates": 0,
+      "child_enrollments": 4203,
+      "density": 27.62,
+      "anomaly_score": 0.09
+    },
+    "BARAN": {
+      "lat": 25.0117,
+      "lng": 76.6165,
+      "offices": 197,
+      "enrollments": 6267,
+      "updates": 0,
+      "child_enrollments": 4532,
+      "density": 31.81,
+      "anomaly_score": 0.068
+    },
+    "BARMER": {
+      "lat": 25.6705,
+      "lng": 71.6604,
+      "offices": 637,
+      "enrollments": 15851,
+      "updates": 0,
+      "child_enrollments": 10522,
+      "density": 24.88,
+      "anomaly_score": 0.103
+    },
+    "BHARATPUR": {
+      "lat": 27.1793,
+      "lng": 77.4707,
+      "offices": 400,
+      "enrollments": 17054,
+      "updates": 0,
+      "child_enrollments": 10236,
+      "density": 42.63,
+      "anomaly_score": 0.013
+    },
+    "BHILWARA": {
+      "lat": 25.4754,
+      "lng": 74.6896,
+      "offices": 384,
+      "enrollments": 11083,
+      "updates": 0,
+      "child_enrollments": 7865,
+      "density": 28.86,
+      "anomaly_score": 0.083
+    },
+    "BIKANER": {
+      "lat": 28.0986,
+      "lng": 73.39,
+      "offices": 324,
+      "enrollments": 13283,
+      "updates": 0,
+      "child_enrollments": 7464,
+      "density": 41.0,
+      "anomaly_score": 0.022
+    },
+    "BUNDI": {
+      "lat": 25.8102,
+      "lng": 75.6101,
+      "offices": 175,
+      "enrollments": 4872,
+      "updates": 0,
+      "child_enrollments": 3414,
+      "density": 27.84,
+      "anomaly_score": 0.088
+    },
+    "CHITTORGARH": {
+      "lat": 24.7563,
+      "lng": 74.6313,
+      "offices": 281,
+      "enrollments": 5986,
+      "updates": 0,
+      "child_enrollments": 3698,
+      "density": 21.3,
+      "anomaly_score": 0.122
+    },
+    "CHURU": {
+      "lat": 28.4667,
+      "lng": 74.89,
+      "offices": 255,
+      "enrollments": 12780,
+      "updates": 0,
+      "child_enrollments": 7888,
+      "density": 50.12,
+      "anomaly_score": 0.025
+    },
+    "DAUSA": {
+      "lat": 26.3922,
+      "lng": 76.71,
+      "offices": 201,
+      "enrollments": 6133,
+      "updates": 0,
+      "child_enrollments": 4277,
+      "density": 30.51,
+      "anomaly_score": 0.075
+    },
+    "DHOLPUR": {
+      "lat": 26.7482,
+      "lng": 77.7035,
+      "offices": 187,
+      "enrollments": 8580,
+      "updates": 0,
+      "child_enrollments": 5719,
+      "density": 45.88,
+      "anomaly_score": 0.003
+    },
+    "DUNGARPUR": {
+      "lat": 23.7418,
+      "lng": 73.8568,
+      "offices": 294,
+      "enrollments": 6571,
+      "updates": 0,
+      "child_enrollments": 3869,
+      "density": 22.35,
+      "anomaly_score": 0.116
+    },
+    "GANGANAGAR": {
+      "lat": 29.4967,
+      "lng": 73.9474,
+      "offices": 308,
+      "enrollments": 5504,
+      "updates": 0,
+      "child_enrollments": 4186,
+      "density": 17.87,
+      "anomaly_score": 0.139
+    },
+    "HANUMANGARH": {
+      "lat": 29.2701,
+      "lng": 74.7311,
+      "offices": 193,
+      "enrollments": 4940,
+      "updates": 0,
+      "child_enrollments": 3628,
+      "density": 25.6,
+      "anomaly_score": 0.1
+    },
+    "JAIPUR": {
+      "lat": 26.7746,
+      "lng": 75.8345,
+      "offices": 428,
+      "enrollments": 31146,
+      "updates": 0,
+      "child_enrollments": 21436,
+      "density": 72.77,
+      "anomaly_score": 0.14
+    },
+    "JAISALMER": {
+      "lat": 26.9346,
+      "lng": 70.9273,
+      "offices": 208,
+      "enrollments": 2854,
+      "updates": 0,
+      "child_enrollments": 1683,
+      "density": 13.72,
+      "anomaly_score": 0.16
+    },
+    "JALORE": {
+      "lat": 25.217,
+      "lng": 72.5366,
+      "offices": 282,
+      "enrollments": 494,
+      "updates": 0,
+      "child_enrollments": 298,
+      "density": 1.75,
+      "anomaly_score": 0.221
+    },
+    "JHALAWAR": {
+      "lat": 24.4217,
+      "lng": 76.1442,
+      "offices": 249,
+      "enrollments": 7036,
+      "updates": 0,
+      "child_enrollments": 4978,
+      "density": 28.26,
+      "anomaly_score": 0.086
+    },
+    "JHUNJHUNU": {
+      "lat": 28.0928,
+      "lng": 75.5594,
+      "offices": 411,
+      "enrollments": 311,
+      "updates": 0,
+      "child_enrollments": 210,
+      "density": 0.76,
+      "anomaly_score": 0.226
+    },
+    "JODHPUR": {
+      "lat": 26.5668,
+      "lng": 72.9835,
+      "offices": 357,
+      "enrollments": 22215,
+      "updates": 0,
+      "child_enrollments": 14563,
+      "density": 62.23,
+      "anomaly_score": 0.086
+    },
+    "KARAULI": {
+      "lat": 26.5207,
+      "lng": 76.9257,
+      "offices": 256,
+      "enrollments": 8636,
+      "updates": 0,
+      "child_enrollments": 5857,
+      "density": 33.73,
+      "anomaly_score": 0.059
+    },
+    "KOTA": {
+      "lat": 25.1563,
+      "lng": 76.0071,
+      "offices": 190,
+      "enrollments": 7525,
+      "updates": 0,
+      "child_enrollments": 5545,
+      "density": 39.61,
+      "anomaly_score": 0.029
+    },
+    "NAGAUR": {
+      "lat": 27.0156,
+      "lng": 74.395,
+      "offices": 463,
+      "enrollments": 17267,
+      "updates": 0,
+      "child_enrollments": 11618,
+      "density": 37.29,
+      "anomaly_score": 0.04
+    },
+    "PALI": {
+      "lat": 25.6559,
+      "lng": 73.553,
+      "offices": 372,
+      "enrollments": 9114,
+      "updates": 0,
+      "child_enrollments": 6300,
+      "density": 24.5,
+      "anomaly_score": 0.105
+    },
+    "PRATAPGARH": {
+      "lat": 24.1952,
+      "lng": 74.706,
+      "offices": 157,
+      "enrollments": 3794,
+      "updates": 0,
+      "child_enrollments": 2643,
+      "density": 24.17,
+      "anomaly_score": 0.107
+    },
+    "RAJSAMAND": {
+      "lat": 25.1873,
+      "lng": 73.8883,
+      "offices": 216,
+      "enrollments": 4512,
+      "updates": 0,
+      "child_enrollments": 3078,
+      "density": 20.89,
+      "anomaly_score": 0.124
+    },
+    "SAWAI MADHOPUR": {
+      "lat": 26.2567,
+      "lng": 76.6796,
+      "offices": 215,
+      "enrollments": 6744,
+      "updates": 0,
+      "child_enrollments": 4575,
+      "density": 31.37,
+      "anomaly_score": 0.071
+    },
+    "SIKAR": {
+      "lat": 27.6143,
+      "lng": 75.2985,
+      "offices": 467,
+      "enrollments": 11400,
+      "updates": 0,
+      "child_enrollments": 8163,
+      "density": 24.41,
+      "anomaly_score": 0.106
+    },
+    "SIROHI": {
+      "lat": 24.7408,
+      "lng": 72.777,
+      "offices": 187,
+      "enrollments": 10732,
+      "updates": 0,
+      "child_enrollments": 5500,
+      "density": 57.39,
+      "anomaly_score": 0.062
+    },
+    "TONK": {
+      "lat": 26.1766,
+      "lng": 75.5921,
+      "offices": 219,
+      "enrollments": 5915,
+      "updates": 0,
+      "child_enrollments": 4198,
+      "density": 27.01,
+      "anomaly_score": 0.093
+    },
+    "UDAIPUR": {
+      "lat": 24.4098,
+      "lng": 73.7461,
+      "offices": 484,
+      "enrollments": 14906,
+      "updates": 0,
+      "child_enrollments": 8641,
+      "density": 30.8,
+      "anomaly_score": 0.073
+    }
+  },
+  "SIKKIM": {},
+  "TAMIL NADU": {
+    "ARIYALUR": {
+      "lat": 11.1685,
+      "lng": 79.2263,
+      "offices": 220,
+      "enrollments": 2412,
+      "updates": 0,
+      "child_enrollments": 1927,
+      "density": 10.96,
+      "anomaly_score": 0.174
+    },
+    "CHENGALPATTU": {
+      "lat": 12.6278,
+      "lng": 80.0074,
+      "offices": 276,
+      "enrollments": 1253,
+      "updates": 0,
+      "child_enrollments": 862,
+      "density": 4.54,
+      "anomaly_score": 0.207
+    },
+    "CHENNAI": {
+      "lat": 13.0449,
+      "lng": 80.1766,
+      "offices": 152,
+      "enrollments": 10043,
+      "updates": 0,
+      "child_enrollments": 7686,
+      "density": 66.07,
+      "anomaly_score": 0.106
+    },
+    "COIMBATORE": {
+      "lat": 11.0169,
+      "lng": 77.0039,
+      "offices": 322,
+      "enrollments": 8986,
+      "updates": 0,
+      "child_enrollments": 7139,
+      "density": 27.91,
+      "anomaly_score": 0.088
+    },
+    "CUDDALORE": {
+      "lat": 11.543,
+      "lng": 79.5349,
+      "offices": 472,
+      "enrollments": 8630,
+      "updates": 0,
+      "child_enrollments": 7493,
+      "density": 18.28,
+      "anomaly_score": 0.137
+    },
+    "DHARMAPURI": {
+      "lat": 12.1174,
+      "lng": 78.2318,
+      "offices": 255,
+      "enrollments": 5739,
+      "updates": 0,
+      "child_enrollments": 4840,
+      "density": 22.51,
+      "anomaly_score": 0.115
+    },
+    "DINDIGUL": {
+      "lat": 10.4116,
+      "lng": 77.8376,
+      "offices": 459,
+      "enrollments": 6083,
+      "updates": 0,
+      "child_enrollments": 4678,
+      "density": 13.25,
+      "anomaly_score": 0.163
+    },
+    "ERODE": {
+      "lat": 11.3963,
+      "lng": 77.5178,
+      "offices": 342,
+      "enrollments": 6017,
+      "updates": 0,
+      "child_enrollments": 4964,
+      "density": 17.59,
+      "anomaly_score": 0.14
+    },
+    "KALLAKURICHI": {
+      "lat": 11.8026,
+      "lng": 79.0664,
+      "offices": 249,
+      "enrollments": 1064,
+      "updates": 0,
+      "child_enrollments": 877,
+      "density": 4.27,
+      "anomaly_score": 0.208
+    },
+    "KANCHIPURAM": {
+      "lat": 12.9091,
+      "lng": 79.8089,
+      "offices": 156,
+      "enrollments": 387,
+      "updates": 0,
+      "child_enrollments": 277,
+      "density": 2.48,
+      "anomaly_score": 0.217
+    },
+    "KANNIYAKUMARI": {
+      "lat": 8.2598,
+      "lng": 77.3192,
+      "offices": 262,
+      "enrollments": 2275,
+      "updates": 0,
+      "child_enrollments": 2139,
+      "density": 8.68,
+      "anomaly_score": 0.186
+    },
+    "KARUR": {
+      "lat": 10.8706,
+      "lng": 78.1338,
+      "offices": 241,
+      "enrollments": 4019,
+      "updates": 0,
+      "child_enrollments": 3362,
+      "density": 16.68,
+      "anomaly_score": 0.145
+    },
+    "KRISHNAGIRI": {
+      "lat": 12.5279,
+      "lng": 78.1704,
+      "offices": 295,
+      "enrollments": 5075,
+      "updates": 0,
+      "child_enrollments": 4157,
+      "density": 17.2,
+      "anomaly_score": 0.142
+    },
+    "MADURAI": {
+      "lat": 9.9519,
+      "lng": 78.0751,
+      "offices": 385,
+      "enrollments": 9938,
+      "updates": 0,
+      "child_enrollments": 8875,
+      "density": 25.81,
+      "anomaly_score": 0.099
+    },
+    "MAYILADUTHURAI": {
+      "lat": 11.1091,
+      "lng": 79.7069,
+      "offices": 213,
+      "enrollments": 502,
+      "updates": 0,
+      "child_enrollments": 437,
+      "density": 2.36,
+      "anomaly_score": 0.218
+    },
+    "NAGAPATTINAM": {
+      "lat": 10.686,
+      "lng": 79.7461,
+      "offices": 174,
+      "enrollments": 4047,
+      "updates": 0,
+      "child_enrollments": 3315,
+      "density": 23.26,
+      "anomaly_score": 0.112
+    },
+    "NAMAKKAL": {
+      "lat": 11.3232,
+      "lng": 78.1002,
+      "offices": 353,
+      "enrollments": 4872,
+      "updates": 0,
+      "child_enrollments": 4257,
+      "density": 13.8,
+      "anomaly_score": 0.16
+    },
+    "PERAMBALUR": {
+      "lat": 11.2675,
+      "lng": 78.904,
+      "offices": 138,
+      "enrollments": 2130,
+      "updates": 0,
+      "child_enrollments": 1898,
+      "density": 15.43,
+      "anomaly_score": 0.151
+    },
+    "PUDUKKOTTAI": {
+      "lat": 10.3408,
+      "lng": 78.8815,
+      "offices": 339,
+      "enrollments": 7045,
+      "updates": 0,
+      "child_enrollments": 5339,
+      "density": 20.78,
+      "anomaly_score": 0.124
+    },
+    "RAMANATHAPURAM": {
+      "lat": 9.4674,
+      "lng": 78.7077,
+      "offices": 306,
+      "enrollments": 4005,
+      "updates": 0,
+      "child_enrollments": 3318,
+      "density": 13.09,
+      "anomaly_score": 0.163
+    },
+    "RANIPET": {
+      "lat": 12.9747,
+      "lng": 79.4578,
+      "offices": 205,
+      "enrollments": 111,
+      "updates": 0,
+      "child_enrollments": 97,
+      "density": 0.54,
+      "anomaly_score": 0.227
+    },
+    "SALEM": {
+      "lat": 11.6673,
+      "lng": 78.1741,
+      "offices": 499,
+      "enrollments": 10249,
+      "updates": 0,
+      "child_enrollments": 8417,
+      "density": 20.54,
+      "anomaly_score": 0.126
+    },
+    "SIVAGANGA": {
+      "lat": 9.9459,
+      "lng": 78.5883,
+      "offices": 315,
+      "enrollments": 4446,
+      "updates": 0,
+      "child_enrollments": 3740,
+      "density": 14.11,
+      "anomaly_score": 0.158
+    },
+    "TENKASI": {
+      "lat": 9.0321,
+      "lng": 77.4295,
+      "offices": 239,
+      "enrollments": 1268,
+      "updates": 0,
+      "child_enrollments": 1150,
+      "density": 5.31,
+      "anomaly_score": 0.203
+    },
+    "THANJAVUR": {
+      "lat": 10.7311,
+      "lng": 79.246,
+      "offices": 513,
+      "enrollments": 7372,
+      "updates": 0,
+      "child_enrollments": 5881,
+      "density": 14.37,
+      "anomaly_score": 0.157
+    },
+    "THE NILGIRIS": {
+      "lat": 11.4053,
+      "lng": 76.6988,
+      "offices": 180,
+      "enrollments": 1714,
+      "updates": 0,
+      "child_enrollments": 1279,
+      "density": 9.52,
+      "anomaly_score": 0.181
+    },
+    "THENI": {
+      "lat": 9.9548,
+      "lng": 77.4725,
+      "offices": 159,
+      "enrollments": 3473,
+      "updates": 0,
+      "child_enrollments": 2908,
+      "density": 21.84,
+      "anomaly_score": 0.119
+    },
+    "THIRUVALLUR": {
+      "lat": 13.1766,
+      "lng": 79.9187,
+      "offices": 351,
+      "enrollments": 605,
+      "updates": 0,
+      "child_enrollments": 461,
+      "density": 1.72,
+      "anomaly_score": 0.221
+    },
+    "THIRUVARUR": {
+      "lat": 10.7162,
+      "lng": 79.5334,
+      "offices": 354,
+      "enrollments": 4165,
+      "updates": 0,
+      "child_enrollments": 3346,
+      "density": 11.77,
+      "anomaly_score": 0.17
+    },
+    "TIRUCHIRAPPALLI": {
+      "lat": 10.8922,
+      "lng": 78.5946,
+      "offices": 486,
+      "enrollments": 9932,
+      "updates": 0,
+      "child_enrollments": 8396,
+      "density": 20.44,
+      "anomaly_score": 0.126
+    },
+    "TIRUNELVELI": {
+      "lat": 8.5701,
+      "lng": 77.6519,
+      "offices": 301,
+      "enrollments": 9675,
+      "updates": 0,
+      "child_enrollments": 8303,
+      "density": 32.14,
+      "anomaly_score": 0.067
+    },
+    "TIRUPPUR": {
+      "lat": 11.0692,
+      "lng": 77.5042,
+      "offices": 294,
+      "enrollments": 6192,
+      "updates": 0,
+      "child_enrollments": 5078,
+      "density": 21.06,
+      "anomaly_score": 0.123
+    },
+    "TIRUVANNAMALAI": {
+      "lat": 12.3967,
+      "lng": 79.3194,
+      "offices": 496,
+      "enrollments": 7266,
+      "updates": 0,
+      "child_enrollments": 6556,
+      "density": 14.65,
+      "anomaly_score": 0.155
+    },
+    "TUTICORIN": {
+      "lat": 8.7639,
+      "lng": 77.9867,
+      "offices": 422,
+      "enrollments": 2,
+      "updates": 0,
+      "child_enrollments": 1,
+      "density": 0.0,
+      "anomaly_score": 0.23
+    },
+    "TIRUPATHUR": {
+      "lat": 12.5785,
+      "lng": 78.6137,
+      "offices": 189,
+      "enrollments": 4,
+      "updates": 0,
+      "child_enrollments": 4,
+      "density": 0.02,
+      "anomaly_score": 0.23
+    },
+    "VELLORE": {
+      "lat": 12.9118,
+      "lng": 79.0842,
+      "offices": 251,
+      "enrollments": 9633,
+      "updates": 0,
+      "child_enrollments": 8271,
+      "density": 38.38,
+      "anomaly_score": 0.035
+    },
+    "VILLUPURAM": {
+      "lat": 12.0962,
+      "lng": 79.4845,
+      "offices": 389,
+      "enrollments": 6772,
+      "updates": 0,
+      "child_enrollments": 5854,
+      "density": 17.41,
+      "anomaly_score": 0.141
+    },
+    "VIRUDHUNAGAR": {
+      "lat": 9.4814,
+      "lng": 77.8892,
+      "offices": 279,
+      "enrollments": 5407,
+      "updates": 0,
+      "child_enrollments": 4769,
+      "density": 19.38,
+      "anomaly_score": 0.131
+    }
+  },
+  "TELANGANA": {
+    "ADILABAD": {
+      "lat": 19.5078,
+      "lng": 78.5576,
+      "offices": 132,
+      "enrollments": 2987,
+      "updates": 0,
+      "child_enrollments": 2517,
+      "density": 22.63,
+      "anomaly_score": 0.115
+    },
+    "BHADRADRI KOTHAGUDEM": {
+      "lat": 17.6402,
+      "lng": 80.7059,
+      "offices": 333,
+      "enrollments": 3211,
+      "updates": 0,
+      "child_enrollments": 2490,
+      "density": 9.64,
+      "anomaly_score": 0.181
+    },
+    "HANUMAKONDA": {
+      "lat": 17.9718,
+      "lng": 79.5377,
+      "offices": 167,
+      "enrollments": 1030,
+      "updates": 0,
+      "child_enrollments": 916,
+      "density": 6.17,
+      "anomaly_score": 0.198
+    },
+    "HYDERABAD": {
+      "lat": 17.4435,
+      "lng": 78.5174,
+      "offices": 90,
+      "enrollments": 25990,
+      "updates": 0,
+      "child_enrollments": 19721,
+      "density": 288.78,
+      "anomaly_score": 1.0
+    },
+    "JANGOAN": {
+      "lat": 17.2558,
+      "lng": 78.4575,
+      "offices": 149,
+      "enrollments": 1022,
+      "updates": 0,
+      "child_enrollments": 892,
+      "density": 6.86,
+      "anomaly_score": 0.195
+    },
+    "JOGULAMBA GADWAL": {
+      "lat": 16.0667,
+      "lng": 77.7931,
+      "offices": 103,
+      "enrollments": 1844,
+      "updates": 0,
+      "child_enrollments": 1543,
+      "density": 17.9,
+      "anomaly_score": 0.139
+    },
+    "JAGITIAL": {
+      "lat": 18.8095,
+      "lng": 78.8299,
+      "offices": 195,
+      "enrollments": 1595,
+      "updates": 0,
+      "child_enrollments": 1488,
+      "density": 8.18,
+      "anomaly_score": 0.188
+    },
+    "KAMAREDDY": {
+      "lat": 18.3117,
+      "lng": 78.0929,
+      "offices": 192,
+      "enrollments": 2008,
+      "updates": 0,
+      "child_enrollments": 1862,
+      "density": 10.46,
+      "anomaly_score": 0.177
+    },
+    "KARIMNAGAR": {
+      "lat": 18.3869,
+      "lng": 79.2387,
+      "offices": 180,
+      "enrollments": 5808,
+      "updates": 0,
+      "child_enrollments": 5115,
+      "density": 32.27,
+      "anomaly_score": 0.066
+    },
+    "KHAMMAM": {
+      "lat": 17.2097,
+      "lng": 80.3445,
+      "offices": 410,
+      "enrollments": 3888,
+      "updates": 0,
+      "child_enrollments": 2800,
+      "density": 9.48,
+      "anomaly_score": 0.182
+    },
+    "MAHABUBABAD": {
+      "lat": 17.6019,
+      "lng": 79.9741,
+      "offices": 175,
+      "enrollments": 1503,
+      "updates": 0,
+      "child_enrollments": 1249,
+      "density": 8.59,
+      "anomaly_score": 0.186
+    },
+    "MAHABUBNAGAR": {
+      "lat": 16.7233,
+      "lng": 77.9306,
+      "offices": 114,
+      "enrollments": 10168,
+      "updates": 0,
+      "child_enrollments": 7689,
+      "density": 89.19,
+      "anomaly_score": 0.223
+    },
+    "MANCHERIAL": {
+      "lat": 18.9906,
+      "lng": 79.443,
+      "offices": 149,
+      "enrollments": 1094,
+      "updates": 0,
+      "child_enrollments": 924,
+      "density": 7.34,
+      "anomaly_score": 0.193
+    },
+    "MEDAK": {
+      "lat": 17.9497,
+      "lng": 78.2371,
+      "offices": 155,
+      "enrollments": 7544,
+      "updates": 0,
+      "child_enrollments": 6158,
+      "density": 48.67,
+      "anomaly_score": 0.017
+    },
+    "MEDCHAL MALKAJGIRI": {
+      "lat": 17.5105,
+      "lng": 78.5625,
+      "offices": 90,
+      "enrollments": 704,
+      "updates": 0,
+      "child_enrollments": 409,
+      "density": 7.82,
+      "anomaly_score": 0.19
+    },
+    "MULUGU": {
+      "lat": 18.633,
+      "lng": 80.0496,
+      "offices": 139,
+      "enrollments": 937,
+      "updates": 0,
+      "child_enrollments": 700,
+      "density": 6.74,
+      "anomaly_score": 0.196
+    },
+    "NAGARKURNOOL": {
+      "lat": 16.4342,
+      "lng": 78.4245,
+      "offices": 20,
+      "enrollments": 1361,
+      "updates": 0,
+      "child_enrollments": 1077,
+      "density": 68.05,
+      "anomaly_score": 0.116
+    },
+    "NALGONDA": {
+      "lat": 16.939,
+      "lng": 79.1942,
+      "offices": 315,
+      "enrollments": 6661,
+      "updates": 0,
+      "child_enrollments": 5405,
+      "density": 21.15,
+      "anomaly_score": 0.122
+    },
+    "NIZAMABAD": {
+      "lat": 18.7199,
+      "lng": 78.1863,
+      "offices": 267,
+      "enrollments": 6577,
+      "updates": 0,
+      "child_enrollments": 5985,
+      "density": 24.63,
+      "anomaly_score": 0.105
+    },
+    "NARAYANPET": {
+      "lat": 16.6604,
+      "lng": 77.586,
+      "offices": 123,
+      "enrollments": 1310,
+      "updates": 0,
+      "child_enrollments": 1082,
+      "density": 10.65,
+      "anomaly_score": 0.176
+    },
+    "NIRMAL": {
+      "lat": 19.0257,
+      "lng": 78.3978,
+      "offices": 134,
+      "enrollments": 1401,
+      "updates": 0,
+      "child_enrollments": 1292,
+      "density": 10.46,
+      "anomaly_score": 0.177
+    },
+    "PEDDAPALLI": {
+      "lat": 18.6204,
+      "lng": 79.4549,
+      "offices": 148,
+      "enrollments": 588,
+      "updates": 0,
+      "child_enrollments": 513,
+      "density": 3.97,
+      "anomaly_score": 0.21
+    },
+    "RAJANNA SIRCILLA": {
+      "lat": 18.4041,
+      "lng": 78.7902,
+      "offices": 122,
+      "enrollments": 888,
+      "updates": 0,
+      "child_enrollments": 834,
+      "density": 7.28,
+      "anomaly_score": 0.193
+    },
+    "RANGA REDDY": {
+      "lat": 17.2654,
+      "lng": 78.4411,
+      "offices": 183,
+      "enrollments": 284,
+      "updates": 0,
+      "child_enrollments": 181,
+      "density": 1.55,
+      "anomaly_score": 0.222
+    },
+    "SANGAREDDY": {
+      "lat": 17.7455,
+      "lng": 77.9028,
+      "offices": 247,
+      "enrollments": 2703,
+      "updates": 0,
+      "child_enrollments": 2224,
+      "density": 10.94,
+      "anomaly_score": 0.174
+    },
+    "SIDDIPET": {
+      "lat": 17.9226,
+      "lng": 78.8542,
+      "offices": 229,
+      "enrollments": 1876,
+      "updates": 0,
+      "child_enrollments": 1701,
+      "density": 8.19,
+      "anomaly_score": 0.188
+    },
+    "SURYAPET": {
+      "lat": 17.1097,
+      "lng": 79.739,
+      "offices": 216,
+      "enrollments": 2042,
+      "updates": 0,
+      "child_enrollments": 1743,
+      "density": 9.45,
+      "anomaly_score": 0.182
+    },
+    "VIKARABAD": {
+      "lat": 17.2395,
+      "lng": 77.7322,
+      "offices": 165,
+      "enrollments": 2593,
+      "updates": 0,
+      "child_enrollments": 2085,
+      "density": 15.72,
+      "anomaly_score": 0.15
+    },
+    "WANAPARTHY": {
+      "lat": 16.4685,
+      "lng": 77.9211,
+      "offices": 29,
+      "enrollments": 1667,
+      "updates": 0,
+      "child_enrollments": 1266,
+      "density": 57.48,
+      "anomaly_score": 0.062
+    },
+    "WARANGAL": {
+      "lat": 17.7601,
+      "lng": 79.3644,
+      "offices": 129,
+      "enrollments": 2952,
+      "updates": 0,
+      "child_enrollments": 2462,
+      "density": 22.88,
+      "anomaly_score": 0.114
+    }
+  },
+  "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU": {
+    "DADRA AND NAGAR HAVELI": {
+      "lat": 20.1956,
+      "lng": 73.0415,
+      "offices": 34,
+      "enrollments": 716,
+      "updates": 0,
+      "child_enrollments": 548,
+      "density": 21.06,
+      "anomaly_score": 0.123
+    }
+  },
+  "TRIPURA": {
+    "DHALAI": {
+      "lat": 23.8872,
+      "lng": 91.9455,
+      "offices": 25,
+      "enrollments": 1420,
+      "updates": 0,
+      "child_enrollments": 777,
+      "density": 56.8,
+      "anomaly_score": 0.059
+    },
+    "GOMATI": {
+      "lat": 23.5556,
+      "lng": 91.5169,
+      "offices": 8,
+      "enrollments": 679,
+      "updates": 0,
+      "child_enrollments": 464,
+      "density": 84.88,
+      "anomaly_score": 0.201
+    },
+    "KHOWAI": {
+      "lat": 23.9464,
+      "lng": 91.5208,
+      "offices": 7,
+      "enrollments": 339,
+      "updates": 0,
+      "child_enrollments": 196,
+      "density": 48.43,
+      "anomaly_score": 0.016
+    },
+    "NORTH TRIPURA": {
+      "lat": 24.175,
+      "lng": 92.2005,
+      "offices": 12,
+      "enrollments": 1488,
+      "updates": 0,
+      "child_enrollments": 1046,
+      "density": 124.0,
+      "anomaly_score": 0.4
+    },
+    "SEPAHIJALA": {
+      "lat": 23.5173,
+      "lng": 88.8245,
+      "offices": 7,
+      "enrollments": 1728,
+      "updates": 0,
+      "child_enrollments": 1121,
+      "density": 246.86,
+      "anomaly_score": 1.0
+    },
+    "SOUTH TRIPURA": {
+      "lat": 23.1834,
+      "lng": 91.5496,
+      "offices": 10,
+      "enrollments": 2158,
+      "updates": 0,
+      "child_enrollments": 1348,
+      "density": 215.8,
+      "anomaly_score": 0.866
+    },
+    "UNAKOTI": {
+      "lat": 24.3194,
+      "lng": 92.1052,
+      "offices": 12,
+      "enrollments": 639,
+      "updates": 0,
+      "child_enrollments": 433,
+      "density": 53.25,
+      "anomaly_score": 0.041
+    },
+    "WEST TRIPURA": {
+      "lat": 23.8452,
+      "lng": 91.304,
+      "offices": 20,
+      "enrollments": 2802,
+      "updates": 0,
+      "child_enrollments": 1963,
+      "density": 140.1,
+      "anomaly_score": 0.482
+    }
+  },
+  "UTTAR PRADESH": {
+    "AGRA": {
+      "lat": 27.0287,
+      "lng": 78.0499,
+      "offices": 339,
+      "enrollments": 29910,
+      "updates": 0,
+      "child_enrollments": 16314,
+      "density": 88.23,
+      "anomaly_score": 0.218
+    },
+    "ALIGARH": {
+      "lat": 27.3312,
+      "lng": 78.2258,
+      "offices": 380,
+      "enrollments": 26192,
+      "updates": 0,
+      "child_enrollments": 13830,
+      "density": 68.93,
+      "anomaly_score": 0.12
+    },
+    "AMBEDKAR NAGAR": {
+      "lat": 26.4195,
+      "lng": 82.606,
+      "offices": 328,
+      "enrollments": 8002,
+      "updates": 0,
+      "child_enrollments": 3856,
+      "density": 24.4,
+      "anomaly_score": 0.106
+    },
+    "AMROHA": {
+      "lat": 28.8773,
+      "lng": 78.4229,
+      "offices": 102,
+      "enrollments": 8142,
+      "updates": 0,
+      "child_enrollments": 5605,
+      "density": 79.82,
+      "anomaly_score": 0.176
+    },
+    "AURAIYA": {
+      "lat": 26.6482,
+      "lng": 79.4821,
+      "offices": 158,
+      "enrollments": 3733,
+      "updates": 0,
+      "child_enrollments": 2169,
+      "density": 23.63,
+      "anomaly_score": 0.11
+    },
+    "AYODHYA": {
+      "lat": 26.6527,
+      "lng": 82.04,
+      "offices": 366,
+      "enrollments": 1693,
+      "updates": 0,
+      "child_enrollments": 1027,
+      "density": 4.63,
+      "anomaly_score": 0.206
+    },
+    "AZAMGARH": {
+      "lat": 20.4905,
+      "lng": 80.2262,
+      "offices": 263,
+      "enrollments": 20573,
+      "updates": 0,
+      "child_enrollments": 6717,
+      "density": 78.22,
+      "anomaly_score": 0.167
+    },
+    "AMETHI": {
+      "lat": 26.1996,
+      "lng": 81.6488,
+      "offices": 233,
+      "enrollments": 7197,
+      "updates": 0,
+      "child_enrollments": 3890,
+      "density": 30.89,
+      "anomaly_score": 0.073
+    },
+    "BAGHPAT": {
+      "lat": 29.0636,
+      "lng": 77.3174,
+      "offices": 130,
+      "enrollments": 6839,
+      "updates": 0,
+      "child_enrollments": 3482,
+      "density": 52.61,
+      "anomaly_score": 0.037
+    },
+    "BAHRAICH": {
+      "lat": 27.6401,
+      "lng": 81.5144,
+      "offices": 293,
+      "enrollments": 39338,
+      "updates": 0,
+      "child_enrollments": 14674,
+      "density": 134.26,
+      "anomaly_score": 0.452
+    },
+    "BALLIA": {
+      "lat": 25.8504,
+      "lng": 84.0746,
+      "offices": 352,
+      "enrollments": 9976,
+      "updates": 0,
+      "child_enrollments": 4079,
+      "density": 28.34,
+      "anomaly_score": 0.086
+    },
+    "BALRAMPUR": {
+      "lat": 27.394,
+      "lng": 82.3749,
+      "offices": 185,
+      "enrollments": 12324,
+      "updates": 0,
+      "child_enrollments": 4181,
+      "density": 66.62,
+      "anomaly_score": 0.108
+    },
+    "BANDA": {
+      "lat": 25.4862,
+      "lng": 80.5515,
+      "offices": 209,
+      "enrollments": 10591,
+      "updates": 0,
+      "child_enrollments": 4825,
+      "density": 50.67,
+      "anomaly_score": 0.027
+    },
+    "BARABANKI": {
+      "lat": 26.9197,
+      "lng": 81.3337,
+      "offices": 365,
+      "enrollments": 2375,
+      "updates": 0,
+      "child_enrollments": 1401,
+      "density": 6.51,
+      "anomaly_score": 0.197
+    },
+    "BAREILLY": {
+      "lat": 28.5483,
+      "lng": 79.4836,
+      "offices": 288,
+      "enrollments": 27811,
+      "updates": 0,
+      "child_enrollments": 17187,
+      "density": 96.57,
+      "anomaly_score": 0.261
+    },
+    "BASTI": {
+      "lat": 26.8415,
+      "lng": 82.6096,
+      "offices": 277,
+      "enrollments": 10119,
+      "updates": 0,
+      "child_enrollments": 4823,
+      "density": 36.53,
+      "anomaly_score": 0.044
+    },
+    "BHADOHI": {
+      "lat": 25.3499,
+      "lng": 82.4599,
+      "offices": 103,
+      "enrollments": 546,
+      "updates": 0,
+      "child_enrollments": 265,
+      "density": 5.3,
+      "anomaly_score": 0.203
+    },
+    "BIJNOR": {
+      "lat": 25.4877,
+      "lng": 78.4146,
+      "offices": 280,
+      "enrollments": 16851,
+      "updates": 0,
+      "child_enrollments": 12935,
+      "density": 60.18,
+      "anomaly_score": 0.076
+    },
+    "BUDAUN": {
+      "lat": 28.0884,
+      "lng": 79.089,
+      "offices": 252,
+      "enrollments": 15529,
+      "updates": 0,
+      "child_enrollments": 7773,
+      "density": 61.62,
+      "anomaly_score": 0.083
+    },
+    "BULANDSHAHR": {
+      "lat": 28.3594,
+      "lng": 78.0033,
+      "offices": 311,
+      "enrollments": 16885,
+      "updates": 0,
+      "child_enrollments": 9155,
+      "density": 54.29,
+      "anomaly_score": 0.046
+    },
+    "CHANDAULI": {
+      "lat": 25.5525,
+      "lng": 83.1751,
+      "offices": 203,
+      "enrollments": 9566,
+      "updates": 0,
+      "child_enrollments": 4405,
+      "density": 47.12,
+      "anomaly_score": 0.009
+    },
+    "CHITRAKOOT": {
+      "lat": 25.2906,
+      "lng": 81.0869,
+      "offices": 92,
+      "enrollments": 5401,
+      "updates": 0,
+      "child_enrollments": 2951,
+      "density": 58.71,
+      "anomaly_score": 0.068
+    },
+    "DEORIA": {
+      "lat": 26.4859,
+      "lng": 83.6823,
+      "offices": 293,
+      "enrollments": 10257,
+      "updates": 0,
+      "child_enrollments": 4700,
+      "density": 35.01,
+      "anomaly_score": 0.052
+    },
+    "ETAH": {
+      "lat": 27.5203,
+      "lng": 78.7293,
+      "offices": 201,
+      "enrollments": 11264,
+      "updates": 0,
+      "child_enrollments": 6760,
+      "density": 56.04,
+      "anomaly_score": 0.055
+    },
+    "ETAWAH": {
+      "lat": 26.7636,
+      "lng": 79.0832,
+      "offices": 175,
+      "enrollments": 7154,
+      "updates": 0,
+      "child_enrollments": 4173,
+      "density": 40.88,
+      "anomaly_score": 0.022
+    },
+    "FARRUKHABAD": {
+      "lat": 27.2473,
+      "lng": 79.8772,
+      "offices": 155,
+      "enrollments": 5870,
+      "updates": 0,
+      "child_enrollments": 2844,
+      "density": 37.87,
+      "anomaly_score": 0.038
+    },
+    "FATEHPUR": {
+      "lat": 25.8878,
+      "lng": 80.7813,
+      "offices": 254,
+      "enrollments": 12333,
+      "updates": 0,
+      "child_enrollments": 6526,
+      "density": 48.56,
+      "anomaly_score": 0.017
+    },
+    "FIROZABAD": {
+      "lat": 25.1696,
+      "lng": 78.618,
+      "offices": 162,
+      "enrollments": 12300,
+      "updates": 0,
+      "child_enrollments": 7250,
+      "density": 75.93,
+      "anomaly_score": 0.156
+    },
+    "GAUTAM BUDDHA NAGAR": {
+      "lat": 27.9449,
+      "lng": 77.6546,
+      "offices": 121,
+      "enrollments": 18957,
+      "updates": 0,
+      "child_enrollments": 9002,
+      "density": 156.67,
+      "anomaly_score": 0.566
+    },
+    "GHAZIABAD": {
+      "lat": 28.7053,
+      "lng": 77.4838,
+      "offices": 118,
+      "enrollments": 23070,
+      "updates": 0,
+      "child_enrollments": 11984,
+      "density": 195.51,
+      "anomaly_score": 0.763
+    },
+    "GHAZIPUR": {
+      "lat": 25.6042,
+      "lng": 83.4752,
+      "offices": 53,
+      "enrollments": 11288,
+      "updates": 0,
+      "child_enrollments": 4323,
+      "density": 212.98,
+      "anomaly_score": 0.852
+    },
+    "GONDA": {
+      "lat": 26.9657,
+      "lng": 81.9178,
+      "offices": 351,
+      "enrollments": 15267,
+      "updates": 0,
+      "child_enrollments": 7445,
+      "density": 43.5,
+      "anomaly_score": 0.009
+    },
+    "GORAKHPUR": {
+      "lat": 26.6191,
+      "lng": 83.1528,
+      "offices": 408,
+      "enrollments": 19969,
+      "updates": 0,
+      "child_enrollments": 7454,
+      "density": 48.94,
+      "anomaly_score": 0.019
+    },
+    "HAMIRPUR": {
+      "lat": 25.7589,
+      "lng": 79.9139,
+      "offices": 143,
+      "enrollments": 3465,
+      "updates": 0,
+      "child_enrollments": 2040,
+      "density": 24.23,
+      "anomaly_score": 0.107
+    },
+    "HAPUR": {
+      "lat": 28.5824,
+      "lng": 77.908,
+      "offices": 99,
+      "enrollments": 7262,
+      "updates": 0,
+      "child_enrollments": 4450,
+      "density": 73.35,
+      "anomaly_score": 0.143
+    },
+    "HARDOI": {
+      "lat": 27.2385,
+      "lng": 80.1109,
+      "offices": 317,
+      "enrollments": 25193,
+      "updates": 0,
+      "child_enrollments": 12591,
+      "density": 79.47,
+      "anomaly_score": 0.174
+    },
+    "HATHRAS": {
+      "lat": 27.4588,
+      "lng": 78.311,
+      "offices": 150,
+      "enrollments": 6493,
+      "updates": 0,
+      "child_enrollments": 3815,
+      "density": 43.29,
+      "anomaly_score": 0.01
+    },
+    "JALAUN": {
+      "lat": 26.1011,
+      "lng": 79.3384,
+      "offices": 241,
+      "enrollments": 5557,
+      "updates": 0,
+      "child_enrollments": 2791,
+      "density": 23.06,
+      "anomaly_score": 0.113
+    },
+    "JAUNPUR": {
+      "lat": 25.981,
+      "lng": 82.2131,
+      "offices": 423,
+      "enrollments": 15853,
+      "updates": 0,
+      "child_enrollments": 5400,
+      "density": 37.48,
+      "anomaly_score": 0.039
+    },
+    "JHANSI": {
+      "lat": 25.4958,
+      "lng": 78.9511,
+      "offices": 196,
+      "enrollments": 7160,
+      "updates": 0,
+      "child_enrollments": 4570,
+      "density": 36.53,
+      "anomaly_score": 0.044
+    },
+    "KANNAUJ": {
+      "lat": 27.0129,
+      "lng": 79.855,
+      "offices": 144,
+      "enrollments": 6638,
+      "updates": 0,
+      "child_enrollments": 3083,
+      "density": 46.1,
+      "anomaly_score": 0.004
+    },
+    "KANPUR DEHAT": {
+      "lat": 26.4207,
+      "lng": 79.8721,
+      "offices": 198,
+      "enrollments": 8017,
+      "updates": 0,
+      "child_enrollments": 4032,
+      "density": 40.49,
+      "anomaly_score": 0.024
+    },
+    "KANPUR NAGAR": {
+      "lat": 26.4285,
+      "lng": 80.2442,
+      "offices": 280,
+      "enrollments": 24708,
+      "updates": 0,
+      "child_enrollments": 11427,
+      "density": 88.24,
+      "anomaly_score": 0.218
+    },
+    "KAUSHAMBI": {
+      "lat": 25.657,
+      "lng": 81.3215,
+      "offices": 122,
+      "enrollments": 7463,
+      "updates": 0,
+      "child_enrollments": 4356,
+      "density": 61.17,
+      "anomaly_score": 0.081
+    },
+    "KHERI": {
+      "lat": 28.0506,
+      "lng": 80.7029,
+      "offices": 377,
+      "enrollments": 24578,
+      "updates": 0,
+      "child_enrollments": 11282,
+      "density": 65.19,
+      "anomaly_score": 0.101
+    },
+    "KUSHI NAGAR": {
+      "lat": 26.8644,
+      "lng": 83.142,
+      "offices": 216,
+      "enrollments": 1570,
+      "updates": 0,
+      "child_enrollments": 779,
+      "density": 7.27,
+      "anomaly_score": 0.193
+    },
+    "KASGANJ": {
+      "lat": 27.7603,
+      "lng": 78.8251,
+      "offices": 109,
+      "enrollments": 6341,
+      "updates": 0,
+      "child_enrollments": 3206,
+      "density": 58.17,
+      "anomaly_score": 0.066
+    },
+    "LALITPUR": {
+      "lat": 24.6908,
+      "lng": 78.6786,
+      "offices": 31,
+      "enrollments": 4753,
+      "updates": 0,
+      "child_enrollments": 3376,
+      "density": 153.32,
+      "anomaly_score": 0.549
+    },
+    "LUCKNOW": {
+      "lat": 26.8589,
+      "lng": 80.9231,
+      "offices": 285,
+      "enrollments": 25514,
+      "updates": 0,
+      "child_enrollments": 13739,
+      "density": 89.52,
+      "anomaly_score": 0.225
+    },
+    "MAHARAJGANJ": {
+      "lat": 26.9986,
+      "lng": 83.2921,
+      "offices": 195,
+      "enrollments": 17871,
+      "updates": 0,
+      "child_enrollments": 6132,
+      "density": 91.65,
+      "anomaly_score": 0.236
+    },
+    "MAHOBA": {
+      "lat": 25.4211,
+      "lng": 79.7845,
+      "offices": 98,
+      "enrollments": 3020,
+      "updates": 0,
+      "child_enrollments": 1979,
+      "density": 30.82,
+      "anomaly_score": 0.073
+    },
+    "MAINPURI": {
+      "lat": 26.046,
+      "lng": 78.544,
+      "offices": 181,
+      "enrollments": 11726,
+      "updates": 0,
+      "child_enrollments": 5056,
+      "density": 64.78,
+      "anomaly_score": 0.099
+    },
+    "MATHURA": {
+      "lat": 27.4798,
+      "lng": 77.6988,
+      "offices": 216,
+      "enrollments": 11746,
+      "updates": 0,
+      "child_enrollments": 5851,
+      "density": 54.38,
+      "anomaly_score": 0.046
+    },
+    "MAU": {
+      "lat": 25.3493,
+      "lng": 83.3553,
+      "offices": 144,
+      "enrollments": 7579,
+      "updates": 0,
+      "child_enrollments": 2590,
+      "density": 52.63,
+      "anomaly_score": 0.037
+    },
+    "MEERUT": {
+      "lat": 29.0446,
+      "lng": 77.6997,
+      "offices": 268,
+      "enrollments": 24027,
+      "updates": 0,
+      "child_enrollments": 14177,
+      "density": 89.65,
+      "anomaly_score": 0.225
+    },
+    "MIRZAPUR": {
+      "lat": 25.0464,
+      "lng": 82.7389,
+      "offices": 263,
+      "enrollments": 7645,
+      "updates": 0,
+      "child_enrollments": 3536,
+      "density": 29.07,
+      "anomaly_score": 0.082
+    },
+    "MORADABAD": {
+      "lat": 28.8005,
+      "lng": 78.6853,
+      "offices": 140,
+      "enrollments": 21545,
+      "updates": 0,
+      "child_enrollments": 15196,
+      "density": 153.89,
+      "anomaly_score": 0.552
+    },
+    "MUZAFFARNAGAR": {
+      "lat": 29.3949,
+      "lng": 77.662,
+      "offices": 227,
+      "enrollments": 11949,
+      "updates": 0,
+      "child_enrollments": 7250,
+      "density": 52.64,
+      "anomaly_score": 0.037
+    },
+    "PILIBHIT": {
+      "lat": 28.4531,
+      "lng": 79.9174,
+      "offices": 166,
+      "enrollments": 13635,
+      "updates": 0,
+      "child_enrollments": 8791,
+      "density": 82.14,
+      "anomaly_score": 0.187
+    },
+    "PRATAPGARH": {
+      "lat": 22.1002,
+      "lng": 81.5236,
+      "offices": 360,
+      "enrollments": 10308,
+      "updates": 0,
+      "child_enrollments": 5866,
+      "density": 28.63,
+      "anomaly_score": 0.084
+    },
+    "PRAYAGRAJ": {
+      "lat": 25.4567,
+      "lng": 81.7697,
+      "offices": 416,
+      "enrollments": 2865,
+      "updates": 0,
+      "child_enrollments": 1428,
+      "density": 6.89,
+      "anomaly_score": 0.195
+    },
+    "RAE BARELI": {
+      "lat": 25.8619,
+      "lng": 80.6759,
+      "offices": 350,
+      "enrollments": 9729,
+      "updates": 0,
+      "child_enrollments": 5812,
+      "density": 27.8,
+      "anomaly_score": 0.089
+    },
+    "RAMPUR": {
+      "lat": 28.6324,
+      "lng": 79.1611,
+      "offices": 127,
+      "enrollments": 20110,
+      "updates": 0,
+      "child_enrollments": 12051,
+      "density": 158.35,
+      "anomaly_score": 0.574
+    },
+    "SAHARANPUR": {
+      "lat": 29.9153,
+      "lng": 77.5439,
+      "offices": 209,
+      "enrollments": 19166,
+      "updates": 0,
+      "child_enrollments": 13708,
+      "density": 91.7,
+      "anomaly_score": 0.236
+    },
+    "SAMBHAL": {
+      "lat": 28.5483,
+      "lng": 78.7088,
+      "offices": 183,
+      "enrollments": 8677,
+      "updates": 0,
+      "child_enrollments": 4744,
+      "density": 47.42,
+      "anomaly_score": 0.011
+    },
+    "SHAHJAHANPUR": {
+      "lat": 27.8871,
+      "lng": 79.908,
+      "offices": 269,
+      "enrollments": 24291,
+      "updates": 0,
+      "child_enrollments": 12811,
+      "density": 90.3,
+      "anomaly_score": 0.229
+    },
+    "SHAMLI": {
+      "lat": 29.1768,
+      "lng": 77.3242,
+      "offices": 97,
+      "enrollments": 8200,
+      "updates": 0,
+      "child_enrollments": 5530,
+      "density": 84.54,
+      "anomaly_score": 0.199
+    },
+    "SHRAVASTI": {
+      "lat": 27.6034,
+      "lng": 81.9252,
+      "offices": 102,
+      "enrollments": 2535,
+      "updates": 0,
+      "child_enrollments": 867,
+      "density": 24.85,
+      "anomaly_score": 0.104
+    },
+    "SIDDHARTH NAGAR": {
+      "lat": 27.2217,
+      "lng": 82.8414,
+      "offices": 225,
+      "enrollments": 4341,
+      "updates": 0,
+      "child_enrollments": 1603,
+      "density": 19.29,
+      "anomaly_score": 0.132
+    },
+    "SITAPUR": {
+      "lat": 27.5769,
+      "lng": 80.7264,
+      "offices": 422,
+      "enrollments": 30854,
+      "updates": 0,
+      "child_enrollments": 16237,
+      "density": 73.11,
+      "anomaly_score": 0.141
+    },
+    "SONBHADRA": {
+      "lat": 24.4864,
+      "lng": 83.091,
+      "offices": 283,
+      "enrollments": 5034,
+      "updates": 0,
+      "child_enrollments": 2998,
+      "density": 17.79,
+      "anomaly_score": 0.139
+    },
+    "SULTANPUR": {
+      "lat": 26.2571,
+      "lng": 82.0642,
+      "offices": 326,
+      "enrollments": 11434,
+      "updates": 0,
+      "child_enrollments": 5465,
+      "density": 35.07,
+      "anomaly_score": 0.052
+    },
+    "UNNAO": {
+      "lat": 26.5689,
+      "lng": 80.6072,
+      "offices": 270,
+      "enrollments": 19148,
+      "updates": 0,
+      "child_enrollments": 9838,
+      "density": 70.92,
+      "anomaly_score": 0.13
+    },
+    "VARANASI": {
+      "lat": 25.3807,
+      "lng": 82.9259,
+      "offices": 263,
+      "enrollments": 23334,
+      "updates": 0,
+      "child_enrollments": 9479,
+      "density": 88.72,
+      "anomaly_score": 0.221
+    }
+  },
+  "UTTARAKHAND": {
+    "ALMORA": {
+      "lat": 29.6702,
+      "lng": 79.5476,
+      "offices": 325,
+      "enrollments": 1367,
+      "updates": 0,
+      "child_enrollments": 1228,
+      "density": 4.21,
+      "anomaly_score": 0.208
+    },
+    "BAGESHWAR": {
+      "lat": 29.8522,
+      "lng": 79.7709,
+      "offices": 151,
+      "enrollments": 742,
+      "updates": 0,
+      "child_enrollments": 675,
+      "density": 4.91,
+      "anomaly_score": 0.205
+    },
+    "CHAMOLI": {
+      "lat": 30.2666,
+      "lng": 79.3314,
+      "offices": 248,
+      "enrollments": 1090,
+      "updates": 0,
+      "child_enrollments": 1006,
+      "density": 4.4,
+      "anomaly_score": 0.207
+    },
+    "CHAMPAWAT": {
+      "lat": 29.3787,
+      "lng": 80.0917,
+      "offices": 84,
+      "enrollments": 866,
+      "updates": 0,
+      "child_enrollments": 769,
+      "density": 10.31,
+      "anomaly_score": 0.177
+    },
+    "DEHRADUN": {
+      "lat": 30.4053,
+      "lng": 77.9605,
+      "offices": 247,
+      "enrollments": 9485,
+      "updates": 0,
+      "child_enrollments": 7797,
+      "density": 38.4,
+      "anomaly_score": 0.035
+    },
+    "HARIDWAR": {
+      "lat": 29.8623,
+      "lng": 78.0171,
+      "offices": 118,
+      "enrollments": 5955,
+      "updates": 0,
+      "child_enrollments": 4688,
+      "density": 50.47,
+      "anomaly_score": 0.026
+    },
+    "NAINITAL": {
+      "lat": 29.3703,
+      "lng": 79.4541,
+      "offices": 165,
+      "enrollments": 3951,
+      "updates": 0,
+      "child_enrollments": 3417,
+      "density": 23.95,
+      "anomaly_score": 0.108
+    },
+    "PAURI GARHWAL": {
+      "lat": 29.8849,
+      "lng": 78.9243,
+      "offices": 424,
+      "enrollments": 1856,
+      "updates": 0,
+      "child_enrollments": 1677,
+      "density": 4.38,
+      "anomaly_score": 0.208
+    },
+    "PITHORAGARH": {
+      "lat": 29.7563,
+      "lng": 80.139,
+      "offices": 322,
+      "enrollments": 1220,
+      "updates": 0,
+      "child_enrollments": 1065,
+      "density": 3.79,
+      "anomaly_score": 0.211
+    },
+    "TEHRI GARHWAL": {
+      "lat": 30.3458,
+      "lng": 78.4916,
+      "offices": 267,
+      "enrollments": 2781,
+      "updates": 0,
+      "child_enrollments": 2444,
+      "density": 10.42,
+      "anomaly_score": 0.177
+    }
+  },
+  "WEST BENGAL": {
+    "24 PARAGANAS NORTH": {
+      "lat": 22.7375,
+      "lng": 88.62,
+      "offices": 692,
+      "enrollments": 6147,
+      "updates": 0,
+      "child_enrollments": 3177,
+      "density": 8.88,
+      "anomaly_score": 0.185
+    },
+    "24 PARAGANAS SOUTH": {
+      "lat": 22.2291,
+      "lng": 88.3827,
+      "offices": 773,
+      "enrollments": 490,
+      "updates": 0,
+      "child_enrollments": 364,
+      "density": 0.63,
+      "anomaly_score": 0.227
+    },
+    "ALIPURDUAR": {
+      "lat": 26.5499,
+      "lng": 89.2551,
+      "offices": 159,
+      "enrollments": 3673,
+      "updates": 0,
+      "child_enrollments": 1521,
+      "density": 23.1,
+      "anomaly_score": 0.113
+    },
+    "BANKURA": {
+      "lat": 23.1191,
+      "lng": 87.1392,
+      "offices": 491,
+      "enrollments": 11355,
+      "updates": 0,
+      "child_enrollments": 9083,
+      "density": 23.13,
+      "anomaly_score": 0.112
+    },
+    "BIRBHUM": {
+      "lat": 23.9478,
+      "lng": 87.6785,
+      "offices": 463,
+      "enrollments": 15509,
+      "updates": 0,
+      "child_enrollments": 13361,
+      "density": 33.5,
+      "anomaly_score": 0.06
+    },
+    "COOCHBEHAR": {
+      "lat": 26.1616,
+      "lng": 89.022,
+      "offices": 302,
+      "enrollments": 4410,
+      "updates": 0,
+      "child_enrollments": 2140,
+      "density": 14.6,
+      "anomaly_score": 0.156
+    },
+    "DARJEELING": {
+      "lat": 26.8125,
+      "lng": 88.2394,
+      "offices": 170,
+      "enrollments": 7319,
+      "updates": 0,
+      "child_enrollments": 3967,
+      "density": 43.05,
+      "anomaly_score": 0.011
+    },
+    "DINAJPUR DAKSHIN": {
+      "lat": 25.3276,
+      "lng": 88.6457,
+      "offices": 159,
+      "enrollments": 997,
+      "updates": 0,
+      "child_enrollments": 707,
+      "density": 6.27,
+      "anomaly_score": 0.198
+    },
+    "DINAJPUR UTTAR": {
+      "lat": 25.7316,
+      "lng": 88.2527,
+      "offices": 206,
+      "enrollments": 11671,
+      "updates": 0,
+      "child_enrollments": 6478,
+      "density": 56.66,
+      "anomaly_score": 0.058
+    },
+    "HOOGHLY": {
+      "lat": 22.8059,
+      "lng": 88.1988,
+      "offices": 491,
+      "enrollments": 15343,
+      "updates": 0,
+      "child_enrollments": 11145,
+      "density": 31.25,
+      "anomaly_score": 0.071
+    },
+    "HOWRAH": {
+      "lat": 22.1054,
+      "lng": 88.1411,
+      "offices": 348,
+      "enrollments": 11410,
+      "updates": 0,
+      "child_enrollments": 8139,
+      "density": 32.79,
+      "anomaly_score": 0.063
+    },
+    "JALPAIGURI": {
+      "lat": 26.6231,
+      "lng": 88.7473,
+      "offices": 208,
+      "enrollments": 10654,
+      "updates": 0,
+      "child_enrollments": 5674,
+      "density": 51.22,
+      "anomaly_score": 0.03
+    },
+    "JHARGRAM": {
+      "lat": 22.411,
+      "lng": 87.0166,
+      "offices": 186,
+      "enrollments": 962,
+      "updates": 0,
+      "child_enrollments": 741,
+      "density": 5.17,
+      "anomaly_score": 0.204
+    },
+    "KALIMPONG": {
+      "lat": 27.031,
+      "lng": 88.5444,
+      "offices": 45,
+      "enrollments": 513,
+      "updates": 0,
+      "child_enrollments": 176,
+      "density": 11.4,
+      "anomaly_score": 0.172
+    },
+    "KOLKATA": {
+      "lat": 22.52,
+      "lng": 88.3122,
+      "offices": 215,
+      "enrollments": 10362,
+      "updates": 0,
+      "child_enrollments": 5028,
+      "density": 48.2,
+      "anomaly_score": 0.015
+    },
+    "MALDAH": {
+      "lat": 25.0657,
+      "lng": 88.177,
+      "offices": 339,
+      "enrollments": 1756,
+      "updates": 0,
+      "child_enrollments": 1190,
+      "density": 5.18,
+      "anomaly_score": 0.203
+    },
+    "MEDINIPUR WEST": {
+      "lat": 22.383,
+      "lng": 87.4875,
+      "offices": 604,
+      "enrollments": 645,
+      "updates": 0,
+      "child_enrollments": 325,
+      "density": 1.07,
+      "anomaly_score": 0.224
+    },
+    "MURSHIDABAD": {
+      "lat": 24.1623,
+      "lng": 88.0134,
+      "offices": 594,
+      "enrollments": 35911,
+      "updates": 0,
+      "child_enrollments": 31442,
+      "density": 60.46,
+      "anomaly_score": 0.077
+    },
+    "NADIA": {
+      "lat": 23.475,
+      "lng": 88.4461,
+      "offices": 458,
+      "enrollments": 17716,
+      "updates": 0,
+      "child_enrollments": 13249,
+      "density": 38.68,
+      "anomaly_score": 0.033
+    },
+    "PASCHIM BARDHAMAN": {
+      "lat": 23.7065,
+      "lng": 86.9991,
+      "offices": 212,
+      "enrollments": 1276,
+      "updates": 0,
+      "child_enrollments": 865,
+      "density": 6.02,
+      "anomaly_score": 0.199
+    },
+    "PURBA BARDHAMAN": {
+      "lat": 23.3672,
+      "lng": 87.9193,
+      "offices": 560,
+      "enrollments": 3041,
+      "updates": 0,
+      "child_enrollments": 2523,
+      "density": 5.43,
+      "anomaly_score": 0.202
+    },
+    "PURULIA": {
+      "lat": 23.2754,
+      "lng": 86.4115,
+      "offices": 441,
+      "enrollments": 783,
+      "updates": 0,
+      "child_enrollments": 539,
+      "density": 1.78,
+      "anomaly_score": 0.221
+    }
+  }
+}

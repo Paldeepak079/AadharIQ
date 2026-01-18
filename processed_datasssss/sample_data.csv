@@ -1,0 +1,101 @@
+date,state,district,pincode,age_0_5,age_5_17,age_18_greater,demo_age_5_17,demo_age_17_,bio_age_5_17,bio_age_17_
+2025-03-02,Meghalaya,East Khasi Hills,793121,11,61,37,0,0,0,0
+2025-03-09,Karnataka,Bengaluru Urban,560043,14,33,39,0,0,0,0
+2025-03-09,Uttar Pradesh,Kanpur Nagar,208001,29,82,12,0,0,0,0
+2025-03-09,Uttar Pradesh,Aligarh,202133,62,29,15,0,0,0,0
+2025-03-09,Karnataka,Bengaluru Urban,560016,14,16,21,0,0,0,0
+2025-03-09,Bihar,Sitamarhi,843331,20,49,12,0,0,0,0
+2025-03-09,Bihar,Sitamarhi,843330,23,24,42,0,0,0,0
+2025-03-09,Uttar Pradesh,Bahraich,271865,26,60,14,0,0,0,0
+2025-03-09,Uttar Pradesh,Firozabad,283204,28,26,10,0,0,0,0
+2025-03-09,Bihar,Purbi Champaran,845418,30,48,10,0,0,0,0
+2025-03-09,Uttar Pradesh,Maharajganj,273164,31,70,13,0,0,0,0
+2025-03-09,Bihar,Sitamarhi,843317,35,94,16,0,0,0,0
+2025-03-09,Maharashtra,Aurangabad,431001,42,46,12,0,0,0,0
+2025-03-09,Bihar,Sitamarhi,843324,49,186,34,0,0,0,0
+2025-03-09,Uttar Pradesh,Ghaziabad,201102,50,113,11,0,0,0,0
+2025-03-09,Haryana,Faridabad,121004,80,60,10,0,0,0,0
+2025-03-09,Karnataka,Bengaluru Urban,560068,14,17,35,0,0,0,0
+2025-03-09,Bihar,Madhubani,847108,18,120,22,0,0,0,0
+2025-03-09,Karnataka,Bengaluru Urban,560032,21,14,10,0,0,0,0
+2025-03-09,Rajasthan,Sikar,332001,41,36,17,0,0,0,0
+2025-03-09,Bihar,Bhagalpur,812005,13,40,18,0,0,0,0
+2025-03-09,Punjab,Amritsar,143001,14,15,20,0,0,0,0
+2025-03-09,Haryana,Gurugram,122001,18,19,13,0,0,0,0
+2025-03-09,Uttar Pradesh,Gautam Buddha Nagar,201301,25,249,16,0,0,0,0
+2025-03-09,Delhi,West Delhi,110018,29,11,15,0,0,0,0
+2025-03-09,Madhya Pradesh,Bhind,477116,37,18,11,0,0,0,0
+2025-03-09,Madhya Pradesh,Gwalior,475110,42,14,14,0,0,0,0
+2025-03-09,Madhya Pradesh,Katni,483501,53,42,11,0,0,0,0
+2025-03-09,Delhi,West Delhi,110059,93,42,42,0,0,0,0
+2025-03-09,Bihar,Purbi Champaran,845304,18,72,12,0,0,0,0
+2025-03-09,West Bengal,Coochbehar,736135,19,12,19,0,0,0,0
+2025-03-09,Uttar Pradesh,Lucknow,226003,23,102,17,0,0,0,0
+2025-03-09,West Bengal,Dinajpur Uttar,733129,26,18,27,0,0,0,0
+2025-03-15,Assam,Marigaon,782104,10,11,46,0,0,0,0
+2025-03-15,Assam,Kokrajhar,783350,10,16,18,0,0,0,0
+2025-03-15,Uttar Pradesh,Agra,282005,10,66,17,0,0,0,0
+2025-03-15,Uttarakhand,Haridwar,247667,17,15,28,0,0,0,0
+2025-03-15,Uttar Pradesh,Ghaziabad,201001,33,125,16,0,0,0,0
+2025-03-15,Uttar Pradesh,Ghaziabad,201206,14,30,13,0,0,0,0
+2025-03-15,Assam,Nagaon,782124,19,15,22,0,0,0,0
+2025-03-15,Delhi,West Delhi,110059,24,34,18,0,0,0,0
+2025-03-15,Uttar Pradesh,Gautam Buddha Nagar,201301,43,132,24,0,0,0,0
+2025-03-15,Uttar Pradesh,Maharajganj,273164,12,55,12,0,0,0,0
+2025-03-15,Maharashtra,Parbhani,431401,17,14,37,0,0,0,0
+2025-03-15,Uttar Pradesh,Ghaziabad,201102,19,146,30,0,0,0,0
+2025-03-15,Assam,Marigaon,782105,26,16,140,0,0,0,0
+2025-03-15,Meghalaya,West Khasi Hills,793119,34,10,148,0,0,0,0
+2025-03-15,Bihar,Purbi Champaran,845303,12,121,13,0,0,0,0
+2025-03-15,Assam,Marigaon,782127,12,16,20,0,0,0,0
+2025-03-15,Uttar Pradesh,Gautam Buddha Nagar,201009,20,37,18,0,0,0,0
+2025-03-15,Bihar,Sitamarhi,843324,22,89,44,0,0,0,0
+2025-03-15,Assam,Kokrajhar,783360,25,23,10,0,0,0,0
+2025-03-15,Delhi,North West Delhi,110086,35,15,10,0,0,0,0
+2025-03-15,Uttar Pradesh,Agra,282001,38,123,21,0,0,0,0
+2025-03-15,Meghalaya,West Jaintia Hills,793150,92,17,30,0,0,0,0
+2025-03-15,Uttar Pradesh,Agra,282010,10,49,19,0,0,0,0
+2025-03-15,Uttar Pradesh,Ghaziabad,201002,13,57,19,0,0,0,0
+2025-03-15,Bihar,Madhubani,847421,15,54,15,0,0,0,0
+2025-03-15,Uttar Pradesh,Unnao,209801,17,95,18,0,0,0,0
+2025-03-15,Bihar,Sitamarhi,843331,20,28,15,0,0,0,0
+2025-03-15,Uttar Pradesh,Saharanpur,247001,91,152,10,0,0,0,0
+2025-03-20,Assam,Dibrugarh,786602,10,12,14,0,0,0,0
+2025-03-20,Assam,Udalguri,784509,10,46,34,0,0,0,0
+2025-03-20,Assam,Chirang,783390,12,29,15,0,0,0,0
+2025-03-20,Assam,Kamrup,781354,13,20,13,0,0,0,0
+2025-03-20,Assam,Dhubri,783331,15,51,12,0,0,0,0
+2025-03-20,Uttar Pradesh,Jaunpur,222001,19,103,29,0,0,0,0
+2025-03-20,Maharashtra,Thane,421503,19,13,15,0,0,0,0
+2025-03-20,Karnataka,Bengaluru Urban,560037,20,16,17,0,0,0,0
+2025-03-20,Assam,Dhemaji,787057,20,46,19,0,0,0,0
+2025-03-20,Uttar Pradesh,Agra,283125,25,29,12,0,0,0,0
+2025-03-20,Assam,Kokrajhar,783360,32,75,29,0,0,0,0
+2025-03-20,Gujarat,Banas Kantha,385545,37,11,15,0,0,0,0
+2025-03-20,Bihar,Sitamarhi,843324,41,55,30,0,0,0,0
+2025-03-20,Karnataka,Bengaluru Urban,560068,56,20,16,0,0,0,0
+2025-03-20,Uttar Pradesh,Firozabad,283203,65,51,11,0,0,0,0
+2025-03-20,Madhya Pradesh,Gwalior,474001,73,25,18,0,0,0,0
+2025-03-20,Uttar Pradesh,Agra,282001,96,125,11,0,0,0,0
+2025-03-20,Maharashtra,Aurangabad,431001,134,38,18,0,0,0,0
+2025-03-20,Assam,Dhubri,783348,11,115,37,0,0,0,0
+2025-03-20,Assam,Tinsukia,786156,12,32,21,0,0,0,0
+2025-03-20,Andhra Pradesh,Spsr Nellore,524311,15,19,17,0,0,0,0
+2025-03-20,Karnataka,Bengaluru Urban,560035,16,10,13,0,0,0,0
+2025-03-20,Uttar Pradesh,Unnao,209821,17,41,15,0,0,0,0
+2025-03-20,Assam,Marigaon,782104,20,58,10,0,0,0,0
+2025-03-20,Assam,Barpeta,783101,24,34,10,0,0,0,0
+2025-03-20,Assam,Kokrajhar,783350,24,55,23,0,0,0,0
+2025-03-20,Karnataka,Bengaluru Urban,560036,28,12,13,0,0,0,0
+2025-03-20,Assam,Dhubri,783334,31,37,25,0,0,0,0
+2025-03-20,Gujarat,Banas Kantha,385310,78,32,13,0,0,0,0
+2025-03-20,Bihar,Sitamarhi,843330,10,12,19,0,0,0,0
+2025-03-20,Assam,Sonitpur,784110,10,28,43,0,0,0,0
+2025-03-20,Assam,Baksa,781366,11,14,13,0,0,0,0
+2025-03-20,Assam,Tinsukia,786152,18,25,11,0,0,0,0
+2025-03-20,Assam,Tinsukia,786151,19,24,19,0,0,0,0
+2025-03-20,Uttar Pradesh,Bahraich,271855,20,62,13,0,0,0,0
+2025-03-20,Gujarat,Banas Kantha,385330,47,11,25,0,0,0,0
+2025-03-20,Karnataka,Bengaluru Urban,560043,49,16,28,0,0,0,0
+2025-03-20,Punjab,Ludhiana,141007,104,13,14,0,0,0,0
+2025-03-20,Gujarat,Patan,384265,118,14,11,0,0,0,0

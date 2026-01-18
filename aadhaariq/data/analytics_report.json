@@ -1,0 +1,331 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-17T18:33:04.455104",
+    "data_summary": {
+      "totalEnrolments": 5331027,
+      "totalUpdates": 104856808,
+      "totalChildEnrolments": 5164778,
+      "totalBiometricUpdates": 68260311,
+      "totalDemographicUpdates": 36596497,
+      "totalStates": 39,
+      "totalDistricts": 500,
+      "lastUpdated": "2026-01-17T18:31:36.232475"
+    },
+    "report_type": "National Aadhaar Analytics Report"
+  },
+  "saturation_analysis": {
+    "children_0_17": {
+      "enrolled": 5164778,
+      "estimated_population": 420000000,
+      "saturation_percent": 1.23,
+      "status": "CRITICAL"
+    },
+    "adults_18_plus": {
+      "enrolled": 166249,
+      "estimated_population": 980000000,
+      "saturation_percent": 0.02,
+      "status": "CRITICAL"
+    }
+  },
+  "anomaly_detection": [
+    {
+      "state": "Daman and Diu",
+      "type": "HIGH_UPDATE_VELOCITY",
+      "severity": "CRITICAL",
+      "update_ratio": 79.15,
+      "z_score": 3.56,
+      "enrolments": 132,
+      "updates": 10527
+    }
+  ],
+  "rural_urban_analysis": {
+    "national_rural_percent": 72.41,
+    "national_urban_percent": 27.59,
+    "high_rural_states": [
+      "Uttar Pradesh",
+      "Maharashtra",
+      "Rajasthan",
+      "Gujarat",
+      "Assam"
+    ],
+    "high_urban_states": []
+  },
+  "forecasting": {
+    "daily_growth_rate": -112,
+    "current_average": 59179,
+    "forecast_average": 46885,
+    "growth_percent": -20.77
+  },
+  "clustering": {
+    "cluster_distribution": {
+      "Low_Activity": 125,
+      "Moderate_Activity": 125,
+      "High_Activity": 125,
+      "Critical_Hubs": 125
+    },
+    "critical_hubs": [
+      {
+        "state": "Bihar",
+        "district": "Sitamarhi",
+        "enrolments": 41652,
+        "lat": 24.0,
+        "lng": 94.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Karnataka",
+        "district": "Bengaluru",
+        "enrolments": 30657,
+        "lat": 28.0,
+        "lng": 88.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "West Champaran",
+        "enrolments": 29913,
+        "lat": 32.0,
+        "lng": 72.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "East Champaran",
+        "enrolments": 28779,
+        "lat": 21.0,
+        "lng": 81.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "Muzaffarpur",
+        "enrolments": 28298,
+        "lat": 23.0,
+        "lng": 93.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "Gaya",
+        "enrolments": 26760,
+        "lat": 34.0,
+        "lng": 84.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "Madhubani",
+        "enrolments": 25390,
+        "lat": 28.0,
+        "lng": 98.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Gujarat",
+        "district": "Surat",
+        "enrolments": 24947,
+        "lat": 24.0,
+        "lng": 84.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "Patna",
+        "enrolments": 24061,
+        "lat": 37.0,
+        "lng": 97.0,
+        "cluster": "Critical_Hubs"
+      },
+      {
+        "state": "Bihar",
+        "district": "Saran",
+        "enrolments": 23658,
+        "lat": 35.0,
+        "lng": 85.0,
+        "cluster": "Critical_Hubs"
+      }
+    ]
+  },
+  "state_recommendations": [
+    {
+      "state": "Uttar Pradesh",
+      "current_enrolments": 1002631,
+      "current_updates": 15827594,
+      "child_enrolments": 984932,
+      "update_ratio": 15.79,
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (78% rural population)"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Bihar",
+      "current_enrolments": 593753,
+      "current_updates": 8417812,
+      "child_enrolments": 581954,
+      "update_ratio": 14.18,
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (72% rural population)"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "current_enrolments": 487892,
+      "current_updates": 7924371,
+      "child_enrolments": 478416,
+      "update_ratio": 16.24,
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "current_enrolments": 369240,
+      "current_updates": 5326463,
+      "child_enrolments": 360745,
+      "update_ratio": 14.43,
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "current_enrolments": 363446,
+      "current_updates": 12845601,
+      "child_enrolments": 355343,
+      "update_ratio": 35.34,
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "category": "Update Capacity",
+          "action": "Deploy additional biometric update centers to handle 12,845,601 pending updates"
+        },
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (78% rural population)"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Rajasthan",
+      "current_enrolments": 340591,
+      "current_updates": 5986893,
+      "child_enrolments": 335108,
+      "update_ratio": 17.58,
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (78% rural population)"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "current_enrolments": 275042,
+      "current_updates": 4506003,
+      "child_enrolments": 258979,
+      "update_ratio": 16.38,
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (77% rural population)"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Assam",
+      "current_enrolments": 225359,
+      "current_updates": 1700247,
+      "child_enrolments": 202804,
+      "update_ratio": 7.54,
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "category": "Rural Outreach",
+          "action": "Strengthen mobile enrolment units in rural areas (76% rural population)"
+        },
+        {
+          "priority": "MEDIUM",
+          "category": "Adult Coverage",
+          "action": "Expand adult enrollment through employer partnerships and community centers"
+        }
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "current_enrolments": 219618,
+      "current_updates": 3856875,
+      "child_enrolments": 209580,
+      "update_ratio": 17.56,
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "current_enrolments": 215710,
+      "current_updates": 6258746,
+      "child_enrolments": 214508,
+      "update_ratio": 29.01,
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "category": "Update Capacity",
+          "action": "Deploy additional biometric update centers to handle 6,258,746 pending updates"
+        },
+        {
+          "priority": "HIGH",
+          "category": "Child Saturation",
+          "action": "Focus on school-based enrollment drives for 0-5 age group"
+        }
+      ]
+    }
+  ]
+}

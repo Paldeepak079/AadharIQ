@@ -1,0 +1,5 @@
+{
+  "name": "AadhaarIQ",
+  "description": "An advanced AI-powered platform for Aadhaar data insights, featuring geospatial heatmaps, machine learning anomalies, and policy-grade report generation using Gemini AI.",
+  "requestFramePermissions": []
+}

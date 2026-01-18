@@ -1,0 +1,398 @@
+{
+  "TELANGANA": {
+    "lat": 17.846,
+    "lng": 79.0356,
+    "bounds": {
+      "latMin": 9.1722,
+      "latMax": 29.5237,
+      "lngMin": 68.5896,
+      "lngMax": 91.2788
+    },
+    "zoomScale": 6
+  },
+  "ANDHRA PRADESH": {
+    "lat": 16.1921,
+    "lng": 80.6568,
+    "bounds": {
+      "latMin": 11.3184,
+      "latMax": 28.6538,
+      "lngMin": 68.33,
+      "lngMax": 89.4164
+    },
+    "zoomScale": 6
+  },
+  "ASSAM": {
+    "lat": 26.2467,
+    "lng": 92.7338,
+    "bounds": {
+      "latMin": 23.1345,
+      "latMax": 28.61,
+      "lngMin": 75.6353,
+      "lngMax": 95.9002
+    },
+    "zoomScale": 6
+  },
+  "BIHAR": {
+    "lat": 25.4704,
+    "lng": 85.1228,
+    "bounds": {
+      "latMin": 12.1668,
+      "latMax": 34.0837,
+      "lngMin": 68.1258,
+      "lngMax": 94.735
+    },
+    "zoomScale": 6
+  },
+  "CHHATTISGARH": {
+    "lat": 21.2181,
+    "lng": 81.9163,
+    "bounds": {
+      "latMin": 16.29,
+      "latMax": 29.7395,
+      "lngMin": 73.3158,
+      "lngMax": 95.4718
+    },
+    "zoomScale": 6
+  },
+  "MEGHALAYA": {
+    "lat": 25.5624,
+    "lng": 91.0683,
+    "bounds": {
+      "latMin": 24.9101,
+      "latMax": 26.4601,
+      "lngMin": 89.8648,
+      "lngMax": 96.2321
+    },
+    "zoomScale": 6
+  },
+  "JHARKHAND": {
+    "lat": 23.7455,
+    "lng": 85.7085,
+    "bounds": {
+      "latMin": 11.942,
+      "latMax": 33.064,
+      "lngMin": 70.3634,
+      "lngMax": 96.7976
+    },
+    "zoomScale": 6
+  },
+  "KARNATAKA": {
+    "lat": 14.5554,
+    "lng": 76.095,
+    "bounds": {
+      "latMin": 10.0881,
+      "latMax": 28.681,
+      "lngMin": 72.8457,
+      "lngMax": 91.49
+    },
+    "zoomScale": 6
+  },
+  "HIMACHAL PRADESH": {
+    "lat": 31.6305,
+    "lng": 76.7971,
+    "bounds": {
+      "latMin": 12.168,
+      "latMax": 33.2226,
+      "lngMin": 73.3865,
+      "lngMax": 81.6296
+    },
+    "zoomScale": 6
+  },
+  "JAMMU AND KASHMIR": {
+    "lat": 33.3793,
+    "lng": 74.7819,
+    "bounds": {
+      "latMin": 21.8966,
+      "latMax": 34.8208,
+      "lngMin": 70.5443,
+      "lngMax": 85.0935
+    },
+    "zoomScale": 6
+  },
+  "LADAKH": {
+    "lat": 34.3107,
+    "lng": 77.0031,
+    "bounds": {
+      "latMin": 33.2059,
+      "latMax": 34.9945,
+      "lngMin": 75.8178,
+      "lngMax": 78.7878
+    },
+    "zoomScale": 12
+  },
+  "GUJARAT": {
+    "lat": 21.8198,
+    "lng": 72.3295,
+    "bounds": {
+      "latMin": 12.1668,
+      "latMax": 27.9922,
+      "lngMin": 68.524,
+      "lngMax": 92.5667
+    },
+    "zoomScale": 6
+  },
+  "THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU": {
+    "lat": 20.294,
+    "lng": 72.8296,
+    "bounds": {
+      "latMin": 20.0859,
+      "latMax": 20.7292,
+      "lngMin": 70.8744,
+      "lngMax": 73.2006
+    },
+    "zoomScale": 12
+  },
+  "HARYANA": {
+    "lat": 29.1357,
+    "lng": 76.5457,
+    "bounds": {
+      "latMin": 17.4269,
+      "latMax": 34.4931,
+      "lngMin": 71.7178,
+      "lngMax": 96.7968
+    },
+    "zoomScale": 6
+  },
+  "DELHI": {
+    "lat": 28.5633,
+    "lng": 77.2523,
+    "bounds": {
+      "latMin": 17.4137,
+      "latMax": 32.6439,
+      "lngMin": 71.1129,
+      "lngMax": 90.4125
+    },
+    "zoomScale": 6
+  },
+  "MAHARASHTRA": {
+    "lat": 19.3246,
+    "lng": 75.8223,
+    "bounds": {
+      "latMin": 11.9846,
+      "latMax": 34.59,
+      "lngMin": 69.9,
+      "lngMax": 96.0163
+    },
+    "zoomScale": 6
+  },
+  "KERALA": {
+    "lat": 10.5864,
+    "lng": 76.3254,
+    "bounds": {
+      "latMin": 8.06,
+      "latMax": 26.4113,
+      "lngMin": 72.326,
+      "lngMax": 87.6055
+    },
+    "zoomScale": 6
+  },
+  "MANIPUR": {
+    "lat": 24.7019,
+    "lng": 93.8871,
+    "bounds": {
+      "latMin": 23.2465,
+      "latMax": 25.6228,
+      "lngMin": 86.1106,
+      "lngMax": 94.9425
+    },
+    "zoomScale": 6
+  },
+  "MIZORAM": {
+    "lat": 23.3894,
+    "lng": 92.8546,
+    "bounds": {
+      "latMin": 22.1168,
+      "latMax": 24.4682,
+      "lngMin": 92.2956,
+      "lngMax": 93.4011
+    },
+    "zoomScale": 12
+  },
+  "NAGALAND": {
+    "lat": 26.0045,
+    "lng": 94.3258,
+    "bounds": {
+      "latMin": 12.1668,
+      "latMax": 26.9334,
+      "lngMin": 77.1066,
+      "lngMax": 95.1884
+    },
+    "zoomScale": 6
+  },
+  "PUDUCHERRY": {
+    "lat": 11.6863,
+    "lng": 79.5902,
+    "bounds": {
+      "latMin": 10.52,
+      "latMax": 17.3213,
+      "lngMin": 75.53,
+      "lngMax": 82.0407
+    },
+    "zoomScale": 6
+  },
+  "MADHYA PRADESH": {
+    "lat": 23.8624,
+    "lng": 78.3173,
+    "bounds": {
+      "latMin": 8.5766,
+      "latMax": 34.137,
+      "lngMin": 68.3122,
+      "lngMax": 96.7052
+    },
+    "zoomScale": 6
+  },
+  "GOA": {
+    "lat": 15.4189,
+    "lng": 73.9115,
+    "bounds": {
+      "latMin": 14.9596,
+      "latMax": 15.7165,
+      "lngMin": 73.09,
+      "lngMax": 74.2429
+    },
+    "zoomScale": 18
+  },
+  "PUNJAB": {
+    "lat": 30.8599,
+    "lng": 75.5278,
+    "bounds": {
+      "latMin": 9.5718,
+      "latMax": 34.0101,
+      "lngMin": 68.01,
+      "lngMax": 91.8331
+    },
+    "zoomScale": 6
+  },
+  "RAJASTHAN": {
+    "lat": 26.2866,
+    "lng": 74.7053,
+    "bounds": {
+      "latMin": 10.2381,
+      "latMax": 34.4669,
+      "lngMin": 68.6633,
+      "lngMax": 96.3318
+    },
+    "zoomScale": 6
+  },
+  "ODISHA": {
+    "lat": 20.6172,
+    "lng": 84.9928,
+    "bounds": {
+      "latMin": 16.4384,
+      "latMax": 31.2308,
+      "lngMin": 73.1981,
+      "lngMax": 88.5287
+    },
+    "zoomScale": 6
+  },
+  "ARUNACHAL PRADESH": {
+    "lat": 27.7133,
+    "lng": 94.3595,
+    "bounds": {
+      "latMin": 26.4043,
+      "latMax": 29.8527,
+      "lngMin": 91.4142,
+      "lngMax": 96.9814
+    },
+    "zoomScale": 9
+  },
+  "TRIPURA": {
+    "lat": 23.847,
+    "lng": 91.5489,
+    "bounds": {
+      "latMin": 21.2319,
+      "latMax": 24.4371,
+      "lngMin": 74.0976,
+      "lngMax": 92.857
+    },
+    "zoomScale": 6
+  },
+  "TAMIL NADU": {
+    "lat": 11.0491,
+    "lng": 78.5893,
+    "bounds": {
+      "latMin": 8.08,
+      "latMax": 33.749,
+      "lngMin": 70.181,
+      "lngMax": 84.388
+    },
+    "zoomScale": 6
+  },
+  "CHANDIGARH": {
+    "lat": 30.6272,
+    "lng": 77.0598,
+    "bounds": {
+      "latMin": 25.7,
+      "latMax": 30.7666,
+      "lngMin": 75.7185,
+      "lngMax": 94.1
+    },
+    "zoomScale": 6
+  },
+  "UTTAR PRADESH": {
+    "lat": 26.6837,
+    "lng": 80.6513,
+    "bounds": {
+      "latMin": 10.2,
+      "latMax": 34.99,
+      "lngMin": 68.638,
+      "lngMax": 96.8251
+    },
+    "zoomScale": 6
+  },
+  "UTTARAKHAND": {
+    "lat": 29.9518,
+    "lng": 79.1281,
+    "bounds": {
+      "latMin": 23.3484,
+      "latMax": 31.9714,
+      "lngMin": 70.0436,
+      "lngMax": 88.1777
+    },
+    "zoomScale": 6
+  },
+  "WEST BENGAL": {
+    "lat": 23.4695,
+    "lng": 87.9938,
+    "bounds": {
+      "latMin": 15.5934,
+      "latMax": 33.6086,
+      "lngMin": 72.8499,
+      "lngMax": 95.6124
+    },
+    "zoomScale": 6
+  },
+  "ANDAMAN AND NICOBAR ISLANDS": {
+    "lat": 11.5541,
+    "lng": 92.8349,
+    "bounds": {
+      "latMin": 8.0009,
+      "latMax": 13.2454,
+      "lngMin": 92.42,
+      "lngMax": 93.5176
+    },
+    "zoomScale": 9
+  },
+  "SIKKIM": {
+    "lat": 27.3228,
+    "lng": 88.4677,
+    "bounds": {
+      "latMin": 27.08,
+      "latMax": 27.82,
+      "lngMin": 88.09,
+      "lngMax": 88.84
+    },
+    "zoomScale": 25
+  },
+  "LAKSHADWEEP": {
+    "lat": 10.7946,
+    "lng": 72.8868,
+    "bounds": {
+      "latMin": 8.2748,
+      "latMax": 11.6914,
+      "lngMin": 72.1868,
+      "lngMax": 73.6815
+    },
+    "zoomScale": 12
+  }
+}

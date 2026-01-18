@@ -1,0 +1,4385 @@
+{
+  "summary": {
+    "totalEnrolments": 5331027,
+    "totalUpdates": 104856808,
+    "totalChildEnrolments": 5164778,
+    "totalBiometricUpdates": 68260311,
+    "totalDemographicUpdates": 36596497,
+    "totalStates": 39,
+    "totalDistricts": 500,
+    "lastUpdated": "2026-01-18T00:01:16.832167"
+  },
+  "states": [
+    {
+      "state": "Andaman and Nicobar Islands",
+      "enrolments": 491,
+      "updates": 25192,
+      "childEnrolments": 491,
+      "enrolment_0_5": 459,
+      "enrolment_5_17": 32,
+      "enrolment_18_plus": 0,
+      "biometricUpdates": 19988,
+      "demographicUpdates": 5204,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Andhra Pradesh",
+      "enrolments": 124273,
+      "updates": 5252918,
+      "childEnrolments": 122808,
+      "enrolment_0_5": 109394,
+      "enrolment_5_17": 13414,
+      "enrolment_18_plus": 1465,
+      "biometricUpdates": 3610776,
+      "demographicUpdates": 1642142,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "enrolments": 4240,
+      "updates": 98450,
+      "childEnrolments": 4090,
+      "enrolment_0_5": 1914,
+      "enrolment_5_17": 2176,
+      "enrolment_18_plus": 150,
+      "biometricUpdates": 70059,
+      "demographicUpdates": 28391,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Assam",
+      "enrolments": 225359,
+      "updates": 1700247,
+      "childEnrolments": 202804,
+      "enrolment_0_5": 137970,
+      "enrolment_5_17": 64834,
+      "enrolment_18_plus": 22555,
+      "biometricUpdates": 945150,
+      "demographicUpdates": 755097,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Bihar",
+      "enrolments": 593753,
+      "updates": 8417812,
+      "childEnrolments": 581954,
+      "enrolment_0_5": 254911,
+      "enrolment_5_17": 327043,
+      "enrolment_18_plus": 11799,
+      "biometricUpdates": 4778968,
+      "demographicUpdates": 3638844,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Chandigarh",
+      "enrolments": 2620,
+      "updates": 130947,
+      "childEnrolments": 2587,
+      "enrolment_0_5": 2377,
+      "enrolment_5_17": 210,
+      "enrolment_18_plus": 33,
+      "biometricUpdates": 73552,
+      "demographicUpdates": 57395,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Chhattisgarh",
+      "enrolments": 99773,
+      "updates": 3980480,
+      "childEnrolments": 97811,
+      "enrolment_0_5": 79653,
+      "enrolment_5_17": 18158,
+      "enrolment_18_plus": 1962,
+      "biometricUpdates": 2559111,
+      "demographicUpdates": 1421369,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "enrolments": 763,
+      "updates": 32223,
+      "childEnrolments": 759,
+      "enrolment_0_5": 686,
+      "enrolment_5_17": 73,
+      "enrolment_18_plus": 4,
+      "biometricUpdates": 27523,
+      "demographicUpdates": 4700,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "enrolments": 885,
+      "updates": 5275,
+      "childEnrolments": 839,
+      "enrolment_0_5": 678,
+      "enrolment_5_17": 161,
+      "enrolment_18_plus": 46,
+      "biometricUpdates": 2507,
+      "demographicUpdates": 2768,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Daman and Diu",
+      "enrolments": 132,
+      "updates": 10527,
+      "childEnrolments": 132,
+      "enrolment_0_5": 118,
+      "enrolment_5_17": 14,
+      "enrolment_18_plus": 0,
+      "biometricUpdates": 8831,
+      "demographicUpdates": 1696,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Delhi",
+      "enrolments": 92838,
+      "updates": 2251610,
+      "childEnrolments": 89815,
+      "enrolment_0_5": 67844,
+      "enrolment_5_17": 21971,
+      "enrolment_18_plus": 3023,
+      "biometricUpdates": 1281944,
+      "demographicUpdates": 969666,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Goa",
+      "enrolments": 2280,
+      "updates": 94245,
+      "childEnrolments": 2124,
+      "enrolment_0_5": 1871,
+      "enrolment_5_17": 253,
+      "enrolment_18_plus": 156,
+      "biometricUpdates": 66554,
+      "demographicUpdates": 27691,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Gujarat",
+      "enrolments": 275042,
+      "updates": 4506003,
+      "childEnrolments": 258979,
+      "enrolment_0_5": 188709,
+      "enrolment_5_17": 70270,
+      "enrolment_18_plus": 16063,
+      "biometricUpdates": 3147888,
+      "demographicUpdates": 1358115,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Haryana",
+      "enrolments": 95085,
+      "updates": 2426107,
+      "childEnrolments": 94009,
+      "enrolment_0_5": 85112,
+      "enrolment_5_17": 8897,
+      "enrolment_18_plus": 1076,
+      "biometricUpdates": 1600264,
+      "demographicUpdates": 825843,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Himachal Pradesh",
+      "enrolments": 16909,
+      "updates": 501077,
+      "childEnrolments": 16731,
+      "enrolment_0_5": 16081,
+      "enrolment_5_17": 650,
+      "enrolment_18_plus": 178,
+      "biometricUpdates": 385264,
+      "demographicUpdates": 115813,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "enrolments": 47629,
+      "updates": 1066340,
+      "childEnrolments": 47107,
+      "enrolment_0_5": 39305,
+      "enrolment_5_17": 7802,
+      "enrolment_18_plus": 522,
+      "biometricUpdates": 771586,
+      "demographicUpdates": 294754,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Jharkhand",
+      "enrolments": 153612,
+      "updates": 3061268,
+      "childEnrolments": 152200,
+      "enrolment_0_5": 96048,
+      "enrolment_5_17": 56152,
+      "enrolment_18_plus": 1412,
+      "biometricUpdates": 1995940,
+      "demographicUpdates": 1065328,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Karnataka",
+      "enrolments": 219618,
+      "updates": 3856875,
+      "childEnrolments": 209580,
+      "enrolment_0_5": 176178,
+      "enrolment_5_17": 33402,
+      "enrolment_18_plus": 10038,
+      "biometricUpdates": 2602087,
+      "demographicUpdates": 1254788,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Kerala",
+      "enrolments": 73950,
+      "updates": 2159550,
+      "childEnrolments": 71310,
+      "enrolment_0_5": 52950,
+      "enrolment_5_17": 18360,
+      "enrolment_18_plus": 2640,
+      "biometricUpdates": 1585769,
+      "demographicUpdates": 573781,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Ladakh",
+      "enrolments": 617,
+      "updates": 10135,
+      "childEnrolments": 599,
+      "enrolment_0_5": 466,
+      "enrolment_5_17": 133,
+      "enrolment_18_plus": 18,
+      "biometricUpdates": 5659,
+      "demographicUpdates": 4476,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Lakshadweep",
+      "enrolments": 199,
+      "updates": 5658,
+      "childEnrolments": 198,
+      "enrolment_0_5": 188,
+      "enrolment_5_17": 10,
+      "enrolment_18_plus": 1,
+      "biometricUpdates": 4745,
+      "demographicUpdates": 913,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Madhya Pradesh",
+      "enrolments": 487892,
+      "updates": 7924371,
+      "childEnrolments": 478416,
+      "enrolment_0_5": 363244,
+      "enrolment_5_17": 115172,
+      "enrolment_18_plus": 9476,
+      "biometricUpdates": 5819736,
+      "demographicUpdates": 2104635,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Maharashtra",
+      "enrolments": 363446,
+      "updates": 12845601,
+      "childEnrolments": 355343,
+      "enrolment_0_5": 274274,
+      "enrolment_5_17": 81069,
+      "enrolment_18_plus": 8103,
+      "biometricUpdates": 9020710,
+      "demographicUpdates": 3824891,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Manipur",
+      "enrolments": 13199,
+      "updates": 509282,
+      "childEnrolments": 12939,
+      "enrolment_0_5": 5044,
+      "enrolment_5_17": 7895,
+      "enrolment_18_plus": 260,
+      "biometricUpdates": 275900,
+      "demographicUpdates": 233382,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Meghalaya",
+      "enrolments": 109239,
+      "updates": 150515,
+      "childEnrolments": 74161,
+      "enrolment_0_5": 21072,
+      "enrolment_5_17": 53089,
+      "enrolment_18_plus": 35078,
+      "biometricUpdates": 86574,
+      "demographicUpdates": 63941,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Mizoram",
+      "enrolments": 5774,
+      "updates": 150716,
+      "childEnrolments": 5303,
+      "enrolment_0_5": 4044,
+      "enrolment_5_17": 1259,
+      "enrolment_18_plus": 471,
+      "biometricUpdates": 119160,
+      "demographicUpdates": 31556,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Nagaland",
+      "enrolments": 15429,
+      "updates": 135826,
+      "childEnrolments": 14309,
+      "enrolment_0_5": 4453,
+      "enrolment_5_17": 9856,
+      "enrolment_18_plus": 1120,
+      "biometricUpdates": 108271,
+      "demographicUpdates": 27555,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Odisha",
+      "enrolments": 119991,
+      "updates": 3274766,
+      "childEnrolments": 119265,
+      "enrolment_0_5": 97061,
+      "enrolment_5_17": 22204,
+      "enrolment_18_plus": 726,
+      "biometricUpdates": 2423071,
+      "demographicUpdates": 851695,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Puducherry",
+      "enrolments": 2950,
+      "updates": 93231,
+      "childEnrolments": 2906,
+      "enrolment_0_5": 2713,
+      "enrolment_5_17": 193,
+      "enrolment_18_plus": 44,
+      "biometricUpdates": 68485,
+      "demographicUpdates": 24746,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Punjab",
+      "enrolments": 75773,
+      "updates": 2360017,
+      "childEnrolments": 72656,
+      "enrolment_0_5": 60481,
+      "enrolment_5_17": 12175,
+      "enrolment_18_plus": 3117,
+      "biometricUpdates": 1717845,
+      "demographicUpdates": 642172,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Rajasthan",
+      "enrolments": 340591,
+      "updates": 5986893,
+      "childEnrolments": 335108,
+      "enrolment_0_5": 224977,
+      "enrolment_5_17": 110131,
+      "enrolment_18_plus": 5483,
+      "biometricUpdates": 3927997,
+      "demographicUpdates": 2058896,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Sikkim",
+      "enrolments": 2175,
+      "updates": 37789,
+      "childEnrolments": 2070,
+      "enrolment_0_5": 1040,
+      "enrolment_5_17": 1030,
+      "enrolment_18_plus": 105,
+      "biometricUpdates": 22576,
+      "demographicUpdates": 15213,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Tamil Nadu",
+      "enrolments": 215710,
+      "updates": 6258746,
+      "childEnrolments": 214508,
+      "enrolment_0_5": 178294,
+      "enrolment_5_17": 36214,
+      "enrolment_18_plus": 1202,
+      "biometricUpdates": 4572152,
+      "demographicUpdates": 1686594,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Telangana",
+      "enrolments": 128948,
+      "updates": 2913870,
+      "childEnrolments": 127803,
+      "enrolment_0_5": 103768,
+      "enrolment_5_17": 24035,
+      "enrolment_18_plus": 1145,
+      "biometricUpdates": 1678277,
+      "demographicUpdates": 1235593,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Tripura",
+      "enrolments": 11008,
+      "updates": 389907,
+      "childEnrolments": 10762,
+      "enrolment_0_5": 7165,
+      "enrolment_5_17": 3597,
+      "enrolment_18_plus": 246,
+      "biometricUpdates": 285324,
+      "demographicUpdates": 104583,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Uttar Pradesh",
+      "enrolments": 1002631,
+      "updates": 15827594,
+      "childEnrolments": 984932,
+      "enrolment_0_5": 511727,
+      "enrolment_5_17": 473205,
+      "enrolment_18_plus": 17699,
+      "biometricUpdates": 9367083,
+      "demographicUpdates": 6460511,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "Uttarakhand",
+      "enrolments": 36956,
+      "updates": 1078217,
+      "childEnrolments": 36618,
+      "enrolment_0_5": 31208,
+      "enrolment_5_17": 5410,
+      "enrolment_18_plus": 338,
+      "biometricUpdates": 740796,
+      "demographicUpdates": 337421,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "West Bengal",
+      "enrolments": 369240,
+      "updates": 5326463,
+      "childEnrolments": 360745,
+      "enrolment_0_5": 270411,
+      "enrolment_5_17": 90334,
+      "enrolment_18_plus": 8495,
+      "biometricUpdates": 2482170,
+      "demographicUpdates": 2844293,
+      "ruralRatio": null,
+      "urbanRatio": null
+    },
+    {
+      "state": "West bengal",
+      "enrolments": 7,
+      "updates": 65,
+      "childEnrolments": 7,
+      "enrolment_0_5": 6,
+      "enrolment_5_17": 1,
+      "enrolment_18_plus": 0,
+      "biometricUpdates": 19,
+      "demographicUpdates": 46,
+      "ruralRatio": null,
+      "urbanRatio": null
+    }
+  ],
+  "districts": [
+    {
+      "state": "Andaman and Nicobar Islands",
+      "district": "Andamans",
+      "enrolments": 73,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "district": "Nicobar",
+      "enrolments": 74,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "district": "Nicobars",
+      "enrolments": 1,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "district": "North And Middle Andaman",
+      "enrolments": 129,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "district": "South Andaman",
+      "enrolments": 214,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Adilabad",
+      "enrolments": 1395,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Alluri Sitharama Raju",
+      "enrolments": 1214,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Anakapalli",
+      "enrolments": 524,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Anantapur",
+      "enrolments": 4311,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Ananthapur",
+      "enrolments": 1937,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Ananthapuramu",
+      "enrolments": 3094,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Annamayya",
+      "enrolments": 995,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Bapatla",
+      "enrolments": 482,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Chittoor",
+      "enrolments": 7944,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Cuddapah",
+      "enrolments": 5762,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Dr. B. R. Ambedkar Konaseema",
+      "enrolments": 651,
+      "lat": 27.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "East Godavari",
+      "enrolments": 7504,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Eluru",
+      "enrolments": 608,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "enrolments": 9480,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Hyderabad",
+      "enrolments": 4708,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "K.V.Rangareddy",
+      "enrolments": 67,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "K.v. Rangareddy",
+      "enrolments": 16,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Kakinada",
+      "enrolments": 932,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Karim Nagar",
+      "enrolments": 81,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Karimnagar",
+      "enrolments": 643,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Khammam",
+      "enrolments": 1106,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Krishna",
+      "enrolments": 6568,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Kurnool",
+      "enrolments": 11516,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Mahabub Nagar",
+      "enrolments": 1471,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Mahabubnagar",
+      "enrolments": 7,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Mahbubnagar",
+      "enrolments": 708,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Medak",
+      "enrolments": 1376,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "N. T. R",
+      "enrolments": 912,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Nalgonda",
+      "enrolments": 1137,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Nandyal",
+      "enrolments": 886,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Nellore",
+      "enrolments": 5264,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Nizamabad",
+      "enrolments": 498,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Palnadu",
+      "enrolments": 830,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Parvathipuram Manyam",
+      "enrolments": 489,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Prakasam",
+      "enrolments": 7390,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Rangareddi",
+      "enrolments": 1833,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Spsr Nellore",
+      "enrolments": 2183,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Sri Potti Sriramulu Nellore",
+      "enrolments": 1562,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Sri Sathya Sai",
+      "enrolments": 901,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Srikakulam",
+      "enrolments": 4176,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Tirupati",
+      "enrolments": 1683,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatanam",
+      "enrolments": 226,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "enrolments": 7910,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Vizianagaram",
+      "enrolments": 3745,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Warangal",
+      "enrolments": 1004,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "West Godavari",
+      "enrolments": 5752,
+      "lat": 27.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Y. S. R",
+      "enrolments": 787,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "chittoor",
+      "enrolments": 4,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "rangareddi",
+      "enrolments": 1,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Anjaw",
+      "enrolments": 36,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Changlang",
+      "enrolments": 790,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Dibang Valley",
+      "enrolments": 10,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "East Kameng",
+      "enrolments": 179,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "East Siang",
+      "enrolments": 165,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Kamle",
+      "enrolments": 30,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Kra Daadi",
+      "enrolments": 80,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Kurung Kumey",
+      "enrolments": 73,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Leparada",
+      "enrolments": 3,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Lohit",
+      "enrolments": 157,
+      "lat": 27.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Longding",
+      "enrolments": 878,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Lower Dibang Valley",
+      "enrolments": 103,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Lower Siang",
+      "enrolments": 31,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Lower Subansiri",
+      "enrolments": 105,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Namsai",
+      "enrolments": 148,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Pakke Kessang",
+      "enrolments": 4,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Papum Pare",
+      "enrolments": 434,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Shi-yomi",
+      "enrolments": 31,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Siang",
+      "enrolments": 102,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Tawang",
+      "enrolments": 153,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Tirap",
+      "enrolments": 89,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Upper Siang",
+      "enrolments": 41,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "Upper Subansiri",
+      "enrolments": 139,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "West Kameng",
+      "enrolments": 273,
+      "lat": 39.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "district": "West Siang",
+      "enrolments": 186,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Assam",
+      "district": "Bajali",
+      "enrolments": 26,
+      "lat": 36.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Assam",
+      "district": "Baksa",
+      "enrolments": 3584,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Assam",
+      "district": "Barpeta",
+      "enrolments": 14033,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Assam",
+      "district": "Biswanath",
+      "enrolments": 1272,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Assam",
+      "district": "Bongaigaon",
+      "enrolments": 3103,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Assam",
+      "district": "Cachar",
+      "enrolments": 17211,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Assam",
+      "district": "Charaideo",
+      "enrolments": 1182,
+      "lat": 36.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Assam",
+      "district": "Chirang",
+      "enrolments": 3286,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Assam",
+      "district": "Darrang",
+      "enrolments": 7441,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Assam",
+      "district": "Dhemaji",
+      "enrolments": 6803,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Assam",
+      "district": "Dhubri",
+      "enrolments": 12362,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Assam",
+      "district": "Dibrugarh",
+      "enrolments": 6886,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Assam",
+      "district": "Dima Hasao",
+      "enrolments": 248,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Assam",
+      "district": "Goalpara",
+      "enrolments": 9714,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Assam",
+      "district": "Golaghat",
+      "enrolments": 11329,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Assam",
+      "district": "Hailakandi",
+      "enrolments": 5399,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Assam",
+      "district": "Hojai",
+      "enrolments": 6940,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Assam",
+      "district": "Jorhat",
+      "enrolments": 4744,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Assam",
+      "district": "Kamrup",
+      "enrolments": 13412,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Assam",
+      "district": "Kamrup Metro",
+      "enrolments": 5875,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Assam",
+      "district": "Karbi Anglong",
+      "enrolments": 7967,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Assam",
+      "district": "Karimganj",
+      "enrolments": 14599,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Assam",
+      "district": "Kokrajhar",
+      "enrolments": 4520,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Assam",
+      "district": "Lakhimpur",
+      "enrolments": 7084,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Assam",
+      "district": "Majuli",
+      "enrolments": 511,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Assam",
+      "district": "Marigaon",
+      "enrolments": 10282,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Assam",
+      "district": "Nagaon",
+      "enrolments": 12589,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Assam",
+      "district": "Nalbari",
+      "enrolments": 3736,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Assam",
+      "district": "North Cachar Hills",
+      "enrolments": 1043,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Assam",
+      "district": "Sibsagar",
+      "enrolments": 2674,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Assam",
+      "district": "Sivasagar",
+      "enrolments": 422,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Assam",
+      "district": "Sonitpur",
+      "enrolments": 8924,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Assam",
+      "district": "South Salmara Mankachar",
+      "enrolments": 1437,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Assam",
+      "district": "Sribhumi",
+      "enrolments": 161,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Assam",
+      "district": "Tamulpur District",
+      "enrolments": 54,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Assam",
+      "district": "Tinsukia",
+      "enrolments": 8194,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Assam",
+      "district": "Udalguri",
+      "enrolments": 4440,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Assam",
+      "district": "West Karbi Anglong",
+      "enrolments": 1872,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Araria",
+      "enrolments": 15127,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Arwal",
+      "enrolments": 3749,
+      "lat": 25.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Aurangabad",
+      "enrolments": 9810,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Aurangabad(BH)",
+      "enrolments": 8,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Aurangabad(bh)",
+      "enrolments": 103,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Banka",
+      "enrolments": 10693,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Begusarai",
+      "enrolments": 12625,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Bhabua",
+      "enrolments": 31,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Bhagalpur",
+      "enrolments": 20596,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Bhojpur",
+      "enrolments": 12979,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Buxar",
+      "enrolments": 6920,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Darbhanga",
+      "enrolments": 15167,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Bihar",
+      "district": "East Champaran",
+      "enrolments": 28779,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Gaya",
+      "enrolments": 26760,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Gopalganj",
+      "enrolments": 14848,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Jamui",
+      "enrolments": 10098,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Jehanabad",
+      "enrolments": 4710,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Kaimur (Bhabua)",
+      "enrolments": 7622,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Katihar",
+      "enrolments": 15747,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Khagaria",
+      "enrolments": 7887,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Kishanganj",
+      "enrolments": 8230,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Lakhisarai",
+      "enrolments": 6031,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Madhepura",
+      "enrolments": 8634,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Madhubani",
+      "enrolments": 25390,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Monghyr",
+      "enrolments": 49,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Munger",
+      "enrolments": 5916,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Muzaffarpur",
+      "enrolments": 28298,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Nalanda",
+      "enrolments": 14113,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Nawada",
+      "enrolments": 15048,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Pashchim Champaran",
+      "enrolments": 16358,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Patna",
+      "enrolments": 24061,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Purba Champaran",
+      "enrolments": 121,
+      "lat": 31.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Purbi Champaran",
+      "enrolments": 14871,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Purnea",
+      "enrolments": 255,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Purnia",
+      "enrolments": 19593,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Rohtas",
+      "enrolments": 7673,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Saharsa",
+      "enrolments": 12590,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Samastipur",
+      "enrolments": 18501,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Samstipur",
+      "enrolments": 78,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Saran",
+      "enrolments": 23658,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Sheikhpura",
+      "enrolments": 3046,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Sheikpura",
+      "enrolments": 27,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Sheohar",
+      "enrolments": 3030,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Sitamarhi",
+      "enrolments": 41652,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Siwan",
+      "enrolments": 14874,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Supaul",
+      "enrolments": 10036,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Bihar",
+      "district": "Vaishali",
+      "enrolments": 17448,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Bihar",
+      "district": "West Champaran",
+      "enrolments": 29913,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Chandigarh",
+      "district": "Chandigarh",
+      "enrolments": 2617,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Chandigarh",
+      "district": "Rupnagar",
+      "enrolments": 3,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Balod",
+      "enrolments": 1596,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Baloda Bazar",
+      "enrolments": 4705,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Balrampur",
+      "enrolments": 6016,
+      "lat": 31.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Bastar",
+      "enrolments": 6501,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Bemetara",
+      "enrolments": 2677,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Bijapur",
+      "enrolments": 6616,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Bilaspur",
+      "enrolments": 8708,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Dakshin Bastar Dantewada",
+      "enrolments": 1172,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Dantewada",
+      "enrolments": 696,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Dhamtari",
+      "enrolments": 1920,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Durg",
+      "enrolments": 3913,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Gariyaband",
+      "enrolments": 1486,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Gaurela-pendra-marwahi",
+      "enrolments": 132,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Gaurella Pendra Marwahi",
+      "enrolments": 983,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Janjgir - Champa",
+      "enrolments": 33,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Janjgir Champa",
+      "enrolments": 24,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Janjgir-champa",
+      "enrolments": 4475,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Jashpur",
+      "enrolments": 2386,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Kabeerdham",
+      "enrolments": 917,
+      "lat": 39.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Kanker",
+      "enrolments": 1632,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Kawardha",
+      "enrolments": 2028,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Khairagarh Chhuikhadan Gandai",
+      "enrolments": 233,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Kondagaon",
+      "enrolments": 2959,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Korba",
+      "enrolments": 3465,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Koriya",
+      "enrolments": 1684,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Mahasamund",
+      "enrolments": 3175,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Manendragarh–Chirmiri–Bharatpur",
+      "enrolments": 288,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Mohalla-Manpur-Ambagarh Chowki",
+      "enrolments": 13,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Mohla-Manpur-Ambagarh Chouki",
+      "enrolments": 253,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Mungeli",
+      "enrolments": 2790,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Narayanpur",
+      "enrolments": 729,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Raigarh",
+      "enrolments": 4851,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Raipur",
+      "enrolments": 6820,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Rajnandgaon",
+      "enrolments": 4006,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Sakti",
+      "enrolments": 452,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Sarangarh-Bilaigarh",
+      "enrolments": 179,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Sukma",
+      "enrolments": 2152,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Surajpur",
+      "enrolments": 2831,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Surguja",
+      "enrolments": 3438,
+      "lat": 31.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Chhattisgarh",
+      "district": "Uttar Bastar Kanker",
+      "enrolments": 839,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "district": "Dadra & Nagar Haveli",
+      "enrolments": 25,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "district": "Dadra and Nagar Haveli",
+      "enrolments": 738,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "district": "Dadra And Nagar Haveli",
+      "enrolments": 716,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "district": "Dadra and Nagar Haveli",
+      "enrolments": 87,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "district": "Daman",
+      "enrolments": 61,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "district": "Diu",
+      "enrolments": 21,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Daman and Diu",
+      "district": "Daman",
+      "enrolments": 64,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Daman and Diu",
+      "district": "Diu",
+      "enrolments": 68,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Delhi",
+      "district": "Central Delhi",
+      "enrolments": 3896,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Delhi",
+      "district": "East Delhi",
+      "enrolments": 10640,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Delhi",
+      "district": "Najafgarh",
+      "enrolments": 30,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Delhi",
+      "district": "New Delhi",
+      "enrolments": 1628,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Delhi",
+      "district": "North Delhi",
+      "enrolments": 4294,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Delhi",
+      "district": "North East",
+      "enrolments": 1697,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Delhi",
+      "district": "North East   *",
+      "enrolments": 2,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Delhi",
+      "district": "North East Delhi",
+      "enrolments": 11862,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Delhi",
+      "district": "North West Delhi",
+      "enrolments": 15501,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Delhi",
+      "district": "Shahdara",
+      "enrolments": 1697,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Delhi",
+      "district": "South Delhi",
+      "enrolments": 13212,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Delhi",
+      "district": "South East Delhi",
+      "enrolments": 56,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Delhi",
+      "district": "South West Delhi",
+      "enrolments": 9025,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Delhi",
+      "district": "West Delhi",
+      "enrolments": 19298,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Goa",
+      "district": "Bardez",
+      "enrolments": 2,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Goa",
+      "district": "North Goa",
+      "enrolments": 1320,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Goa",
+      "district": "South Goa",
+      "enrolments": 958,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Ahmadabad",
+      "enrolments": 6633,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "enrolments": 18513,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Amreli",
+      "enrolments": 4173,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Anand",
+      "enrolments": 6747,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Arvalli",
+      "enrolments": 2301,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Banas Kantha",
+      "enrolments": 13491,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Banaskantha",
+      "enrolments": 17001,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Bharuch",
+      "enrolments": 4222,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Bhavnagar",
+      "enrolments": 9997,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Botad",
+      "enrolments": 2910,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Chhotaudepur",
+      "enrolments": 4066,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Dahod",
+      "enrolments": 10191,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Dang",
+      "enrolments": 872,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Devbhumi Dwarka",
+      "enrolments": 2457,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Dohad",
+      "enrolments": 12936,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Gandhinagar",
+      "enrolments": 5436,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Gir Somnath",
+      "enrolments": 5672,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Jamnagar",
+      "enrolments": 5967,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Junagadh",
+      "enrolments": 5394,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Kachchh",
+      "enrolments": 9081,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Kheda",
+      "enrolments": 7366,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Mahesana",
+      "enrolments": 6313,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Mahisagar",
+      "enrolments": 2506,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Morbi",
+      "enrolments": 7950,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Narmada",
+      "enrolments": 1236,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Navsari",
+      "enrolments": 2706,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Panch Mahals",
+      "enrolments": 1399,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Panchmahals",
+      "enrolments": 6127,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Patan",
+      "enrolments": 8866,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Porbandar",
+      "enrolments": 2488,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Rajkot",
+      "enrolments": 16777,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Sabar Kantha",
+      "enrolments": 2432,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Sabarkantha",
+      "enrolments": 5008,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Surat",
+      "enrolments": 24947,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Surendra Nagar",
+      "enrolments": 6697,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Surendranagar",
+      "enrolments": 1441,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Tapi",
+      "enrolments": 2177,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "The Dangs",
+      "enrolments": 1322,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Vadodara",
+      "enrolments": 11973,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Gujarat",
+      "district": "Valsad",
+      "enrolments": 7251,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Ambala",
+      "enrolments": 3115,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Bhiwani",
+      "enrolments": 3320,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Charkhi Dadri",
+      "enrolments": 814,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Faridabad",
+      "enrolments": 15781,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Fatehabad",
+      "enrolments": 2532,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Gurgaon",
+      "enrolments": 6651,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Gurugram",
+      "enrolments": 2636,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Hisar",
+      "enrolments": 5050,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Jhajjar",
+      "enrolments": 2571,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Jhajjar *",
+      "enrolments": 1,
+      "lat": 39.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Jind",
+      "enrolments": 3669,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Kaithal",
+      "enrolments": 2857,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Karnal",
+      "enrolments": 3907,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Kurukshetra",
+      "enrolments": 2312,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Mahendragarh",
+      "enrolments": 2620,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Mewat",
+      "enrolments": 7262,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Nuh",
+      "enrolments": 1506,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Palwal",
+      "enrolments": 4428,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Panchkula",
+      "enrolments": 1335,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Panipat",
+      "enrolments": 6011,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Rewari",
+      "enrolments": 2364,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Rohtak",
+      "enrolments": 3347,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Sirsa",
+      "enrolments": 3190,
+      "lat": 39.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Sonipat",
+      "enrolments": 4524,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Yamuna Nagar",
+      "enrolments": 3223,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Haryana",
+      "district": "Yamunanagar",
+      "enrolments": 59,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Bilaspur",
+      "enrolments": 952,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Chamba",
+      "enrolments": 1594,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Hamirpur",
+      "enrolments": 1159,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Kangra",
+      "enrolments": 3848,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Kinnaur",
+      "enrolments": 160,
+      "lat": 36.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Kullu",
+      "enrolments": 1194,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Lahaul and Spiti",
+      "enrolments": 3,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Lahul & Spiti",
+      "enrolments": 37,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Lahul and Spiti",
+      "enrolments": 31,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Mandi",
+      "enrolments": 2436,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Shimla",
+      "enrolments": 1625,
+      "lat": 21.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Sirmaur",
+      "enrolments": 1526,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Solan",
+      "enrolments": 1141,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Una",
+      "enrolments": 1203,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Anantnag",
+      "enrolments": 3231,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Badgam",
+      "enrolments": 1824,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Bandipore",
+      "enrolments": 1601,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Bandipur",
+      "enrolments": 2,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Baramula",
+      "enrolments": 3697,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Budgam",
+      "enrolments": 804,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Doda",
+      "enrolments": 4423,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Ganderbal",
+      "enrolments": 807,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Jammu",
+      "enrolments": 4504,
+      "lat": 39.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Kargil",
+      "enrolments": 520,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Kathua",
+      "enrolments": 2828,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Kishtwar",
+      "enrolments": 1240,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Kulgam",
+      "enrolments": 1154,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Kupwara",
+      "enrolments": 2801,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Leh",
+      "enrolments": 199,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Leh (ladakh)",
+      "enrolments": 2,
+      "lat": 27.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Pulwama",
+      "enrolments": 1829,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Punch",
+      "enrolments": 2559,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Rajauri",
+      "enrolments": 2,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Rajouri",
+      "enrolments": 2522,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Ramban",
+      "enrolments": 1874,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Reasi",
+      "enrolments": 1658,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Samba",
+      "enrolments": 570,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Shopian",
+      "enrolments": 412,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Shupiyan",
+      "enrolments": 650,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Srinagar",
+      "enrolments": 3168,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "Udhampur",
+      "enrolments": 2747,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "district": "punch",
+      "enrolments": 1,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Bokaro",
+      "enrolments": 5688,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Bokaro *",
+      "enrolments": 2,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Chatra",
+      "enrolments": 6279,
+      "lat": 39.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Deoghar",
+      "enrolments": 8060,
+      "lat": 28.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Dhanbad",
+      "enrolments": 10791,
+      "lat": 25.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Dumka",
+      "enrolments": 5661,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "East Singhbhum",
+      "enrolments": 7940,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "East Singhbum",
+      "enrolments": 1447,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Garhwa",
+      "enrolments": 5971,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Garhwa *",
+      "enrolments": 372,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Giridih",
+      "enrolments": 14094,
+      "lat": 20.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Godda",
+      "enrolments": 5160,
+      "lat": 31.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Gumla",
+      "enrolments": 6652,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Hazaribag",
+      "enrolments": 549,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Hazaribagh",
+      "enrolments": 6004,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Jamtara",
+      "enrolments": 4340,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Khunti",
+      "enrolments": 2583,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Kodarma",
+      "enrolments": 305,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Koderma",
+      "enrolments": 3084,
+      "lat": 36.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Latehar",
+      "enrolments": 2575,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Lohardaga",
+      "enrolments": 2849,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Pakaur",
+      "enrolments": 291,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Pakur",
+      "enrolments": 6851,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Palamau",
+      "enrolments": 276,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Palamu",
+      "enrolments": 8401,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Pashchimi Singhbhum",
+      "enrolments": 576,
+      "lat": 33.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Purbi Singhbhum",
+      "enrolments": 971,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Ramgarh",
+      "enrolments": 2879,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Ranchi",
+      "enrolments": 13902,
+      "lat": 38.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Sahebganj",
+      "enrolments": 6031,
+      "lat": 21.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Sahibganj",
+      "enrolments": 345,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Seraikela-Kharsawan",
+      "enrolments": 3290,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Seraikela-kharsawan",
+      "enrolments": 824,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "Simdega",
+      "enrolments": 1989,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Jharkhand",
+      "district": "West Singhbhum",
+      "enrolments": 6580,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bagalkot",
+      "enrolments": 7015,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bagalkot *",
+      "enrolments": 243,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Ballari",
+      "enrolments": 2720,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bangalore",
+      "enrolments": 6824,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bangalore Rural",
+      "enrolments": 2605,
+      "lat": 39.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "enrolments": 7638,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Belgaum",
+      "enrolments": 6637,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bellary",
+      "enrolments": 4142,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bengaluru",
+      "enrolments": 30657,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bengaluru Rural",
+      "enrolments": 2790,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bengaluru South",
+      "enrolments": 196,
+      "lat": 21.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "enrolments": 23074,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bidar",
+      "enrolments": 4817,
+      "lat": 36.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bijapur",
+      "enrolments": 4143,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Bijapur(KAR)",
+      "enrolments": 3,
+      "lat": 31.0,
+      "lng": 71.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chamarajanagar",
+      "enrolments": 243,
+      "lat": 20.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chamarajanagar *",
+      "enrolments": 23,
+      "lat": 24.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chamrajanagar",
+      "enrolments": 2182,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chamrajnagar",
+      "enrolments": 374,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chickmagalur",
+      "enrolments": 1197,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chikkaballapur",
+      "enrolments": 3063,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chikkamagaluru",
+      "enrolments": 1126,
+      "lat": 39.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chikmagalur",
+      "enrolments": 150,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Chitradurga",
+      "enrolments": 4294,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Dakshina Kannada",
+      "enrolments": 6315,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Davanagere",
+      "enrolments": 477,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Davangere",
+      "enrolments": 4722,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Dharwad",
+      "enrolments": 5016,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Gadag",
+      "enrolments": 4354,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Gadag *",
+      "enrolments": 144,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Gulbarga",
+      "enrolments": 4271,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Hasan",
+      "enrolments": 966,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Hassan",
+      "enrolments": 2457,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Haveri",
+      "enrolments": 4155,
+      "lat": 25.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Haveri *",
+      "enrolments": 116,
+      "lat": 36.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Kalaburagi",
+      "enrolments": 4734,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Kodagu",
+      "enrolments": 1195,
+      "lat": 37.0,
+      "lng": 77.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Kolar",
+      "enrolments": 4051,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Koppal",
+      "enrolments": 5317,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Mandya",
+      "enrolments": 3545,
+      "lat": 35.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Mysore",
+      "enrolments": 3014,
+      "lat": 29.0,
+      "lng": 99.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "enrolments": 4301,
+      "lat": 25.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Raichur",
+      "enrolments": 9567,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Ramanagar",
+      "enrolments": 2913,
+      "lat": 30.0,
+      "lng": 80.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Ramanagara",
+      "enrolments": 204,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Shimoga",
+      "enrolments": 2222,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Shivamogga",
+      "enrolments": 2197,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "enrolments": 2938,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Tumkur",
+      "enrolments": 2895,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Udupi",
+      "enrolments": 3562,
+      "lat": 25.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Udupi *",
+      "enrolments": 2,
+      "lat": 29.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Uttara Kannada",
+      "enrolments": 3385,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Vijayanagara",
+      "enrolments": 2089,
+      "lat": 23.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Vijayapura",
+      "enrolments": 5515,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "Yadgir",
+      "enrolments": 6141,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Karnataka",
+      "district": "yadgir",
+      "enrolments": 682,
+      "lat": 33.0,
+      "lng": 73.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Alappuzha",
+      "enrolments": 3479,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Ernakulam",
+      "enrolments": 6224,
+      "lat": 27.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Idukki",
+      "enrolments": 1668,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kannur",
+      "enrolments": 5875,
+      "lat": 32.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kasaragod",
+      "enrolments": 3511,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kasargod",
+      "enrolments": 310,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kollam",
+      "enrolments": 4988,
+      "lat": 34.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kottayam",
+      "enrolments": 3238,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Kozhikode",
+      "enrolments": 6635,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Malappuram",
+      "enrolments": 14469,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Palakkad",
+      "enrolments": 6652,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Pathanamthitta",
+      "enrolments": 1916,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Thiruvananthapuram",
+      "enrolments": 6537,
+      "lat": 34.0,
+      "lng": 74.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Thrissur",
+      "enrolments": 6937,
+      "lat": 23.0,
+      "lng": 83.0
+    },
+    {
+      "state": "Kerala",
+      "district": "Wayanad",
+      "enrolments": 1511,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Ladakh",
+      "district": "Kargil",
+      "enrolments": 492,
+      "lat": 33.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Ladakh",
+      "district": "Leh",
+      "enrolments": 125,
+      "lat": 25.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Lakshadweep",
+      "district": "Lakshadweep",
+      "enrolments": 199,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Agar Malwa",
+      "enrolments": 2526,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Alirajpur",
+      "enrolments": 6912,
+      "lat": 27.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Anuppur",
+      "enrolments": 3181,
+      "lat": 25.0,
+      "lng": 95.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Ashok Nagar",
+      "enrolments": 5150,
+      "lat": 26.0,
+      "lng": 86.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Ashoknagar",
+      "enrolments": 3011,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Balaghat",
+      "enrolments": 6666,
+      "lat": 38.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Barwani",
+      "enrolments": 21813,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Betul",
+      "enrolments": 8082,
+      "lat": 28.0,
+      "lng": 78.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Bhind",
+      "enrolments": 13877,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Bhopal",
+      "enrolments": 12647,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Burhanpur",
+      "enrolments": 9689,
+      "lat": 27.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Chhatarpur",
+      "enrolments": 17664,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Chhindwara",
+      "enrolments": 8866,
+      "lat": 29.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Damoh",
+      "enrolments": 5926,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Datia",
+      "enrolments": 5809,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Dewas",
+      "enrolments": 10367,
+      "lat": 28.0,
+      "lng": 98.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Dhar",
+      "enrolments": 12549,
+      "lat": 21.0,
+      "lng": 81.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Dindori",
+      "enrolments": 2618,
+      "lat": 26.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "East Nimar",
+      "enrolments": 3796,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Guna",
+      "enrolments": 9699,
+      "lat": 23.0,
+      "lng": 93.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "enrolments": 18370,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Harda",
+      "enrolments": 2102,
+      "lat": 22.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Harda *",
+      "enrolments": 601,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Hoshangabad",
+      "enrolments": 5914,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "enrolments": 22058,
+      "lat": 31.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "enrolments": 12383,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Jhabua",
+      "enrolments": 13436,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Katni",
+      "enrolments": 10786,
+      "lat": 31.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Khandwa",
+      "enrolments": 4461,
+      "lat": 30.0,
+      "lng": 70.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Khargone",
+      "enrolments": 14922,
+      "lat": 21.0,
+      "lng": 91.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Maihar",
+      "enrolments": 400,
+      "lat": 36.0,
+      "lng": 76.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Mandla",
+      "enrolments": 4859,
+      "lat": 32.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Mandsaur",
+      "enrolments": 8148,
+      "lat": 20.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Mauganj",
+      "enrolments": 423,
+      "lat": 22.0,
+      "lng": 82.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Morena",
+      "enrolments": 22268,
+      "lat": 37.0,
+      "lng": 87.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Narmadapuram",
+      "enrolments": 726,
+      "lat": 32.0,
+      "lng": 72.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Narsimhapur",
+      "enrolments": 1182,
+      "lat": 35.0,
+      "lng": 85.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Narsinghpur",
+      "enrolments": 5128,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Neemuch",
+      "enrolments": 4909,
+      "lat": 26.0,
+      "lng": 96.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Niwari",
+      "enrolments": 138,
+      "lat": 37.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Pandhurna",
+      "enrolments": 98,
+      "lat": 39.0,
+      "lng": 89.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Panna",
+      "enrolments": 9300,
+      "lat": 34.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Raisen",
+      "enrolments": 7470,
+      "lat": 35.0,
+      "lng": 75.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Rajgarh",
+      "enrolments": 7950,
+      "lat": 22.0,
+      "lng": 92.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Ratlam",
+      "enrolments": 7884,
+      "lat": 38.0,
+      "lng": 88.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Rewa",
+      "enrolments": 10670,
+      "lat": 27.0,
+      "lng": 97.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Sagar",
+      "enrolments": 13580,
+      "lat": 39.0,
+      "lng": 79.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Satna",
+      "enrolments": 13104,
+      "lat": 24.0,
+      "lng": 94.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Sehore",
+      "enrolments": 6415,
+      "lat": 24.0,
+      "lng": 84.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Seoni",
+      "enrolments": 5999,
+      "lat": 30.0,
+      "lng": 90.0
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Shahdol",
+      "enrolments": 5198,
+      "lat": 37.0,
+      "lng": 87.0
+    }
+  ],
+  "timeSeries": [
+    {
+      "date": "2025-03-15",
+      "enrolments": 3102
+    },
+    {
+      "date": "2025-03-20",
+      "enrolments": 6218
+    },
+    {
+      "date": "2025-03-23",
+      "enrolments": 576
+    },
+    {
+      "date": "2025-03-26",
+      "enrolments": 211
+    },
+    {
+      "date": "2025-03-27",
+      "enrolments": 2704
+    },
+    {
+      "date": "2025-03-28",
+      "enrolments": 191
+    },
+    {
+      "date": "2025-03-29",
+      "enrolments": 67
+    },
+    {
+      "date": "2025-04-01",
+      "enrolments": 257438
+    },
+    {
+      "date": "2025-05-01",
+      "enrolments": 183616
+    },
+    {
+      "date": "2025-06-01",
+      "enrolments": 215734
+    },
+    {
+      "date": "2025-07-01",
+      "enrolments": 616868
+    },
+    {
+      "date": "2025-09-01",
+      "enrolments": 74970
+    },
+    {
+      "date": "2025-09-02",
+      "enrolments": 76485
+    },
+    {
+      "date": "2025-09-03",
+      "enrolments": 71975
+    },
+    {
+      "date": "2025-09-04",
+      "enrolments": 65336
+    },
+    {
+      "date": "2025-09-05",
+      "enrolments": 26067
+    },
+    {
+      "date": "2025-09-06",
+      "enrolments": 58947
+    },
+    {
+      "date": "2025-09-07",
+      "enrolments": 14658
+    },
+    {
+      "date": "2025-09-08",
+      "enrolments": 83343
+    },
+    {
+      "date": "2025-09-09",
+      "enrolments": 88499
+    },
+    {
+      "date": "2025-09-10",
+      "enrolments": 84292
+    },
+    {
+      "date": "2025-09-11",
+      "enrolments": 73194
+    },
+    {
+      "date": "2025-09-12",
+      "enrolments": 78848
+    },
+    {
+      "date": "2025-09-13",
+      "enrolments": 56225
+    },
+    {
+      "date": "2025-09-14",
+      "enrolments": 14990
+    },
+    {
+      "date": "2025-09-15",
+      "enrolments": 53231
+    },
+    {
+      "date": "2025-09-16",
+      "enrolments": 63840
+    },
+    {
+      "date": "2025-09-17",
+      "enrolments": 57407
+    },
+    {
+      "date": "2025-09-18",
+      "enrolments": 60583
+    },
+    {
+      "date": "2025-09-19",
+      "enrolments": 57348
+    },
+    {
+      "date": "2025-09-20",
+      "enrolments": 49364
+    },
+    {
+      "date": "2025-09-21",
+      "enrolments": 4400
+    },
+    {
+      "date": "2025-09-22",
+      "enrolments": 40307
+    },
+    {
+      "date": "2025-09-23",
+      "enrolments": 48940
+    },
+    {
+      "date": "2025-09-24",
+      "enrolments": 56567
+    },
+    {
+      "date": "2025-09-25",
+      "enrolments": 53315
+    },
+    {
+      "date": "2025-09-26",
+      "enrolments": 37647
+    },
+    {
+      "date": "2025-09-27",
+      "enrolments": 13592
+    },
+    {
+      "date": "2025-09-28",
+      "enrolments": 2454
+    },
+    {
+      "date": "2025-09-29",
+      "enrolments": 6896
+    },
+    {
+      "date": "2025-09-30",
+      "enrolments": 1944
+    },
+    {
+      "date": "2025-10-13",
+      "enrolments": 70410
+    },
+    {
+      "date": "2025-10-15",
+      "enrolments": 55217
+    },
+    {
+      "date": "2025-10-16",
+      "enrolments": 35275
+    },
+    {
+      "date": "2025-10-17",
+      "enrolments": 104604
+    },
+    {
+      "date": "2025-10-18",
+      "enrolments": 56005
+    },
+    {
+      "date": "2025-10-19",
+      "enrolments": 54689
+    },
+    {
+      "date": "2025-10-20",
+      "enrolments": 15402
+    },
+    {
+      "date": "2025-10-21",
+      "enrolments": 7441
+    },
+    {
+      "date": "2025-10-22",
+      "enrolments": 233
+    },
+    {
+      "date": "2025-10-23",
+      "enrolments": 1146
+    },
+    {
+      "date": "2025-10-24",
+      "enrolments": 36202
+    },
+    {
+      "date": "2025-10-25",
+      "enrolments": 48237
+    },
+    {
+      "date": "2025-10-26",
+      "enrolments": 28680
+    },
+    {
+      "date": "2025-10-27",
+      "enrolments": 26037
+    },
+    {
+      "date": "2025-10-28",
+      "enrolments": 33726
+    },
+    {
+      "date": "2025-10-29",
+      "enrolments": 27590
+    },
+    {
+      "date": "2025-10-30",
+      "enrolments": 111400
+    },
+    {
+      "date": "2025-10-31",
+      "enrolments": 67212
+    },
+    {
+      "date": "2025-11-01",
+      "enrolments": 17845
+    },
+    {
+      "date": "2025-11-02",
+      "enrolments": 97125
+    },
+    {
+      "date": "2025-11-03",
+      "enrolments": 30917
+    },
+    {
+      "date": "2025-11-04",
+      "enrolments": 1007
+    },
+    {
+      "date": "2025-11-05",
+      "enrolments": 75107
+    },
+    {
+      "date": "2025-11-06",
+      "enrolments": 43294
+    },
+    {
+      "date": "2025-11-07",
+      "enrolments": 41532
+    },
+    {
+      "date": "2025-11-08",
+      "enrolments": 50447
+    },
+    {
+      "date": "2025-11-09",
+      "enrolments": 47293
+    },
+    {
+      "date": "2025-11-10",
+      "enrolments": 63941
+    },
+    {
+      "date": "2025-11-11",
+      "enrolments": 41447
+    },
+    {
+      "date": "2025-11-12",
+      "enrolments": 38303
+    },
+    {
+      "date": "2025-11-13",
+      "enrolments": 32681
+    },
+    {
+      "date": "2025-11-14",
+      "enrolments": 44523
+    },
+    {
+      "date": "2025-11-15",
+      "enrolments": 108938
+    },
+    {
+      "date": "2025-11-16",
+      "enrolments": 52074
+    },
+    {
+      "date": "2025-11-17",
+      "enrolments": 30686
+    },
+    {
+      "date": "2025-11-18",
+      "enrolments": 68926
+    },
+    {
+      "date": "2025-11-19",
+      "enrolments": 108870
+    },
+    {
+      "date": "2025-11-25",
+      "enrolments": 57509
+    },
+    {
+      "date": "2025-12-15",
+      "enrolments": 138262
+    },
+    {
+      "date": "2025-12-21",
+      "enrolments": 28008
+    },
+    {
+      "date": "2025-12-22",
+      "enrolments": 105316
+    },
+    {
+      "date": "2025-12-23",
+      "enrolments": 47315
+    },
+    {
+      "date": "2025-12-24",
+      "enrolments": 46037
+    },
+    {
+      "date": "2025-12-25",
+      "enrolments": 48369
+    },
+    {
+      "date": "2025-12-26",
+      "enrolments": 51823
+    },
+    {
+      "date": "2025-12-27",
+      "enrolments": 44866
+    },
+    {
+      "date": "2025-12-28",
+      "enrolments": 43458
+    },
+    {
+      "date": "2025-12-29",
+      "enrolments": 60510
+    },
+    {
+      "date": "2025-12-31",
+      "enrolments": 119190
+    }
+  ]
+}
