@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { API_BASE_URL } from '../services/api';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { TrendingUp, AlertTriangle, Lightbulb, ArrowRight, Activity, Globe, Filter, Info, Calendar } from 'lucide-react';
 
@@ -32,7 +33,7 @@ const PredictiveDemand: React.FC = () => {
     const [states, setStates] = useState<string[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:8001/api/states')
+        fetch(`${API_BASE_URL}/api/states`)
             .then(res => res.json())
             .then(d => {
                 const names = d.map((s: any) => s.state).sort();
@@ -43,7 +44,7 @@ const PredictiveDemand: React.FC = () => {
 
     const fetchForecast = (stateName: string, gran: string) => {
         setLoading(true);
-        const url = `http://localhost:8001/api/ml/forecast?state=${encodeURIComponent(stateName)}&granularity=${gran}`;
+        const url = `${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(stateName)}&granularity=${gran}`;
 
         fetch(url)
             .then(res => res.json())

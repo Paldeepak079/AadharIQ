@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { API_BASE_URL } from '../services/api';
 import { translations } from '../translations';
 import { Language } from '../types';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea } from 'recharts';
@@ -28,7 +29,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
 
   // Fetch states
   useEffect(() => {
-    fetch('http://localhost:8001/api/states')
+    fetch(`${API_BASE_URL}/api/states`)
       .then(res => res.json())
       .then(d => setStates(d.map((s: any) => s.state).sort()))
       .catch(err => console.error("Error states:", err));
@@ -39,8 +40,8 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
     setLoading(true);
     // Use the forecast endpoint with 0 forecast steps for history visualization if monthly
     const url = granularity === 'daily'
-      ? (selectedState === "All India" ? 'http://localhost:8001/api/ml/pulse' : `http://localhost:8001/api/ml/pulse?state=${encodeURIComponent(selectedState)}`)
-      : `http://localhost:8001/api/ml/forecast?state=${encodeURIComponent(selectedState)}&granularity=monthly`;
+      ? (selectedState === "All India" ? `${API_BASE_URL}/api/ml/pulse` : `${API_BASE_URL}/api/ml/pulse?state=${encodeURIComponent(selectedState)}`)
+      : `${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(selectedState)}&granularity=monthly`;
 
     fetch(url)
       .then(res => res.json())
@@ -49,7 +50,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
         setPulseData(data || []);
 
         // Fetch anomalies from forecast always
-        fetch(`http://localhost:8001/api/ml/forecast?state=${encodeURIComponent(selectedState)}`)
+        fetch(`${API_BASE_URL}/api/ml/forecast?state=${encodeURIComponent(selectedState)}`)
           .then(res => res.json())
           .then(fd => {
             setAnomalies(fd.anomalies || []);
