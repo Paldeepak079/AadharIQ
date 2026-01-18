@@ -31,9 +31,9 @@ const App: React.FC = () => {
       case 'map':
         return <GeospatialMap lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'ml':
-        return <MLInsights lang={state.lang} selectedState={state.selectedState} />;
+        return <MLInsights lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'predictive':
-        return <PredictiveDemand selectedState={state.selectedState} />;
+        return <PredictiveDemand selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'ai':
         return <InsightEngine lang={state.lang} selectedState={state.selectedState} />;
       case 'reports':

@@ -11,6 +11,7 @@ import IntersectionExplorer from './IntersectionExplorer';
 interface MLProps {
   lang: Language;
   selectedState: string | null;
+  onSelect: (state: string | null) => void;
 }
 
 interface Anomaly {
@@ -19,7 +20,7 @@ interface Anomaly {
   desc: string;
 }
 
-const MLInsights: React.FC<MLProps> = ({ lang, selectedState }) => {
+const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
   const t = translations[lang];
   const [pulseData, setPulseData] = useState<any[]>([]);
   const [granularity, setGranularity] = useState<"daily" | "monthly">("daily");
@@ -97,8 +98,25 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState }) => {
               </div>
             </div>
 
-            <div className="bg-orange-600/20 px-4 py-2 rounded-xl border border-orange-500/30">
-              <span className="text-xs font-black text-orange-400 uppercase tracking-widest">{activeState}</span>
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+              <div className="bg-orange-600/20 px-4 py-2 rounded-xl border border-orange-500/30">
+                <span className="text-xs font-black text-orange-400 uppercase tracking-widest">{activeState}</span>
+              </div>
+
+              <select
+                value={selectedState || "All India"}
+                onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
+                className="bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer"
+              >
+                <option value="All India">ALL INDIA</option>
+                {/* List of states could be imported, but for now we rely on the global data availability */}
+                <option value="Bihar">BIHAR</option>
+                <option value="Uttar Pradesh">UTTAR PRADESH</option>
+                <option value="Maharashtra">MAHARASHTRA</option>
+                <option value="West Bengal">WEST BENGAL</option>
+                <option value="Tamil Nadu">TAMIL NADU</option>
+                <option value="Gujarat">GUJARAT</option>
+              </select>
             </div>
           </div>
 

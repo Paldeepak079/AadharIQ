@@ -27,9 +27,10 @@ interface ForecastResponse {
 
 interface PredictiveDemandProps {
     selectedState?: string | null;
+    onSelect: (state: string | null) => void;
 }
 
-const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState }) => {
+const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSelect }) => {
     const [data, setData] = useState<ForecastResponse | null>(null);
     const [loading, setLoading] = useState(true);
     const [granularity, setGranularity] = useState<"daily" | "monthly">("monthly");
@@ -98,10 +99,24 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState }) =>
                             <span className="text-sm font-black text-blue-400 uppercase tracking-widest">{activeState}</span>
                         </div>
 
-                        <div className="px-6 py-3 bg-gray-900/80 rounded-xl border border-gray-800 flex items-center gap-4 min-w-[200px]">
-                            <div className="space-y-1">
-                                <p className="text-[10px] text-gray-500 uppercase font-black tracking-widest text-right">Momentum shift</p>
-                                <p className={`text-xl font-black text-right ${data?.growth_percent && data.growth_percent > 0 ? 'text-green-400' : 'text-orange-400'}`}>
+                        <select
+                            value={selectedState || "All India"}
+                            onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
+                            className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-xs font-black text-gray-400 uppercase tracking-widest outline-none focus:border-blue-500 transition-all cursor-pointer shadow-xl"
+                        >
+                            <option value="All India">ALL INDIA</option>
+                            <option value="Bihar">BIHAR</option>
+                            <option value="Uttar Pradesh">UTTAR PRADESH</option>
+                            <option value="Maharashtra">MAHARASHTRA</option>
+                            <option value="West Bengal">WEST BENGAL</option>
+                            <option value="Tamil Nadu">TAMIL NADU</option>
+                            <option value="Gujarat">GUJARAT</option>
+                        </select>
+
+                        <div className="px-6 py-3 bg-gray-900/80 rounded-xl border border-gray-800 flex items-center gap-4 min-w-[180px]">
+                            <div className="space-y-1 text-right">
+                                <p className="text-[10px] text-gray-500 uppercase font-black tracking-widest">Momentum</p>
+                                <p className={`text-xl font-black ${data?.growth_percent && data.growth_percent > 0 ? 'text-green-400' : 'text-orange-400'}`}>
                                     {data?.growth_percent}%
                                 </p>
                             </div>
