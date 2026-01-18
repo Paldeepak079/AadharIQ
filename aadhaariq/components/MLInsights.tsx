@@ -69,14 +69,19 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState: initialSelectedSta
       })
       .catch(err => {
         console.error("Fetch error:", err);
-        // Use real TIME_SERIES_DATA for National context if API fails
         if (selectedState === "All India") {
           import('../data/realData').then(({ TIME_SERIES_DATA }) => {
-            setPulseData(TIME_SERIES_DATA.map((d: any) => ({
-              label: d.date,
-              val: d.enrolments,
-              actual: d.enrolments
-            })));
+            // Match backend: Slice last 30 days for daily pulse
+            const raw = granularity === 'daily' ? TIME_SERIES_DATA.slice(-30) : TIME_SERIES_DATA;
+            setPulseData(raw.map((d: any) => {
+              const dt = new Date(d.date);
+              const label = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+              return {
+                label,
+                val: d.enrolments,
+                actual: d.enrolments
+              };
+            }));
           });
         } else {
           setPulseData([]);
