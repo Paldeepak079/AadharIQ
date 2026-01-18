@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { TrendingUp, AlertTriangle, Lightbulb, ArrowRight, Activity, Globe, Filter, Info, Calendar } from 'lucide-react';
 import { API_BASE_URL } from '../src/config';
+import { INDIA_STATES_DATA } from '../data/realData';
 
 interface MergedPoint {
     date: string;
@@ -18,6 +19,8 @@ interface ForecastResponse {
     interpretation: string;
     state?: string;
     confidence_score?: number;
+    peak_demand_stage?: string;
+    sample_density?: string;
     model_metadata?: {
         citation: string;
         input_range: string;
@@ -95,22 +98,15 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-                        <div className="bg-blue-600/20 px-6 py-3 rounded-xl border border-blue-500/30">
-                            <span className="text-sm font-black text-blue-400 uppercase tracking-widest">{activeState}</span>
-                        </div>
-
                         <select
                             value={selectedState || "All India"}
                             onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
                             className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-xs font-black text-gray-400 uppercase tracking-widest outline-none focus:border-blue-500 transition-all cursor-pointer shadow-xl"
                         >
                             <option value="All India">ALL INDIA</option>
-                            <option value="Bihar">BIHAR</option>
-                            <option value="Uttar Pradesh">UTTAR PRADESH</option>
-                            <option value="Maharashtra">MAHARASHTRA</option>
-                            <option value="West Bengal">WEST BENGAL</option>
-                            <option value="Tamil Nadu">TAMIL NADU</option>
-                            <option value="Gujarat">GUJARAT</option>
+                            {INDIA_STATES_DATA.map(s => (
+                                <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
+                            ))}
                         </select>
 
                         <div className="px-6 py-3 bg-gray-900/80 rounded-xl border border-gray-800 flex items-center gap-4 min-w-[180px]">
@@ -285,9 +281,9 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
-                    { title: "Peak Demand Stage", val: granularity === 'daily' ? "Immediate" : "Seasonal", desc: "Based on local volatility", color: "text-orange-500" },
+                    { title: "Peak Demand Stage", val: data?.peak_demand_stage || (granularity === 'daily' ? "Immediate" : "Seasonal"), desc: "Based on local volatility", color: "text-orange-500" },
                     { title: "Forecast Integrity", val: `${data?.confidence_score || 94.8}%`, desc: `Statistically validated`, color: "text-green-500" },
-                    { title: "Sample Density", val: granularity === 'daily' ? "High" : "Strategic", desc: "Data aggregation level", color: "text-blue-500" }
+                    { title: "Sample Density", val: data?.sample_density || (granularity === 'daily' ? "High" : "Strategic"), desc: "Data aggregation level", color: "text-blue-500" }
                 ].map((stat, i) => (
                     <div key={i} className="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all">
                         <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-widest mb-1">{stat.title}</h5>

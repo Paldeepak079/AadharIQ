@@ -56,8 +56,9 @@ const UrbanRuralVelocityChart: React.FC<VelocityProps> = ({ externalState }) => 
 
     // Sync with external state
     useEffect(() => {
-        if (externalState && fullData) {
-            handleStateChange({ target: { value: externalState } } as any);
+        if (fullData) {
+            const stateToSet = externalState || 'All India';
+            handleStateChange({ target: { value: stateToSet } } as any);
         }
     }, [externalState, fullData]);
 
@@ -123,7 +124,12 @@ const UrbanRuralVelocityChart: React.FC<VelocityProps> = ({ externalState }) => 
         if (state === 'All India') {
             processStateData(fullData.allIndia);
         } else {
-            processStateData(fullData.states[state]);
+            const stateData = fullData.states[state];
+            if (stateData) {
+                processStateData(stateData);
+            } else {
+                processStateData(fullData.allIndia);
+            }
         }
     };
 

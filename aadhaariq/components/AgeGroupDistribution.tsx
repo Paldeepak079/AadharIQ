@@ -20,9 +20,7 @@ const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState }) => {
 
     // Sync with external state
     useEffect(() => {
-        if (externalState) {
-            setSelectedState(externalState);
-        }
+        setSelectedState(externalState || 'All India');
     }, [externalState]);
 
     // Get unique state list from authentic data

@@ -83,7 +83,7 @@ async def get_forecast(state: Optional[str] = None, granularity: str = "monthly"
     analytics_cache = data_cache.get('analytics_report', {}).get('state_recommendations', [])
     
     if not time_series:
-        return {"mergedData": [], "growth_percent": 0, "interpretation": "No data available"}
+        return {"mergedData": [], "growth_percent": 0, "interpretation": "No data available", "anomalies": []}
 
     # Pure scaling logic (strictly authentic proportions)
     scaling_factor = 1.0
@@ -129,7 +129,7 @@ async def get_forecast(state: Optional[str] = None, granularity: str = "monthly"
         step_delta = datetime.timedelta(days=30)
         label_fmt = "%b %y"
     vals = [p['val'] for p in processed_series]
-    if len(vals) < 2: return {"mergedData": [], "growth_percent": 0}
+    if len(vals) < 2: return {"mergedData": [], "growth_percent": 0, "anomalies": []}
     
     # Improved SES + Dampened Trend to avoid sharp drops
     alpha = 0.3 
@@ -191,14 +191,22 @@ async def get_forecast(state: Optional[str] = None, granularity: str = "monthly"
         if update_ratio > 25:
              anomaly_narratives.append({"type": "CRITICAL", "title": "Update Friction Detected", "desc": f"{display_name} reports a high update-to-enrollment ratio ({update_ratio:.1f}). Focus on biometric kiosk capacity."})
         elif update_ratio < 10:
-             anomaly_narratives.append({"type": "SOCIETAL", "title": "Enrollment Drive Opportunity", "desc": f"{display_name} has a low update ratio ({update_ratio:.1f}). Potential for targeted new enrollment campaigns in dark zones."})
+             anomaly_narratives.append({"type": "SOCIETAL", "title": "Enrollment Drive Opportunity", "desc": f"{display_name} has a low update ratio ({update_ratio:.1f}). Potential for targeted new enrollment campaigns."})
         
-        if -5 < growth < 5:
-             anomaly_narratives.append({"type": "SOCIETAL", "title": "Operational Plateau", "desc": f"{display_name} has reached a steady state of enrollments. Resource allocation should focus on maintenance and updates."})
-        elif growth > 5:
+        if growth > 5:
              anomaly_narratives.append({"type": "GROWTH", "title": "Expansion Pulse", "desc": f"Projected growth of {growth:.1f}% in {display_name} indicates an influx of transaction volume. Prepare infrastructure for seasonal scaling."})
+        elif growth < -5:
+             anomaly_narratives.append({"type": "INFRA", "title": "Efficiency Optimization", "desc": f"Current transaction velocity in {display_name} is in a saturation phase. Recommend machine health checkups for long-term reliability."})
         else:
-             anomaly_narratives.append({"type": "INFRA", "title": "Efficiency Optimization", "desc": f"Current transaction velocity in {display_name} is stable. Recommend machine health checkups for long-term reliability."})
+             anomaly_narratives.append({"type": "SOCIETAL", "title": "Operational Plateau", "desc": f"{display_name} has reached a steady state of enrollments. Resource allocation should focus on maintenance and updates."})
+        
+        # Ensure at least one narrative exists if logic somehow skips
+        if not anomaly_narratives:
+             anomaly_narratives.append({"type": "SOCIETAL", "title": "Baseline Performance", "desc": f"Operations in {display_name} are proceeding according to historical benchmarks with no immediate red flags."})
+
+    # Dynamic stages and density for frontend
+    peak_stage = "Extreme Surge" if growth > 15 else "Active Pulse" if abs(growth) > 5 else "Seasonal Stability"
+    density = "High (High Frequency)" if granularity == 'daily' else "Strategic (Long-term)" if len(processed_series) > 12 else "Emergent"
 
     # Model metadata refinement for authenticity
     return {
@@ -207,9 +215,11 @@ async def get_forecast(state: Optional[str] = None, granularity: str = "monthly"
         "state": display_name,
         "anomalies": anomaly_narratives,
         "confidence_score": round(min(99.2, 95.5 - (volatility / max(1, last_actual_val) * 3)), 1),
+        "peak_demand_stage": peak_stage,
+        "sample_density": density,
         "model_metadata": {
             "citation": f"Prophet-dampened SES trained on {len(processed_series)} authentic daily data points.",
-            "input_range": f"{processed_series[0]['date'].strftime('%b %Y')} – {processed_series[-1]['date'].strftime('%b %Y')}",
+            "input_range": f"{processed_series[0]['date'].strftime('%b %Y')} – {merged_data[-1]['date']}",
             "algorithm": "Holt-Winters (Dampened Trend)"
         },
         "interpretation": f"📈 {display_name}: Authentic analysis identifies a '{('Stable' if abs(growth) < 5 else 'Growth' if growth > 0 else 'Saturation Plateau')}' phase. We forecast a {abs(growth):.1f}% shift in demand over the next window."

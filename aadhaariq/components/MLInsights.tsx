@@ -4,6 +4,7 @@ import { Language } from '../types';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea } from 'recharts';
 import { BrainCircuit, Users, Activity, Zap, ArrowRight, ShieldAlert, Target } from 'lucide-react';
 import { API_BASE_URL } from '../src/config';
+import { INDIA_STATES_DATA } from '../data/realData';
 import UrbanRuralVelocityChart from './UrbanRuralVelocityChart';
 import AgeGroupDistribution from './AgeGroupDistribution';
 import IntersectionExplorer from './IntersectionExplorer';
@@ -68,9 +69,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
 
   return (
     <div className="space-y-8 animate-in slide-in-from-bottom duration-700">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Diagnostic Activity Pulse Section */}
-        <div className="glass-panel p-8 rounded-3xl border-t-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent">
+        <div className="lg:col-span-8 glass-panel p-8 rounded-3xl border-t-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent">
           <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
             <div className="flex items-center gap-3">
               <Target className="text-orange-500 w-7 h-7" />
@@ -99,9 +100,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
-              <div className="bg-orange-600/20 px-4 py-2 rounded-xl border border-orange-500/30">
-                <span className="text-xs font-black text-orange-400 uppercase tracking-widest">{activeState}</span>
-              </div>
+
 
               <select
                 value={selectedState || "All India"}
@@ -109,13 +108,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
                 className="bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer"
               >
                 <option value="All India">ALL INDIA</option>
-                {/* List of states could be imported, but for now we rely on the global data availability */}
-                <option value="Bihar">BIHAR</option>
-                <option value="Uttar Pradesh">UTTAR PRADESH</option>
-                <option value="Maharashtra">MAHARASHTRA</option>
-                <option value="West Bengal">WEST BENGAL</option>
-                <option value="Tamil Nadu">TAMIL NADU</option>
-                <option value="Gujarat">GUJARAT</option>
+                {INDIA_STATES_DATA.map(s => (
+                  <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
+                ))}
               </select>
             </div>
           </div>
@@ -170,7 +165,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
         </div>
 
         {/* Anomaly Context & Dynamic Narratives */}
-        <div className="glass-panel p-8 rounded-3xl border-t-4 border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent">
+        <div className="lg:col-span-4 glass-panel p-8 rounded-3xl border-t-4 border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent">
           <div className="flex items-center gap-3 mb-8">
             <ShieldAlert className="text-red-500 w-7 h-7" />
             <div>
@@ -178,8 +173,8 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
               <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black mt-1">Cross-referencing regional volatility</p>
             </div>
           </div>
-          <div className="space-y-4 h-[350px] overflow-y-auto pr-2 custom-scrollbar">
-            {anomalies.length > 0 ? anomalies.map((anomaly, i) => (
+          <div className="space-y-4 max-h-[480px] overflow-y-auto pr-2 custom-scrollbar">
+            {anomalies?.length > 0 ? anomalies.map((anomaly, i) => (
               <div key={i} className={`p-5 rounded-2xl border transition-all ${anomaly.type === 'SOCIETAL' ? 'bg-blue-950/20 border-blue-500/20' : 'bg-red-950/20 border-red-500/30'}`}>
                 <div className="flex justify-between items-start mb-2">
                   <div className="flex items-center gap-2">
