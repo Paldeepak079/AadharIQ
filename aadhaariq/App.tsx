@@ -35,7 +35,7 @@ const App: React.FC = () => {
       case 'predictive':
         return <PredictiveDemand selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'ai':
-        return <InsightEngine lang={state.lang} selectedState={state.selectedState} />;
+        return <InsightEngine lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'reports':
         return (
           <div className="flex flex-col items-center justify-center min-h-[400px]">

@@ -12,9 +12,10 @@ import PolicyActionMapper from './PolicyActionMapper';
 interface InsightEngineProps {
   lang: Language;
   selectedState: string | null;
+  onSelect?: (state: string | null) => void;
 }
 
-const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState }) => {
+const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSelect }) => {
   const t = translations[lang];
   const [loading, setLoading] = useState(false);
   const [insight, setInsight] = useState<InsightResponse | null>(null);
@@ -87,6 +88,20 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState }) =>
             <h2 className="text-2xl font-bold devanagari-header text-center">{t.aiInsightEngine}</h2>
             {/* Attribution removed as requested */}
           </div>
+        </div>
+
+        <div className="mb-6">
+          <label className="text-sm text-gray-400 mb-2 block uppercase tracking-widest font-black text-[10px]">Select Regional Focus</label>
+          <select
+            value={selectedState || "All India"}
+            onChange={(e) => onSelect?.(e.target.value === "All India" ? null : e.target.value)}
+            className="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-xs font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer shadow-xl"
+          >
+            <option value="All India">ALL INDIA (NATIONAL)</option>
+            {INDIA_STATES_DATA.map(s => (
+              <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
+            ))}
+          </select>
         </div>
 
         {/* Audience Selector */}

@@ -42,7 +42,7 @@ interface StateCoordinates {
 interface MapProps {
   lang: Language;
   selectedState?: string | null;
-  onSelect: (state: string) => void;
+  onSelect: (state: string | null) => void;
 }
 
 const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) => {
@@ -273,6 +273,19 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
                 </p>
               </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <select
+                value={selectedState || "All India"}
+                onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
+                className="bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer"
+              >
+                <option value="All India">ALL INDIA</option>
+                {INDIA_STATES_DATA.map(s => (
+                  <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
+                ))}
+              </select>
             </div>
           </div>
 

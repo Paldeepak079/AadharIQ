@@ -210,7 +210,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
         </div>
       </div>
 
-      <IntersectionExplorer lang={lang} selectedState={activeState} />
+      <IntersectionExplorer lang={lang} selectedState={activeState} onSelect={onSelect} />
 
       <UrbanRuralVelocityChart externalState={activeState} />
 
