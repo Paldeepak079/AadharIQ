@@ -6,6 +6,12 @@
   publish = "aadhaariq/dist"
 
 [[redirects]]
+  # Handle API proxy to avoid CORS/Mixed Content
+  from = "/api/*"
+  to = "http://localhost:8001/api/:splat" # Default to local, user can override via netlify.toml or Env vars
+  status = 200
+
+[[redirects]]
   # Handle SPA routing (redirect all requests to index.html)
   from = "/*"
   to = "/index.html"
