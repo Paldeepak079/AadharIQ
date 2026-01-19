@@ -92,16 +92,16 @@ export const generatePolicyPDF = async (options: PDFExportOptions): Promise<void
             addText(`• Saturation Status: ${insights.metrics.status}`, 10);
         }
 
-        if (insights.hindiTranslation) {
+        if (insights.insightHindi) {
             yPosition += 5;
             addText('हिंदी अनुवाद', 12, true, [66, 135, 245]);
-            addText(insights.hindiTranslation, 10);
+            addText(insights.insightHindi, 10);
         }
 
-        if (insights.trends && insights.trends.length > 0) {
+        if (insights.tags && insights.tags.length > 0) {
             yPosition += 5;
             addText('Identified Trends', 12, true, [66, 135, 245]);
-            insights.trends.forEach((trend: any) => {
+            insights.tags.forEach((trend: any) => {
                 const severityColor = trend.severity === 'critical' ? [239, 68, 68] :
                     trend.severity === 'high' ? [251, 146, 60] :
                         trend.severity === 'medium' ? [252, 211, 77] : [74, 222, 128];

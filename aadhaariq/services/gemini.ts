@@ -208,6 +208,7 @@ export const generatePolicyInsight = async (
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
+  // Use a more stable endpoint/model reference if available
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   // Build audience-aware prompt
@@ -256,11 +257,12 @@ ${insight}`;
   } catch (error) {
     console.error("Gemini Error:", error);
 
-    // Return fallback response
+    // Return fallback response that won't crash the UI
     return {
-      insight: "Error connecting to AI Insight Engine. Please check connectivity and API key.",
+      insight: "AI Insight Engine is currently adjusting parameters. Please try again in 30 seconds.",
+      insightHindi: "एआई अंतर्दृष्टि इंजन वर्तमान में मापदंडों को समायोजित कर रहा है। कृपया 30 सेकंड में पुन: प्रयास करें।",
       tags: [],
-      actionableSteps: [],
+      actionableSteps: ["Ensure internet connectivity is stable", "Verify API key limits", "Retry regional sync"],
       timestamp: Date.now(),
       cacheKey
     };

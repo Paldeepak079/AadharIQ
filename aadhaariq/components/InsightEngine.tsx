@@ -152,7 +152,7 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSe
               </div>
 
               {/* Language Toggle */}
-              {insight.hindiTranslation && (
+              {insight.insightHindi && (
                 <div className="mb-4 flex justify-end">
                   <button
                     onClick={() => setShowHindi(!showHindi)}
@@ -164,7 +164,7 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSe
               )}
 
               <div className="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg italic font-light">
-                {(showHindi && insight.hindiTranslation ? insight.hindiTranslation : insight.insight).split('\n').map((para, i) => (
+                {(showHindi && insight.insightHindi ? insight.insightHindi : insight.insight).split('\n').map((para, i) => (
                   <p key={i} className="mb-4">{para}</p>
                 ))}
               </div>
@@ -197,14 +197,14 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSe
             </div>
 
             {/* Trend Tags */}
-            {insight.trends.length > 0 && (
+            {insight.tags.length > 0 && (
               <div className="glass-panel p-6 rounded-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <Sparkles className="w-5 h-5 text-orange-500" />
                   <h3 className="font-bold">Detected Trends</h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  {insight.trends.map((trend, idx) => (
+                  {insight.tags.map((trend, idx) => (
                     <div
                       key={idx}
                       className={`px-4 py-2 rounded-xl border flex items-center gap-2 ${getSeverityColor(trend.severity)}`}
