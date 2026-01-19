@@ -127,6 +127,42 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
     }))
     : [];
 
+  // Calculate dynamic density metrics for the current state
+  const densityMetrics = React.useMemo(() => {
+    if (!currentStateForDistricts || !districtData[currentStateForDistricts.toUpperCase()]) {
+      return {
+        low: '<10/office',
+        medium: '10-20/office',
+        high: '20-50/office',
+        veryHigh: '>50/office'
+      };
+    }
+
+    const districts = Object.values(districtData[currentStateForDistricts.toUpperCase()]) as DistrictData[];
+    const densities = districts.map(d => d.density).sort((a, b) => a - b);
+
+    if (densities.length === 0) {
+      return {
+        low: '<10/office',
+        medium: '10-20/office',
+        high: '20-50/office',
+        veryHigh: '>50/office'
+      };
+    }
+
+    // Calculate quartiles
+    const q1 = densities[Math.floor(densities.length * 0.25)];
+    const q2 = densities[Math.floor(densities.length * 0.50)];
+    const q3 = densities[Math.floor(densities.length * 0.75)];
+
+    return {
+      low: `<${q1.toFixed(1)}/office`,
+      medium: `${q1.toFixed(1)}-${q2.toFixed(1)}/office`,
+      high: `${q2.toFixed(1)}-${q3.toFixed(1)}/office`,
+      veryHigh: `>${q3.toFixed(1)}/office`
+    };
+  }, [currentStateForDistricts, districtData]);
+
   const getStateTrace = () => {
     if (mapMode === 'saturation') {
       return {
@@ -158,7 +194,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
         },
         mode: 'markers+text',
         textposition: 'middle center',
-        textfont: { size: 12, color: '#000', weight: 900, family: 'Inter, sans-serif' },
+        textfont: { size: 12, color: '#fff', weight: 400, family: 'Inter, sans-serif' },
         hovertemplate: '<b style="font-size:16px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
           '<span style="font-size:14px; color:#94a3b8">Saturation:</span> <b style="font-size:14px; color:#22c55e">%{customdata.saturation}%</b><br>' +
           '<span style="font-size:14px; color:#94a3b8">Gap (Dark Zone):</span> <b style="font-size:14px; color:#ef4444">%{customdata.gap}%</b><br>' +
@@ -196,7 +232,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
         size: 11,
         color: '#ffffff',
         family: 'Inter, sans-serif',
-        weight: 700
+        weight: 400
       },
       hovertemplate: '<b style="font-size:16px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
         '<span style="font-size:14px; color:#94a3b8">Enrollments:</span> <b style="font-size:14px; color:#fff">%{customdata.enrollments:,.0f}</b><br>' +
@@ -249,7 +285,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
   return (
     <div className="space-y-6 animate-in slide-in-from-bottom duration-500">
       {/* Premium Single-Line Header */}
-      <div className="glass-panel p-4 rounded-3xl border border-orange-500/20 bg-gradient-to-br from-gray-900/90 via-gray-900/70 to-orange-900/10">
+      <div className="glass-panel p-4 rounded-3xl border border-orange-500/20 bg-gradient-to-br from-gray-900/90 via-gray-900/70 to-orange-900/10 relative z-40 overflow-visible">
         <div className="flex items-center justify-between gap-6">
           {/* Left Section: Title & Icon */}
           <div className="flex items-center gap-3 min-w-0 flex-1">
@@ -260,8 +296,8 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
               <h2 className="text-xl md:text-2xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent truncate">
                 {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
               </h2>
-              <p className="text-[11px] text-gray-500 uppercase tracking-widest font-bold flex items-center gap-1.5">
-                <MapPin className="w-3 h-3" />
+              <p className="text-sm text-gray-300 uppercase tracking-widest font-bold flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5" />
                 {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
               </p>
             </div>
@@ -280,11 +316,11 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
           </select>
 
           {/* Right Section: Mode Toggle & Legend */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 relative z-50">
             {viewMode === 'states' && (
               <>
                 <div className="flex bg-gray-900/80 p-1.5 rounded-xl border border-gray-800">
-                  <GlossaryTerm term="ACTIVITY" lang={lang}>
+                  <GlossaryTerm term="ACTIVITY" lang={lang} side="bottom">
                     <button
                       onClick={() => setMapMode('activity')}
                       className={`px-4 py-2 text-[11px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'activity' ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
@@ -293,7 +329,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                       ACTIVITY
                     </button>
                   </GlossaryTerm>
-                  <GlossaryTerm term="SATURATION GAP" lang={lang}>
+                  <GlossaryTerm term="SATURATION GAP" lang={lang} side="bottom">
                     <button
                       onClick={() => setMapMode('saturation')}
                       className={`px-4 py-2 text-[11px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'saturation' ? 'bg-red-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
@@ -307,13 +343,13 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                 <div className="flex items-center gap-3">
                   {mapMode === 'activity' ? (
                     <>
-                      <GlossaryTerm term="High Anomaly" lang={lang}>
+                      <GlossaryTerm term="High Anomaly" lang={lang} side="bottom">
                         <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-red-500/30 rounded-lg cursor-help group">
                           <div className="w-2.5 h-2.5 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
                           <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">High Anomaly</span>
                         </div>
                       </GlossaryTerm>
-                      <GlossaryTerm term="Normal" lang={lang}>
+                      <GlossaryTerm term="Normal" lang={lang} side="bottom">
                         <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-orange-500/30 rounded-lg cursor-help group">
                           <div className="w-2.5 h-2.5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
                           <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">Normal</span>
@@ -322,13 +358,13 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                     </>
                   ) : (
                     <>
-                      <GlossaryTerm term=">10% Gap" lang={lang}>
+                      <GlossaryTerm term=">10% Gap" lang={lang} side="bottom">
                         <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-red-500/30 rounded-lg cursor-help group">
                           <div className="w-2.5 h-2.5 bg-red-600 rounded-full group-hover:scale-110 transition-transform" />
                           <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">&gt;10% Gap</span>
                         </div>
                       </GlossaryTerm>
-                      <GlossaryTerm term="<5% Gap" lang={lang}>
+                      <GlossaryTerm term="<5% Gap" lang={lang} side="bottom">
                         <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-green-500/30 rounded-lg cursor-help group">
                           <div className="w-2.5 h-2.5 bg-green-600 rounded-full group-hover:scale-110 transition-transform" />
                           <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">&lt;5% Gap</span>
@@ -359,7 +395,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
         {/* Glow effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-        <div className="relative bg-black/40 rounded-3xl p-4 backdrop-blur-sm">
+        <div className="relative bg-black/40 rounded-3xl p-4">
           <Plot
             data={[viewMode === 'states' ? getStateTrace() : getDistrictTrace()]}
             layout={{
@@ -459,7 +495,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-lg shadow-blue-500/50 group-hover:scale-110 transition-transform" />
                   <div>
                     <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Low Density</span>
-                    <p className="text-white font-black text-base">&lt;10/office</p>
+                    <p className="text-white font-black text-base">{densityMetrics.low}</p>
                   </div>
                 </div>
               </GlossaryTerm>
@@ -468,7 +504,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg shadow-green-500/50 group-hover:scale-110 transition-transform" />
                   <div>
                     <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Medium</span>
-                    <p className="text-white font-black text-base">10-20/office</p>
+                    <p className="text-white font-black text-base">{densityMetrics.medium}</p>
                   </div>
                 </div>
               </GlossaryTerm>
@@ -477,7 +513,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-lg shadow-orange-500/50 group-hover:scale-110 transition-transform" />
                   <div>
                     <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">High</span>
-                    <p className="text-white font-black text-base">20-50/office</p>
+                    <p className="text-white font-black text-base">{densityMetrics.high}</p>
                   </div>
                 </div>
               </GlossaryTerm>
@@ -486,7 +522,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <div className="w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-lg shadow-red-500/50 group-hover:scale-110 transition-transform" />
                   <div>
                     <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Very High</span>
-                    <p className="text-white font-black text-base">&gt;50/office</p>
+                    <p className="text-white font-black text-base">{densityMetrics.veryHigh}</p>
                   </div>
                 </div>
               </GlossaryTerm>
