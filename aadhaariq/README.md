@@ -27,45 +27,35 @@ AadhaarIQ transforms complex Aadhaar enrollment data into actionable insights th
 - Confidence scoring for predictions
 
 ### 📊 State Comparison Tool
-- Side-by-side state performance analysis
-- Multi-metric comparisons
-- Visual trend indicators
-- Comprehensive data tables
+# AadhaarIQ - Intelligent Enrollment Analytics Platform
 
-### 🌍 Multi-Language Support
-- English and Hindi interface
-- Context-aware tooltips
-- Localized terminology
+![AadhaarIQ Banner](https://img.shields.io/badge/UIDAI-Hackathon%202026-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-## 🚀 Getting Started
+> Transforming Aadhaar enrollment data into actionable policy insights through predictive analytics and interactive visualizations.
+
+---
+
+## 🎯 **Overview**
+
+AadhaarIQ analyzes **5.3+ million Aadhaar enrollment records** across 39 states and 734 districts to identify:
+- Geographic saturation gaps
+- Demographic enrollment patterns  
+- Predictive dark zones (6-month forecasts)
+- Policy intervention priorities
+
+**Key Features**:
+- 📊 Interactive dashboards with real-time metrics
+- 🗺️ Geospatial mapping (state & district levels)
+- 🔮 ML-based forecasting (Holt-Winters ~ 8.4% MAPE)
+- 🎯 Automated policy action mapping
+- 🌐 Multi-language support (English/Hindi)
+
+---
+
+## 🚀 **Quick Start**
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- Python 3.8+ (for backend)
-- npm or yarn
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd aadhaariq
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-The application will be available at `http://localhost:5173`
-
-### Backend Setup
-
-1. Navigate to the backend directory:
    ```bash
    cd backend
    ```
