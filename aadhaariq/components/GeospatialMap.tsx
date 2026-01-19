@@ -403,14 +403,14 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                 scope: 'asia',
                 center: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
                   ? { lat: stateCoordinates[currentStateForDistricts.toUpperCase()].lat, lon: stateCoordinates[currentStateForDistricts.toUpperCase()].lng }
-                  : { lat: 22, lon: 82 },
+                  : { lat: 23.5, lon: 82.5 },
                 projection: {
                   type: 'mercator',
                   scale: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
                     ? stateCoordinates[currentStateForDistricts.toUpperCase()].zoomScale
-                    : 2.2,
-                  // Limit zoom range - min 1.5 (zoomed out), max 15 (zoomed in)
-                  scalerange: [1.5, 15]
+                    : 3.0,
+                  // Improved zoom range for better detail
+                  scalerange: [1.5, 25]
                 },
                 showland: true,
                 landcolor: 'rgb(17, 24, 39)',
@@ -440,7 +440,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
               hovermode: 'closest',
               dragmode: 'pan',
               transition: {
-                duration: 500,
+                duration: 300,
                 easing: 'cubic-in-out'
               },
               hoverlabel: {
