@@ -1,10 +1,12 @@
 # AadhaarIQ - https://aadhariq.netlify.app/
 <img width="1894" height="971" alt="image" src="https://github.com/user-attachments/assets/c37a9668-5d47-4afa-9664-ab4a68496852" />
+<img width="1907" height="967" alt="image" src="https://github.com/user-attachments/assets/2dc300bf-4c0e-4a35-a44f-88add0eb713b" />
+<img width="1917" height="967" alt="image" src="https://github.com/user-attachments/assets/426ca434-4062-4162-9819-6c349cafff02" />
+<img width="1907" height="968" alt="image" src="https://github.com/user-attachments/assets/5204e554-5923-4262-b2cd-c3c24810ec03" />
+<img width="1910" height="965" alt="image" src="https://github.com/user-attachments/assets/6d7b30eb-7bae-45a3-90d2-623df70b924d" />
+<img width="1908" height="973" alt="image" src="https://github.com/user-attachments/assets/275e99a4-89c5-4911-89a9-3e9ac9501f62" />
 
 - **Data Source**: UIDAI Open Datasets
-- **AI Engine**: Google Gemini 1.5 Flash
-- **Built for**: Hackathon / Policy Analysis
-
 ## 📄 License
 
 This project uses real UIDAI data for educational/analytical purposes.
@@ -159,12 +161,7 @@ This project is developed for educational and analytical purposes. Please ensure
 
 ## 👥 Team
 
-Developed by the AadhaarIQ team for better visualization and understanding of India's digital identity infrastructure.
-
-## 📞 Support
-
-For questions or issues, please open an issue on GitHub.
-
+Developed by the MADTech team for better visualization and understanding of India's digital identity infrastructure.
 ---
 
 **Note**: This is a data analytics tool designed for visualization and insight generation. It does not store or process any personally identifiable information (PII).
