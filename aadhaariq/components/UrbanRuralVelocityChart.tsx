@@ -231,7 +231,7 @@ const UrbanRuralVelocityChart: React.FC<VelocityProps> = ({ externalState, lang 
                         <div className="flex items-center gap-3">
                             <TrendingUp className="text-blue-500 w-7 h-7" />
                             <div>
-                                <GlossaryTerm term="Urban/Rural Velocity" lang={lang}>
+                                <GlossaryTerm term="Urban/Rural Velocity" lang={lang} side="bottom">
                                     <h3 className="text-xl font-black text-white italic uppercase tracking-tighter">Urban vs Rural Velocity</h3>
                                 </GlossaryTerm>
                                 <p className="text-[10px] text-blue-500 uppercase tracking-widest font-black mt-1 line-clamp-1">

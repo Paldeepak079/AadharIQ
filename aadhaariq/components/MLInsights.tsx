@@ -72,12 +72,12 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
     <div className="space-y-8 animate-in slide-in-from-bottom duration-700">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Diagnostic Activity Pulse Section */}
-        <div className="lg:col-span-8 glass-panel p-8 rounded-3xl border-t-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent">
+        <div className="lg:col-span-8 glass-panel p-8 rounded-3xl border-t-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent relative hover:z-[50] transition-all">
           <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
             <div className="flex items-center gap-3">
               <Target className="text-orange-500 w-7 h-7" />
               <div>
-                <GlossaryTerm term="National Activity Pulse" lang={lang}>
+                <GlossaryTerm term="National Activity Pulse" lang={lang} side="bottom">
                   <h3 className="text-xl font-black text-white hover:text-orange-500 transition-colors uppercase tracking-widest">
                     DIAGNOSTIC PULSE
                   </h3>
@@ -166,11 +166,11 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
         </div>
 
         {/* Anomaly Context & Dynamic Narratives */}
-        <div className="lg:col-span-4 glass-panel p-8 rounded-3xl border-t-4 border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent">
+        <div className="lg:col-span-4 glass-panel p-8 rounded-3xl border-t-4 border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent relative hover:z-[50] transition-all">
           <div className="flex items-center gap-3 mb-8">
             <ShieldAlert className="text-red-500 w-7 h-7" />
             <div>
-              <GlossaryTerm term="Diagnostic Identification" lang={lang}>
+              <GlossaryTerm term="Diagnostic Identification" lang={lang} side="bottom">
                 <h3 className="text-xl font-black text-white uppercase tracking-tighter">ANOMALY CONTEXT</h3>
               </GlossaryTerm>
               <p className="text-[10px] text-red-500 uppercase tracking-widest font-black mt-1">{activeState.toUpperCase()}</p>
@@ -252,7 +252,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
               <div className="flex items-center gap-3">
                 <Users className="text-green-500 w-8 h-8" />
                 <div>
-                  <GlossaryTerm term="Demographic & Economic Clustering" lang={lang}>
+                  <GlossaryTerm term="Demographic & Economic Clustering" lang={lang} side="bottom">
                     <h3 className="text-xl font-black text-white italic uppercase tracking-tighter">
                       DEMOGRAPHIC & ECONOMIC CLUSTERING
                     </h3>

@@ -57,7 +57,7 @@ const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedSta
         <div className="space-y-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <GlossaryTerm term="Multivariate State Profile" lang={lang}>
+                    <GlossaryTerm term="Multivariate State Profile" lang={lang} side="bottom">
                         <h2 className="text-xl font-black devanagari-header flex items-center gap-2 text-white uppercase tracking-widest hover:text-orange-500 transition-colors">
                             <Zap className="text-yellow-500 w-6 h-6" />
                             MULTIVARIATE PROFILE

@@ -248,202 +248,192 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
 
   return (
     <div className="space-y-6 animate-in slide-in-from-bottom duration-500">
-      {/* Premium Header */}
-      <div className="glass-panel p-6 rounded-3xl border border-orange-500/20 bg-gradient-to-br from-gray-900/90 via-gray-900/70 to-orange-900/10">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
+      {/* Premium Single-Line Header */}
+      <div className="glass-panel p-4 rounded-3xl border border-orange-500/20 bg-gradient-to-br from-gray-900/90 via-gray-900/70 to-orange-900/10">
+        <div className="flex items-center justify-between gap-6">
+          {/* Left Section: Title & Icon */}
+          <div className="flex items-center gap-3 min-w-0 flex-1">
+            <div className="p-2.5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl shadow-lg shadow-orange-500/30 shrink-0">
+              <Globe className="text-white w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="text-lg md:text-xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent truncate">
+                {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
+              </h2>
+              <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold flex items-center gap-1.5">
+                <MapPin className="w-2.5 h-2.5" />
+                {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
+              </p>
+            </div>
+          </div>
+
+          {/* Center Section: State Selector */}
+          <select
+            value={selectedState || "All India"}
+            onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
+            className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-[10px] font-black text-gray-300 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer hover:border-orange-500/50 min-w-[140px]"
+          >
+            <option value="All India">ALL INDIA</option>
+            {INDIA_STATES_DATA.map(s => (
+              <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
+            ))}
+          </select>
+
+          {/* Right Section: Mode Toggle & Legend */}
+          <div className="flex items-center gap-3">
+            {viewMode === 'states' && (
+              <>
+                <div className="flex bg-gray-900/80 p-1 rounded-xl border border-gray-800">
+                  <button
+                    onClick={() => setMapMode('activity')}
+                    className={`px-3 py-1.5 text-[9px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'activity' ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                  >
+                    <Activity className="w-2.5 h-2.5" />
+                    ACTIVITY
+                  </button>
+                  <button
+                    onClick={() => setMapMode('saturation')}
+                    className={`px-3 py-1.5 text-[9px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'saturation' ? 'bg-red-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                  >
+                    <Layers className="w-2.5 h-2.5" />
+                    SATURATION GAP
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  {mapMode === 'activity' ? (
+                    <>
+                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-red-500/30 rounded-lg">
+                        <div className="w-2 h-2 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-sm" />
+                        <span className="text-[9px] text-gray-300 font-bold">High Anomaly</span>
+                      </div>
+                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-orange-500/30 rounded-lg">
+                        <div className="w-2 h-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-sm" />
+                        <span className="text-[9px] text-gray-300 font-bold">Normal</span>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-red-500/30 rounded-lg">
+                        <div className="w-2 h-2 bg-red-600 rounded-full" />
+                        <span className="text-[9px] text-gray-300 font-bold">&gt;10% Gap</span>
+                      </div>
+                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-green-500/30 rounded-lg">
+                        <div className="w-2 h-2 bg-green-600 rounded-full" />
+                        <span className="text-[9px] text-gray-300 font-bold">&lt;5% Gap</span>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </>
+            )}
+
             {viewMode === 'districts' && (
               <button
                 onClick={handleBackToStates}
-                className="px-5 py-2.5 bg-gradient-to-r from-gray-900 to-gray-800 border-2 border-orange-500/30 rounded-xl text-white text-sm font-bold hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2 group"
+                className="px-4 py-2 bg-gradient-to-r from-gray-900 to-gray-800 border border-orange-500/30 rounded-xl text-white text-[10px] font-bold hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2 group"
               >
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                Back to States
+                <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
+                BACK TO STATES
               </button>
             )}
-            <div className="flex items-center gap-3">
-              <div className="p-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-lg shadow-orange-500/30">
-                <Globe className="text-white w-7 h-7" />
-              </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent">
-                  {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
-                </h2>
-                <p className="text-xs text-gray-400 uppercase tracking-widest font-bold mt-1 flex items-center gap-2">
-                  <MapPin className="w-3 h-3" />
-                  {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
-                </p>
-              </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <select
-                value={selectedState || "All India"}
-                onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
-                className="bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer"
-              >
-                <option value="All India">ALL INDIA</option>
-                {INDIA_STATES_DATA.map(s => (
-                  <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Premium Legend & Toggles */}
-          <div className="flex flex-wrap items-center gap-4">
-            {viewMode === 'states' && (
-              <div className="flex bg-gray-900/80 p-1.5 rounded-2xl border border-gray-800 shadow-inner">
-                <button
-                  onClick={() => setMapMode('activity')}
-                  className={`px-4 py-2 text-[10px] font-bold rounded-xl transition-all flex items-center gap-2 ${mapMode === 'activity' ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  <Activity className="w-3 h-3" />
-                  ACTIVITY
-                </button>
-                <button
-                  onClick={() => setMapMode('saturation')}
-                  className={`px-4 py-2 text-[10px] font-bold rounded-xl transition-all flex items-center gap-2 ${mapMode === 'saturation' ? 'bg-red-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
-                >
-                  <Layers className="w-3 h-3" />
-                  SATURATION GAP
-                </button>
-              </div>
-            )}
-
-            <div className="flex flex-wrap gap-4">
-              {viewMode === 'states' ? (
-                mapMode === 'activity' ? (
-                  <>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-red-500/30 rounded-xl">
-                      <div className="w-3 h-3 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-lg shadow-red-500/50" />
-                      <GlossaryTerm term="Anomaly Score" lang={lang}>
-                        <span className="text-xs text-gray-300 font-bold">High Anomaly</span>
-                      </GlossaryTerm>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-orange-500/30 rounded-xl">
-                      <div className="w-3 h-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-lg shadow-orange-500/50" />
-                      <span className="text-xs text-gray-300 font-bold">Normal</span>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-red-500/30 rounded-xl">
-                      <div className="w-3 h-3 bg-red-600 rounded-full" />
-                      <GlossaryTerm term="Dark Zone (>10% Gap)" lang={lang}>
-                        <span className="text-xs text-gray-300 font-bold">Dark Zone (&gt;10% Gap)</span>
-                      </GlossaryTerm>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-green-500/30 rounded-xl">
-                      <div className="w-3 h-3 bg-green-600 rounded-full" />
-                      <GlossaryTerm term="Saturated (<5% Gap)" lang={lang}>
-                        <span className="text-xs text-gray-300 font-bold">Saturated (&lt;5% Gap)</span>
-                      </GlossaryTerm>
-                    </div>
-                  </>
-                )
-              ) : (
-                <>
-                  <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-900/50 border border-red-500/30 rounded-lg">
-                    <div className="w-2.5 h-2.5 bg-red-500 rounded-full shadow-lg shadow-red-500/50" />
-                    <span className="text-[10px] text-gray-300 font-bold">&gt;50</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-900/50 border border-orange-500/30 rounded-lg">
-                    <div className="w-2.5 h-2.5 bg-orange-500 rounded-full shadow-lg shadow-orange-500/50" />
-                    <span className="text-[10px] text-gray-300 font-bold">20-50</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-900/50 border border-green-500/30 rounded-lg">
-                    <div className="w-2.5 h-2.5 bg-green-500 rounded-full shadow-lg shadow-green-500/50" />
-                    <span className="text-[10px] text-gray-300 font-bold">10-20</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-900/50 border border-blue-500/30 rounded-lg">
-                    <div className="w-2.5 h-2.5 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50" />
-                    <span className="text-[10px] text-gray-300 font-bold">&lt;10</span>
-                  </div>
-                </>
-              )}
-            </div>
           </div>
         </div>
+      </div>
 
-        {/* Premium Map Container */}
-        <div className="glass-panel p-1 rounded-3xl border border-orange-500/10 bg-gradient-to-br from-gray-900/50 via-black/30 to-gray-900/50 shadow-2xl shadow-orange-500/5 overflow-hidden relative group">
-          {/* Glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+      {/* Premium Map Container */}
+      <div className="glass-panel p-1 rounded-3xl border border-orange-500/10 bg-gradient-to-br from-gray-900/50 via-black/30 to-gray-900/50 shadow-2xl shadow-orange-500/5 overflow-hidden relative group">
+        {/* Glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-          <div className="relative bg-black/40 rounded-3xl p-4 backdrop-blur-sm">
-            <Plot
-              data={[viewMode === 'states' ? getStateTrace() : getDistrictTrace()]}
-              layout={{
-                geo: {
-                  scope: 'asia',
-                  center: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
-                    ? { lat: stateCoordinates[currentStateForDistricts.toUpperCase()].lat, lon: stateCoordinates[currentStateForDistricts.toUpperCase()].lng }
-                    : { lat: 22, lon: 82 },
-                  projection: {
-                    type: 'mercator',
-                    scale: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
-                      ? stateCoordinates[currentStateForDistricts.toUpperCase()].zoomScale
-                      : 2.2
-                  },
-                  showland: true,
-                  landcolor: 'rgb(17, 24, 39)',
-                  showlakes: true,
-                  lakecolor: 'rgb(15, 23, 42)',
-                  showcountries: true,
-                  countrycolor: 'rgb(249, 115, 22, 0.5)',
-                  countrywidth: 3,
-                  subunitcolor: 'rgb(75, 85, 99, 0.3)',
-                  subunitwidth: 1,
-                  bgcolor: 'rgba(0,0,0,0)',
-                  lonaxis: {
-                    showgrid: false,
-                    gridcolor: 'rgb(55, 65, 81, 0.2)'
-                  },
-                  lataxis: {
-                    showgrid: false,
-                    gridcolor: 'rgb(55, 65, 81, 0.2)'
-                  }
+        <div className="relative bg-black/40 rounded-3xl p-4 backdrop-blur-sm">
+          <Plot
+            data={[viewMode === 'states' ? getStateTrace() : getDistrictTrace()]}
+            layout={{
+              geo: {
+                scope: 'asia',
+                center: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
+                  ? { lat: stateCoordinates[currentStateForDistricts.toUpperCase()].lat, lon: stateCoordinates[currentStateForDistricts.toUpperCase()].lng }
+                  : { lat: 22, lon: 82 },
+                projection: {
+                  type: 'mercator',
+                  scale: viewMode === 'districts' && currentStateForDistricts && stateCoordinates[currentStateForDistricts.toUpperCase()]
+                    ? stateCoordinates[currentStateForDistricts.toUpperCase()].zoomScale
+                    : 2.2,
+                  // Limit zoom range - min 1.5 (zoomed out), max 15 (zoomed in)
+                  scalerange: [1.5, 15]
                 },
-                paper_bgcolor: 'rgba(0,0,0,0)',
-                plot_bgcolor: 'rgba(0,0,0,0)',
-                margin: { l: 0, r: 0, b: 0, t: 0 },
-                height: 650,
-                autosize: true,
-                showlegend: false,
-                hovermode: 'closest',
-                hoverlabel: {
-                  bgcolor: 'rgba(17, 24, 39, 0.98)',
-                  bordercolor: 'rgba(249, 115, 22, 0.3)',
-                  font: {
-                    family: 'Inter, sans-serif',
-                    size: 12,
-                    color: '#ffffff'
-                  }
+                showland: true,
+                landcolor: 'rgb(17, 24, 39)',
+                showlakes: true,
+                lakecolor: 'rgb(15, 23, 42)',
+                showcountries: true,
+                countrycolor: 'rgb(249, 115, 22, 0.5)',
+                countrywidth: 3,
+                subunitcolor: 'rgb(75, 85, 99, 0.3)',
+                subunitwidth: 1,
+                bgcolor: 'rgba(0,0,0,0)',
+                lonaxis: {
+                  showgrid: false,
+                  gridcolor: 'rgb(55, 65, 81, 0.2)'
+                },
+                lataxis: {
+                  showgrid: false,
+                  gridcolor: 'rgb(55, 65, 81, 0.2)'
                 }
-              }}
-              config={{
-                displayModeBar: false,
-                responsive: true
-              }}
-              onClick={(event: any) => {
-                if (viewMode === 'states' && event.points && event.points[0]) {
-                  const stateName = event.points[0].customdata.fullName;
-                  const normalizedStateName = stateName.toUpperCase();
+              },
+              paper_bgcolor: 'rgba(0,0,0,0)',
+              plot_bgcolor: 'rgba(0,0,0,0)',
+              margin: { l: 0, r: 0, b: 0, t: 0 },
+              height: 650,
+              autosize: true,
+              showlegend: false,
+              hovermode: 'closest',
+              dragmode: 'zoom',
+              transition: {
+                duration: 500,
+                easing: 'cubic-in-out'
+              },
+              hoverlabel: {
+                bgcolor: 'rgba(17, 24, 39, 0.98)',
+                bordercolor: 'rgba(249, 115, 22, 0.3)',
+                font: {
+                  family: 'Inter, sans-serif',
+                  size: 12,
+                  color: '#ffffff'
+                }
+              }
+            }}
+            config={{
+              displayModeBar: false,
+              responsive: true,
+              scrollZoom: true,
+              doubleClick: 'reset',
+              // Limit zoom to reasonable bounds
+              modeBarButtonsToRemove: ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d'],
+              // Prevent infinite zoom out
+              staticPlot: false
+            }}
+            onClick={(event: any) => {
+              if (viewMode === 'states' && event.points && event.points[0]) {
+                const stateName = event.points[0].customdata.fullName;
+                const normalizedStateName = stateName.toUpperCase();
 
-                  if (districtData[normalizedStateName]) {
-                    setCurrentStateForDistricts(stateName);
-                    setViewMode('districts');
-                  }
+                if (districtData[normalizedStateName]) {
+                  setCurrentStateForDistricts(stateName);
+                  setViewMode('districts');
                 }
-              }}
-              style={{ width: '100%', height: '100%' }}
-            />
-          </div>
+              }
+            }}
+            style={{ width: '100%', height: '100%' }}
+          />
         </div>
+      </div>
 
-        {/* Premium Info Panel for Districts */}
-        {viewMode === 'districts' && (
+      {/* Premium Info Panel for Districts */}
+      {
+        viewMode === 'districts' && (
           <div className="glass-panel p-6 rounded-2xl border border-orange-500/10 bg-gradient-to-br from-gray-900/50 to-gray-900/30">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1 h-8 bg-gradient-to-b from-orange-500 to-orange-600 rounded-full" />
@@ -480,8 +470,8 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
               </div>
             </div>
           </div>
-        )}
-      </div>
+        )
+      }
     </div>
   );
 };

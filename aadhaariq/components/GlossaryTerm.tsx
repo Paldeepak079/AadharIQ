@@ -147,6 +147,66 @@ export const GLOSSARY: Record<string, { EN: string; HI: string }> = {
     'Enrollment Density Scale': {
         EN: 'A measure of enrollment concentration per operational center, normalized for regional population.',
         HI: 'प्रति परिचालन केंद्र नामांकन एकाग्रता का माप, क्षेत्रीय जनसंख्या के लिए सामान्यीकृत।'
+    },
+    'Age Demographics': {
+        EN: 'Pattern of enrollment and updates across different age bands (Child, Youth, Adult).',
+        HI: 'विभिन्न आयु वर्गों (बाल, युवा, वयस्क) में नामांकन और अपडेट का पैटर्न।'
+    },
+    'Trend Spotlight': {
+        EN: 'AI-surfaced anomalies and operational highlights requiring immediate attention.',
+        HI: 'तत्काल ध्यान देने योग्य एआई-सतह विसंगतियां और परिचालन हाइलाइट्स।'
+    },
+    'Demographic Distribution': {
+        EN: 'Visual breakdown of population segments across the selected region.',
+        HI: 'चयनित क्षेत्र में जनसंख्या खंडों का दृश्य विवरण।'
+    },
+    'Child Enrolment Leader': {
+        EN: 'The specific region achieving the highest progress in Baal Aadhaar registration.',
+        HI: 'बाल आधार पंजीकरण में उच्चतम प्रगति प्राप्त करने वाला विशिष्ट क्षेत्र।'
+    },
+    'ACTIVITY': {
+        EN: 'Real-time monitoring of enrollment and update transactions across regions.',
+        HI: 'क्षेत्रों में नामांकन और अपडेट लेनदेन की वास्तविक समय की निगरानी।'
+    },
+    'SATURATION GAP': {
+        EN: 'Calculated difference between total population and enrolled Aadhaar holders.',
+        HI: 'कुल जनसंख्या और नामांकित आधार धारकों के बीच गणना किया गया अंतर।'
+    },
+    'High Anomaly': {
+        EN: 'Regions where activity patterns deviate significantly from historical norms.',
+        HI: 'वे क्षेत्र जहां गतिविधि पैटर्न ऐतिहासिक मानदंडों से काफी भिन्न होते हैं।'
+    },
+    'Normal': {
+        EN: 'Activity levels consistent with expected regional growth and maintenance patterns.',
+        HI: 'अपेक्षित क्षेत्रीय विकास और रखरखाव पैटर्न के अनुरूप गतिविधि स्तर।'
+    },
+    '>10% Gap': {
+        EN: 'Critical dark zones where over 10% of the eligible population is not yet enrolled.',
+        HI: 'गंभीर डार्क जोन जहां 10% से अधिक पात्र आबादी का अभी तक नामांकन नहीं हुआ है।'
+    },
+    '<5% Gap': {
+        EN: 'Healthy zones where Aadhaar coverage has reached near-universal saturation.',
+        HI: 'स्वस्थ क्षेत्र जहां आधार कवरेज लगभग सार्वभौमिक संतृप्ति तक पहुंच गया है।'
+    },
+    'Enrollment Density Scale': {
+        EN: 'Classification of regions based on the number of residents per enrollment office.',
+        HI: 'प्रत्येक नामांकन कार्यालय में निवासियों की संख्या के आधार पर क्षेत्रों का वर्गीकरण।'
+    },
+    'Low Density': {
+        EN: 'Fewer than 10 active enrollments/updates per office capacity.',
+        HI: 'प्रति कार्यालय क्षमता 10 से कम सक्रिय नामांकन/अपडेट।'
+    },
+    'Medium': {
+        EN: 'Balanced workload between 10-20 enrollments/updates per office capacity.',
+        HI: 'प्रति कार्यालय क्षमता 10-20 नामांकन/अपडेट के बीच संतुलित कार्यभार।'
+    },
+    'High': {
+        EN: 'Increased pressure with 20-50 transactions per office capacity.',
+        HI: 'प्रति कार्यालय क्षमता 20-50 लेनदेन के साथ बढ़ा हुआ दबाव।'
+    },
+    'Very High': {
+        EN: 'Critical infrastructure strain with over 50 transactions per office capacity.',
+        HI: 'प्रति कार्यालय क्षमता 50 से अधिक लेनदेन के साथ गंभीर बुनियादी ढांचा तनाव।'
     }
 };
 
@@ -167,7 +227,7 @@ const GlossaryTerm: React.FC<GlossaryProps> = ({ term, children, lang = 'EN', cl
 
     return (
         <span
-            className={`relative inline-flex items-center gap-1 cursor-help group transition-all ${className}`}
+            className={`relative inline-flex items-center gap-1 cursor-help group transition-all ${isHovered ? 'z-[1000]' : 'z-auto'} ${className}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -182,7 +242,7 @@ const GlossaryTerm: React.FC<GlossaryProps> = ({ term, children, lang = 'EN', cl
                         initial={{ opacity: 0, scale: 0.9, y: 10, x: '-50%' }}
                         animate={{ opacity: 1, scale: 1, y: 0, x: '-50%' }}
                         exit={{ opacity: 0, scale: 0.9, y: 10, x: '-50%' }}
-                        className="absolute z-[100] w-72 p-4 bg-gray-950/95 backdrop-blur-2xl border border-white/20 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8)] pointer-events-none left-1/2 bottom-full mb-4"
+                        className={`absolute z-[10000] w-72 p-4 bg-gray-950/95 backdrop-blur-2xl border border-white/20 rounded-2xl shadow-[0_20px_50_rgba(0,0,0,0.8)] pointer-events-none left-1/2 ${side === 'top' ? 'bottom-full mb-4' : 'top-full mt-4'}`}
                         style={{
                             maxWidth: '90vw',
                             transform: 'translateX(-50%)'
@@ -196,8 +256,8 @@ const GlossaryTerm: React.FC<GlossaryProps> = ({ term, children, lang = 'EN', cl
                                 {definition}
                             </span>
                         </div>
-                        {/* Caret - Always at bottom since tooltip is always at top */}
-                        <div className="absolute top-full -mt-[6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-950 border-r border-b border-white/20 rotate-45 z-0" />
+                        {/* Caret */}
+                        <div className={`absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-950 border-r border-b border-white/20 rotate-45 z-0 ${side === 'top' ? 'top-full -mt-[6px]' : 'bottom-full -mb-[6px] rotate-[225deg]'}`} />
                     </motion.div>
                 )}
             </AnimatePresence>

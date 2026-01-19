@@ -40,7 +40,7 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((s, idx) => (
-          <div key={idx} className="glass-panel p-3 px-4 rounded-xl hover:border-orange-500/50 transition-all group flex items-center gap-4">
+          <div key={idx} className="glass-panel p-3 px-4 rounded-xl hover:border-orange-500/50 transition-all group flex items-center gap-4 relative hover:z-[50]">
             <div className={`p-2 rounded-lg bg-gray-900 group-hover:bg-gray-800 transition-colors ${s.color} shrink-0`}>
               <s.icon className="w-4 h-4" />
             </div>
@@ -56,9 +56,11 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-8">
-          <div className="glass-panel p-8 rounded-3xl">
+          <div className="glass-panel p-8 rounded-3xl relative hover:z-[40] transition-all">
             <h3 className="text-xl font-bold mb-6 devanagari-header flex items-center justify-between">
-              <span>Age Demographics (All Regions)</span>
+              <GlossaryTerm term="Age Demographics" lang={lang} side="bottom">
+                <span>Age Demographics (All Regions)</span>
+              </GlossaryTerm>
               <span className="text-xs font-normal text-gray-500 uppercase tracking-widest">Enrolment Distribution</span>
             </h3>
             {/* Scrollable Container for All States */}
@@ -119,7 +121,9 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
           <div className="glass-panel p-8 rounded-3xl border-l-4 border-orange-500 bg-gradient-to-br from-orange-500/5 to-transparent">
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
               <Globe2 className="w-5 h-5 text-orange-500" />
-              Trend Spotlight
+              <GlossaryTerm term="Trend Spotlight" lang={lang}>
+                <span>Trend Spotlight</span>
+              </GlossaryTerm>
             </h3>
             {(() => {
               // Dynamic Trend Calculation
@@ -161,7 +165,9 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
                   </div>
                   <div className="p-4 bg-gray-900/80 rounded-2xl border border-gray-800">
                     <p className="text-[10px] text-green-400 font-bold uppercase tracking-widest mb-1">Operational Insight #2</p>
-                    <p className="text-sm font-bold text-white mb-2">Child Enrolment Leader</p>
+                    <GlossaryTerm term="Child Enrolment Leader" lang={lang}>
+                      <p className="text-sm font-bold text-white mb-2">Child Enrolment Leader</p>
+                    </GlossaryTerm>
                     <p className="text-xs text-gray-400 leading-relaxed">
                       {maxChildState.state} records the highest child enrolment at {(maxChildState.childEnrolments / 1000000).toFixed(2)}M, reflecting successful youth outreach.
                     </p>
@@ -180,7 +186,9 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
           <div className="glass-panel p-8 rounded-3xl">
             <div className="flex flex-col gap-4 mb-6">
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-bold">Demographic Distribution</h3>
+                <GlossaryTerm term="Demographic Distribution" lang={lang} side="bottom">
+                  <h3 className="text-lg font-bold">Demographic Distribution</h3>
+                </GlossaryTerm>
                 <div className="flex bg-gray-900/50 p-1 rounded-lg border border-gray-800 shadow-inner">
                   <button
                     onClick={() => {
