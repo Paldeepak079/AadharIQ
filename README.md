@@ -1,197 +1,6 @@
 # AadhaarIQ - https://aadhariq.netlify.app/
+<img width="1894" height="971" alt="image" src="https://github.com/user-attachments/assets/c37a9668-5d47-4afa-9664-ab4a68496852" />
 
-Production-ready dashboard for analyzing nationwide Aadhaar enrolment and update trends using real UIDAI datasets, powered by AI/ML models and Google Gemini 1.5 Flash.
-
-## 🚀 Features
-
-- **Real Data Integration**: 5.3M+ enrolments, 104M+ updates from official UIDAI datasets
-- **Interactive Geospatial Map**: Click state tiles for drill-down analysis
-- **ML-Powered Insights**: Anomaly detection, forecasting (LSTM/Prophet), clustering (K-Means/DBSCAN)
-- **AI Narrative Engine**: Policy-grade insights (Hindi/English, audience modes)
-- **PDF Export**: Generate comprehensive strategy reports
-- **FastAPI Backend**: 14 real-time analytics endpoints
-- **Premium Dark UI**: High-contrast Indian-themed interface with smooth animations
-
-## 📋 Prerequisites
-
-- **Node.js** 16+ and npm
-- **Python** 3.8+
- 
-## 🛠️ Setup Instructions
-
-### 1. Install Dependencies
-
-**Frontend:**
-```bash
-cd aadhaariq
-npm install
-```
-
-**Backend:**
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
-### 2. Configure Environment Variables
-
-Create `aadhaariq/.env` file:
-```bash
-cd aadhaariq
-cp .env.example .env
-```
-
-Edit `.env` and add your Gemini API key:
-```
-VITE_GEMINI_API_KEY=your_actual_api_key_here
-```
-
-### 3. Process Real Data (Already Done)
-
-The cleaned data is already processed and available in `aadhaariq/data/aadhaar_data.json`.
-
-To regenerate (optional):
-```bash
-cd aadhaariq
-python process_real_data.py
-python analytics_engine.py
-```
-
-### 4. Start the Servers
-
-**Terminal 1 - Backend:**
-```bash
-cd backend
-python main.py
-```
-Backend will run on: http://localhost:8000
-
-**Terminal 2 - Frontend:**
-```bash
-cd aadhaariq
-npm run dev
-```
- 
-## 🎯 Usage
-
-1. **Dashboard**: View real-time nationwide statistics
-2. **Geospatial Map**: Click state tiles to see detailed analysis
-3. **State Comparison**: Compare metrics between any two states
-4. **ML Insights**: View forecasting, anomaly detection, clustering results
-5. **AI Insight Engine**: 
-   - Select audience (Policymaker/Field Team/Citizen/Analyst)
-   - Generate AI-powered policy insights
-   - Export as PDF strategy report
-6. **Strategy Reports**: Download pre-generated analytics
-
-## 📊 Data Sources
-
-- `api_data_aadhar_enrolment` - 1.86M enrolment records
-- `api_data_aadhar_demographic` - Demographic update records
-- `api_data_aadhar_biometric` - Biometric update records
-
-**Processed Data**:
-- 39 cleaned states (duplicates removed)
-- 500 districts
-- 5,331,027 total enrolments
-- 104,858,618 total updates
-
-## 🏗️ Architecture
-
-```
-aadhaariq/
-├── components/          # React UI components
-│   ├── Dashboard.tsx
-│   ├── GeospatialMap.tsx
-│   ├── StateComparison.tsx
-│   ├── MLInsights.tsx
-│   └── InsightEngine.tsx
-├── services/
-│   ├── gemini.ts       # AI insight generation
-│   └── pdfGenerator.ts # PDF export logic
-├── data/
-│   ├── aadhaar_data.json       # Processed data
-│   └── analytics_report.json  # ML analytics
-├── process_real_data.py   # Data cleaning pipeline
-└── analytics_engine.py    # ML analytics engine
-
-backend/
-└── main.py             # FastAPI server with 14 endpoints
-```
-
-## 🔥 API Endpoints
-
-- `GET /api/dashboard/stats` - Dashboard statistics
-- `GET /api/states` - All states data
-- `GET /api/states/{name}` - State-specific details
-- `GET /api/ml/anomalies` - Anomaly detection results
-- `GET /api/ml/forecast` - Forecasting predictions
-- `GET /api/ml/clusters` - District clustering
-- `GET /api/recommendations` - State recommendations
-- Full API docs: http://localhost:8000/docs
-
-## ✨ Key Features Implemented
-
-✅ 100% real UIDAI data (no mock/placeholder content)  
-✅ State name normalization (West Bengal variants, J&K, etc.)  
-✅ Interactive clickable map tiles with drill-down  
-✅ PDF export with AI insights and charts  
-✅ Multi-lingual support (English/Hindi)  
-✅ Audience-aware AI prompts (4 persona modes)  
-✅ Human-friendly ML explanations  
-✅ Premium dark UI with smooth animations  
-✅ All TypeScript errors resolved  
-✅ FastAPI backend with CORS enabled  
-
-## 🎨 Tech Stack
-
-**Frontend**:
-- React + TypeScript
-- Vite
-- Recharts (data visualization)
-- Lucide icons
-- Tailwind CSS
-
-**Backend**:
-- FastAPI
-- Python pandas/numpy
-- Statistical analysis
-
-**AI/ML**:
-- Google Gemini 1.5 Flash (narrative insights)
-- Linear regression (forecasting)
-- Z-score analysis (anomaly detection)
-- K-Means clustering
-
-## 📝 Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `VITE_GEMINI_API_KEY` | Google Gemini API key | Yes |
-
-## 🚨 Troubleshooting
-
-**Issue**: "VITE_GEMINI_API_KEY not found"
-- **Solution**: Ensure `.env` file exists in `aadhaariq/` directory with valid API key
-
-**Issue**: Backend not connecting
-- **Solution**: Check if port 8000 is available, restart `python main.py`
-
-**Issue**: Old data showing
-- **Solution**: Re-run `process_real_data.py` and restart dev server
-
-## 📦 Production Build
-
-```bash
-cd aadhaariq
-npm run build
-```
-
-Build output will be in `dist/` directory.
-
-## 👥 Credits
-
-- **Platform**: AadhaarIQ
 - **Data Source**: UIDAI Open Datasets
 - **AI Engine**: Google Gemini 1.5 Flash
 - **Built for**: Hackathon / Policy Analysis
@@ -201,6 +10,161 @@ Build output will be in `dist/` directory.
 This project uses real UIDAI data for educational/analytical purposes.
 
 ---
+ 
+A comprehensive data analytics dashboard for visualizing and analyzing Aadhaar enrollment patterns, demographic trends, and regional insights across India.
 
-**Status**: ✅ Production Ready (95% Complete)  
-**Last Updated**: January 2026
+## 📊 Overview
+
+AadhaarIQ transforms complex Aadhaar enrollment data into actionable insights through interactive visualizations, real-time analytics, and predictive forecasting. Built to help policymakers and administrators identify coverage gaps, track enrollment trends, and make data-driven decisions.
+
+## ✨ Key Features
+
+### 📈 Interactive Analytics Dashboard
+- Real-time enrollment statistics and trends
+- Age-based demographic breakdowns (0-5, 5-17, 18+)
+- Biometric vs Demographic update tracking
+- State-wise performance metrics
+
+### 🗺️ Geospatial Visualization
+- Interactive India map with state and district-level data
+- Enrollment density heatmaps
+- Dual-mode viewing (Activity & Saturation Gap)
+- Dynamic tooltips with contextual information
+
+### 🔮 Predictive Forecasting
+- Time-series analysis using Holt-Winters algorithm
+- 30-day enrollment projections
+- Trend detection and anomaly identification
+- Confidence scoring for predictions
+
+### 📊 State Comparison Tool
+# AadhaarIQ - Intelligent Enrollment Analytics Platform
+
+![AadhaarIQ Banner](https://img.shields.io/badge/UIDAI-Hackathon%202026-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+
+> **India's First Dark Zone Early Warning System** — Predicting enrollment crises 6 months before they happen, transforming reactive firefighting into strategic foresight.
+
+---
+
+## 🎯 **Overview**
+
+AadhaarIQ analyzes **5.3+ million Aadhaar enrollment records** across 39 states and 734 districts to identify:
+- Geographic saturation gaps
+- Demographic enrollment patterns  
+- Predictive dark zones (6-month forecasts)
+- Policy intervention priorities
+
+**Key Features**:
+- 📊 Interactive dashboards with real-time metrics
+- 🗺️ Geospatial mapping (state & district levels)
+- 🔮 ML-based forecasting (Holt-Winters ~ 8.4% MAPE)
+- 🎯 Automated policy action mapping
+- 🌐 Multi-language support (English/Hindi)
+
+---
+
+## 🚀 **Quick Start**
+
+### Prerequisites
+   ```bash
+   cd backend
+   ```
+
+2. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Start the FastAPI server:
+   ```bash
+   python -m uvicorn main:app --host 0.0.0.0 --port 8003
+   ```
+
+API will be available at `http://localhost:8003`
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **React** - UI framework
+- **TypeScript** - Type-safe development
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **Plotly.js** - Interactive map visualizations
+- **Framer Motion** - Smooth animations
+- **Recharts** - Chart components
+
+### Backend
+- **FastAPI** - Modern Python web framework
+- **Pandas** - Data processing and analysis
+- **NumPy** - Numerical computations
+- **Uvicorn** - ASGI server
+
+## 📁 Project Structure
+
+```
+aadhaariq/
+├── components/          # React components
+│   ├── Dashboard.tsx
+│   ├── GeospatialMap.tsx
+│   ├── StateComparison.tsx
+│   └── GlossaryTerm.tsx
+├── data/               # Data files and configurations
+├── public/             # Static assets
+└── ...
+
+backend/
+├── main.py            # FastAPI application
+├── requirements.txt   # Python dependencies
+└── ...
+```
+
+## 📊 Data Sources
+
+- Aadhaar enrollment records (processed from official data)
+- Census 2011 population statistics (projected to 2024)
+- District-level geographic coordinates
+- State and UT administrative boundaries
+
+## 🎯 Key Metrics Tracked
+
+- **Total Enrollments**: Cumulative Aadhaar registrations
+- **Update Velocity**: Rate of record updates
+- **Saturation Gap**: Difference between population and enrolled citizens
+- **Child Coverage**: 0-18 age group enrollment percentage
+- **Anomaly Scores**: Statistical deviation from national patterns
+- **Enrollment Density**: Enrollments per office/center
+
+## 🔧 Configuration
+
+Create a `.env.local` file in the `aadhaariq` directory:
+
+```env
+VITE_API_BASE_URL=http://localhost:8003
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these guidelines:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## 📝 License
+
+This project is developed for educational and analytical purposes. Please ensure compliance with data protection regulations when handling Aadhaar-related information.
+
+## 👥 Team
+
+Developed by the AadhaarIQ team for better visualization and understanding of India's digital identity infrastructure.
+
+## 📞 Support
+
+For questions or issues, please open an issue on GitHub.
+
+---
+
+**Note**: This is a data analytics tool designed for visualization and insight generation. It does not store or process any personally identifiable information (PII).
