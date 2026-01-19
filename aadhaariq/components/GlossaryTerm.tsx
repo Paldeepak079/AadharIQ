@@ -238,7 +238,7 @@ const GlossaryTerm: React.FC<GlossaryProps> = ({ term, children, lang = 'EN', cl
                     >
                         <div className="relative z-10">
                             <span className="block text-[10px] font-black uppercase tracking-[0.2em] text-orange-500 mb-2">
-                                {lang === 'HI' ? 'क्षेत्रीय अवधारणा' : 'Domain Concept'}
+                                {lang === 'HI' ? 'अर्थ:' : 'Means:'}
                             </span>
                             <span className="block text-xs text-gray-200 leading-relaxed font-semibold">
                                 {definition}

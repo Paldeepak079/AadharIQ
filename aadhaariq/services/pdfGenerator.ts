@@ -51,7 +51,7 @@ export const generatePolicyPDF = async (options: PDFExportOptions): Promise<void
 
     pdf.setFontSize(12);
     pdf.setFont('helvetica', 'normal');
-    pdf.text('AI-Powered Aadhaar Analytics Platform', margin, 30);
+    pdf.text('Intelligent Aadhaar Analytics Platform', margin, 30);
 
     yPosition = 50;
 

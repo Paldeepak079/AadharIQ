@@ -126,6 +126,13 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSe
           </div>
         </div>
 
+        {/* Auto-regenerate when audience changes */}
+        {React.useEffect(() => {
+          if (insight) {
+            handleGenerate();
+          }
+        }, [selectedAudience])}
+
         <div className="mt-8 mb-8">
           <PolicyActionMapper selectedState={selectedState} saturationData={saturationData} />
         </div>
@@ -218,12 +225,12 @@ const InsightEngine: React.FC<InsightEngineProps> = ({ lang, selectedState, onSe
               </div>
             )}
 
-            {/* Actionable Steps */}
-            {insight.actionableSteps.length > 0 && (
+            {/* Actionable Steps - Only show if meaningful actions exist */}
+            {insight.actionableSteps.length > 0 && insight.actionableSteps[0] !== 'Ensure internet connectivity is stable' && (
               <div className="glass-panel p-6 rounded-2xl">
                 <div className="flex items-center gap-2 mb-4">
                   <Users className="w-5 h-5 text-green-500" />
-                  <h3 className="font-bold">Recommended Actions</h3>
+                  <h3 className="font-bold">Strategic Recommendations</h3>
                 </div>
                 <ul className="space-y-3">
                   {insight.actionableSteps.map((step, idx) => (

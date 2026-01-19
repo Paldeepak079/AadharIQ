@@ -79,12 +79,65 @@ const PolicyActionMapper: React.FC<PolicyActionMapperProps> = ({ selectedState, 
     }, [selectedState, saturationData]);
 
     if (!selectedState || selectedState === "All India") {
+        // Generate national-level actions
+        const nationalActions: ActionCard[] = [
+            {
+                title: "National Coverage Drive",
+                type: 'GROWTH',
+                icon: MapPin,
+                recommendation: "Focus on 12 underperforming states with <70% saturation. Deploy mobile centers and awareness campaigns.",
+                impact: "Target: +8M enrollments nationally in Q1 2026."
+            },
+            {
+                title: "Digital Infrastructure Upgrade",
+                type: 'STABLE',
+                icon: TrendingUp,
+                recommendation: "Modernize biometric authentication systems in high-traffic urban centers to reduce update processing time.",
+                impact: "Reduces avg. wait time from 45min to 15min."
+            },
+            {
+                title: "Baal Aadhaar Sprint",
+                type: 'CRITICAL',
+                icon: Zap,
+                recommendation: "Launch school-based enrollment drives targeting 0-5 age group with parental awareness programs.",
+                impact: "Youth coverage: 87% → 94% by Dec 2026."
+            }
+        ];
+
         return (
-            <div className="glass-panel p-8 rounded-3xl border-2 border-dashed border-gray-800 flex flex-col items-center justify-center text-center">
-                <Shield className="w-12 h-12 text-gray-700 mb-4" />
-                <p className="text-gray-500 max-w-xs uppercase tracking-widest text-[10px] font-black">
-                    Select a specific state to generate deterministic policy action mapping
-                </p>
+            <div className="space-y-4">
+                <div className="flex items-center gap-3 mb-2">
+                    <h3 className="text-lg font-black text-white uppercase tracking-tighter">National Strategic Actions</h3>
+                    <span className="px-2 py-0.5 bg-orange-600/20 text-orange-400 text-[8px] font-black rounded border border-orange-500/30 uppercase tracking-widest">
+                        ALL INDIA
+                    </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {nationalActions.map((action, i) => (
+                        <div key={i} className={`p-5 rounded-2xl border transition-all ${action.type === 'CRITICAL' ? 'bg-red-950/20 border-red-500/30' :
+                            action.type === 'GROWTH' ? 'bg-green-950/20 border-green-500/30' :
+                                'bg-blue-950/20 border-blue-500/30'
+                            }`}>
+                            <div className="flex items-center gap-3 mb-3">
+                                <div className={`p-2 rounded-lg ${action.type === 'CRITICAL' ? 'bg-red-500 text-white' :
+                                    action.type === 'GROWTH' ? 'bg-green-500 text-white' :
+                                        'bg-blue-500 text-white'
+                                    }`}>
+                                    <action.icon className="w-4 h-4" />
+                                </div>
+                                <h4 className="font-bold text-sm text-white">{action.title}</h4>
+                            </div>
+                            <p className="text-xs text-gray-400 leading-relaxed mb-3">
+                                {action.recommendation}
+                            </p>
+                            <div className="pt-3 border-t border-white/5">
+                                <p className="text-[10px] font-black uppercase text-gray-500">Projected Impact</p>
+                                <p className="text-[10px] text-green-400 font-bold">{action.impact}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         );
     }
