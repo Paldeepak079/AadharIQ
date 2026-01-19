@@ -58,28 +58,17 @@ const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedSta
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
                     <GlossaryTerm term="Multivariate State Profile" lang={lang}>
-                        <h2 className="text-2xl font-bold devanagari-header flex items-center gap-2">
+                        <h2 className="text-xl font-black devanagari-header flex items-center gap-2 text-white uppercase tracking-widest hover:text-orange-500 transition-colors">
                             <Zap className="text-yellow-500 w-6 h-6" />
-                            Multivariate State Profile
+                            MULTIVARIATE PROFILE
                         </h2>
                     </GlossaryTerm>
-                    <p className="text-sm text-gray-400 mt-1">Cross-referencing 5 critical operational dimensions for
-                        <span className="text-orange-500 font-black ml-1 uppercase">{selectedState || "National Average"}</span>
+                    <p className="text-[10px] text-yellow-500 uppercase tracking-widest font-black mt-1">
+                        {selectedState?.toUpperCase() || "ALL INDIA"}
                     </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center gap-4">
-                    <select
-                        value={selectedState || "All India"}
-                        onChange={(e) => onSelect?.(e.target.value === "All India" ? null : e.target.value)}
-                        className="bg-gray-900 border border-gray-800 rounded-xl px-3 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer"
-                    >
-                        <option value="All India">ALL INDIA</option>
-                        {INDIA_STATES_DATA.map(s => (
-                            <option key={s.state} value={s.state}>{s.state.toUpperCase()}</option>
-                        ))}
-                    </select>
-                </div>
+                {/* State Label removed */}
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">

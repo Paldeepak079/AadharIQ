@@ -104,7 +104,7 @@ export const GLOSSARY: Record<string, { EN: string; HI: string }> = {
         EN: 'Monthly growth patterns identifying seasonal peaks in service center traffic.',
         HI: 'सेवा केंद्र ट्रैफ़िक में मौसमी चोटियों की पहचान करने वाले मासिक विकास पैटर्न।'
     },
-    'Diagnostic identification': {
+    'Diagnostic Identification': {
         EN: 'AI-driven analysis to pinpoint statistical outliers in regional Aadhaar activity.',
         HI: 'क्षेत्रीय आधार गतिविधि में सांख्यिकीय विचलनों को इंगित करने के लिए एआई-संचालित विश्लेषण।'
     },
@@ -143,6 +143,10 @@ export const GLOSSARY: Record<string, { EN: string; HI: string }> = {
     'Dark Zone (>10% Gap)': {
         EN: 'Critical priority regions with significant eligible population segments yet to be enrolled.',
         HI: 'महत्वपूर्ण प्राथमिकता वाले क्षेत्र जहाँ पात्र जनसंख्या के बड़े हिस्से का अभी तक नामांकन नहीं हुआ है।'
+    },
+    'Enrollment Density Scale': {
+        EN: 'A measure of enrollment concentration per operational center, normalized for regional population.',
+        HI: 'प्रति परिचालन केंद्र नामांकन एकाग्रता का माप, क्षेत्रीय जनसंख्या के लिए सामान्यीकृत।'
     }
 };
 
@@ -175,19 +179,25 @@ const GlossaryTerm: React.FC<GlossaryProps> = ({ term, children, lang = 'EN', cl
             <AnimatePresence>
                 {isHovered && (
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9, y: side === 'top' ? 10 : -10 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0, scale: 0.9, y: side === 'top' ? 10 : -10 }}
-                        className={`absolute z-50 w-72 p-4 bg-gray-900 border border-gray-700 rounded-xl shadow-2xl pointer-events-none ${side === 'top' ? 'bottom-full mb-3' : 'top-full mt-3'}`}
+                        initial={{ opacity: 0, scale: 0.9, y: 10, x: '-50%' }}
+                        animate={{ opacity: 1, scale: 1, y: 0, x: '-50%' }}
+                        exit={{ opacity: 0, scale: 0.9, y: 10, x: '-50%' }}
+                        className="absolute z-[100] w-72 p-4 bg-gray-950/95 backdrop-blur-2xl border border-white/20 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8)] pointer-events-none left-1/2 bottom-full mb-4"
+                        style={{
+                            maxWidth: '90vw',
+                            transform: 'translateX(-50%)'
+                        }}
                     >
-                        <span className="block text-[10px] font-black uppercase tracking-widest text-orange-500 mb-1">
-                            {lang === 'HI' ? 'क्षेत्रीय अवधारणा' : 'Domain Concept'}
-                        </span>
-                        <span className="block text-[11px] text-gray-300 leading-relaxed font-medium">
-                            {definition}
-                        </span>
-                        {/* Caret */}
-                        <div className={`absolute ${side === 'top' ? 'top-full -mt-2' : 'bottom-full -mb-2'} left-6 w-3 h-3 bg-gray-900 border-r border-b border-gray-700 rotate-45`} />
+                        <div className="relative z-10">
+                            <span className="block text-[10px] font-black uppercase tracking-[0.2em] text-orange-500 mb-2">
+                                {lang === 'HI' ? 'क्षेत्रीय अवधारणा' : 'Domain Concept'}
+                            </span>
+                            <span className="block text-xs text-gray-200 leading-relaxed font-semibold">
+                                {definition}
+                            </span>
+                        </div>
+                        {/* Caret - Always at bottom since tooltip is always at top */}
+                        <div className="absolute top-full -mt-[6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-950 border-r border-b border-white/20 rotate-45 z-0" />
                     </motion.div>
                 )}
             </AnimatePresence>

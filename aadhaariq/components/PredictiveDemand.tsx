@@ -274,7 +274,7 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
                                 <div className="p-2 bg-blue-500/10 rounded-lg">
                                     <TrendingUp className="w-5 h-5 text-blue-400" />
                                 </div>
-                                <GlossaryTerm term="Momentum Shift" lang={lang}>
+                                <GlossaryTerm term="Momentum Shift" lang={lang} side="bottom">
                                     <h4 className="text-sm font-black text-white uppercase tracking-tighter">Growth Momentum</h4>
                                 </GlossaryTerm>
                             </div>

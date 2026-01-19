@@ -110,29 +110,12 @@ const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState, lang = '
                 <div className="flex items-center gap-3">
                     <Users className="text-orange-500 w-5 h-5" />
                     <div>
-                        <p className="text-white text-sm font-bold">Age Group Distribution</p>
-                        <p className="text-[10px] text-gray-500 uppercase mt-1">Based on Real Enrolment Data</p>
+                        <p className="text-white text-sm font-black uppercase tracking-tighter">Age Group Distribution</p>
+                        <p className="text-[10px] text-orange-500 uppercase tracking-widest font-black mt-1">{selectedState.toUpperCase()}</p>
                     </div>
                 </div>
 
-                {/* State Selector - FIXED */}
-                <div className="flex items-center gap-2">
-                    <label className="text-xs text-gray-400 font-bold uppercase tracking-widest whitespace-nowrap">State:</label>
-                    <select
-                        value={selectedState}
-                        onChange={handleStateChange}
-                        className="w-full px-3 py-1.5 bg-gray-900/50 border border-gray-800 rounded-lg text-white text-xs font-bold hover:border-orange-500 transition-colors cursor-pointer focus:outline-none focus:border-orange-500"
-                        style={{
-                            maxHeight: '200px',
-                            overflowY: 'auto'
-                        }}
-                    >
-                        <option value="All India">All India</option>
-                        {stateList.map(state => (
-                            <option key={state} value={state}>{state}</option>
-                        ))}
-                    </select>
-                </div>
+                {/* State Label removed */}
             </div>
 
             {/* Chart */}
