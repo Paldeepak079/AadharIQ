@@ -76,6 +76,10 @@ export const GLOSSARY: Record<string, { EN: string; HI: string }> = {
         EN: 'A qualitative assessment of how Aadhaar coverage improves access to social welfare and financial inclusion.',
         HI: 'आधार कवरेज सामाजिक कल्याण और वित्तीय समावेशन तक पहुंच को कैसे बेहतर बनाता है, इसका गुणात्मक मूल्यांकन।'
     },
+    'Geographic Distribution': {
+        EN: 'Visual representation of Aadhaar enrollment patterns and coverage across states and union territories, showing regional saturation levels and identifying areas requiring focused attention.',
+        HI: 'राज्यों और केंद्र शासित प्रदेशों में आधार नामांकन पैटर्न और कवरेज का दृश्य प्रतिनिधित्व, क्षेत्रीय संतृप्ति स्तर दिखाना और केंद्रित ध्यान की आवश्यकता वाले क्षेत्रों की पहचान करना।'
+    },
     'Biometric Updates': {
         EN: 'Re-validation of fingerprints, iris scans, or face photos to maintain record accuracy.',
         HI: 'रिकॉर्ड की सटीकता बनाए रखने के लिए उंगलियों के निशान, आईरिस स्कैन या चेहरे की तस्वीरों का पुन: सत्यापन।'

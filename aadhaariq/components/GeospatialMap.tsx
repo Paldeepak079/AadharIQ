@@ -292,10 +292,12 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
             <div className="p-2.5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl shadow-lg shadow-orange-500/30 shrink-0">
               <Globe className="text-white w-5 h-5" />
             </div>
-            <div className="min-w-0">
-              <h2 className="text-xl md:text-2xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent truncate">
-                {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
-              </h2>
+            <div className="min-w-0 flex-1">
+              <GlossaryTerm term="Geographic Distribution" lang={lang} side="bottom">
+                <h2 className="text-xl md:text-2xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent whitespace-nowrap">
+                  {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
+                </h2>
+              </GlossaryTerm>
               <p className="text-sm text-gray-300 uppercase tracking-widest font-bold flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5" />
                 {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
