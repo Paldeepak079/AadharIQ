@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { TrendingUp, AlertTriangle, Lightbulb, ArrowRight, Activity, Globe, Filter, Info, Calendar } from 'lucide-react';
+import { TrendingUp, AlertTriangle, Lightbulb, ArrowRight, Activity, Globe, Filter, Info, Calendar, Zap, TrendingDown } from 'lucide-react';
 import { API_BASE_URL } from '../src/config';
 import { INDIA_STATES_DATA } from '../data/realData';
+import GlossaryTerm from './GlossaryTerm';
 
 interface MergedPoint {
     date: string;
@@ -31,9 +32,10 @@ interface ForecastResponse {
 interface PredictiveDemandProps {
     selectedState?: string | null;
     onSelect: (state: string | null) => void;
+    lang?: 'EN' | 'HI';
 }
 
-const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSelect }) => {
+const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSelect, lang = 'EN' }) => {
     const [data, setData] = useState<ForecastResponse | null>(null);
     const [loading, setLoading] = useState(true);
     const [granularity, setGranularity] = useState<"daily" | "monthly">("monthly");
@@ -68,10 +70,12 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
             <div className="glass-panel p-8 rounded-3xl border-l-4 border-blue-500 bg-gradient-to-br from-blue-500/5 to-transparent">
                 <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-12">
                     <div className="flex-1">
-                        <h2 className="text-2xl font-black text-white mb-2 flex items-center gap-3">
-                            <TrendingUp className="w-8 h-8 text-blue-500" />
-                            Strategic Workload Forecasting
-                        </h2>
+                        <GlossaryTerm term="Strategic Workload Forecasting" lang={lang} side="bottom">
+                            <h2 className="text-2xl font-black text-white mb-2 flex items-center gap-3">
+                                <TrendingUp className="w-8 h-8 text-blue-500" />
+                                Strategic Workload Forecasting
+                            </h2>
+                        </GlossaryTerm>
                         <div className="flex flex-wrap items-center gap-3">
                             <p className="text-gray-400 text-sm max-w-xl">
                                 Analyzing growth patterns to prevent service bottlenecks.
@@ -266,6 +270,14 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
                                 <h4 className="text-xs font-black uppercase text-blue-400 tracking-wider">Actionable Strategy</h4>
                             </div>
                             <p className="text-sm font-bold text-white mb-2 leading-tight">Dynamic Resource Allocation</p>
+                            <div className="flex items-center gap-2 mb-3">
+                                <div className="p-2 bg-blue-500/10 rounded-lg">
+                                    <TrendingUp className="w-5 h-5 text-blue-400" />
+                                </div>
+                                <GlossaryTerm term="Momentum Shift" lang={lang}>
+                                    <h4 className="text-sm font-black text-white uppercase tracking-tighter">Growth Momentum</h4>
+                                </GlossaryTerm>
+                            </div>
                             <p className="text-[11px] text-gray-400 leading-relaxed font-medium transition-all">
                                 {granularity === 'daily'
                                     ? `Immediate ${data?.growth_percent && data.growth_percent > 0 ? 'surge' : 'recession'} alert for next 7 days in **${activeState}**.`
@@ -281,12 +293,14 @@ const PredictiveDemand: React.FC<PredictiveDemandProps> = ({ selectedState, onSe
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
-                    { title: "Peak Demand Stage", val: data?.peak_demand_stage || (granularity === 'daily' ? "Immediate" : "Seasonal"), desc: "Based on local volatility", color: "text-orange-500" },
+                    { title: "Peak Demand Stage", val: data?.peak_demand_stage || (granularity === 'daily' ? "Immediate" : "Seasonal"), desc: "Local volatility metrics", color: "text-orange-500" },
                     { title: "Forecast Integrity", val: `${data?.confidence_score || 94.8}%`, desc: `Statistically validated`, color: "text-green-500" },
                     { title: "Sample Density", val: data?.sample_density || (granularity === 'daily' ? "High" : "Strategic"), desc: "Data aggregation level", color: "text-blue-500" }
                 ].map((stat, i) => (
                     <div key={i} className="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-gray-700 transition-all">
-                        <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-widest mb-1">{stat.title}</h5>
+                        <GlossaryTerm term={stat.title} lang={lang}>
+                            <h5 className="text-[10px] font-black uppercase text-gray-500 tracking-widest mb-1">{stat.title}</h5>
+                        </GlossaryTerm>
                         <p className={`text-xl font-black mb-1 ${stat.color}`}>{stat.val}</p>
                         <p className="text-xs text-gray-400">{stat.desc}</p>
                     </div>

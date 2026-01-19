@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Users } from 'lucide-react';
 import { INDIA_STATES_DATA } from '../data/realData';
+import { Language } from '../types';
+import GlossaryTerm from './GlossaryTerm';
 
 interface AgeGroupData {
     name: string;
@@ -11,9 +13,10 @@ interface AgeGroupData {
 
 interface AgeGroupProps {
     externalState?: string | null;
+    lang?: Language;
 }
 
-const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState }) => {
+const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState, lang = 'EN' }) => {
     const [selectedState, setSelectedState] = useState<string>(externalState || 'All India');
     const [chartData, setChartData] = useState<AgeGroupData[]>([]);
     const [totalEnrollments, setTotalEnrollments] = useState<number>(0);
@@ -167,7 +170,9 @@ const AgeGroupDistribution: React.FC<AgeGroupProps> = ({ externalState }) => {
 
                     return (
                         <div key={idx} className="p-3 bg-gray-900/50 border border-gray-800 rounded-xl hover:border-orange-500 transition-all cursor-default">
-                            <div className="text-[10px] text-gray-400 mb-1 font-bold">{group.name} yrs</div>
+                            <GlossaryTerm term={group.name.includes('-') ? `Child (0-5)` : group.name.includes('+') ? `Adults (18+)` : `Youth (5-17)`} lang={lang}>
+                                <div className="text-[10px] text-gray-400 mb-1 font-bold">{group.name} yrs</div>
+                            </GlossaryTerm>
                             <div className="text-white text-lg font-bold">{formatNumber(group.value)}</div>
                             <div className="text-xs font-bold mt-1" style={{ color: group.color }}>
                                 {percentage}%

@@ -132,13 +132,25 @@ const Layout: React.FC<LayoutProps> = ({ state, setState, activeTab, setActiveTa
 
           <div className="flex items-center gap-4">
             {/* Language Toggle */}
-            <button
-              onClick={toggleLang}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-700 hover:border-orange-500 transition-all text-xs font-bold"
-            >
-              <Globe className="w-4 h-4 text-blue-400" />
-              {state.lang === 'EN' ? 'हिंदी' : 'English'}
-            </button>
+            <div className="flex bg-gray-900 border border-gray-700 rounded-lg p-0.5 no-print relative overflow-hidden">
+              {/* Flag Gradient Background Overlay for active state */}
+              <div
+                className={`absolute inset-0 opacity-20 transition-all duration-500 bg-gradient-to-r from-[#FF9933] via-white to-[#138808]`}
+              />
+              <button
+                onClick={() => state.lang !== 'EN' && toggleLang()}
+                className={`relative z-10 px-3 py-1 text-[10px] font-black rounded-md transition-all ${state.lang === 'EN' ? 'bg-[#FF9933] text-white shadow-lg shadow-orange-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+              >
+                EN
+              </button>
+              <div className="w-px h-4 bg-white/20 self-center mx-0.5 z-10" />
+              <button
+                onClick={() => state.lang !== 'HI' && toggleLang()}
+                className={`relative z-10 px-3 py-1 text-[10px] font-black rounded-md transition-all ${state.lang === 'HI' ? 'bg-[#138808] text-white shadow-lg shadow-green-500/20' : 'text-gray-500 hover:text-gray-300'}`}
+              >
+                हिं
+              </button>
+            </div>
           </div>
         </header>
 

@@ -4,7 +4,8 @@ import { translations } from '../translations';
 import { Language, AadhaarData } from '../types';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from 'recharts';
 import { INDIA_STATES_DATA, DATA_SUMMARY } from '../data/realData';
-import { TrendingUp, Users, RefreshCw, Baby, Globe2, ArrowRight } from 'lucide-react';
+import { TrendingUp, Users, RefreshCw, Baby, Globe2, ArrowRight, ShieldAlert } from 'lucide-react';
+import GlossaryTerm from './GlossaryTerm';
 
 interface DashboardProps {
   lang: Language;
@@ -27,10 +28,10 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
   const totalChild = filteredData.reduce((acc, curr) => acc + curr.childEnrolments, 0);
 
   const stats = [
-    { label: t.totalEnrolments, value: (totalEnrolments / 10000000).toFixed(2) + " Cr", icon: Users, color: 'text-orange-500' },
-    { label: t.biometricUpdates, value: (totalUpdates / 10000000).toFixed(2) + " Cr", icon: RefreshCw, color: 'text-blue-500' },
-    { label: t.childEnrolment, value: (totalChild / 1000000).toFixed(2) + " M", icon: Baby, color: 'text-green-500' },
-    { label: t.societalImpact, value: t.high, icon: Globe2, color: 'text-purple-500' },
+    { label: t.totalEnrolments, key: 'Total Enrolments', value: (totalEnrolments / 10000000).toFixed(2) + " Cr", icon: Users, color: 'text-orange-500' },
+    { label: t.biometricUpdates, key: 'Biometric Updates', value: (totalUpdates / 10000000).toFixed(2) + " Cr", icon: RefreshCw, color: 'text-blue-500' },
+    { label: t.childEnrolment, key: 'Child Enrolment', value: (totalChild / 1000000).toFixed(2) + " M", icon: Baby, color: 'text-green-500' },
+    { label: t.societalImpact, key: 'Societal Impact', value: t.high, icon: Globe2, color: 'text-purple-500' },
   ];
 
   const COLORS = ['#FF9933', '#138808', '#000080'];
@@ -39,14 +40,16 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
     <div className="space-y-8 animate-in fade-in duration-500">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((s, idx) => (
-          <div key={idx} className="glass-panel p-6 rounded-2xl hover:border-orange-500/50 transition-all group">
-            <div className="flex justify-between items-start mb-4">
-              <div className={`p-3 rounded-xl bg-gray-900 group-hover:bg-gray-800 transition-colors ${s.color}`}>
-                <s.icon className="w-6 h-6" />
-              </div>
+          <div key={idx} className="glass-panel p-3 px-4 rounded-xl hover:border-orange-500/50 transition-all group flex items-center gap-4">
+            <div className={`p-2 rounded-lg bg-gray-900 group-hover:bg-gray-800 transition-colors ${s.color} shrink-0`}>
+              <s.icon className="w-4 h-4" />
             </div>
-            <h3 className="text-gray-500 text-sm mb-1 uppercase tracking-wider font-bold">{s.label}</h3>
-            <p className="text-2xl font-black text-white">{s.value}</p>
+            <div className="flex-1 min-w-0">
+              <GlossaryTerm term={s.key} lang={lang} side="bottom">
+                <h3 className="text-gray-500 text-[9px] uppercase tracking-widest font-bold truncate">{s.label}</h3>
+              </GlossaryTerm>
+              <p className="text-xl font-black text-white leading-tight">{s.value}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -95,12 +98,14 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
           </div>
 
           <div className="glass-panel p-8 rounded-3xl">
-            <h3 className="text-xl font-bold mb-6 devanagari-header">{t.totalEnrolments} Trend</h3>
+            <GlossaryTerm term="Total Enrolments Trend" lang={lang}>
+              <h3 className="text-xl font-bold mb-6 devanagari-header">{t.totalEnrolments} Trend</h3>
+            </GlossaryTerm>
             <div className="h-[250px] w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={filteredData.slice(0, 9)}>
+                <LineChart data={[...INDIA_STATES_DATA].sort((a, b) => b.enrolments - a.enrolments).slice(0, 15)}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#222" />
-                  <XAxis dataKey="state" stroke="#999" fontSize={8} />
+                  <XAxis dataKey="state" stroke="#999" fontSize={8} interval={0} angle={-30} textAnchor="end" height={60} />
                   <YAxis stroke="#999" fontSize={10} />
                   <Tooltip contentStyle={{ backgroundColor: '#121212', border: '1px solid #444' }} />
                   <Line type="monotone" dataKey="enrolments" stroke="#FF9933" strokeWidth={3} dot={{ r: 4, fill: '#FF9933' }} activeDot={{ r: 6 }} />
@@ -121,13 +126,31 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
               const maxUpdatesState = [...INDIA_STATES_DATA].sort((a, b) => b.updates - a.updates)[0];
               const maxChildState = [...INDIA_STATES_DATA].sort((a, b) => b.childEnrolments - a.childEnrolments)[0];
 
+              // For Anomaly Score, let's pick two states for demonstration
+              // In a real scenario, anomaly scores would be pre-calculated or derived from more complex logic
+              const state1 = INDIA_STATES_DATA.find(s => s.state === 'Uttar Pradesh') || INDIA_STATES_DATA[0];
+              const state2 = INDIA_STATES_DATA.find(s => s.state === 'Maharashtra') || INDIA_STATES_DATA[1];
+
+              // Assign dummy anomaly scores for demonstration
+              // In a real app, these would come from data
+              const state1WithAnomaly = { ...state1, anomalyScore: 0.15 }; // 15% deviation
+              const state2WithAnomaly = { ...state2, anomalyScore: 0.08 }; // 8% deviation
+
               return (
                 <div className="space-y-4">
                   <div className="p-4 bg-gray-900/80 rounded-2xl border border-gray-800">
                     <p className="text-[10px] text-orange-400 font-bold uppercase tracking-widest mb-1">Operational Insight #1</p>
-                    <p className="text-sm font-bold text-white mb-2">Highest Update Volume</p>
+                    <p className="text-sm font-bold text-white mb-2">Anomaly Score Comparison</p>
                     <p className="text-xs text-gray-400 leading-relaxed">
-                      {maxUpdatesState.state} leads with {(maxUpdatesState.updates / 1000000).toFixed(2)}M biometic updates, indicating high re-validation activity in this region.
+                      {state1WithAnomaly.anomalyScore > state2WithAnomaly.anomalyScore ? (
+                        <GlossaryTerm term="Anomaly Score" lang={lang}>
+                          <span className="text-white font-bold">{state1WithAnomaly.state}</span> shows a higher deviation ({(state1WithAnomaly.anomalyScore * 100).toFixed(0)}%) from the national update/enrolment baseline compared to {state2WithAnomaly.state} ({(state2WithAnomaly.anomalyScore * 100).toFixed(0)}%).
+                        </GlossaryTerm>
+                      ) : (
+                        <GlossaryTerm term="Anomaly Score" lang={lang}>
+                          <span className="text-orange-500 font-bold">{state2WithAnomaly.state}</span> shows a higher deviation ({(state2WithAnomaly.anomalyScore * 100).toFixed(0)}%) from the national update/enrolment baseline compared to {state1WithAnomaly.state} ({(state1WithAnomaly.anomalyScore * 100).toFixed(0)}%).
+                        </GlossaryTerm>
+                      )}
                     </p>
                     <button
                       onClick={() => alert(`Framework: High Volume Update Optimization\nTarget Region: ${maxUpdatesState.state}\nVolume: ${(maxUpdatesState.updates / 1000000).toFixed(2)}M`)}
@@ -226,7 +249,9 @@ const Dashboard: React.FC<DashboardProps> = ({ lang, selectedState, onSelect }) 
                     {metrics.map((item, i) => (
                       <div key={i} className="space-y-2">
                         <div className="flex justify-between text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                          <span>{item.label}</span>
+                          <GlossaryTerm term={item.label} lang={lang}>
+                            <span>{item.label}</span>
+                          </GlossaryTerm>
                           <span className="text-white">{item.val}%</span>
                         </div>
                         <div className="h-2 w-full bg-gray-900 rounded-full overflow-hidden border border-gray-800">

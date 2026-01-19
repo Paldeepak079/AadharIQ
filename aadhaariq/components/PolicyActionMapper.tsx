@@ -101,13 +101,13 @@ const PolicyActionMapper: React.FC<PolicyActionMapperProps> = ({ selectedState, 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {actions.map((action, i) => (
                     <div key={i} className={`p-5 rounded-2xl border transition-all ${action.type === 'CRITICAL' ? 'bg-red-950/20 border-red-500/30' :
-                            action.type === 'GROWTH' ? 'bg-green-950/20 border-green-500/30' :
-                                'bg-blue-950/20 border-blue-500/30'
+                        action.type === 'GROWTH' ? 'bg-green-950/20 border-green-500/30' :
+                            'bg-blue-950/20 border-blue-500/30'
                         }`}>
                         <div className="flex items-center gap-3 mb-3">
                             <div className={`p-2 rounded-lg ${action.type === 'CRITICAL' ? 'bg-red-500 text-white' :
-                                    action.type === 'GROWTH' ? 'bg-green-500 text-white' :
-                                        'bg-blue-500 text-white'
+                                action.type === 'GROWTH' ? 'bg-green-500 text-white' :
+                                    'bg-blue-500 text-white'
                                 }`}>
                                 <action.icon className="w-4 h-4" />
                             </div>

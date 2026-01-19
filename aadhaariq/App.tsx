@@ -33,7 +33,7 @@ const App: React.FC = () => {
       case 'ml':
         return <MLInsights lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'predictive':
-        return <PredictiveDemand selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
+        return <PredictiveDemand lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'ai':
         return <InsightEngine lang={state.lang} selectedState={state.selectedState} onSelect={(s) => setState(prev => ({ ...prev, selectedState: s }))} />;
       case 'reports':

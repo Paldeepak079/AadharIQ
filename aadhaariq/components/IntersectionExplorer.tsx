@@ -4,6 +4,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Responsi
 import { INDIA_STATES_DATA } from '../data/realData';
 import { Language } from '../types';
 import { Target, Zap, ShieldAlert, Users, TrendingUp } from 'lucide-react';
+import GlossaryTerm from './GlossaryTerm';
 
 interface IntersectionExplorerProps {
     lang: Language;
@@ -11,7 +12,7 @@ interface IntersectionExplorerProps {
     onSelect?: (state: string | null) => void;
 }
 
-const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedState, onSelect }) => {
+const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedState, onSelect, lang }) => {
     // Calculate National Averages for baseline
     const stats = useMemo(() => {
         const count = INDIA_STATES_DATA.length;
@@ -56,10 +57,12 @@ const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedSta
         <div className="space-y-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <h2 className="text-2xl font-bold devanagari-header flex items-center gap-2">
-                        <Zap className="text-yellow-500 w-6 h-6" />
-                        Multivariate State Profile
-                    </h2>
+                    <GlossaryTerm term="Multivariate State Profile" lang={lang}>
+                        <h2 className="text-2xl font-bold devanagari-header flex items-center gap-2">
+                            <Zap className="text-yellow-500 w-6 h-6" />
+                            Multivariate State Profile
+                        </h2>
+                    </GlossaryTerm>
                     <p className="text-sm text-gray-400 mt-1">Cross-referencing 5 critical operational dimensions for
                         <span className="text-orange-500 font-black ml-1 uppercase">{selectedState || "National Average"}</span>
                     </p>
@@ -124,7 +127,9 @@ const IntersectionExplorer: React.FC<IntersectionExplorerProps> = ({ selectedSta
                         <div key={i} className="p-4 rounded-2xl bg-gray-900/40 border border-gray-800/50 hover:bg-gray-800/60 transition-all group">
                             <div className="flex items-center gap-3 mb-2">
                                 <item.icon className={`w-4 h-4 ${item.color}`} />
-                                <h4 className="text-[10px] font-black uppercase text-white tracking-widest">{item.label}</h4>
+                                <GlossaryTerm term={item.label} lang={lang}>
+                                    <h4 className="text-[10px] font-black uppercase text-white tracking-widest">{item.label}</h4>
+                                </GlossaryTerm>
                             </div>
                             <p className="text-[10px] text-gray-500 leading-relaxed font-medium group-hover:text-gray-400">
                                 {item.desc}

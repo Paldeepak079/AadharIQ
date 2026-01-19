@@ -5,6 +5,7 @@ import { INDIA_STATES_DATA } from '../data/realData';
 import { MapPin, ArrowLeft, ZoomIn, Globe, Layers, Activity } from 'lucide-react';
 import Plot from 'react-plotly.js';
 import { API_BASE_URL } from '../src/config';
+import GlossaryTerm from './GlossaryTerm';
 
 interface DistrictData {
   lat: number;
@@ -316,7 +317,9 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <>
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-red-500/30 rounded-xl">
                       <div className="w-3 h-3 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-lg shadow-red-500/50" />
-                      <span className="text-xs text-gray-300 font-bold">High Anomaly</span>
+                      <GlossaryTerm term="Anomaly Score" lang={lang}>
+                        <span className="text-xs text-gray-300 font-bold">High Anomaly</span>
+                      </GlossaryTerm>
                     </div>
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-orange-500/30 rounded-xl">
                       <div className="w-3 h-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-lg shadow-orange-500/50" />
@@ -327,11 +330,15 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
                   <>
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-red-500/30 rounded-xl">
                       <div className="w-3 h-3 bg-red-600 rounded-full" />
-                      <span className="text-xs text-gray-300 font-bold">Dark Zone (&gt;10% Gap)</span>
+                      <GlossaryTerm term="Dark Zone (>10% Gap)" lang={lang}>
+                        <span className="text-xs text-gray-300 font-bold">Dark Zone (&gt;10% Gap)</span>
+                      </GlossaryTerm>
                     </div>
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-green-500/30 rounded-xl">
                       <div className="w-3 h-3 bg-green-600 rounded-full" />
-                      <span className="text-xs text-gray-300 font-bold">Saturated (&lt;5% Gap)</span>
+                      <GlossaryTerm term="Saturated (<5% Gap)" lang={lang}>
+                        <span className="text-xs text-gray-300 font-bold">Saturated (&lt;5% Gap)</span>
+                      </GlossaryTerm>
                     </div>
                   </>
                 )

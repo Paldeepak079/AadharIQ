@@ -8,6 +8,7 @@ import { INDIA_STATES_DATA } from '../data/realData';
 import UrbanRuralVelocityChart from './UrbanRuralVelocityChart';
 import AgeGroupDistribution from './AgeGroupDistribution';
 import IntersectionExplorer from './IntersectionExplorer';
+import GlossaryTerm from './GlossaryTerm';
 
 interface MLProps {
   lang: Language;
@@ -76,9 +77,11 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
             <div className="flex items-center gap-3">
               <Target className="text-orange-500 w-7 h-7" />
               <div>
-                <h3 className="text-xl font-black text-white">
-                  {activeState === "All India" ? "National Activity Pulse" : `${activeState}: Diagnostic Pulse`}
-                </h3>
+                <GlossaryTerm term="National Activity Pulse" lang={lang} side="bottom">
+                  <h3 className="text-xl font-black text-white">
+                    {activeState === "All India" ? "National Activity Pulse" : `${activeState}: Diagnostic Pulse`}
+                  </h3>
+                </GlossaryTerm>
                 <div className="flex items-center gap-2 mt-1">
                   <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black">Velocity tracking</p>
                   <div className="flex bg-gray-900 border border-gray-800 rounded-lg p-0.5 no-print ml-2">
@@ -169,7 +172,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
           <div className="flex items-center gap-3 mb-8">
             <ShieldAlert className="text-red-500 w-7 h-7" />
             <div>
-              <h3 className="text-xl font-black text-white uppercase tracking-tighter">Diagnostic identification</h3>
+              <GlossaryTerm term="Anomaly Score" lang={lang} side="bottom">
+                <h3 className="text-xl font-black text-white uppercase tracking-tighter">Diagnostic identification</h3>
+              </GlossaryTerm>
               <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black mt-1">Cross-referencing regional volatility</p>
             </div>
           </div>
@@ -181,7 +186,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
                     <span className={`px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ${anomaly.type === 'SOCIETAL' ? 'bg-blue-600 text-white' : 'bg-red-600 text-white'}`}>
                       {anomaly.type}
                     </span>
-                    <h4 className="font-bold text-white text-sm">{anomaly.title}</h4>
+                    <GlossaryTerm term={anomaly.title} lang={lang}>
+                      <h4 className="font-bold text-white text-sm">{anomaly.title}</h4>
+                    </GlossaryTerm>
                   </div>
                 </div>
                 <p className="text-xs text-gray-400 leading-relaxed mb-4">{anomaly.desc}</p>
@@ -212,7 +219,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
 
       <IntersectionExplorer lang={lang} selectedState={activeState} onSelect={onSelect} />
 
-      <UrbanRuralVelocityChart externalState={activeState} />
+      <GlossaryTerm term="Urban/Rural Velocity" className="w-full" lang={lang}>
+        <UrbanRuralVelocityChart externalState={activeState} />
+      </GlossaryTerm>
 
       <div className="glass-panel p-8 rounded-3xl border-t-2 border-green-500/20">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -220,7 +229,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
             <div className="flex items-center gap-3 mb-8">
               <Users className="text-green-500 w-8 h-8" />
               <div>
-                <h3 className="text-xl font-black text-white italic">Demographic & Economic Clustering</h3>
+                <GlossaryTerm term="Demographic & Economic Clustering" lang={lang}>
+                  <h3 className="text-xl font-black text-white italic">Demographic & Economic Clustering</h3>
+                </GlossaryTerm>
                 <p className="text-[10px] text-gray-500 uppercase tracking-widest font-black mt-1">Cross-state metadata analysis</p>
               </div>
             </div>
@@ -233,7 +244,9 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
                 { title: "Strategic Surplus", val: "12%", desc: "Spare operational capacity", color: "text-purple-400" }
               ].map((stat, i) => (
                 <div key={i} className="p-5 bg-gray-900/40 border border-gray-800 rounded-2xl hover:bg-gray-800/60 transition-all">
-                  <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">{stat.title}</p>
+                  <GlossaryTerm term={stat.title} lang={lang}>
+                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">{stat.title}</p>
+                  </GlossaryTerm>
                   <p className={`text-lg font-black ${stat.color}`}>{stat.val}</p>
                   <p className="text-[10px] text-gray-500 mt-1">{stat.desc}</p>
                 </div>
@@ -241,7 +254,7 @@ const MLInsights: React.FC<MLProps> = ({ lang, selectedState, onSelect }) => {
             </div>
           </div>
 
-          <AgeGroupDistribution externalState={activeState} />
+          <AgeGroupDistribution externalState={activeState} lang={lang} />
         </div>
       </div>
     </div>
