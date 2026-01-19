@@ -32,7 +32,7 @@ AadhaarIQ transforms complex Aadhaar enrollment data into actionable insights th
 ![AadhaarIQ Banner](https://img.shields.io/badge/UIDAI-Hackathon%202026-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-> Transforming Aadhaar enrollment data into actionable policy insights through predictive analytics and interactive visualizations.
+> **India's First Dark Zone Early Warning System** — Predicting enrollment crises 6 months before they happen, transforming reactive firefighting into strategic foresight.
 
 ---
 
