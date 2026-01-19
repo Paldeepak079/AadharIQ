@@ -1,4 +1,4 @@
-# AadhaarIQ - AI-Powered Aadhaar Analytics Platform
+# AadhaarIQ - https://aadhariq.netlify.app/
 
 Production-ready dashboard for analyzing nationwide Aadhaar enrolment and update trends using real UIDAI datasets, powered by AI/ML models and Google Gemini 1.5 Flash.
 
@@ -7,7 +7,7 @@ Production-ready dashboard for analyzing nationwide Aadhaar enrolment and update
 - **Real Data Integration**: 5.3M+ enrolments, 104M+ updates from official UIDAI datasets
 - **Interactive Geospatial Map**: Click state tiles for drill-down analysis
 - **ML-Powered Insights**: Anomaly detection, forecasting (LSTM/Prophet), clustering (K-Means/DBSCAN)
-- **AI Narrative Engine**: Policy-grade insights with Gemini 1.5 Flash (Hindi/English, audience modes)
+- **AI Narrative Engine**: Policy-grade insights (Hindi/English, audience modes)
 - **PDF Export**: Generate comprehensive strategy reports
 - **FastAPI Backend**: 14 real-time analytics endpoints
 - **Premium Dark UI**: High-contrast Indian-themed interface with smooth animations
@@ -16,8 +16,7 @@ Production-ready dashboard for analyzing nationwide Aadhaar enrolment and update
 
 - **Node.js** 16+ and npm
 - **Python** 3.8+
-- **Gemini API Key** ([Get one here](https://makersuite.google.com/app/apikey))
-
+ 
 ## 🛠️ Setup Instructions
 
 ### 1. Install Dependencies
@@ -72,8 +71,7 @@ Backend will run on: http://localhost:8000
 cd aadhaariq
 npm run dev
 ```
-Frontend will run on: http://localhost:5173 (or 3001)
-
+ 
 ## 🎯 Usage
 
 1. **Dashboard**: View real-time nationwide statistics
