@@ -132,22 +132,6 @@ export const GLOSSARY: Record<string, { EN: string; HI: string }> = {
         EN: 'AI grouping of regions based on shared age-mix and economic activity patterns for tailored policy.',
         HI: 'अनुकूलित नीति के लिए साझा आयु-मिश्रण और आर्थिक गतिविधि पैटर्न के आधार पर क्षेत्रों की एआई समूहीकरण।'
     },
-    'Saturation Gap': {
-        EN: 'The statistical difference between the estimated eligible population and actual Aadhaar holders.',
-        HI: 'अनुमानित पात्र जनसंख्या और वास्तविक आधार धारकों के बीच सांख्यिकीय अंतर।'
-    },
-    'Saturated (<5% Gap)': {
-        EN: 'Regions where Aadhaar coverage is nearly universal, with minimal remaining untapped population.',
-        HI: 'वे क्षेत्र जहाँ आधार कवरेज लगभग सार्वभौमिक है, जिसमें न्यूनतम शेष अप्रयुक्त जनसंख्या है।'
-    },
-    'Dark Zone (>10% Gap)': {
-        EN: 'Critical priority regions with significant eligible population segments yet to be enrolled.',
-        HI: 'महत्वपूर्ण प्राथमिकता वाले क्षेत्र जहाँ पात्र जनसंख्या के बड़े हिस्से का अभी तक नामांकन नहीं हुआ है।'
-    },
-    'Enrollment Density Scale': {
-        EN: 'A measure of enrollment concentration per operational center, normalized for regional population.',
-        HI: 'प्रति परिचालन केंद्र नामांकन एकाग्रता का माप, क्षेत्रीय जनसंख्या के लिए सामान्यीकृत।'
-    },
     'Age Demographics': {
         EN: 'Pattern of enrollment and updates across different age bands (Child, Youth, Adult).',
         HI: 'विभिन्न आयु वर्गों (बाल, युवा, वयस्क) में नामांकन और अपडेट का पैटर्न।'

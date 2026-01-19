@@ -158,12 +158,12 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
         },
         mode: 'markers+text',
         textposition: 'middle center',
-        textfont: { size: 9, color: '#000', weight: 900 },
-        hovertemplate: '<b style="font-size:14px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
-          '<span style="color:#94a3b8">Saturation:</span> <b style="color:#22c55e">%{customdata.saturation}%</b><br>' +
-          '<span style="color:#94a3b8">Gap (Dark Zone):</span> <b style="color:#ef4444">%{customdata.gap}%</b><br>' +
-          '<span style="color:#94a3b8">Population Target:</span> <b style="color:#fff">%{customdata.pop}</b><br>' +
-          '<span style="color:#94a3b8">Status:</span> <b style="color:#f97316">%{customdata.status}</b>' +
+        textfont: { size: 12, color: '#000', weight: 900, family: 'Inter, sans-serif' },
+        hovertemplate: '<b style="font-size:16px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
+          '<span style="font-size:14px; color:#94a3b8">Saturation:</span> <b style="font-size:14px; color:#22c55e">%{customdata.saturation}%</b><br>' +
+          '<span style="font-size:14px; color:#94a3b8">Gap (Dark Zone):</span> <b style="font-size:14px; color:#ef4444">%{customdata.gap}%</b><br>' +
+          '<span style="font-size:14px; color:#94a3b8">Population Target:</span> <b style="font-size:14px; color:#fff">%{customdata.pop}</b><br>' +
+          '<span style="font-size:14px; color:#94a3b8">Status:</span> <b style="font-size:14px; color:#f97316">%{customdata.status}</b>' +
           '<extra></extra>'
       };
     }
@@ -193,16 +193,16 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
       mode: 'markers+text',
       textposition: 'middle center',
       textfont: {
-        size: 9,
+        size: 11,
         color: '#ffffff',
         family: 'Inter, sans-serif',
         weight: 700
       },
-      hovertemplate: '<b style="font-size:14px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
-        '<span style="color:#94a3b8">Enrollments:</span> <b style="color:#fff">%{customdata.enrollments:,.0f}</b><br>' +
-        '<span style="color:#94a3b8">Updates:</span> <b style="color:#60a5fa">%{customdata.updates:,.0f}</b><br>' +
-        '<span style="color:#94a3b8">Child Enrollments:</span> <b style="color:#22c55e">%{customdata.childEnrollments:,.0f}</b><br>' +
-        '<span style="color:#94a3b8">Anomaly Score:</span> <b style="color:#f97316">%{customdata.anomalyScore:.1%}</b>' +
+      hovertemplate: '<b style="font-size:16px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
+        '<span style="font-size:14px; color:#94a3b8">Enrollments:</span> <b style="font-size:14px; color:#fff">%{customdata.enrollments:,.0f}</b><br>' +
+        '<span style="font-size:14px; color:#94a3b8">Updates:</span> <b style="font-size:14px; color:#60a5fa">%{customdata.updates:,.0f}</b><br>' +
+        '<span style="font-size:14px; color:#94a3b8">Child Enrollments:</span> <b style="font-size:14px; color:#22c55e">%{customdata.childEnrollments:,.0f}</b><br>' +
+        '<span style="font-size:14px; color:#94a3b8">Anomaly Score:</span> <b style="font-size:14px; color:#f97316">%{customdata.anomalyScore:.1%}</b>' +
         '<extra></extra>'
     };
   };
@@ -236,13 +236,13 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
       opacity: 0.85
     },
     mode: 'markers',
-    hovertemplate: '<b style="font-size:14px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
-      '<span style="color:#94a3b8">Enrollments:</span> <b style="color:#fff">%{customdata.enrollments:,.0f}</b><br>' +
-      '<span style="color:#94a3b8">Updates:</span> <b style="color:#60a5fa">%{customdata.updates:,.0f}</b><br>' +
-      '<span style="color:#94a3b8">Child Enrollments:</span> <b style="color:#22c55e">%{customdata.childEnrollments:,.0f}</b><br>' +
-      '<span style="color:#94a3b8">Density:</span> <b style="color:#f97316">%{customdata.density:.1f}/office</b><br>' +
-      '<span style="color:#94a3b8">Offices:</span> <b style="color:#a78bfa">%{customdata.offices}</b><br>' +
-      '<span style="color:#94a3b8">Anomaly Score:</span> <b style="color:#fb923c">%{customdata.anomalyScore:.1%}</b>' +
+    hovertemplate: '<b style="font-size:16px; color:#ff9933">%{customdata.fullName}</b><br><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Enrollments:</span> <b style="font-size:14px; color:#fff">%{customdata.enrollments:,.0f}</b><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Updates:</span> <b style="font-size:14px; color:#60a5fa">%{customdata.updates:,.0f}</b><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Child Enrollments:</span> <b style="font-size:14px; color:#22c55e">%{customdata.childEnrollments:,.0f}</b><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Density:</span> <b style="font-size:14px; color:#f97316">%{customdata.density:.1f}/office</b><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Offices:</span> <b style="font-size:14px; color:#a78bfa">%{customdata.offices}</b><br>' +
+      '<span style="font-size:14px; color:#94a3b8">Anomaly Score:</span> <b style="font-size:14px; color:#fb923c">%{customdata.anomalyScore:.1%}</b>' +
       '<extra></extra>'
   });
 
@@ -257,11 +257,11 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
               <Globe className="text-white w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <h2 className="text-lg md:text-xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent truncate">
+              <h2 className="text-xl md:text-2xl font-black bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent truncate">
                 {viewMode === 'states' ? 'Geographic Distribution' : currentStateForDistricts}
               </h2>
-              <p className="text-[9px] text-gray-500 uppercase tracking-widest font-bold flex items-center gap-1.5">
-                <MapPin className="w-2.5 h-2.5" />
+              <p className="text-[11px] text-gray-500 uppercase tracking-widest font-bold flex items-center gap-1.5">
+                <MapPin className="w-3 h-3" />
                 {viewMode === 'states' ? 'State-Level Enrollment Visualization' : 'District-Level Granularity'}
               </p>
             </div>
@@ -271,7 +271,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
           <select
             value={selectedState || "All India"}
             onChange={(e) => onSelect(e.target.value === "All India" ? null : e.target.value)}
-            className="bg-gray-900 border border-gray-800 rounded-xl px-4 py-2.5 text-[10px] font-black text-gray-300 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer hover:border-orange-500/50 min-w-[140px]"
+            className="bg-gray-900 border border-gray-800 rounded-xl px-5 py-3 text-xs font-black text-gray-300 uppercase tracking-widest outline-none focus:border-orange-500 transition-all cursor-pointer hover:border-orange-500/50 min-w-[160px]"
           >
             <option value="All India">ALL INDIA</option>
             {INDIA_STATES_DATA.map(s => (
@@ -283,45 +283,57 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
           <div className="flex items-center gap-3">
             {viewMode === 'states' && (
               <>
-                <div className="flex bg-gray-900/80 p-1 rounded-xl border border-gray-800">
-                  <button
-                    onClick={() => setMapMode('activity')}
-                    className={`px-3 py-1.5 text-[9px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'activity' ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
-                  >
-                    <Activity className="w-2.5 h-2.5" />
-                    ACTIVITY
-                  </button>
-                  <button
-                    onClick={() => setMapMode('saturation')}
-                    className={`px-3 py-1.5 text-[9px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'saturation' ? 'bg-red-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
-                  >
-                    <Layers className="w-2.5 h-2.5" />
-                    SATURATION GAP
-                  </button>
+                <div className="flex bg-gray-900/80 p-1.5 rounded-xl border border-gray-800">
+                  <GlossaryTerm term="ACTIVITY" lang={lang}>
+                    <button
+                      onClick={() => setMapMode('activity')}
+                      className={`px-4 py-2 text-[11px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'activity' ? 'bg-orange-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                    >
+                      <Activity className="w-3 h-3" />
+                      ACTIVITY
+                    </button>
+                  </GlossaryTerm>
+                  <GlossaryTerm term="SATURATION GAP" lang={lang}>
+                    <button
+                      onClick={() => setMapMode('saturation')}
+                      className={`px-4 py-2 text-[11px] font-black rounded-lg transition-all flex items-center gap-1.5 ${mapMode === 'saturation' ? 'bg-red-600 text-white shadow-lg' : 'text-gray-500 hover:text-gray-300'}`}
+                    >
+                      <Layers className="w-3 h-3" />
+                      SATURATION GAP
+                    </button>
+                  </GlossaryTerm>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   {mapMode === 'activity' ? (
                     <>
-                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-red-500/30 rounded-lg">
-                        <div className="w-2 h-2 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-sm" />
-                        <span className="text-[9px] text-gray-300 font-bold">High Anomaly</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-orange-500/30 rounded-lg">
-                        <div className="w-2 h-2 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-sm" />
-                        <span className="text-[9px] text-gray-300 font-bold">Normal</span>
-                      </div>
+                      <GlossaryTerm term="High Anomaly" lang={lang}>
+                        <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-red-500/30 rounded-lg cursor-help group">
+                          <div className="w-2.5 h-2.5 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
+                          <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">High Anomaly</span>
+                        </div>
+                      </GlossaryTerm>
+                      <GlossaryTerm term="Normal" lang={lang}>
+                        <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-orange-500/30 rounded-lg cursor-help group">
+                          <div className="w-2.5 h-2.5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-sm group-hover:scale-110 transition-transform" />
+                          <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">Normal</span>
+                        </div>
+                      </GlossaryTerm>
                     </>
                   ) : (
                     <>
-                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-red-500/30 rounded-lg">
-                        <div className="w-2 h-2 bg-red-600 rounded-full" />
-                        <span className="text-[9px] text-gray-300 font-bold">&gt;10% Gap</span>
-                      </div>
-                      <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-900/50 border border-green-500/30 rounded-lg">
-                        <div className="w-2 h-2 bg-green-600 rounded-full" />
-                        <span className="text-[9px] text-gray-300 font-bold">&lt;5% Gap</span>
-                      </div>
+                      <GlossaryTerm term=">10% Gap" lang={lang}>
+                        <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-red-500/30 rounded-lg cursor-help group">
+                          <div className="w-2.5 h-2.5 bg-red-600 rounded-full group-hover:scale-110 transition-transform" />
+                          <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">&gt;10% Gap</span>
+                        </div>
+                      </GlossaryTerm>
+                      <GlossaryTerm term="<5% Gap" lang={lang}>
+                        <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 border border-green-500/30 rounded-lg cursor-help group">
+                          <div className="w-2.5 h-2.5 bg-green-600 rounded-full group-hover:scale-110 transition-transform" />
+                          <span className="text-[11px] text-gray-300 font-bold whitespace-nowrap">&lt;5% Gap</span>
+                        </div>
+                      </GlossaryTerm>
                     </>
                   )}
                 </div>
@@ -390,7 +402,7 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
               autosize: true,
               showlegend: false,
               hovermode: 'closest',
-              dragmode: 'zoom',
+              dragmode: 'pan',
               transition: {
                 duration: 500,
                 easing: 'cubic-in-out'
@@ -435,39 +447,49 @@ const GeospatialMap: React.FC<MapProps> = ({ lang, selectedState, onSelect }) =>
       {
         viewMode === 'districts' && (
           <div className="glass-panel p-6 rounded-2xl border border-orange-500/10 bg-gradient-to-br from-gray-900/50 to-gray-900/30">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-1 h-8 bg-gradient-to-b from-orange-500 to-orange-600 rounded-full" />
-              <p className="text-sm text-gray-300 uppercase font-bold tracking-wider">Enrollment Density Scale</p>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1.5 h-10 bg-gradient-to-b from-orange-500 to-orange-600 rounded-full" />
+              <GlossaryTerm term="Enrollment Density Scale" lang={lang} side="bottom">
+                <p className="text-base text-gray-300 uppercase font-black tracking-widest">Enrollment Density Scale</p>
+              </GlossaryTerm>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="flex items-center gap-3 p-3 bg-gray-900/50 border border-blue-500/20 rounded-xl hover:border-blue-500/50 transition-colors">
-                <div className="w-5 h-5 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-lg shadow-blue-500/50" />
-                <div>
-                  <span className="text-xs text-gray-400">Low Density</span>
-                  <p className="text-white font-bold text-sm">&lt;10/office</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <GlossaryTerm term="Low Density" lang={lang}>
+                <div className="flex items-center gap-4 p-4 bg-gray-900/50 border border-blue-500/20 rounded-2xl hover:border-blue-500/50 transition-all group">
+                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full shadow-lg shadow-blue-500/50 group-hover:scale-110 transition-transform" />
+                  <div>
+                    <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Low Density</span>
+                    <p className="text-white font-black text-base">&lt;10/office</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-3 bg-gray-900/50 border border-green-500/20 rounded-xl hover:border-green-500/50 transition-colors">
-                <div className="w-5 h-5 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg shadow-green-500/50" />
-                <div>
-                  <span className="text-xs text-gray-400">Medium</span>
-                  <p className="text-white font-bold text-sm">10-20/office</p>
+              </GlossaryTerm>
+              <GlossaryTerm term="Medium" lang={lang}>
+                <div className="flex items-center gap-4 p-4 bg-gray-900/50 border border-green-500/20 rounded-2xl hover:border-green-500/50 transition-all group">
+                  <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg shadow-green-500/50 group-hover:scale-110 transition-transform" />
+                  <div>
+                    <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Medium</span>
+                    <p className="text-white font-black text-base">10-20/office</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-3 bg-gray-900/50 border border-orange-500/20 rounded-xl hover:border-orange-500/50 transition-colors">
-                <div className="w-5 h-5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-lg shadow-orange-500/50" />
-                <div>
-                  <span className="text-xs text-gray-400">High</span>
-                  <p className="text-white font-bold text-sm">20-50/office</p>
+              </GlossaryTerm>
+              <GlossaryTerm term="High" lang={lang}>
+                <div className="flex items-center gap-4 p-4 bg-gray-900/50 border border-orange-500/20 rounded-2xl hover:border-orange-500/50 transition-all group">
+                  <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full shadow-lg shadow-orange-500/50 group-hover:scale-110 transition-transform" />
+                  <div>
+                    <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">High</span>
+                    <p className="text-white font-black text-base">20-50/office</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-3 bg-gray-900/50 border border-red-500/20 rounded-xl hover:border-red-500/50 transition-colors">
-                <div className="w-5 h-5 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-lg shadow-red-500/50" />
-                <div>
-                  <span className="text-xs text-gray-400">Very High</span>
-                  <p className="text-white font-bold text-sm">&gt;50/office</p>
+              </GlossaryTerm>
+              <GlossaryTerm term="Very High" lang={lang}>
+                <div className="flex items-center gap-4 p-4 bg-gray-900/50 border border-red-500/20 rounded-2xl hover:border-red-500/50 transition-all group">
+                  <div className="w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-lg shadow-red-500/50 group-hover:scale-110 transition-transform" />
+                  <div>
+                    <span className="text-[11px] text-gray-400 font-bold uppercase tracking-wider">Very High</span>
+                    <p className="text-white font-black text-base">&gt;50/office</p>
+                  </div>
                 </div>
-              </div>
+              </GlossaryTerm>
             </div>
           </div>
         )
